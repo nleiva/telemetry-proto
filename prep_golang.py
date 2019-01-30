@@ -9,7 +9,7 @@ import json
 import glob
 
 
-IMPORTPREFIX="github.com/cisco/"
+IMPORTPREFIX="github.com/nleiva/"
 REPOROOT=os.path.basename(os.getcwd())
 SRCDIR="staging"
 TGTDIR="proto_go"
