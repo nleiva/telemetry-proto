@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_local_label_conflicts_conflict
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type FibMplsLlc_KEYS struct {
 	NodeName             string   `protobuf:"bytes,1,opt,name=node_name,json=nodeName,proto3" json:"node_name,omitempty"`
@@ -38,17 +36,16 @@ func (m *FibMplsLlc_KEYS) Reset()         { *m = FibMplsLlc_KEYS{} }
 func (m *FibMplsLlc_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibMplsLlc_KEYS) ProtoMessage()    {}
 func (*FibMplsLlc_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_607d67fd61851b82, []int{0}
+	return fileDescriptor_fib_mpls_llc_01c81bf59f53383b, []int{0}
 }
-
 func (m *FibMplsLlc_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibMplsLlc_KEYS.Unmarshal(m, b)
 }
 func (m *FibMplsLlc_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibMplsLlc_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibMplsLlc_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibMplsLlc_KEYS.Merge(m, src)
+func (dst *FibMplsLlc_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibMplsLlc_KEYS.Merge(dst, src)
 }
 func (m *FibMplsLlc_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibMplsLlc_KEYS.Size(m)
@@ -131,17 +128,16 @@ func (m *FibMplsLlc) Reset()         { *m = FibMplsLlc{} }
 func (m *FibMplsLlc) String() string { return proto.CompactTextString(m) }
 func (*FibMplsLlc) ProtoMessage()    {}
 func (*FibMplsLlc) Descriptor() ([]byte, []int) {
-	return fileDescriptor_607d67fd61851b82, []int{1}
+	return fileDescriptor_fib_mpls_llc_01c81bf59f53383b, []int{1}
 }
-
 func (m *FibMplsLlc) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibMplsLlc.Unmarshal(m, b)
 }
 func (m *FibMplsLlc) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibMplsLlc.Marshal(b, m, deterministic)
 }
-func (m *FibMplsLlc) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibMplsLlc.Merge(m, src)
+func (dst *FibMplsLlc) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibMplsLlc.Merge(dst, src)
 }
 func (m *FibMplsLlc) XXX_Size() int {
 	return xxx_messageInfo_FibMplsLlc.Size(m)
@@ -206,17 +202,16 @@ func (m *FibMplsLlcPfx) Reset()         { *m = FibMplsLlcPfx{} }
 func (m *FibMplsLlcPfx) String() string { return proto.CompactTextString(m) }
 func (*FibMplsLlcPfx) ProtoMessage()    {}
 func (*FibMplsLlcPfx) Descriptor() ([]byte, []int) {
-	return fileDescriptor_607d67fd61851b82, []int{2}
+	return fileDescriptor_fib_mpls_llc_01c81bf59f53383b, []int{2}
 }
-
 func (m *FibMplsLlcPfx) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibMplsLlcPfx.Unmarshal(m, b)
 }
 func (m *FibMplsLlcPfx) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibMplsLlcPfx.Marshal(b, m, deterministic)
 }
-func (m *FibMplsLlcPfx) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibMplsLlcPfx.Merge(m, src)
+func (dst *FibMplsLlcPfx) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibMplsLlcPfx.Merge(dst, src)
 }
 func (m *FibMplsLlcPfx) XXX_Size() int {
 	return xxx_messageInfo_FibMplsLlcPfx.Size(m)
@@ -253,17 +248,16 @@ func (m *FibMplsLlcLsm) Reset()         { *m = FibMplsLlcLsm{} }
 func (m *FibMplsLlcLsm) String() string { return proto.CompactTextString(m) }
 func (*FibMplsLlcLsm) ProtoMessage()    {}
 func (*FibMplsLlcLsm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_607d67fd61851b82, []int{3}
+	return fileDescriptor_fib_mpls_llc_01c81bf59f53383b, []int{3}
 }
-
 func (m *FibMplsLlcLsm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibMplsLlcLsm.Unmarshal(m, b)
 }
 func (m *FibMplsLlcLsm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibMplsLlcLsm.Marshal(b, m, deterministic)
 }
-func (m *FibMplsLlcLsm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibMplsLlcLsm.Merge(m, src)
+func (dst *FibMplsLlcLsm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibMplsLlcLsm.Merge(dst, src)
 }
 func (m *FibMplsLlcLsm) XXX_Size() int {
 	return xxx_messageInfo_FibMplsLlcLsm.Size(m)
@@ -301,17 +295,16 @@ func (m *FibMplsLlcTypeExt) Reset()         { *m = FibMplsLlcTypeExt{} }
 func (m *FibMplsLlcTypeExt) String() string { return proto.CompactTextString(m) }
 func (*FibMplsLlcTypeExt) ProtoMessage()    {}
 func (*FibMplsLlcTypeExt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_607d67fd61851b82, []int{4}
+	return fileDescriptor_fib_mpls_llc_01c81bf59f53383b, []int{4}
 }
-
 func (m *FibMplsLlcTypeExt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibMplsLlcTypeExt.Unmarshal(m, b)
 }
 func (m *FibMplsLlcTypeExt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibMplsLlcTypeExt.Marshal(b, m, deterministic)
 }
-func (m *FibMplsLlcTypeExt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibMplsLlcTypeExt.Merge(m, src)
+func (dst *FibMplsLlcTypeExt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibMplsLlcTypeExt.Merge(dst, src)
 }
 func (m *FibMplsLlcTypeExt) XXX_Size() int {
 	return xxx_messageInfo_FibMplsLlcTypeExt.Size(m)
@@ -351,9 +344,9 @@ func init() {
 	proto.RegisterType((*FibMplsLlcTypeExt)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.local_label.conflicts.conflict.fib_mpls_llc_type_ext")
 }
 
-func init() { proto.RegisterFile("fib_mpls_llc.proto", fileDescriptor_607d67fd61851b82) }
+func init() { proto.RegisterFile("fib_mpls_llc.proto", fileDescriptor_fib_mpls_llc_01c81bf59f53383b) }
 
-var fileDescriptor_607d67fd61851b82 = []byte{
+var fileDescriptor_fib_mpls_llc_01c81bf59f53383b = []byte{
 	// 478 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x52, 0xbd, 0x6e, 0x14, 0x31,
 	0x10, 0xd6, 0x6e, 0x2e, 0x77, 0x7b, 0x93, 0x04, 0x05, 0x8b, 0x20, 0xa3, 0x80, 0x38, 0x2d, 0xcd,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_nsr_status
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IS-IS process NSR status
 type IsisShNsrStatusGlobal_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IsisShNsrStatusGlobal_KEYS) Reset()         { *m = IsisShNsrStatusGloba
 func (m *IsisShNsrStatusGlobal_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShNsrStatusGlobal_KEYS) ProtoMessage()    {}
 func (*IsisShNsrStatusGlobal_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{0}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{0}
 }
-
 func (m *IsisShNsrStatusGlobal_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNsrStatusGlobal_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShNsrStatusGlobal_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNsrStatusGlobal_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShNsrStatusGlobal_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNsrStatusGlobal_KEYS.Merge(m, src)
+func (dst *IsisShNsrStatusGlobal_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNsrStatusGlobal_KEYS.Merge(dst, src)
 }
 func (m *IsisShNsrStatusGlobal_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShNsrStatusGlobal_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *IsisShNsrStatusGlobal) Reset()         { *m = IsisShNsrStatusGlobal{} }
 func (m *IsisShNsrStatusGlobal) String() string { return proto.CompactTextString(m) }
 func (*IsisShNsrStatusGlobal) ProtoMessage()    {}
 func (*IsisShNsrStatusGlobal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{1}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{1}
 }
-
 func (m *IsisShNsrStatusGlobal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNsrStatusGlobal.Unmarshal(m, b)
 }
 func (m *IsisShNsrStatusGlobal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNsrStatusGlobal.Marshal(b, m, deterministic)
 }
-func (m *IsisShNsrStatusGlobal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNsrStatusGlobal.Merge(m, src)
+func (dst *IsisShNsrStatusGlobal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNsrStatusGlobal.Merge(dst, src)
 }
 func (m *IsisShNsrStatusGlobal) XXX_Size() int {
 	return xxx_messageInfo_IsisShNsrStatusGlobal.Size(m)
@@ -133,17 +129,16 @@ func (m *IsisShTimestampType) Reset()         { *m = IsisShTimestampType{} }
 func (m *IsisShTimestampType) String() string { return proto.CompactTextString(m) }
 func (*IsisShTimestampType) ProtoMessage()    {}
 func (*IsisShTimestampType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{2}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{2}
 }
-
 func (m *IsisShTimestampType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTimestampType.Unmarshal(m, b)
 }
 func (m *IsisShTimestampType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTimestampType.Marshal(b, m, deterministic)
 }
-func (m *IsisShTimestampType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTimestampType.Merge(m, src)
+func (dst *IsisShTimestampType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTimestampType.Merge(dst, src)
 }
 func (m *IsisShTimestampType) XXX_Size() int {
 	return xxx_messageInfo_IsisShTimestampType.Size(m)
@@ -193,17 +188,16 @@ func (m *NsrStatusGen) Reset()         { *m = NsrStatusGen{} }
 func (m *NsrStatusGen) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusGen) ProtoMessage()    {}
 func (*NsrStatusGen) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{3}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{3}
 }
-
 func (m *NsrStatusGen) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusGen.Unmarshal(m, b)
 }
 func (m *NsrStatusGen) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusGen.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusGen) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusGen.Merge(m, src)
+func (dst *NsrStatusGen) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusGen.Merge(dst, src)
 }
 func (m *NsrStatusGen) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusGen.Size(m)
@@ -335,17 +329,16 @@ func (m *NsrStatusNcd) Reset()         { *m = NsrStatusNcd{} }
 func (m *NsrStatusNcd) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusNcd) ProtoMessage()    {}
 func (*NsrStatusNcd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{4}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{4}
 }
-
 func (m *NsrStatusNcd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusNcd.Unmarshal(m, b)
 }
 func (m *NsrStatusNcd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusNcd.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusNcd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusNcd.Merge(m, src)
+func (dst *NsrStatusNcd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusNcd.Merge(dst, src)
 }
 func (m *NsrStatusNcd) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusNcd.Size(m)
@@ -412,17 +405,16 @@ func (m *NsrStatusPm) Reset()         { *m = NsrStatusPm{} }
 func (m *NsrStatusPm) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusPm) ProtoMessage()    {}
 func (*NsrStatusPm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{5}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{5}
 }
-
 func (m *NsrStatusPm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusPm.Unmarshal(m, b)
 }
 func (m *NsrStatusPm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusPm.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusPm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusPm.Merge(m, src)
+func (dst *NsrStatusPm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusPm.Merge(dst, src)
 }
 func (m *NsrStatusPm) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusPm.Size(m)
@@ -482,17 +474,16 @@ func (m *NsrStatusIsm) Reset()         { *m = NsrStatusIsm{} }
 func (m *NsrStatusIsm) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusIsm) ProtoMessage()    {}
 func (*NsrStatusIsm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{6}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{6}
 }
-
 func (m *NsrStatusIsm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusIsm.Unmarshal(m, b)
 }
 func (m *NsrStatusIsm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusIsm.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusIsm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusIsm.Merge(m, src)
+func (dst *NsrStatusIsm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusIsm.Merge(dst, src)
 }
 func (m *NsrStatusIsm) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusIsm.Size(m)
@@ -618,17 +609,16 @@ func (m *NsrStatusDs) Reset()         { *m = NsrStatusDs{} }
 func (m *NsrStatusDs) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusDs) ProtoMessage()    {}
 func (*NsrStatusDs) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{7}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{7}
 }
-
 func (m *NsrStatusDs) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusDs.Unmarshal(m, b)
 }
 func (m *NsrStatusDs) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusDs.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusDs) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusDs.Merge(m, src)
+func (dst *NsrStatusDs) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusDs.Merge(dst, src)
 }
 func (m *NsrStatusDs) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusDs.Size(m)
@@ -850,17 +840,16 @@ func (m *NsrStatusNiiIntf) Reset()         { *m = NsrStatusNiiIntf{} }
 func (m *NsrStatusNiiIntf) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusNiiIntf) ProtoMessage()    {}
 func (*NsrStatusNiiIntf) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{8}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{8}
 }
-
 func (m *NsrStatusNiiIntf) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusNiiIntf.Unmarshal(m, b)
 }
 func (m *NsrStatusNiiIntf) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusNiiIntf.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusNiiIntf) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusNiiIntf.Merge(m, src)
+func (dst *NsrStatusNiiIntf) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusNiiIntf.Merge(dst, src)
 }
 func (m *NsrStatusNiiIntf) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusNiiIntf.Size(m)
@@ -924,17 +913,16 @@ func (m *NsrStatusTe) Reset()         { *m = NsrStatusTe{} }
 func (m *NsrStatusTe) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusTe) ProtoMessage()    {}
 func (*NsrStatusTe) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{9}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{9}
 }
-
 func (m *NsrStatusTe) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusTe.Unmarshal(m, b)
 }
 func (m *NsrStatusTe) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusTe.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusTe) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusTe.Merge(m, src)
+func (dst *NsrStatusTe) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusTe.Merge(dst, src)
 }
 func (m *NsrStatusTe) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusTe.Size(m)
@@ -1018,17 +1006,16 @@ func (m *NsrStatusInfraType) Reset()         { *m = NsrStatusInfraType{} }
 func (m *NsrStatusInfraType) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusInfraType) ProtoMessage()    {}
 func (*NsrStatusInfraType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{10}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{10}
 }
-
 func (m *NsrStatusInfraType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusInfraType.Unmarshal(m, b)
 }
 func (m *NsrStatusInfraType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusInfraType.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusInfraType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusInfraType.Merge(m, src)
+func (dst *NsrStatusInfraType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusInfraType.Merge(dst, src)
 }
 func (m *NsrStatusInfraType) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusInfraType.Size(m)
@@ -1103,17 +1090,16 @@ func (m *NsrStatusGblType) Reset()         { *m = NsrStatusGblType{} }
 func (m *NsrStatusGblType) String() string { return proto.CompactTextString(m) }
 func (*NsrStatusGblType) ProtoMessage()    {}
 func (*NsrStatusGblType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0d348ec9ac5b05fa, []int{11}
+	return fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05, []int{11}
 }
-
 func (m *NsrStatusGblType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatusGblType.Unmarshal(m, b)
 }
 func (m *NsrStatusGblType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatusGblType.Marshal(b, m, deterministic)
 }
-func (m *NsrStatusGblType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatusGblType.Merge(m, src)
+func (dst *NsrStatusGblType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatusGblType.Merge(dst, src)
 }
 func (m *NsrStatusGblType) XXX_Size() int {
 	return xxx_messageInfo_NsrStatusGblType.Size(m)
@@ -1174,9 +1160,11 @@ func init() {
 	proto.RegisterType((*NsrStatusGblType)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.nsr_status.nsr_status_gbl_type")
 }
 
-func init() { proto.RegisterFile("isis_sh_nsr_status_global.proto", fileDescriptor_0d348ec9ac5b05fa) }
+func init() {
+	proto.RegisterFile("isis_sh_nsr_status_global.proto", fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05)
+}
 
-var fileDescriptor_0d348ec9ac5b05fa = []byte{
+var fileDescriptor_isis_sh_nsr_status_global_97f3d40f95bf6a05 = []byte{
 	// 1614 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x58, 0xdd, 0x6e, 0x23, 0xb7,
 	0x15, 0x86, 0x2c, 0x5b, 0x1e, 0x1d, 0xfd, 0xac, 0xc3, 0xac, 0x37, 0xb3, 0x9b, 0x4d, 0xe3, 0xa8,

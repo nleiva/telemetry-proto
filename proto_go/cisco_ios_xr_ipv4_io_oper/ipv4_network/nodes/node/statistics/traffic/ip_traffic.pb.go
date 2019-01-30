@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_io_oper_ipv4_network_nodes_node_statistics_traffic
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IP and ICMP Traffic Information
 type IpTraffic_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IpTraffic_KEYS) Reset()         { *m = IpTraffic_KEYS{} }
 func (m *IpTraffic_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IpTraffic_KEYS) ProtoMessage()    {}
 func (*IpTraffic_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e13a2a8e22f29b44, []int{0}
+	return fileDescriptor_ip_traffic_268f01bbe9b94ef2, []int{0}
 }
-
 func (m *IpTraffic_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpTraffic_KEYS.Unmarshal(m, b)
 }
 func (m *IpTraffic_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpTraffic_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IpTraffic_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpTraffic_KEYS.Merge(m, src)
+func (dst *IpTraffic_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpTraffic_KEYS.Merge(dst, src)
 }
 func (m *IpTraffic_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IpTraffic_KEYS.Size(m)
@@ -74,17 +71,16 @@ func (m *IpTraffic) Reset()         { *m = IpTraffic{} }
 func (m *IpTraffic) String() string { return proto.CompactTextString(m) }
 func (*IpTraffic) ProtoMessage()    {}
 func (*IpTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e13a2a8e22f29b44, []int{1}
+	return fileDescriptor_ip_traffic_268f01bbe9b94ef2, []int{1}
 }
-
 func (m *IpTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpTraffic.Unmarshal(m, b)
 }
 func (m *IpTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpTraffic.Marshal(b, m, deterministic)
 }
-func (m *IpTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpTraffic.Merge(m, src)
+func (dst *IpTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpTraffic.Merge(dst, src)
 }
 func (m *IpTraffic) XXX_Size() int {
 	return xxx_messageInfo_IpTraffic.Size(m)
@@ -210,17 +206,16 @@ func (m *Ipv4IoTraffic) Reset()         { *m = Ipv4IoTraffic{} }
 func (m *Ipv4IoTraffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv4IoTraffic) ProtoMessage()    {}
 func (*Ipv4IoTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e13a2a8e22f29b44, []int{2}
+	return fileDescriptor_ip_traffic_268f01bbe9b94ef2, []int{2}
 }
-
 func (m *Ipv4IoTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4IoTraffic.Unmarshal(m, b)
 }
 func (m *Ipv4IoTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4IoTraffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv4IoTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4IoTraffic.Merge(m, src)
+func (dst *Ipv4IoTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4IoTraffic.Merge(dst, src)
 }
 func (m *Ipv4IoTraffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv4IoTraffic.Size(m)
@@ -631,17 +626,16 @@ func (m *Ipv4IoIcmpTraffic) Reset()         { *m = Ipv4IoIcmpTraffic{} }
 func (m *Ipv4IoIcmpTraffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv4IoIcmpTraffic) ProtoMessage()    {}
 func (*Ipv4IoIcmpTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e13a2a8e22f29b44, []int{3}
+	return fileDescriptor_ip_traffic_268f01bbe9b94ef2, []int{3}
 }
-
 func (m *Ipv4IoIcmpTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4IoIcmpTraffic.Unmarshal(m, b)
 }
 func (m *Ipv4IoIcmpTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4IoIcmpTraffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv4IoIcmpTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4IoIcmpTraffic.Merge(m, src)
+func (dst *Ipv4IoIcmpTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4IoIcmpTraffic.Merge(dst, src)
 }
 func (m *Ipv4IoIcmpTraffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv4IoIcmpTraffic.Size(m)
@@ -918,9 +912,9 @@ func init() {
 	proto.RegisterType((*Ipv4IoIcmpTraffic)(nil), "cisco_ios_xr_ipv4_io_oper.ipv4_network.nodes.node.statistics.traffic.ipv4_io_icmp_traffic")
 }
 
-func init() { proto.RegisterFile("ip_traffic.proto", fileDescriptor_e13a2a8e22f29b44) }
+func init() { proto.RegisterFile("ip_traffic.proto", fileDescriptor_ip_traffic_268f01bbe9b94ef2) }
 
-var fileDescriptor_e13a2a8e22f29b44 = []byte{
+var fileDescriptor_ip_traffic_268f01bbe9b94ef2 = []byte{
 	// 1479 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x56, 0x5b, 0x4f, 0x1c, 0x39,
 	0x16, 0x16, 0x7b, 0x49, 0xe0, 0x40, 0xd3, 0x4d, 0x75, 0x03, 0x05, 0x84, 0x0d, 0x81, 0x5c, 0xc8,

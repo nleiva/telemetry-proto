@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_server_profiles_profile_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 server profile parameters
 type Ipv6Dhcpv6DServerProfile_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6Dhcpv6DServerProfile_KEYS) Reset()         { *m = Ipv6Dhcpv6DServer
 func (m *Ipv6Dhcpv6DServerProfile_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerProfile_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerProfile_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DServerProfile_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerProfile_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerProfile_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerProfile_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerProfile_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerProfile_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerProfile_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *Ipv6Dhcpv6DServerProfile) Reset()         { *m = Ipv6Dhcpv6DServerProfi
 func (m *Ipv6Dhcpv6DServerProfile) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerProfile) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerProfile) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DServerProfile) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerProfile) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerProfile) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerProfile.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerProfile) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerProfile.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerProfile) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerProfile.Size(m)
@@ -201,17 +197,16 @@ func (m *IPV6AddressType) Reset()         { *m = IPV6AddressType{} }
 func (m *IPV6AddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV6AddressType) ProtoMessage()    {}
 func (*IPV6AddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{2}
 }
-
 func (m *IPV6AddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV6AddressType.Unmarshal(m, b)
 }
 func (m *IPV6AddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV6AddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV6AddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV6AddressType.Merge(m, src)
+func (dst *IPV6AddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV6AddressType.Merge(dst, src)
 }
 func (m *IPV6AddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV6AddressType.Size(m)
@@ -244,17 +239,16 @@ func (m *TimeBag) Reset()         { *m = TimeBag{} }
 func (m *TimeBag) String() string { return proto.CompactTextString(m) }
 func (*TimeBag) ProtoMessage()    {}
 func (*TimeBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{3}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{3}
 }
-
 func (m *TimeBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TimeBag.Unmarshal(m, b)
 }
 func (m *TimeBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TimeBag.Marshal(b, m, deterministic)
 }
-func (m *TimeBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TimeBag.Merge(m, src)
+func (dst *TimeBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TimeBag.Merge(dst, src)
 }
 func (m *TimeBag) XXX_Size() int {
 	return xxx_messageInfo_TimeBag.Size(m)
@@ -292,17 +286,16 @@ func (m *Ipv6Dhcpv6DServerInterfaceReference) Reset()         { *m = Ipv6Dhcpv6D
 func (m *Ipv6Dhcpv6DServerInterfaceReference) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerInterfaceReference) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerInterfaceReference) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{4}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{4}
 }
-
 func (m *Ipv6Dhcpv6DServerInterfaceReference) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReference.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerInterfaceReference) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReference.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerInterfaceReference) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReference.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerInterfaceReference) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReference.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerInterfaceReference) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReference.Size(m)
@@ -334,17 +327,16 @@ func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) Reset() {
 func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerInterfaceReferenceItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerInterfaceReferenceItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ac60509bf736c3ca, []int{5}
+	return fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7, []int{5}
 }
-
 func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReferenceItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReferenceItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReferenceItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerInterfaceReferenceItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReferenceItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerInterfaceReferenceItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerInterfaceReferenceItem.Size(m)
@@ -371,9 +363,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DServerInterfaceReferenceItem)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.server.profiles.profile.info.ipv6_dhcpv6d_server_interface_reference_item")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_server_profile.proto", fileDescriptor_ac60509bf736c3ca) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_server_profile.proto", fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7)
+}
 
-var fileDescriptor_ac60509bf736c3ca = []byte{
+var fileDescriptor_ipv6_dhcpv6d_server_profile_d5911eb8aa60fed7 = []byte{
 	// 531 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x94, 0xdd, 0x6a, 0xd4, 0x40,
 	0x14, 0xc7, 0x49, 0x75, 0x75, 0x7b, 0xd6, 0x22, 0x4e, 0x2b, 0x06, 0x2b, 0x34, 0x8d, 0x17, 0xdd,

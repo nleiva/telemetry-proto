@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_neighbor_summaries_neighbor_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Neighbor summary data
 type IsisShNbrSumm_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShNbrSumm_KEYS) Reset()         { *m = IsisShNbrSumm_KEYS{} }
 func (m *IsisShNbrSumm_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShNbrSumm_KEYS) ProtoMessage()    {}
 func (*IsisShNbrSumm_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_443ddc1857ea4f23, []int{0}
+	return fileDescriptor_isis_sh_nbr_summ_959d41e88521bd05, []int{0}
 }
-
 func (m *IsisShNbrSumm_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNbrSumm_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShNbrSumm_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNbrSumm_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShNbrSumm_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNbrSumm_KEYS.Merge(m, src)
+func (dst *IsisShNbrSumm_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNbrSumm_KEYS.Merge(dst, src)
 }
 func (m *IsisShNbrSumm_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShNbrSumm_KEYS.Size(m)
@@ -84,17 +81,16 @@ func (m *IsisShNbrSumm) Reset()         { *m = IsisShNbrSumm{} }
 func (m *IsisShNbrSumm) String() string { return proto.CompactTextString(m) }
 func (*IsisShNbrSumm) ProtoMessage()    {}
 func (*IsisShNbrSumm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_443ddc1857ea4f23, []int{1}
+	return fileDescriptor_isis_sh_nbr_summ_959d41e88521bd05, []int{1}
 }
-
 func (m *IsisShNbrSumm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNbrSumm.Unmarshal(m, b)
 }
 func (m *IsisShNbrSumm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNbrSumm.Marshal(b, m, deterministic)
 }
-func (m *IsisShNbrSumm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNbrSumm.Merge(m, src)
+func (dst *IsisShNbrSumm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNbrSumm.Merge(dst, src)
 }
 func (m *IsisShNbrSumm) XXX_Size() int {
 	return xxx_messageInfo_IsisShNbrSumm.Size(m)
@@ -143,17 +139,16 @@ func (m *IsisShNbrSummLevel) Reset()         { *m = IsisShNbrSummLevel{} }
 func (m *IsisShNbrSummLevel) String() string { return proto.CompactTextString(m) }
 func (*IsisShNbrSummLevel) ProtoMessage()    {}
 func (*IsisShNbrSummLevel) Descriptor() ([]byte, []int) {
-	return fileDescriptor_443ddc1857ea4f23, []int{2}
+	return fileDescriptor_isis_sh_nbr_summ_959d41e88521bd05, []int{2}
 }
-
 func (m *IsisShNbrSummLevel) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNbrSummLevel.Unmarshal(m, b)
 }
 func (m *IsisShNbrSummLevel) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNbrSummLevel.Marshal(b, m, deterministic)
 }
-func (m *IsisShNbrSummLevel) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNbrSummLevel.Merge(m, src)
+func (dst *IsisShNbrSummLevel) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNbrSummLevel.Merge(dst, src)
 }
 func (m *IsisShNbrSummLevel) XXX_Size() int {
 	return xxx_messageInfo_IsisShNbrSummLevel.Size(m)
@@ -191,9 +186,11 @@ func init() {
 	proto.RegisterType((*IsisShNbrSummLevel)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.neighbor_summaries.neighbor_summary.isis_sh_nbr_summ_level")
 }
 
-func init() { proto.RegisterFile("isis_sh_nbr_summ.proto", fileDescriptor_443ddc1857ea4f23) }
+func init() {
+	proto.RegisterFile("isis_sh_nbr_summ.proto", fileDescriptor_isis_sh_nbr_summ_959d41e88521bd05)
+}
 
-var fileDescriptor_443ddc1857ea4f23 = []byte{
+var fileDescriptor_isis_sh_nbr_summ_959d41e88521bd05 = []byte{
 	// 306 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x93, 0xc1, 0x4a, 0xc3, 0x30,
 	0x18, 0xc7, 0xe9, 0x06, 0x82, 0xd1, 0xb9, 0x19, 0x51, 0x76, 0x1c, 0x15, 0x61, 0x78, 0x08, 0xac,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ma_oper_ipv6_network_nodes_node_interface_data_vrfs_vrf_briefs_brief
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Brief Summary of IPv6 Interface
 type Ipv6IfBrief_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ipv6IfBrief_KEYS) Reset()         { *m = Ipv6IfBrief_KEYS{} }
 func (m *Ipv6IfBrief_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6IfBrief_KEYS) ProtoMessage()    {}
 func (*Ipv6IfBrief_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_12de899f81f054b5, []int{0}
+	return fileDescriptor_ipv6_if_brief_965b77168672aa56, []int{0}
 }
-
 func (m *Ipv6IfBrief_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6IfBrief_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6IfBrief_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6IfBrief_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6IfBrief_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6IfBrief_KEYS.Merge(m, src)
+func (dst *Ipv6IfBrief_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6IfBrief_KEYS.Merge(dst, src)
 }
 func (m *Ipv6IfBrief_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6IfBrief_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *Ipv6IfBrief) Reset()         { *m = Ipv6IfBrief{} }
 func (m *Ipv6IfBrief) String() string { return proto.CompactTextString(m) }
 func (*Ipv6IfBrief) ProtoMessage()    {}
 func (*Ipv6IfBrief) Descriptor() ([]byte, []int) {
-	return fileDescriptor_12de899f81f054b5, []int{1}
+	return fileDescriptor_ipv6_if_brief_965b77168672aa56, []int{1}
 }
-
 func (m *Ipv6IfBrief) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6IfBrief.Unmarshal(m, b)
 }
 func (m *Ipv6IfBrief) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6IfBrief.Marshal(b, m, deterministic)
 }
-func (m *Ipv6IfBrief) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6IfBrief.Merge(m, src)
+func (dst *Ipv6IfBrief) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6IfBrief.Merge(dst, src)
 }
 func (m *Ipv6IfBrief) XXX_Size() int {
 	return xxx_messageInfo_Ipv6IfBrief.Size(m)
@@ -155,17 +151,16 @@ func (m *Ipv6AddrNode) Reset()         { *m = Ipv6AddrNode{} }
 func (m *Ipv6AddrNode) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AddrNode) ProtoMessage()    {}
 func (*Ipv6AddrNode) Descriptor() ([]byte, []int) {
-	return fileDescriptor_12de899f81f054b5, []int{2}
+	return fileDescriptor_ipv6_if_brief_965b77168672aa56, []int{2}
 }
-
 func (m *Ipv6AddrNode) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AddrNode.Unmarshal(m, b)
 }
 func (m *Ipv6AddrNode) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AddrNode.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AddrNode) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AddrNode.Merge(m, src)
+func (dst *Ipv6AddrNode) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AddrNode.Merge(dst, src)
 }
 func (m *Ipv6AddrNode) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AddrNode.Size(m)
@@ -217,9 +212,9 @@ func init() {
 	proto.RegisterType((*Ipv6AddrNode)(nil), "cisco_ios_xr_ipv6_ma_oper.ipv6_network.nodes.node.interface_data.vrfs.vrf.briefs.brief.ipv6_addr_node")
 }
 
-func init() { proto.RegisterFile("ipv6_if_brief.proto", fileDescriptor_12de899f81f054b5) }
+func init() { proto.RegisterFile("ipv6_if_brief.proto", fileDescriptor_ipv6_if_brief_965b77168672aa56) }
 
-var fileDescriptor_12de899f81f054b5 = []byte{
+var fileDescriptor_ipv6_if_brief_965b77168672aa56 = []byte{
 	// 372 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x92, 0xc1, 0x4a, 0xc3, 0x30,
 	0x18, 0xc7, 0xe9, 0xa6, 0xae, 0xcd, 0xd6, 0x21, 0xf1, 0x52, 0x91, 0x41, 0x99, 0x08, 0x3b, 0xf5,

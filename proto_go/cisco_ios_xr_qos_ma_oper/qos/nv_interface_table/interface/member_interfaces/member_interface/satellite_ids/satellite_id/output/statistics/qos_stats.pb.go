@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_qos_ma_oper_qos_nv_interface_table_interface_member_interfaces_member_interface_satellite_ids_satellite_id_output_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // policy map statistics
 type QosStats_KEYS struct {
@@ -34,17 +32,16 @@ func (m *QosStats_KEYS) Reset()         { *m = QosStats_KEYS{} }
 func (m *QosStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*QosStats_KEYS) ProtoMessage()    {}
 func (*QosStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{0}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{0}
 }
-
 func (m *QosStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_QosStats_KEYS.Unmarshal(m, b)
 }
 func (m *QosStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_QosStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *QosStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_QosStats_KEYS.Merge(m, src)
+func (dst *QosStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_QosStats_KEYS.Merge(dst, src)
 }
 func (m *QosStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_QosStats_KEYS.Size(m)
@@ -93,17 +90,16 @@ func (m *QosStats) Reset()         { *m = QosStats{} }
 func (m *QosStats) String() string { return proto.CompactTextString(m) }
 func (*QosStats) ProtoMessage()    {}
 func (*QosStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{1}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{1}
 }
-
 func (m *QosStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_QosStats.Unmarshal(m, b)
 }
 func (m *QosStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_QosStats.Marshal(b, m, deterministic)
 }
-func (m *QosStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_QosStats.Merge(m, src)
+func (dst *QosStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_QosStats.Merge(dst, src)
 }
 func (m *QosStats) XXX_Size() int {
 	return xxx_messageInfo_QosStats.Size(m)
@@ -161,17 +157,16 @@ func (m *PolicyParamUint32St_) Reset()         { *m = PolicyParamUint32St_{} }
 func (m *PolicyParamUint32St_) String() string { return proto.CompactTextString(m) }
 func (*PolicyParamUint32St_) ProtoMessage()    {}
 func (*PolicyParamUint32St_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{2}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{2}
 }
-
 func (m *PolicyParamUint32St_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_PolicyParamUint32St_.Unmarshal(m, b)
 }
 func (m *PolicyParamUint32St_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_PolicyParamUint32St_.Marshal(b, m, deterministic)
 }
-func (m *PolicyParamUint32St_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_PolicyParamUint32St_.Merge(m, src)
+func (dst *PolicyParamUint32St_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_PolicyParamUint32St_.Merge(dst, src)
 }
 func (m *PolicyParamUint32St_) XXX_Size() int {
 	return xxx_messageInfo_PolicyParamUint32St_.Size(m)
@@ -225,17 +220,16 @@ func (m *GenStatsSt) Reset()         { *m = GenStatsSt{} }
 func (m *GenStatsSt) String() string { return proto.CompactTextString(m) }
 func (*GenStatsSt) ProtoMessage()    {}
 func (*GenStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{3}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{3}
 }
-
 func (m *GenStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_GenStatsSt.Unmarshal(m, b)
 }
 func (m *GenStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_GenStatsSt.Marshal(b, m, deterministic)
 }
-func (m *GenStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_GenStatsSt.Merge(m, src)
+func (dst *GenStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_GenStatsSt.Merge(dst, src)
 }
 func (m *GenStatsSt) XXX_Size() int {
 	return xxx_messageInfo_GenStatsSt.Size(m)
@@ -356,17 +350,16 @@ func (m *PlcColorClassStatsSt) Reset()         { *m = PlcColorClassStatsSt{} }
 func (m *PlcColorClassStatsSt) String() string { return proto.CompactTextString(m) }
 func (*PlcColorClassStatsSt) ProtoMessage()    {}
 func (*PlcColorClassStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{4}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{4}
 }
-
 func (m *PlcColorClassStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_PlcColorClassStatsSt.Unmarshal(m, b)
 }
 func (m *PlcColorClassStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_PlcColorClassStatsSt.Marshal(b, m, deterministic)
 }
-func (m *PlcColorClassStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_PlcColorClassStatsSt.Merge(m, src)
+func (dst *PlcColorClassStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_PlcColorClassStatsSt.Merge(dst, src)
 }
 func (m *PlcColorClassStatsSt) XXX_Size() int {
 	return xxx_messageInfo_PlcColorClassStatsSt.Size(m)
@@ -541,17 +534,16 @@ func (m *PlcStatsSt) Reset()         { *m = PlcStatsSt{} }
 func (m *PlcStatsSt) String() string { return proto.CompactTextString(m) }
 func (*PlcStatsSt) ProtoMessage()    {}
 func (*PlcStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{5}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{5}
 }
-
 func (m *PlcStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_PlcStatsSt.Unmarshal(m, b)
 }
 func (m *PlcStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_PlcStatsSt.Marshal(b, m, deterministic)
 }
-func (m *PlcStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_PlcStatsSt.Merge(m, src)
+func (dst *PlcStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_PlcStatsSt.Merge(dst, src)
 }
 func (m *PlcStatsSt) XXX_Size() int {
 	return xxx_messageInfo_PlcStatsSt.Size(m)
@@ -683,17 +675,16 @@ func (m *CacStatsSt) Reset()         { *m = CacStatsSt{} }
 func (m *CacStatsSt) String() string { return proto.CompactTextString(m) }
 func (*CacStatsSt) ProtoMessage()    {}
 func (*CacStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{6}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{6}
 }
-
 func (m *CacStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CacStatsSt.Unmarshal(m, b)
 }
 func (m *CacStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CacStatsSt.Marshal(b, m, deterministic)
 }
-func (m *CacStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CacStatsSt.Merge(m, src)
+func (dst *CacStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CacStatsSt.Merge(dst, src)
 }
 func (m *CacStatsSt) XXX_Size() int {
 	return xxx_messageInfo_CacStatsSt.Size(m)
@@ -781,17 +772,16 @@ func (m *IphcStatsSt) Reset()         { *m = IphcStatsSt{} }
 func (m *IphcStatsSt) String() string { return proto.CompactTextString(m) }
 func (*IphcStatsSt) ProtoMessage()    {}
 func (*IphcStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{7}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{7}
 }
-
 func (m *IphcStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IphcStatsSt.Unmarshal(m, b)
 }
 func (m *IphcStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IphcStatsSt.Marshal(b, m, deterministic)
 }
-func (m *IphcStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IphcStatsSt.Merge(m, src)
+func (dst *IphcStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IphcStatsSt.Merge(dst, src)
 }
 func (m *IphcStatsSt) XXX_Size() int {
 	return xxx_messageInfo_IphcStatsSt.Size(m)
@@ -941,17 +931,16 @@ func (m *QStatsSt) Reset()         { *m = QStatsSt{} }
 func (m *QStatsSt) String() string { return proto.CompactTextString(m) }
 func (*QStatsSt) ProtoMessage()    {}
 func (*QStatsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{8}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{8}
 }
-
 func (m *QStatsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_QStatsSt.Unmarshal(m, b)
 }
 func (m *QStatsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_QStatsSt.Marshal(b, m, deterministic)
 }
-func (m *QStatsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_QStatsSt.Merge(m, src)
+func (dst *QStatsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_QStatsSt.Merge(dst, src)
 }
 func (m *QStatsSt) XXX_Size() int {
 	return xxx_messageInfo_QStatsSt.Size(m)
@@ -1131,17 +1120,16 @@ func (m *WredTypeValue) Reset()         { *m = WredTypeValue{} }
 func (m *WredTypeValue) String() string { return proto.CompactTextString(m) }
 func (*WredTypeValue) ProtoMessage()    {}
 func (*WredTypeValue) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{9}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{9}
 }
-
 func (m *WredTypeValue) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_WredTypeValue.Unmarshal(m, b)
 }
 func (m *WredTypeValue) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_WredTypeValue.Marshal(b, m, deterministic)
 }
-func (m *WredTypeValue) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_WredTypeValue.Merge(m, src)
+func (dst *WredTypeValue) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_WredTypeValue.Merge(dst, src)
 }
 func (m *WredTypeValue) XXX_Size() int {
 	return xxx_messageInfo_WredTypeValue.Size(m)
@@ -1196,17 +1184,16 @@ func (m *RedProfileStats) Reset()         { *m = RedProfileStats{} }
 func (m *RedProfileStats) String() string { return proto.CompactTextString(m) }
 func (*RedProfileStats) ProtoMessage()    {}
 func (*RedProfileStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{10}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{10}
 }
-
 func (m *RedProfileStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RedProfileStats.Unmarshal(m, b)
 }
 func (m *RedProfileStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RedProfileStats.Marshal(b, m, deterministic)
 }
-func (m *RedProfileStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RedProfileStats.Merge(m, src)
+func (dst *RedProfileStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RedProfileStats.Merge(dst, src)
 }
 func (m *RedProfileStats) XXX_Size() int {
 	return xxx_messageInfo_RedProfileStats.Size(m)
@@ -1317,17 +1304,16 @@ func (m *ClassStats) Reset()         { *m = ClassStats{} }
 func (m *ClassStats) String() string { return proto.CompactTextString(m) }
 func (*ClassStats) ProtoMessage()    {}
 func (*ClassStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e45aa6eaecc60a3, []int{11}
+	return fileDescriptor_qos_stats_3cdc2597cb6543aa, []int{11}
 }
-
 func (m *ClassStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ClassStats.Unmarshal(m, b)
 }
 func (m *ClassStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ClassStats.Marshal(b, m, deterministic)
 }
-func (m *ClassStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ClassStats.Merge(m, src)
+func (dst *ClassStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ClassStats.Merge(dst, src)
 }
 func (m *ClassStats) XXX_Size() int {
 	return xxx_messageInfo_ClassStats.Size(m)
@@ -1437,9 +1423,9 @@ func init() {
 	proto.RegisterType((*ClassStats)(nil), "cisco_ios_xr_qos_ma_oper.qos.nv_interface_table.interface.member_interfaces.member_interface.satellite_ids.satellite_id.output.statistics.class_stats")
 }
 
-func init() { proto.RegisterFile("qos_stats.proto", fileDescriptor_1e45aa6eaecc60a3) }
+func init() { proto.RegisterFile("qos_stats.proto", fileDescriptor_qos_stats_3cdc2597cb6543aa) }
 
-var fileDescriptor_1e45aa6eaecc60a3 = []byte{
+var fileDescriptor_qos_stats_3cdc2597cb6543aa = []byte{
 	// 2019 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x59, 0xcd, 0x6f, 0x1c, 0x49,
 	0x15, 0x57, 0xfb, 0x73, 0xe6, 0xcd, 0x77, 0x4f, 0x6c, 0x8f, 0x1d, 0x96, 0x24, 0x13, 0x6d, 0x62,

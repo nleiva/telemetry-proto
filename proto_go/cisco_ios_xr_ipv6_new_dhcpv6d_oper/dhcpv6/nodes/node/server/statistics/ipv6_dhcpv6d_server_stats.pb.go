@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_server_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 server statistics
 type Ipv6Dhcpv6DServerStats_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ipv6Dhcpv6DServerStats_KEYS) Reset()         { *m = Ipv6Dhcpv6DServerSt
 func (m *Ipv6Dhcpv6DServerStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerStats_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8c0b98617b7699ed, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DServerStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerStats_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerStats_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats_KEYS.Size(m)
@@ -71,17 +68,16 @@ func (m *Ipv6Dhcpv6DServerStats) Reset()         { *m = Ipv6Dhcpv6DServerStats{}
 func (m *Ipv6Dhcpv6DServerStats) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerStats) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8c0b98617b7699ed, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DServerStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerStats.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerStats.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerStats) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStats.Size(m)
@@ -113,17 +109,16 @@ func (m *Ipv6Dhcpv6DServerStatsItem) Reset()         { *m = Ipv6Dhcpv6DServerSta
 func (m *Ipv6Dhcpv6DServerStatsItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerStatsItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerStatsItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8c0b98617b7699ed, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894, []int{2}
 }
-
 func (m *Ipv6Dhcpv6DServerStatsItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStatsItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerStatsItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStatsItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerStatsItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerStatsItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerStatsItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerStatsItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerStatsItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerStatsItem.Size(m)
@@ -165,17 +160,16 @@ func (m *Ipv6Dhcpv6DFilteredStats) Reset()         { *m = Ipv6Dhcpv6DFilteredSta
 func (m *Ipv6Dhcpv6DFilteredStats) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DFilteredStats) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DFilteredStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8c0b98617b7699ed, []int{3}
+	return fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894, []int{3}
 }
-
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(m, src)
+func (dst *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Size(m)
@@ -214,9 +208,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DFilteredStats)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.server.statistics.ipv6_dhcpv6d_filtered_stats")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_server_stats.proto", fileDescriptor_8c0b98617b7699ed) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_server_stats.proto", fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894)
+}
 
-var fileDescriptor_8c0b98617b7699ed = []byte{
+var fileDescriptor_ipv6_dhcpv6d_server_stats_489234065b539894 = []byte{
 	// 314 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x92, 0x41, 0x4b, 0xfb, 0x30,
 	0x18, 0xc6, 0xc9, 0xf6, 0xe7, 0xef, 0x96, 0x81, 0x93, 0x08, 0xb2, 0x31, 0xd0, 0xd1, 0x8b, 0xf3,

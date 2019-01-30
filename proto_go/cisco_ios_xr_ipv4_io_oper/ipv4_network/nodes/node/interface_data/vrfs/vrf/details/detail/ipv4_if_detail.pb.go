@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_io_oper_ipv4_network_nodes_node_interface_data_vrfs_vrf_details_detail
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Detailed Info of IP Interface
 type Ipv4IfDetail_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ipv4IfDetail_KEYS) Reset()         { *m = Ipv4IfDetail_KEYS{} }
 func (m *Ipv4IfDetail_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv4IfDetail_KEYS) ProtoMessage()    {}
 func (*Ipv4IfDetail_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{0}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{0}
 }
-
 func (m *Ipv4IfDetail_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4IfDetail_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv4IfDetail_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4IfDetail_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv4IfDetail_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4IfDetail_KEYS.Merge(m, src)
+func (dst *Ipv4IfDetail_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4IfDetail_KEYS.Merge(dst, src)
 }
 func (m *Ipv4IfDetail_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv4IfDetail_KEYS.Size(m)
@@ -142,17 +139,16 @@ func (m *Ipv4IfDetail) Reset()         { *m = Ipv4IfDetail{} }
 func (m *Ipv4IfDetail) String() string { return proto.CompactTextString(m) }
 func (*Ipv4IfDetail) ProtoMessage()    {}
 func (*Ipv4IfDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{1}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{1}
 }
-
 func (m *Ipv4IfDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4IfDetail.Unmarshal(m, b)
 }
 func (m *Ipv4IfDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4IfDetail.Marshal(b, m, deterministic)
 }
-func (m *Ipv4IfDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4IfDetail.Merge(m, src)
+func (dst *Ipv4IfDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4IfDetail.Merge(dst, src)
 }
 func (m *Ipv4IfDetail) XXX_Size() int {
 	return xxx_messageInfo_Ipv4IfDetail.Size(m)
@@ -370,17 +366,16 @@ func (m *Str) Reset()         { *m = Str{} }
 func (m *Str) String() string { return proto.CompactTextString(m) }
 func (*Str) ProtoMessage()    {}
 func (*Str) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{2}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{2}
 }
-
 func (m *Str) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Str.Unmarshal(m, b)
 }
 func (m *Str) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Str.Marshal(b, m, deterministic)
 }
-func (m *Str) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Str.Merge(m, src)
+func (dst *Str) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Str.Merge(dst, src)
 }
 func (m *Str) XXX_Size() int {
 	return xxx_messageInfo_Str.Size(m)
@@ -411,17 +406,16 @@ func (m *McastGroup) Reset()         { *m = McastGroup{} }
 func (m *McastGroup) String() string { return proto.CompactTextString(m) }
 func (*McastGroup) ProtoMessage()    {}
 func (*McastGroup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{3}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{3}
 }
-
 func (m *McastGroup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_McastGroup.Unmarshal(m, b)
 }
 func (m *McastGroup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_McastGroup.Marshal(b, m, deterministic)
 }
-func (m *McastGroup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_McastGroup.Merge(m, src)
+func (dst *McastGroup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_McastGroup.Merge(dst, src)
 }
 func (m *McastGroup) XXX_Size() int {
 	return xxx_messageInfo_McastGroup.Size(m)
@@ -456,17 +450,16 @@ func (m *IpAddrNode) Reset()         { *m = IpAddrNode{} }
 func (m *IpAddrNode) String() string { return proto.CompactTextString(m) }
 func (*IpAddrNode) ProtoMessage()    {}
 func (*IpAddrNode) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{4}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{4}
 }
-
 func (m *IpAddrNode) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpAddrNode.Unmarshal(m, b)
 }
 func (m *IpAddrNode) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpAddrNode.Marshal(b, m, deterministic)
 }
-func (m *IpAddrNode) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpAddrNode.Merge(m, src)
+func (dst *IpAddrNode) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpAddrNode.Merge(dst, src)
 }
 func (m *IpAddrNode) XXX_Size() int {
 	return xxx_messageInfo_IpAddrNode.Size(m)
@@ -517,17 +510,16 @@ func (m *AclConfig) Reset()         { *m = AclConfig{} }
 func (m *AclConfig) String() string { return proto.CompactTextString(m) }
 func (*AclConfig) ProtoMessage()    {}
 func (*AclConfig) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{5}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{5}
 }
-
 func (m *AclConfig) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AclConfig.Unmarshal(m, b)
 }
 func (m *AclConfig) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_AclConfig.Marshal(b, m, deterministic)
 }
-func (m *AclConfig) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AclConfig.Merge(m, src)
+func (dst *AclConfig) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AclConfig.Merge(dst, src)
 }
 func (m *AclConfig) XXX_Size() int {
 	return xxx_messageInfo_AclConfig.Size(m)
@@ -583,17 +575,16 @@ func (m *MultiAclConfig) Reset()         { *m = MultiAclConfig{} }
 func (m *MultiAclConfig) String() string { return proto.CompactTextString(m) }
 func (*MultiAclConfig) ProtoMessage()    {}
 func (*MultiAclConfig) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{6}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{6}
 }
-
 func (m *MultiAclConfig) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MultiAclConfig.Unmarshal(m, b)
 }
 func (m *MultiAclConfig) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MultiAclConfig.Marshal(b, m, deterministic)
 }
-func (m *MultiAclConfig) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MultiAclConfig.Merge(m, src)
+func (dst *MultiAclConfig) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MultiAclConfig.Merge(dst, src)
 }
 func (m *MultiAclConfig) XXX_Size() int {
 	return xxx_messageInfo_MultiAclConfig.Size(m)
@@ -638,17 +629,16 @@ func (m *HaddrArray) Reset()         { *m = HaddrArray{} }
 func (m *HaddrArray) String() string { return proto.CompactTextString(m) }
 func (*HaddrArray) ProtoMessage()    {}
 func (*HaddrArray) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{7}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{7}
 }
-
 func (m *HaddrArray) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_HaddrArray.Unmarshal(m, b)
 }
 func (m *HaddrArray) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_HaddrArray.Marshal(b, m, deterministic)
 }
-func (m *HaddrArray) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_HaddrArray.Merge(m, src)
+func (dst *HaddrArray) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_HaddrArray.Merge(dst, src)
 }
 func (m *HaddrArray) XXX_Size() int {
 	return xxx_messageInfo_HaddrArray.Size(m)
@@ -685,17 +675,16 @@ func (m *RpfConfig) Reset()         { *m = RpfConfig{} }
 func (m *RpfConfig) String() string { return proto.CompactTextString(m) }
 func (*RpfConfig) ProtoMessage()    {}
 func (*RpfConfig) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{8}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{8}
 }
-
 func (m *RpfConfig) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RpfConfig.Unmarshal(m, b)
 }
 func (m *RpfConfig) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RpfConfig.Marshal(b, m, deterministic)
 }
-func (m *RpfConfig) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RpfConfig.Merge(m, src)
+func (dst *RpfConfig) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RpfConfig.Merge(dst, src)
 }
 func (m *RpfConfig) XXX_Size() int {
 	return xxx_messageInfo_RpfConfig.Size(m)
@@ -751,17 +740,16 @@ func (m *BgpPaDir) Reset()         { *m = BgpPaDir{} }
 func (m *BgpPaDir) String() string { return proto.CompactTextString(m) }
 func (*BgpPaDir) ProtoMessage()    {}
 func (*BgpPaDir) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{9}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{9}
 }
-
 func (m *BgpPaDir) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpPaDir.Unmarshal(m, b)
 }
 func (m *BgpPaDir) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpPaDir.Marshal(b, m, deterministic)
 }
-func (m *BgpPaDir) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpPaDir.Merge(m, src)
+func (dst *BgpPaDir) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpPaDir.Merge(dst, src)
 }
 func (m *BgpPaDir) XXX_Size() int {
 	return xxx_messageInfo_BgpPaDir.Size(m)
@@ -808,17 +796,16 @@ func (m *BgpPaConfig) Reset()         { *m = BgpPaConfig{} }
 func (m *BgpPaConfig) String() string { return proto.CompactTextString(m) }
 func (*BgpPaConfig) ProtoMessage()    {}
 func (*BgpPaConfig) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{10}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{10}
 }
-
 func (m *BgpPaConfig) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpPaConfig.Unmarshal(m, b)
 }
 func (m *BgpPaConfig) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpPaConfig.Marshal(b, m, deterministic)
 }
-func (m *BgpPaConfig) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpPaConfig.Merge(m, src)
+func (dst *BgpPaConfig) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpPaConfig.Merge(dst, src)
 }
 func (m *BgpPaConfig) XXX_Size() int {
 	return xxx_messageInfo_BgpPaConfig.Size(m)
@@ -854,17 +841,16 @@ func (m *TimevalEntry) Reset()         { *m = TimevalEntry{} }
 func (m *TimevalEntry) String() string { return proto.CompactTextString(m) }
 func (*TimevalEntry) ProtoMessage()    {}
 func (*TimevalEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed75082a60326397, []int{11}
+	return fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a, []int{11}
 }
-
 func (m *TimevalEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TimevalEntry.Unmarshal(m, b)
 }
 func (m *TimevalEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TimevalEntry.Marshal(b, m, deterministic)
 }
-func (m *TimevalEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TimevalEntry.Merge(m, src)
+func (dst *TimevalEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TimevalEntry.Merge(dst, src)
 }
 func (m *TimevalEntry) XXX_Size() int {
 	return xxx_messageInfo_TimevalEntry.Size(m)
@@ -890,9 +876,11 @@ func init() {
 	proto.RegisterType((*TimevalEntry)(nil), "cisco_ios_xr_ipv4_io_oper.ipv4_network.nodes.node.interface_data.vrfs.vrf.details.detail.timeval_entry")
 }
 
-func init() { proto.RegisterFile("ipv4_if_detail.proto", fileDescriptor_ed75082a60326397) }
+func init() {
+	proto.RegisterFile("ipv4_if_detail.proto", fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a)
+}
 
-var fileDescriptor_ed75082a60326397 = []byte{
+var fileDescriptor_ipv4_if_detail_2b2f72fb70d3184a = []byte{
 	// 1136 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x57, 0x5d, 0x6f, 0x1b, 0x45,
 	0x14, 0xd5, 0xc6, 0x8d, 0x6b, 0xdf, 0xd8, 0x49, 0x3a, 0x2d, 0x65, 0x4b, 0x85, 0x64, 0x19, 0x01,

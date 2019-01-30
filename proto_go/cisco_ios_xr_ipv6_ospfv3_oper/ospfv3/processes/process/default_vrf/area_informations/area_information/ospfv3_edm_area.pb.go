@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_area_informations_area_information
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 area summary information
 type Ospfv3EdmArea_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ospfv3EdmArea_KEYS) Reset()         { *m = Ospfv3EdmArea_KEYS{} }
 func (m *Ospfv3EdmArea_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmArea_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmArea_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6aff4bc27772e912, []int{0}
+	return fileDescriptor_ospfv3_edm_area_063bf6ed63b2d1d3, []int{0}
 }
-
 func (m *Ospfv3EdmArea_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmArea_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmArea_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmArea_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmArea_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmArea_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmArea_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmArea_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmArea_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmArea_KEYS.Size(m)
@@ -120,17 +117,16 @@ func (m *Ospfv3EdmArea) Reset()         { *m = Ospfv3EdmArea{} }
 func (m *Ospfv3EdmArea) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmArea) ProtoMessage()    {}
 func (*Ospfv3EdmArea) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6aff4bc27772e912, []int{1}
+	return fileDescriptor_ospfv3_edm_area_063bf6ed63b2d1d3, []int{1}
 }
-
 func (m *Ospfv3EdmArea) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmArea.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmArea) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmArea.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmArea) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmArea.Merge(m, src)
+func (dst *Ospfv3EdmArea) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmArea.Merge(dst, src)
 }
 func (m *Ospfv3EdmArea) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmArea.Size(m)
@@ -309,17 +305,16 @@ func (m *Ospfv3EdmAreaRange) Reset()         { *m = Ospfv3EdmAreaRange{} }
 func (m *Ospfv3EdmAreaRange) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmAreaRange) ProtoMessage()    {}
 func (*Ospfv3EdmAreaRange) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6aff4bc27772e912, []int{2}
+	return fileDescriptor_ospfv3_edm_area_063bf6ed63b2d1d3, []int{2}
 }
-
 func (m *Ospfv3EdmAreaRange) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmAreaRange.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmAreaRange) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmAreaRange.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmAreaRange) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmAreaRange.Merge(m, src)
+func (dst *Ospfv3EdmAreaRange) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmAreaRange.Merge(dst, src)
 }
 func (m *Ospfv3EdmAreaRange) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmAreaRange.Size(m)
@@ -371,9 +366,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmAreaRange)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.area_informations.area_information.ospfv3_edm_area_range")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_area.proto", fileDescriptor_6aff4bc27772e912) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_area.proto", fileDescriptor_ospfv3_edm_area_063bf6ed63b2d1d3)
+}
 
-var fileDescriptor_6aff4bc27772e912 = []byte{
+var fileDescriptor_ospfv3_edm_area_063bf6ed63b2d1d3 = []byte{
 	// 745 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x54, 0x5d, 0x6f, 0x23, 0x35,
 	0x14, 0x55, 0xd8, 0xdd, 0x6e, 0xf1, 0xa6, 0x9b, 0xc6, 0xbb, 0x6d, 0xcd, 0x0b, 0x0a, 0x05, 0x95,

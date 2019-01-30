@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_redistributions_redistribution
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 Redistribution Information
 type Ospfv3EdmRedist_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3EdmRedist_KEYS) Reset()         { *m = Ospfv3EdmRedist_KEYS{} }
 func (m *Ospfv3EdmRedist_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRedist_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmRedist_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_68c50ae606891583, []int{0}
+	return fileDescriptor_ospfv3_edm_redist_88673d59f30e7731, []int{0}
 }
-
 func (m *Ospfv3EdmRedist_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRedist_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRedist_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRedist_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRedist_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRedist_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmRedist_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRedist_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmRedist_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRedist_KEYS.Size(m)
@@ -97,17 +94,16 @@ func (m *Ospfv3EdmRedist) Reset()         { *m = Ospfv3EdmRedist{} }
 func (m *Ospfv3EdmRedist) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRedist) ProtoMessage()    {}
 func (*Ospfv3EdmRedist) Descriptor() ([]byte, []int) {
-	return fileDescriptor_68c50ae606891583, []int{1}
+	return fileDescriptor_ospfv3_edm_redist_88673d59f30e7731, []int{1}
 }
-
 func (m *Ospfv3EdmRedist) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRedist.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRedist) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRedist.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRedist) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRedist.Merge(m, src)
+func (dst *Ospfv3EdmRedist) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRedist.Merge(dst, src)
 }
 func (m *Ospfv3EdmRedist) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRedist.Size(m)
@@ -179,9 +175,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmRedist)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.redistributions.redistribution.ospfv3_edm_redist")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_redist.proto", fileDescriptor_68c50ae606891583) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_redist.proto", fileDescriptor_ospfv3_edm_redist_88673d59f30e7731)
+}
 
-var fileDescriptor_68c50ae606891583 = []byte{
+var fileDescriptor_ospfv3_edm_redist_88673d59f30e7731 = []byte{
 	// 325 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x8f, 0xc1, 0x4e, 0x2a, 0x31,
 	0x18, 0x85, 0x33, 0xdc, 0x84, 0x2b, 0x05, 0x34, 0xce, 0x42, 0xba, 0x31, 0x22, 0x1a, 0xc3, 0x6a,

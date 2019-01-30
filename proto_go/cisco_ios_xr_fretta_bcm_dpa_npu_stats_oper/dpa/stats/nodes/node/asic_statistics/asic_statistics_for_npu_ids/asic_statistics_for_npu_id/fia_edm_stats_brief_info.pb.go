@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fretta_bcm_dpa_npu_stats_oper_dpa_stats_nodes_node_asic_statistics_asic_statistics_for_npu_ids_asic_statistics_for_npu_id
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // ASIC statistics information
 type FiaEdmStatsBriefInfo_KEYS struct {
@@ -33,17 +31,16 @@ func (m *FiaEdmStatsBriefInfo_KEYS) Reset()         { *m = FiaEdmStatsBriefInfo_
 func (m *FiaEdmStatsBriefInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FiaEdmStatsBriefInfo_KEYS) ProtoMessage()    {}
 func (*FiaEdmStatsBriefInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b969035e2969373, []int{0}
+	return fileDescriptor_fia_edm_stats_brief_info_b44537705b38eda8, []int{0}
 }
-
 func (m *FiaEdmStatsBriefInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo_KEYS.Unmarshal(m, b)
 }
 func (m *FiaEdmStatsBriefInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FiaEdmStatsBriefInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FiaEdmStatsBriefInfo_KEYS.Merge(m, src)
+func (dst *FiaEdmStatsBriefInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FiaEdmStatsBriefInfo_KEYS.Merge(dst, src)
 }
 func (m *FiaEdmStatsBriefInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *FiaEdmStatsBriefInfo) Reset()         { *m = FiaEdmStatsBriefInfo{} }
 func (m *FiaEdmStatsBriefInfo) String() string { return proto.CompactTextString(m) }
 func (*FiaEdmStatsBriefInfo) ProtoMessage()    {}
 func (*FiaEdmStatsBriefInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b969035e2969373, []int{1}
+	return fileDescriptor_fia_edm_stats_brief_info_b44537705b38eda8, []int{1}
 }
-
 func (m *FiaEdmStatsBriefInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo.Unmarshal(m, b)
 }
 func (m *FiaEdmStatsBriefInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo.Marshal(b, m, deterministic)
 }
-func (m *FiaEdmStatsBriefInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FiaEdmStatsBriefInfo.Merge(m, src)
+func (dst *FiaEdmStatsBriefInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FiaEdmStatsBriefInfo.Merge(dst, src)
 }
 func (m *FiaEdmStatsBriefInfo) XXX_Size() int {
 	return xxx_messageInfo_FiaEdmStatsBriefInfo.Size(m)
@@ -286,17 +282,16 @@ func (m *FiaEdmDeviceStatsAsicBriefInfo) Reset()         { *m = FiaEdmDeviceStat
 func (m *FiaEdmDeviceStatsAsicBriefInfo) String() string { return proto.CompactTextString(m) }
 func (*FiaEdmDeviceStatsAsicBriefInfo) ProtoMessage()    {}
 func (*FiaEdmDeviceStatsAsicBriefInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5b969035e2969373, []int{2}
+	return fileDescriptor_fia_edm_stats_brief_info_b44537705b38eda8, []int{2}
 }
-
 func (m *FiaEdmDeviceStatsAsicBriefInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FiaEdmDeviceStatsAsicBriefInfo.Unmarshal(m, b)
 }
 func (m *FiaEdmDeviceStatsAsicBriefInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FiaEdmDeviceStatsAsicBriefInfo.Marshal(b, m, deterministic)
 }
-func (m *FiaEdmDeviceStatsAsicBriefInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FiaEdmDeviceStatsAsicBriefInfo.Merge(m, src)
+func (dst *FiaEdmDeviceStatsAsicBriefInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FiaEdmDeviceStatsAsicBriefInfo.Merge(dst, src)
 }
 func (m *FiaEdmDeviceStatsAsicBriefInfo) XXX_Size() int {
 	return xxx_messageInfo_FiaEdmDeviceStatsAsicBriefInfo.Size(m)
@@ -740,9 +735,11 @@ func init() {
 	proto.RegisterType((*FiaEdmDeviceStatsAsicBriefInfo)(nil), "cisco_ios_xr_fretta_bcm_dpa_npu_stats_oper.dpa.stats.nodes.node.asic_statistics.asic_statistics_for_npu_ids.asic_statistics_for_npu_id.fia_edm_device_stats_asic_brief_info")
 }
 
-func init() { proto.RegisterFile("fia_edm_stats_brief_info.proto", fileDescriptor_5b969035e2969373) }
+func init() {
+	proto.RegisterFile("fia_edm_stats_brief_info.proto", fileDescriptor_fia_edm_stats_brief_info_b44537705b38eda8)
+}
 
-var fileDescriptor_5b969035e2969373 = []byte{
+var fileDescriptor_fia_edm_stats_brief_info_b44537705b38eda8 = []byte{
 	// 1308 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x97, 0x6f, 0x6f, 0xd4, 0x36,
 	0x18, 0xc0, 0x75, 0xfc, 0x1b, 0xb8, 0x2d, 0x6d, 0xd3, 0x96, 0x06, 0x18, 0x50, 0x0a, 0xac, 0x85,

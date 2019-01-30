@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_server_profiles_profile_throttle_infos_throttle_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 DHCP Mac Throttle
 type Ipv6Dhcpv6DMacThrottle_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ipv6Dhcpv6DMacThrottle_KEYS) Reset()         { *m = Ipv6Dhcpv6DMacThrot
 func (m *Ipv6Dhcpv6DMacThrottle_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DMacThrottle_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DMacThrottle_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_9b9c12f637bc36f3, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_mac_throttle_ccce04bbc0a0ae85, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DMacThrottle_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DMacThrottle_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DMacThrottle_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DMacThrottle_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DMacThrottle_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DMacThrottle_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DMacThrottle_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *Ipv6Dhcpv6DMacThrottle) Reset()         { *m = Ipv6Dhcpv6DMacThrottle{}
 func (m *Ipv6Dhcpv6DMacThrottle) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DMacThrottle) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DMacThrottle) Descriptor() ([]byte, []int) {
-	return fileDescriptor_9b9c12f637bc36f3, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_mac_throttle_ccce04bbc0a0ae85, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DMacThrottle) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DMacThrottle) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DMacThrottle) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DMacThrottle.Merge(m, src)
+func (dst *Ipv6Dhcpv6DMacThrottle) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DMacThrottle.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DMacThrottle) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DMacThrottle.Size(m)
@@ -148,9 +144,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DMacThrottle)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.server.profiles.profile.throttle_infos.throttle_info.ipv6_dhcpv6d_mac_throttle")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_mac_throttle.proto", fileDescriptor_9b9c12f637bc36f3) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_mac_throttle.proto", fileDescriptor_ipv6_dhcpv6d_mac_throttle_ccce04bbc0a0ae85)
+}
 
-var fileDescriptor_9b9c12f637bc36f3 = []byte{
+var fileDescriptor_ipv6_dhcpv6d_mac_throttle_ccce04bbc0a0ae85 = []byte{
 	// 277 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x91, 0xc1, 0x4b, 0xc3, 0x30,
 	0x18, 0xc5, 0x89, 0xe2, 0xd8, 0xb2, 0xcd, 0x43, 0x10, 0xa9, 0x08, 0xae, 0x0e, 0x84, 0x9e, 0x7a,

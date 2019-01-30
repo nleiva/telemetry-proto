@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_dpt_telemetry_oper_data_path_telemetry_sensor_non_zero_voq_data
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // VOQ Info Block
 type DpaDptTelemetryVoqBlockInfo_KEYS struct {
@@ -31,17 +29,16 @@ func (m *DpaDptTelemetryVoqBlockInfo_KEYS) Reset()         { *m = DpaDptTelemetr
 func (m *DpaDptTelemetryVoqBlockInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*DpaDptTelemetryVoqBlockInfo_KEYS) ProtoMessage()    {}
 func (*DpaDptTelemetryVoqBlockInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_30e6161d178c4b9e, []int{0}
+	return fileDescriptor_dpa_dpt_telemetry_voq_block_info_e1686ca1b4873c7d, []int{0}
 }
-
 func (m *DpaDptTelemetryVoqBlockInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo_KEYS.Unmarshal(m, b)
 }
 func (m *DpaDptTelemetryVoqBlockInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *DpaDptTelemetryVoqBlockInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaDptTelemetryVoqBlockInfo_KEYS.Merge(m, src)
+func (dst *DpaDptTelemetryVoqBlockInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaDptTelemetryVoqBlockInfo_KEYS.Merge(dst, src)
 }
 func (m *DpaDptTelemetryVoqBlockInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo_KEYS.Size(m)
@@ -74,17 +71,16 @@ func (m *DpaDptTelemetryVoqBlockInfo) Reset()         { *m = DpaDptTelemetryVoqB
 func (m *DpaDptTelemetryVoqBlockInfo) String() string { return proto.CompactTextString(m) }
 func (*DpaDptTelemetryVoqBlockInfo) ProtoMessage()    {}
 func (*DpaDptTelemetryVoqBlockInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_30e6161d178c4b9e, []int{1}
+	return fileDescriptor_dpa_dpt_telemetry_voq_block_info_e1686ca1b4873c7d, []int{1}
 }
-
 func (m *DpaDptTelemetryVoqBlockInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo.Unmarshal(m, b)
 }
 func (m *DpaDptTelemetryVoqBlockInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo.Marshal(b, m, deterministic)
 }
-func (m *DpaDptTelemetryVoqBlockInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaDptTelemetryVoqBlockInfo.Merge(m, src)
+func (dst *DpaDptTelemetryVoqBlockInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaDptTelemetryVoqBlockInfo.Merge(dst, src)
 }
 func (m *DpaDptTelemetryVoqBlockInfo) XXX_Size() int {
 	return xxx_messageInfo_DpaDptTelemetryVoqBlockInfo.Size(m)
@@ -154,17 +150,16 @@ func (m *DpaDptTelemetryVoqInfo) Reset()         { *m = DpaDptTelemetryVoqInfo{}
 func (m *DpaDptTelemetryVoqInfo) String() string { return proto.CompactTextString(m) }
 func (*DpaDptTelemetryVoqInfo) ProtoMessage()    {}
 func (*DpaDptTelemetryVoqInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_30e6161d178c4b9e, []int{2}
+	return fileDescriptor_dpa_dpt_telemetry_voq_block_info_e1686ca1b4873c7d, []int{2}
 }
-
 func (m *DpaDptTelemetryVoqInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaDptTelemetryVoqInfo.Unmarshal(m, b)
 }
 func (m *DpaDptTelemetryVoqInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaDptTelemetryVoqInfo.Marshal(b, m, deterministic)
 }
-func (m *DpaDptTelemetryVoqInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaDptTelemetryVoqInfo.Merge(m, src)
+func (dst *DpaDptTelemetryVoqInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaDptTelemetryVoqInfo.Merge(dst, src)
 }
 func (m *DpaDptTelemetryVoqInfo) XXX_Size() int {
 	return xxx_messageInfo_DpaDptTelemetryVoqInfo.Size(m)
@@ -203,10 +198,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("dpa_dpt_telemetry_voq_block_info.proto", fileDescriptor_30e6161d178c4b9e)
+	proto.RegisterFile("dpa_dpt_telemetry_voq_block_info.proto", fileDescriptor_dpa_dpt_telemetry_voq_block_info_e1686ca1b4873c7d)
 }
 
-var fileDescriptor_30e6161d178c4b9e = []byte{
+var fileDescriptor_dpa_dpt_telemetry_voq_block_info_e1686ca1b4873c7d = []byte{
 	// 346 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x92, 0x4d, 0x4b, 0xfb, 0x40,
 	0x10, 0xc6, 0x49, 0xfb, 0xff, 0x17, 0x33, 0x7d, 0x39, 0x04, 0x84, 0xa0, 0x14, 0x43, 0xa1, 0x9a,

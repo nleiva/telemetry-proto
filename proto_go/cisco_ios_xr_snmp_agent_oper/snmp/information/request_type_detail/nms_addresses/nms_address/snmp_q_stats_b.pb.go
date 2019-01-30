@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_request_type_detail_nms_addresses_nms_address
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP incomming/processing queue statistics
 type SnmpQStatsB_KEYS struct {
@@ -32,17 +30,16 @@ func (m *SnmpQStatsB_KEYS) Reset()         { *m = SnmpQStatsB_KEYS{} }
 func (m *SnmpQStatsB_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpQStatsB_KEYS) ProtoMessage()    {}
 func (*SnmpQStatsB_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5af0d739c25f44ca, []int{0}
+	return fileDescriptor_snmp_q_stats_b_e0d145086752cec7, []int{0}
 }
-
 func (m *SnmpQStatsB_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpQStatsB_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpQStatsB_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpQStatsB_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpQStatsB_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpQStatsB_KEYS.Merge(m, src)
+func (dst *SnmpQStatsB_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpQStatsB_KEYS.Merge(dst, src)
 }
 func (m *SnmpQStatsB_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpQStatsB_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *SnmpQStatsB) Reset()         { *m = SnmpQStatsB{} }
 func (m *SnmpQStatsB) String() string { return proto.CompactTextString(m) }
 func (*SnmpQStatsB) ProtoMessage()    {}
 func (*SnmpQStatsB) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5af0d739c25f44ca, []int{1}
+	return fileDescriptor_snmp_q_stats_b_e0d145086752cec7, []int{1}
 }
-
 func (m *SnmpQStatsB) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpQStatsB.Unmarshal(m, b)
 }
 func (m *SnmpQStatsB) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpQStatsB.Marshal(b, m, deterministic)
 }
-func (m *SnmpQStatsB) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpQStatsB.Merge(m, src)
+func (dst *SnmpQStatsB) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpQStatsB.Merge(dst, src)
 }
 func (m *SnmpQStatsB) XXX_Size() int {
 	return xxx_messageInfo_SnmpQStatsB.Size(m)
@@ -150,9 +146,11 @@ func init() {
 	proto.RegisterType((*SnmpQStatsB)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.request_type_detail.nms_addresses.nms_address.snmp_q_stats_b")
 }
 
-func init() { proto.RegisterFile("snmp_q_stats_b.proto", fileDescriptor_5af0d739c25f44ca) }
+func init() {
+	proto.RegisterFile("snmp_q_stats_b.proto", fileDescriptor_snmp_q_stats_b_e0d145086752cec7)
+}
 
-var fileDescriptor_5af0d739c25f44ca = []byte{
+var fileDescriptor_snmp_q_stats_b_e0d145086752cec7 = []byte{
 	// 267 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x5c, 0x91, 0x4d, 0x4b, 0xc3, 0x40,
 	0x10, 0x40, 0x89, 0x07, 0x3f, 0x56, 0x14, 0x4c, 0x2a, 0xd6, 0x93, 0xa5, 0xa7, 0x9e, 0x96, 0x62,

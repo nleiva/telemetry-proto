@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_vrfs_vrf_border_routers_border_router
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Border Router
 type OspfShBorderRouter_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShBorderRouter_KEYS) Reset()         { *m = OspfShBorderRouter_KEYS
 func (m *OspfShBorderRouter_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShBorderRouter_KEYS) ProtoMessage()    {}
 func (*OspfShBorderRouter_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab3846b5d34d165c, []int{0}
+	return fileDescriptor_ospf_sh_border_router_4eb8b0fc08f6926d, []int{0}
 }
-
 func (m *OspfShBorderRouter_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShBorderRouter_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShBorderRouter_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShBorderRouter_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShBorderRouter_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShBorderRouter_KEYS.Merge(m, src)
+func (dst *OspfShBorderRouter_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShBorderRouter_KEYS.Merge(dst, src)
 }
 func (m *OspfShBorderRouter_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShBorderRouter_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *OspfShBorderRouter) Reset()         { *m = OspfShBorderRouter{} }
 func (m *OspfShBorderRouter) String() string { return proto.CompactTextString(m) }
 func (*OspfShBorderRouter) ProtoMessage()    {}
 func (*OspfShBorderRouter) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab3846b5d34d165c, []int{1}
+	return fileDescriptor_ospf_sh_border_router_4eb8b0fc08f6926d, []int{1}
 }
-
 func (m *OspfShBorderRouter) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShBorderRouter.Unmarshal(m, b)
 }
 func (m *OspfShBorderRouter) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShBorderRouter.Marshal(b, m, deterministic)
 }
-func (m *OspfShBorderRouter) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShBorderRouter.Merge(m, src)
+func (dst *OspfShBorderRouter) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShBorderRouter.Merge(dst, src)
 }
 func (m *OspfShBorderRouter) XXX_Size() int {
 	return xxx_messageInfo_OspfShBorderRouter.Size(m)
@@ -150,17 +146,16 @@ func (m *OspfShBrPath) Reset()         { *m = OspfShBrPath{} }
 func (m *OspfShBrPath) String() string { return proto.CompactTextString(m) }
 func (*OspfShBrPath) ProtoMessage()    {}
 func (*OspfShBrPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab3846b5d34d165c, []int{2}
+	return fileDescriptor_ospf_sh_border_router_4eb8b0fc08f6926d, []int{2}
 }
-
 func (m *OspfShBrPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShBrPath.Unmarshal(m, b)
 }
 func (m *OspfShBrPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShBrPath.Marshal(b, m, deterministic)
 }
-func (m *OspfShBrPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShBrPath.Merge(m, src)
+func (dst *OspfShBrPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShBrPath.Merge(dst, src)
 }
 func (m *OspfShBrPath) XXX_Size() int {
 	return xxx_messageInfo_OspfShBrPath.Size(m)
@@ -226,9 +221,11 @@ func init() {
 	proto.RegisterType((*OspfShBrPath)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.vrfs.vrf.border_routers.border_router.ospf_sh_br_path")
 }
 
-func init() { proto.RegisterFile("ospf_sh_border_router.proto", fileDescriptor_ab3846b5d34d165c) }
+func init() {
+	proto.RegisterFile("ospf_sh_border_router.proto", fileDescriptor_ospf_sh_border_router_4eb8b0fc08f6926d)
+}
 
-var fileDescriptor_ab3846b5d34d165c = []byte{
+var fileDescriptor_ospf_sh_border_router_4eb8b0fc08f6926d = []byte{
 	// 400 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x93, 0x4f, 0xcb, 0xd3, 0x40,
 	0x10, 0xc6, 0x89, 0xad, 0xad, 0x4e, 0xfd, 0x53, 0x56, 0x6b, 0x63, 0x3d, 0x18, 0x0b, 0x42, 0x0e,

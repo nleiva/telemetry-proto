@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_controller_optics_oper_optics_oper_optics_ports_optics_port_optics_db_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 //  Optics DB Info
 type OpticsDbInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *OpticsDbInfo_KEYS) Reset()         { *m = OpticsDbInfo_KEYS{} }
 func (m *OpticsDbInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OpticsDbInfo_KEYS) ProtoMessage()    {}
 func (*OpticsDbInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f8f1f7c76d1ffa7e, []int{0}
+	return fileDescriptor_optics_db_info_32eccb062a78f912, []int{0}
 }
-
 func (m *OpticsDbInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsDbInfo_KEYS.Unmarshal(m, b)
 }
 func (m *OpticsDbInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsDbInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OpticsDbInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsDbInfo_KEYS.Merge(m, src)
+func (dst *OpticsDbInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsDbInfo_KEYS.Merge(dst, src)
 }
 func (m *OpticsDbInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OpticsDbInfo_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *OpticsDbInfo) Reset()         { *m = OpticsDbInfo{} }
 func (m *OpticsDbInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsDbInfo) ProtoMessage()    {}
 func (*OpticsDbInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f8f1f7c76d1ffa7e, []int{1}
+	return fileDescriptor_optics_db_info_32eccb062a78f912, []int{1}
 }
-
 func (m *OpticsDbInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsDbInfo.Unmarshal(m, b)
 }
 func (m *OpticsDbInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsDbInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsDbInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsDbInfo.Merge(m, src)
+func (dst *OpticsDbInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsDbInfo.Merge(dst, src)
 }
 func (m *OpticsDbInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsDbInfo.Size(m)
@@ -133,17 +129,16 @@ func (m *OpticsEdmNetworkSrlgStructure) Reset()         { *m = OpticsEdmNetworkS
 func (m *OpticsEdmNetworkSrlgStructure) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmNetworkSrlgStructure) ProtoMessage()    {}
 func (*OpticsEdmNetworkSrlgStructure) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f8f1f7c76d1ffa7e, []int{2}
+	return fileDescriptor_optics_db_info_32eccb062a78f912, []int{2}
 }
-
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Unmarshal(m, b)
 }
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmNetworkSrlgStructure) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Merge(m, src)
+func (dst *OpticsEdmNetworkSrlgStructure) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Merge(dst, src)
 }
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Size(m)
@@ -181,17 +176,16 @@ func (m *OpticsEdmNetworkSrlgInfo) Reset()         { *m = OpticsEdmNetworkSrlgIn
 func (m *OpticsEdmNetworkSrlgInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmNetworkSrlgInfo) ProtoMessage()    {}
 func (*OpticsEdmNetworkSrlgInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f8f1f7c76d1ffa7e, []int{3}
+	return fileDescriptor_optics_db_info_32eccb062a78f912, []int{3}
 }
-
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmNetworkSrlgInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Merge(m, src)
+func (dst *OpticsEdmNetworkSrlgInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Merge(dst, src)
 }
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Size(m)
@@ -216,9 +210,11 @@ func init() {
 	proto.RegisterType((*OpticsEdmNetworkSrlgInfo)(nil), "cisco_ios_xr_controller_optics_oper.optics_oper.optics_ports.optics_port.optics_db_info.optics_edm_network_srlg_info")
 }
 
-func init() { proto.RegisterFile("optics_db_info.proto", fileDescriptor_f8f1f7c76d1ffa7e) }
+func init() {
+	proto.RegisterFile("optics_db_info.proto", fileDescriptor_optics_db_info_32eccb062a78f912)
+}
 
-var fileDescriptor_f8f1f7c76d1ffa7e = []byte{
+var fileDescriptor_optics_db_info_32eccb062a78f912 = []byte{
 	// 321 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x52, 0x3d, 0x4e, 0xf3, 0x40,
 	0x10, 0xd5, 0x26, 0x9f, 0x3e, 0x29, 0x13, 0x42, 0xc2, 0x06, 0x24, 0x17, 0x20, 0x39, 0xa9, 0x9c,

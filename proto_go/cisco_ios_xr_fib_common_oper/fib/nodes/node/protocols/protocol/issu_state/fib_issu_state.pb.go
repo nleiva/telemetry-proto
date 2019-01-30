@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_issu_state
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB ISSU state
 type FibIssuState_KEYS struct {
@@ -33,17 +31,16 @@ func (m *FibIssuState_KEYS) Reset()         { *m = FibIssuState_KEYS{} }
 func (m *FibIssuState_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibIssuState_KEYS) ProtoMessage()    {}
 func (*FibIssuState_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b2beefbf2a0e9098, []int{0}
+	return fileDescriptor_fib_issu_state_cc029880f361f59c, []int{0}
 }
-
 func (m *FibIssuState_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibIssuState_KEYS.Unmarshal(m, b)
 }
 func (m *FibIssuState_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibIssuState_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibIssuState_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibIssuState_KEYS.Merge(m, src)
+func (dst *FibIssuState_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibIssuState_KEYS.Merge(dst, src)
 }
 func (m *FibIssuState_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibIssuState_KEYS.Size(m)
@@ -102,17 +99,16 @@ func (m *FibIssuState) Reset()         { *m = FibIssuState{} }
 func (m *FibIssuState) String() string { return proto.CompactTextString(m) }
 func (*FibIssuState) ProtoMessage()    {}
 func (*FibIssuState) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b2beefbf2a0e9098, []int{1}
+	return fileDescriptor_fib_issu_state_cc029880f361f59c, []int{1}
 }
-
 func (m *FibIssuState) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibIssuState.Unmarshal(m, b)
 }
 func (m *FibIssuState) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibIssuState.Marshal(b, m, deterministic)
 }
-func (m *FibIssuState) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibIssuState.Merge(m, src)
+func (dst *FibIssuState) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibIssuState.Merge(dst, src)
 }
 func (m *FibIssuState) XXX_Size() int {
 	return xxx_messageInfo_FibIssuState.Size(m)
@@ -245,17 +241,16 @@ func (m *FibIssuProtoState) Reset()         { *m = FibIssuProtoState{} }
 func (m *FibIssuProtoState) String() string { return proto.CompactTextString(m) }
 func (*FibIssuProtoState) ProtoMessage()    {}
 func (*FibIssuProtoState) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b2beefbf2a0e9098, []int{2}
+	return fileDescriptor_fib_issu_state_cc029880f361f59c, []int{2}
 }
-
 func (m *FibIssuProtoState) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibIssuProtoState.Unmarshal(m, b)
 }
 func (m *FibIssuProtoState) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibIssuProtoState.Marshal(b, m, deterministic)
 }
-func (m *FibIssuProtoState) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibIssuProtoState.Merge(m, src)
+func (dst *FibIssuProtoState) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibIssuProtoState.Merge(dst, src)
 }
 func (m *FibIssuProtoState) XXX_Size() int {
 	return xxx_messageInfo_FibIssuProtoState.Size(m)
@@ -370,9 +365,11 @@ func init() {
 	proto.RegisterType((*FibIssuProtoState)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.issu_state.fib_issu_proto_state")
 }
 
-func init() { proto.RegisterFile("fib_issu_state.proto", fileDescriptor_b2beefbf2a0e9098) }
+func init() {
+	proto.RegisterFile("fib_issu_state.proto", fileDescriptor_fib_issu_state_cc029880f361f59c)
+}
 
-var fileDescriptor_b2beefbf2a0e9098 = []byte{
+var fileDescriptor_fib_issu_state_cc029880f361f59c = []byte{
 	// 660 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x93, 0x4d, 0x6f, 0xd4, 0x3c,
 	0x10, 0xc7, 0x95, 0xa7, 0x2f, 0x4f, 0x3b, 0xfb, 0xd6, 0xa6, 0x15, 0x8d, 0x28, 0x52, 0x97, 0x82,

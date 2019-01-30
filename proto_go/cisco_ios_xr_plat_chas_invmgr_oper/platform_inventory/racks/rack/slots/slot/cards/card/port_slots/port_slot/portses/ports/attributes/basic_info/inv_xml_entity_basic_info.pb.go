@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_plat_chas_invmgr_oper_platform_inventory_racks_rack_slots_slot_cards_card_portses_ports_attributes_basic_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Bag contains all the basic inventory information for each entity
 type InvXmlEntityBasicInfo_KEYS struct {
@@ -35,17 +33,16 @@ func (m *InvXmlEntityBasicInfo_KEYS) Reset()         { *m = InvXmlEntityBasicInf
 func (m *InvXmlEntityBasicInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*InvXmlEntityBasicInfo_KEYS) ProtoMessage()    {}
 func (*InvXmlEntityBasicInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_637d7cec7f49a4b4, []int{0}
+	return fileDescriptor_inv_xml_entity_basic_info_683e679c6bf795ce, []int{0}
 }
-
 func (m *InvXmlEntityBasicInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InvXmlEntityBasicInfo_KEYS.Unmarshal(m, b)
 }
 func (m *InvXmlEntityBasicInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InvXmlEntityBasicInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *InvXmlEntityBasicInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InvXmlEntityBasicInfo_KEYS.Merge(m, src)
+func (dst *InvXmlEntityBasicInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InvXmlEntityBasicInfo_KEYS.Merge(dst, src)
 }
 func (m *InvXmlEntityBasicInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_InvXmlEntityBasicInfo_KEYS.Size(m)
@@ -112,17 +109,16 @@ func (m *InvXmlEntityBasicInfo) Reset()         { *m = InvXmlEntityBasicInfo{} }
 func (m *InvXmlEntityBasicInfo) String() string { return proto.CompactTextString(m) }
 func (*InvXmlEntityBasicInfo) ProtoMessage()    {}
 func (*InvXmlEntityBasicInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_637d7cec7f49a4b4, []int{1}
+	return fileDescriptor_inv_xml_entity_basic_info_683e679c6bf795ce, []int{1}
 }
-
 func (m *InvXmlEntityBasicInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InvXmlEntityBasicInfo.Unmarshal(m, b)
 }
 func (m *InvXmlEntityBasicInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InvXmlEntityBasicInfo.Marshal(b, m, deterministic)
 }
-func (m *InvXmlEntityBasicInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InvXmlEntityBasicInfo.Merge(m, src)
+func (dst *InvXmlEntityBasicInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InvXmlEntityBasicInfo.Merge(dst, src)
 }
 func (m *InvXmlEntityBasicInfo) XXX_Size() int {
 	return xxx_messageInfo_InvXmlEntityBasicInfo.Size(m)
@@ -201,9 +197,11 @@ func init() {
 	proto.RegisterType((*InvXmlEntityBasicInfo)(nil), "cisco_ios_xr_plat_chas_invmgr_oper.platform_inventory.racks.rack.slots.slot.cards.card.portses.ports.attributes.basic_info.inv_xml_entity_basic_info")
 }
 
-func init() { proto.RegisterFile("inv_xml_entity_basic_info.proto", fileDescriptor_637d7cec7f49a4b4) }
+func init() {
+	proto.RegisterFile("inv_xml_entity_basic_info.proto", fileDescriptor_inv_xml_entity_basic_info_683e679c6bf795ce)
+}
 
-var fileDescriptor_637d7cec7f49a4b4 = []byte{
+var fileDescriptor_inv_xml_entity_basic_info_683e679c6bf795ce = []byte{
 	// 386 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x92, 0x3f, 0x6f, 0x14, 0x31,
 	0x10, 0xc5, 0x75, 0x21, 0x44, 0xc4, 0x01, 0x89, 0xac, 0x04, 0xda, 0x14, 0x90, 0x53, 0x68, 0x22,

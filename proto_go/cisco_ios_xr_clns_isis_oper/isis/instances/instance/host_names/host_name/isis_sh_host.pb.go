@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_host_names_host_name
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Bag representing a host (IS)
 type IsisShHost_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShHost_KEYS) Reset()         { *m = IsisShHost_KEYS{} }
 func (m *IsisShHost_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShHost_KEYS) ProtoMessage()    {}
 func (*IsisShHost_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b3024021844fb8e1, []int{0}
+	return fileDescriptor_isis_sh_host_7aaa5a2ee42cd70b, []int{0}
 }
-
 func (m *IsisShHost_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShHost_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShHost_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShHost_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShHost_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShHost_KEYS.Merge(m, src)
+func (dst *IsisShHost_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShHost_KEYS.Merge(dst, src)
 }
 func (m *IsisShHost_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShHost_KEYS.Size(m)
@@ -84,17 +81,16 @@ func (m *IsisShHost) Reset()         { *m = IsisShHost{} }
 func (m *IsisShHost) String() string { return proto.CompactTextString(m) }
 func (*IsisShHost) ProtoMessage()    {}
 func (*IsisShHost) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b3024021844fb8e1, []int{1}
+	return fileDescriptor_isis_sh_host_7aaa5a2ee42cd70b, []int{1}
 }
-
 func (m *IsisShHost) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShHost.Unmarshal(m, b)
 }
 func (m *IsisShHost) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShHost.Marshal(b, m, deterministic)
 }
-func (m *IsisShHost) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShHost.Merge(m, src)
+func (dst *IsisShHost) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShHost.Merge(dst, src)
 }
 func (m *IsisShHost) XXX_Size() int {
 	return xxx_messageInfo_IsisShHost.Size(m)
@@ -131,9 +127,9 @@ func init() {
 	proto.RegisterType((*IsisShHost)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.host_names.host_name.isis_sh_host")
 }
 
-func init() { proto.RegisterFile("isis_sh_host.proto", fileDescriptor_b3024021844fb8e1) }
+func init() { proto.RegisterFile("isis_sh_host.proto", fileDescriptor_isis_sh_host_7aaa5a2ee42cd70b) }
 
-var fileDescriptor_b3024021844fb8e1 = []byte{
+var fileDescriptor_isis_sh_host_7aaa5a2ee42cd70b = []byte{
 	// 221 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x4c, 0x90, 0x41, 0x4b, 0xc4, 0x30,
 	0x10, 0x85, 0xa9, 0x07, 0xd9, 0x9d, 0xdd, 0x3d, 0x98, 0x53, 0xc0, 0x83, 0x4b, 0xbd, 0xec, 0x29,

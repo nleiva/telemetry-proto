@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_alarmgr_server_oper_alarms_brief_brief_card_brief_locations_brief_location_history
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Alarm mgr show alarm brief info
 type AlarmMgrShowAlarmBriefInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *AlarmMgrShowAlarmBriefInfo_KEYS) Reset()         { *m = AlarmMgrShowAla
 func (m *AlarmMgrShowAlarmBriefInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*AlarmMgrShowAlarmBriefInfo_KEYS) ProtoMessage()    {}
 func (*AlarmMgrShowAlarmBriefInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a0631eb21234d0e7, []int{0}
+	return fileDescriptor_alarm_mgr_show_alarm_brief_info_cea0ebe96079d962, []int{0}
 }
-
 func (m *AlarmMgrShowAlarmBriefInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo_KEYS.Unmarshal(m, b)
 }
 func (m *AlarmMgrShowAlarmBriefInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *AlarmMgrShowAlarmBriefInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AlarmMgrShowAlarmBriefInfo_KEYS.Merge(m, src)
+func (dst *AlarmMgrShowAlarmBriefInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AlarmMgrShowAlarmBriefInfo_KEYS.Merge(dst, src)
 }
 func (m *AlarmMgrShowAlarmBriefInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *AlarmMgrShowAlarmBriefInfo) Reset()         { *m = AlarmMgrShowAlarmBri
 func (m *AlarmMgrShowAlarmBriefInfo) String() string { return proto.CompactTextString(m) }
 func (*AlarmMgrShowAlarmBriefInfo) ProtoMessage()    {}
 func (*AlarmMgrShowAlarmBriefInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a0631eb21234d0e7, []int{1}
+	return fileDescriptor_alarm_mgr_show_alarm_brief_info_cea0ebe96079d962, []int{1}
 }
-
 func (m *AlarmMgrShowAlarmBriefInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo.Unmarshal(m, b)
 }
 func (m *AlarmMgrShowAlarmBriefInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo.Marshal(b, m, deterministic)
 }
-func (m *AlarmMgrShowAlarmBriefInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AlarmMgrShowAlarmBriefInfo.Merge(m, src)
+func (dst *AlarmMgrShowAlarmBriefInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AlarmMgrShowAlarmBriefInfo.Merge(dst, src)
 }
 func (m *AlarmMgrShowAlarmBriefInfo) XXX_Size() int {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefInfo.Size(m)
@@ -127,17 +123,16 @@ func (m *AlarmMgrShowAlarmBriefData) Reset()         { *m = AlarmMgrShowAlarmBri
 func (m *AlarmMgrShowAlarmBriefData) String() string { return proto.CompactTextString(m) }
 func (*AlarmMgrShowAlarmBriefData) ProtoMessage()    {}
 func (*AlarmMgrShowAlarmBriefData) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a0631eb21234d0e7, []int{2}
+	return fileDescriptor_alarm_mgr_show_alarm_brief_info_cea0ebe96079d962, []int{2}
 }
-
 func (m *AlarmMgrShowAlarmBriefData) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefData.Unmarshal(m, b)
 }
 func (m *AlarmMgrShowAlarmBriefData) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefData.Marshal(b, m, deterministic)
 }
-func (m *AlarmMgrShowAlarmBriefData) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AlarmMgrShowAlarmBriefData.Merge(m, src)
+func (dst *AlarmMgrShowAlarmBriefData) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AlarmMgrShowAlarmBriefData.Merge(dst, src)
 }
 func (m *AlarmMgrShowAlarmBriefData) XXX_Size() int {
 	return xxx_messageInfo_AlarmMgrShowAlarmBriefData.Size(m)
@@ -211,10 +206,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("alarm_mgr_show_alarm_brief_info.proto", fileDescriptor_a0631eb21234d0e7)
+	proto.RegisterFile("alarm_mgr_show_alarm_brief_info.proto", fileDescriptor_alarm_mgr_show_alarm_brief_info_cea0ebe96079d962)
 }
 
-var fileDescriptor_a0631eb21234d0e7 = []byte{
+var fileDescriptor_alarm_mgr_show_alarm_brief_info_cea0ebe96079d962 = []byte{
 	// 332 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x92, 0x3f, 0x4f, 0xf3, 0x30,
 	0x10, 0xc6, 0x95, 0xfe, 0xef, 0xf5, 0x7d, 0x41, 0xb2, 0x90, 0x08, 0x48, 0x88, 0xa8, 0x80, 0xe8,

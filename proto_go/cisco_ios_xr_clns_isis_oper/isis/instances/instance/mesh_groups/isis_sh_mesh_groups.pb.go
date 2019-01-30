@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_mesh_groups
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IS-IS mesh-group data
 type IsisShMeshGroups_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IsisShMeshGroups_KEYS) Reset()         { *m = IsisShMeshGroups_KEYS{} }
 func (m *IsisShMeshGroups_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShMeshGroups_KEYS) ProtoMessage()    {}
 func (*IsisShMeshGroups_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ef6f21df520a3481, []int{0}
+	return fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189, []int{0}
 }
-
 func (m *IsisShMeshGroups_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShMeshGroups_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShMeshGroups_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShMeshGroups_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShMeshGroups_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShMeshGroups_KEYS.Merge(m, src)
+func (dst *IsisShMeshGroups_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShMeshGroups_KEYS.Merge(dst, src)
 }
 func (m *IsisShMeshGroups_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShMeshGroups_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *IsisShMeshGroups) Reset()         { *m = IsisShMeshGroups{} }
 func (m *IsisShMeshGroups) String() string { return proto.CompactTextString(m) }
 func (*IsisShMeshGroups) ProtoMessage()    {}
 func (*IsisShMeshGroups) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ef6f21df520a3481, []int{1}
+	return fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189, []int{1}
 }
-
 func (m *IsisShMeshGroups) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShMeshGroups.Unmarshal(m, b)
 }
 func (m *IsisShMeshGroups) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShMeshGroups.Marshal(b, m, deterministic)
 }
-func (m *IsisShMeshGroups) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShMeshGroups.Merge(m, src)
+func (dst *IsisShMeshGroups) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShMeshGroups.Merge(dst, src)
 }
 func (m *IsisShMeshGroups) XXX_Size() int {
 	return xxx_messageInfo_IsisShMeshGroups.Size(m)
@@ -113,17 +109,16 @@ func (m *IsisShMeshEntry) Reset()         { *m = IsisShMeshEntry{} }
 func (m *IsisShMeshEntry) String() string { return proto.CompactTextString(m) }
 func (*IsisShMeshEntry) ProtoMessage()    {}
 func (*IsisShMeshEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ef6f21df520a3481, []int{2}
+	return fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189, []int{2}
 }
-
 func (m *IsisShMeshEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShMeshEntry.Unmarshal(m, b)
 }
 func (m *IsisShMeshEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShMeshEntry.Marshal(b, m, deterministic)
 }
-func (m *IsisShMeshEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShMeshEntry.Merge(m, src)
+func (dst *IsisShMeshEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShMeshEntry.Merge(dst, src)
 }
 func (m *IsisShMeshEntry) XXX_Size() int {
 	return xxx_messageInfo_IsisShMeshEntry.Size(m)
@@ -155,17 +150,16 @@ func (m *IsisShMeshEntryItem) Reset()         { *m = IsisShMeshEntryItem{} }
 func (m *IsisShMeshEntryItem) String() string { return proto.CompactTextString(m) }
 func (*IsisShMeshEntryItem) ProtoMessage()    {}
 func (*IsisShMeshEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ef6f21df520a3481, []int{3}
+	return fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189, []int{3}
 }
-
 func (m *IsisShMeshEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShMeshEntryItem.Unmarshal(m, b)
 }
 func (m *IsisShMeshEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShMeshEntryItem.Marshal(b, m, deterministic)
 }
-func (m *IsisShMeshEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShMeshEntryItem.Merge(m, src)
+func (dst *IsisShMeshEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShMeshEntryItem.Merge(dst, src)
 }
 func (m *IsisShMeshEntryItem) XXX_Size() int {
 	return xxx_messageInfo_IsisShMeshEntryItem.Size(m)
@@ -197,9 +191,11 @@ func init() {
 	proto.RegisterType((*IsisShMeshEntryItem)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.mesh_groups.isis_sh_mesh_entry_item")
 }
 
-func init() { proto.RegisterFile("isis_sh_mesh_groups.proto", fileDescriptor_ef6f21df520a3481) }
+func init() {
+	proto.RegisterFile("isis_sh_mesh_groups.proto", fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189)
+}
 
-var fileDescriptor_ef6f21df520a3481 = []byte{
+var fileDescriptor_isis_sh_mesh_groups_2c52e38f67446189 = []byte{
 	// 296 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x52, 0xc1, 0x4a, 0xc3, 0x40,
 	0x10, 0x65, 0x15, 0x04, 0xb7, 0x96, 0xe2, 0x2a, 0x18, 0x6f, 0x21, 0x7a, 0x08, 0x1e, 0x16, 0xa9,

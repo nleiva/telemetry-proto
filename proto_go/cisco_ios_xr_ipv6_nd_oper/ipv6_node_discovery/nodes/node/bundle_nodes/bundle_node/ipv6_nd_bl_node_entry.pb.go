@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_nd_oper_ipv6_node_discovery_nodes_node_bundle_nodes_bundle_node
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 node discovery bundle node information
 type Ipv6NdBlNodeEntry_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6NdBlNodeEntry_KEYS) Reset()         { *m = Ipv6NdBlNodeEntry_KEYS{}
 func (m *Ipv6NdBlNodeEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdBlNodeEntry_KEYS) ProtoMessage()    {}
 func (*Ipv6NdBlNodeEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bca7327ff191973f, []int{0}
+	return fileDescriptor_ipv6_nd_bl_node_entry_c3a17ab206fa1c0a, []int{0}
 }
-
 func (m *Ipv6NdBlNodeEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6NdBlNodeEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdBlNodeEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdBlNodeEntry_KEYS.Merge(m, src)
+func (dst *Ipv6NdBlNodeEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdBlNodeEntry_KEYS.Merge(dst, src)
 }
 func (m *Ipv6NdBlNodeEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *Ipv6NdBlNodeEntry) Reset()         { *m = Ipv6NdBlNodeEntry{} }
 func (m *Ipv6NdBlNodeEntry) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdBlNodeEntry) ProtoMessage()    {}
 func (*Ipv6NdBlNodeEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bca7327ff191973f, []int{1}
+	return fileDescriptor_ipv6_nd_bl_node_entry_c3a17ab206fa1c0a, []int{1}
 }
-
 func (m *Ipv6NdBlNodeEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry.Unmarshal(m, b)
 }
 func (m *Ipv6NdBlNodeEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdBlNodeEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdBlNodeEntry.Merge(m, src)
+func (dst *Ipv6NdBlNodeEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdBlNodeEntry.Merge(dst, src)
 }
 func (m *Ipv6NdBlNodeEntry) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdBlNodeEntry.Size(m)
@@ -193,17 +189,16 @@ func (m *BagTimespec) Reset()         { *m = BagTimespec{} }
 func (m *BagTimespec) String() string { return proto.CompactTextString(m) }
 func (*BagTimespec) ProtoMessage()    {}
 func (*BagTimespec) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bca7327ff191973f, []int{2}
+	return fileDescriptor_ipv6_nd_bl_node_entry_c3a17ab206fa1c0a, []int{2}
 }
-
 func (m *BagTimespec) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BagTimespec.Unmarshal(m, b)
 }
 func (m *BagTimespec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BagTimespec.Marshal(b, m, deterministic)
 }
-func (m *BagTimespec) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BagTimespec.Merge(m, src)
+func (dst *BagTimespec) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BagTimespec.Merge(dst, src)
 }
 func (m *BagTimespec) XXX_Size() int {
 	return xxx_messageInfo_BagTimespec.Size(m)
@@ -227,9 +222,11 @@ func init() {
 	proto.RegisterType((*BagTimespec)(nil), "cisco_ios_xr_ipv6_nd_oper.ipv6_node_discovery.nodes.node.bundle_nodes.bundle_node.bag_timespec")
 }
 
-func init() { proto.RegisterFile("ipv6_nd_bl_node_entry.proto", fileDescriptor_bca7327ff191973f) }
+func init() {
+	proto.RegisterFile("ipv6_nd_bl_node_entry.proto", fileDescriptor_ipv6_nd_bl_node_entry_c3a17ab206fa1c0a)
+}
 
-var fileDescriptor_bca7327ff191973f = []byte{
+var fileDescriptor_ipv6_nd_bl_node_entry_c3a17ab206fa1c0a = []byte{
 	// 372 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x92, 0x4f, 0xcf, 0xd2, 0x40,
 	0x10, 0xc6, 0x53, 0xdf, 0x28, 0xb0, 0x85, 0x68, 0x36, 0x68, 0x56, 0x49, 0x0c, 0xe2, 0xa5, 0x5e,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_shellutil_oper_system_time_clock
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Date and time
 type TimeDate_KEYS struct {
@@ -31,17 +29,16 @@ func (m *TimeDate_KEYS) Reset()         { *m = TimeDate_KEYS{} }
 func (m *TimeDate_KEYS) String() string { return proto.CompactTextString(m) }
 func (*TimeDate_KEYS) ProtoMessage()    {}
 func (*TimeDate_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5ee1333175fb93a4, []int{0}
+	return fileDescriptor_time_date_4556148fcdc7b263, []int{0}
 }
-
 func (m *TimeDate_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TimeDate_KEYS.Unmarshal(m, b)
 }
 func (m *TimeDate_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TimeDate_KEYS.Marshal(b, m, deterministic)
 }
-func (m *TimeDate_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TimeDate_KEYS.Merge(m, src)
+func (dst *TimeDate_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TimeDate_KEYS.Merge(dst, src)
 }
 func (m *TimeDate_KEYS) XXX_Size() int {
 	return xxx_messageInfo_TimeDate_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *TimeDate) Reset()         { *m = TimeDate{} }
 func (m *TimeDate) String() string { return proto.CompactTextString(m) }
 func (*TimeDate) ProtoMessage()    {}
 func (*TimeDate) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5ee1333175fb93a4, []int{1}
+	return fileDescriptor_time_date_4556148fcdc7b263, []int{1}
 }
-
 func (m *TimeDate) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TimeDate.Unmarshal(m, b)
 }
 func (m *TimeDate) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TimeDate.Marshal(b, m, deterministic)
 }
-func (m *TimeDate) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TimeDate.Merge(m, src)
+func (dst *TimeDate) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TimeDate.Merge(dst, src)
 }
 func (m *TimeDate) XXX_Size() int {
 	return xxx_messageInfo_TimeDate.Size(m)
@@ -178,9 +174,9 @@ func init() {
 	proto.RegisterType((*TimeDate)(nil), "cisco_ios_xr_shellutil_oper.system_time.clock.time_date")
 }
 
-func init() { proto.RegisterFile("time_date.proto", fileDescriptor_5ee1333175fb93a4) }
+func init() { proto.RegisterFile("time_date.proto", fileDescriptor_time_date_4556148fcdc7b263) }
 
-var fileDescriptor_5ee1333175fb93a4 = []byte{
+var fileDescriptor_time_date_4556148fcdc7b263 = []byte{
 	// 249 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x4c, 0x90, 0x4f, 0x4b, 0x03, 0x31,
 	0x10, 0xc5, 0x59, 0xd4, 0x62, 0xa7, 0xa8, 0x25, 0x88, 0x04, 0x3c, 0xb8, 0xf4, 0xd4, 0x8b, 0x7b,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_database
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 DHCP database
 type Ipv6DhcpdDatabase_KEYS struct {
@@ -31,17 +29,16 @@ func (m *Ipv6DhcpdDatabase_KEYS) Reset()         { *m = Ipv6DhcpdDatabase_KEYS{}
 func (m *Ipv6DhcpdDatabase_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6DhcpdDatabase_KEYS) ProtoMessage()    {}
 func (*Ipv6DhcpdDatabase_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_527759233fe123a2, []int{0}
+	return fileDescriptor_ipv6_dhcpd_database_7ceaedd98a35a3dd, []int{0}
 }
-
 func (m *Ipv6DhcpdDatabase_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6DhcpdDatabase_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6DhcpdDatabase_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6DhcpdDatabase_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6DhcpdDatabase_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6DhcpdDatabase_KEYS.Merge(m, src)
+func (dst *Ipv6DhcpdDatabase_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6DhcpdDatabase_KEYS.Merge(dst, src)
 }
 func (m *Ipv6DhcpdDatabase_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6DhcpdDatabase_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *Ipv6DhcpdDatabase) Reset()         { *m = Ipv6DhcpdDatabase{} }
 func (m *Ipv6DhcpdDatabase) String() string { return proto.CompactTextString(m) }
 func (*Ipv6DhcpdDatabase) ProtoMessage()    {}
 func (*Ipv6DhcpdDatabase) Descriptor() ([]byte, []int) {
-	return fileDescriptor_527759233fe123a2, []int{1}
+	return fileDescriptor_ipv6_dhcpd_database_7ceaedd98a35a3dd, []int{1}
 }
-
 func (m *Ipv6DhcpdDatabase) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6DhcpdDatabase.Unmarshal(m, b)
 }
 func (m *Ipv6DhcpdDatabase) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6DhcpdDatabase.Marshal(b, m, deterministic)
 }
-func (m *Ipv6DhcpdDatabase) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6DhcpdDatabase.Merge(m, src)
+func (dst *Ipv6DhcpdDatabase) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6DhcpdDatabase.Merge(dst, src)
 }
 func (m *Ipv6DhcpdDatabase) XXX_Size() int {
 	return xxx_messageInfo_Ipv6DhcpdDatabase.Size(m)
@@ -232,9 +228,11 @@ func init() {
 	proto.RegisterType((*Ipv6DhcpdDatabase)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.database.ipv6_dhcpd_database")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpd_database.proto", fileDescriptor_527759233fe123a2) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpd_database.proto", fileDescriptor_ipv6_dhcpd_database_7ceaedd98a35a3dd)
+}
 
-var fileDescriptor_527759233fe123a2 = []byte{
+var fileDescriptor_ipv6_dhcpd_database_7ceaedd98a35a3dd = []byte{
 	// 461 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x94, 0xdb, 0x6b, 0x13, 0x41,
 	0x14, 0xc6, 0xc9, 0x8b, 0xd5, 0x03, 0x3e, 0x38, 0x35, 0x32, 0xa9, 0xd1, 0x86, 0x2a, 0x12, 0x10,

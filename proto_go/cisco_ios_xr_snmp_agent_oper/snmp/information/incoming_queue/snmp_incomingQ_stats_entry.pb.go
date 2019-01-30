@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_incoming_queue
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP IncomingQ Stats Entry
 type SnmpIncomingQStatsEntry_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpIncomingQStatsEntry_KEYS) Reset()         { *m = SnmpIncomingQStats
 func (m *SnmpIncomingQStatsEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpIncomingQStatsEntry_KEYS) ProtoMessage()    {}
 func (*SnmpIncomingQStatsEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab5cc50c6570daa8, []int{0}
+	return fileDescriptor_snmp_incomingQ_stats_entry_d8241e4dfe0a38f3, []int{0}
 }
-
 func (m *SnmpIncomingQStatsEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpIncomingQStatsEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpIncomingQStatsEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpIncomingQStatsEntry_KEYS.Merge(m, src)
+func (dst *SnmpIncomingQStatsEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpIncomingQStatsEntry_KEYS.Merge(dst, src)
 }
 func (m *SnmpIncomingQStatsEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry_KEYS.Size(m)
@@ -66,17 +63,16 @@ func (m *SnmpIncomingQStatsEntry) Reset()         { *m = SnmpIncomingQStatsEntry
 func (m *SnmpIncomingQStatsEntry) String() string { return proto.CompactTextString(m) }
 func (*SnmpIncomingQStatsEntry) ProtoMessage()    {}
 func (*SnmpIncomingQStatsEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab5cc50c6570daa8, []int{1}
+	return fileDescriptor_snmp_incomingQ_stats_entry_d8241e4dfe0a38f3, []int{1}
 }
-
 func (m *SnmpIncomingQStatsEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry.Unmarshal(m, b)
 }
 func (m *SnmpIncomingQStatsEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry.Marshal(b, m, deterministic)
 }
-func (m *SnmpIncomingQStatsEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpIncomingQStatsEntry.Merge(m, src)
+func (dst *SnmpIncomingQStatsEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpIncomingQStatsEntry.Merge(dst, src)
 }
 func (m *SnmpIncomingQStatsEntry) XXX_Size() int {
 	return xxx_messageInfo_SnmpIncomingQStatsEntry.Size(m)
@@ -122,17 +118,16 @@ func (m *SnmpInqDetail) Reset()         { *m = SnmpInqDetail{} }
 func (m *SnmpInqDetail) String() string { return proto.CompactTextString(m) }
 func (*SnmpInqDetail) ProtoMessage()    {}
 func (*SnmpInqDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab5cc50c6570daa8, []int{2}
+	return fileDescriptor_snmp_incomingQ_stats_entry_d8241e4dfe0a38f3, []int{2}
 }
-
 func (m *SnmpInqDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpInqDetail.Unmarshal(m, b)
 }
 func (m *SnmpInqDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpInqDetail.Marshal(b, m, deterministic)
 }
-func (m *SnmpInqDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpInqDetail.Merge(m, src)
+func (dst *SnmpInqDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpInqDetail.Merge(dst, src)
 }
 func (m *SnmpInqDetail) XXX_Size() int {
 	return xxx_messageInfo_SnmpInqDetail.Size(m)
@@ -184,9 +179,11 @@ func init() {
 	proto.RegisterType((*SnmpInqDetail)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.incoming_queue.snmp_inq_detail")
 }
 
-func init() { proto.RegisterFile("snmp_incomingQ_stats_entry.proto", fileDescriptor_ab5cc50c6570daa8) }
+func init() {
+	proto.RegisterFile("snmp_incomingQ_stats_entry.proto", fileDescriptor_snmp_incomingQ_stats_entry_d8241e4dfe0a38f3)
+}
 
-var fileDescriptor_ab5cc50c6570daa8 = []byte{
+var fileDescriptor_snmp_incomingQ_stats_entry_d8241e4dfe0a38f3 = []byte{
 	// 309 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0x91, 0x41, 0x4b, 0xc3, 0x40,
 	0x10, 0x85, 0x89, 0x55, 0x69, 0xb7, 0x56, 0x4b, 0x40, 0x0c, 0xbd, 0x34, 0xd6, 0x4b, 0x4e, 0x39,

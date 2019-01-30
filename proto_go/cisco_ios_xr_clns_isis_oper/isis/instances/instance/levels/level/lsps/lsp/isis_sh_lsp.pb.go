@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_levels_level_lsps_lsp
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // An IS-IS LSP
 type IsisShLsp_KEYS struct {
@@ -34,17 +32,16 @@ func (m *IsisShLsp_KEYS) Reset()         { *m = IsisShLsp_KEYS{} }
 func (m *IsisShLsp_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShLsp_KEYS) ProtoMessage()    {}
 func (*IsisShLsp_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a4dc830fe33b9450, []int{0}
+	return fileDescriptor_isis_sh_lsp_993f5f51d850fc66, []int{0}
 }
-
 func (m *IsisShLsp_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLsp_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShLsp_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLsp_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShLsp_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLsp_KEYS.Merge(m, src)
+func (dst *IsisShLsp_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLsp_KEYS.Merge(dst, src)
 }
 func (m *IsisShLsp_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShLsp_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *IsisShLsp) Reset()         { *m = IsisShLsp{} }
 func (m *IsisShLsp) String() string { return proto.CompactTextString(m) }
 func (*IsisShLsp) ProtoMessage()    {}
 func (*IsisShLsp) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a4dc830fe33b9450, []int{1}
+	return fileDescriptor_isis_sh_lsp_993f5f51d850fc66, []int{1}
 }
-
 func (m *IsisShLsp) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLsp.Unmarshal(m, b)
 }
 func (m *IsisShLsp) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLsp.Marshal(b, m, deterministic)
 }
-func (m *IsisShLsp) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLsp.Merge(m, src)
+func (dst *IsisShLsp) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLsp.Merge(dst, src)
 }
 func (m *IsisShLsp) XXX_Size() int {
 	return xxx_messageInfo_IsisShLsp.Size(m)
@@ -160,17 +156,16 @@ func (m *IsisShLspHeader) Reset()         { *m = IsisShLspHeader{} }
 func (m *IsisShLspHeader) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspHeader) ProtoMessage()    {}
 func (*IsisShLspHeader) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a4dc830fe33b9450, []int{2}
+	return fileDescriptor_isis_sh_lsp_993f5f51d850fc66, []int{2}
 }
-
 func (m *IsisShLspHeader) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspHeader.Unmarshal(m, b)
 }
 func (m *IsisShLspHeader) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspHeader.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspHeader) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspHeader.Merge(m, src)
+func (dst *IsisShLspHeader) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspHeader.Merge(dst, src)
 }
 func (m *IsisShLspHeader) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspHeader.Size(m)
@@ -271,9 +266,9 @@ func init() {
 	proto.RegisterType((*IsisShLspHeader)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.levels.level.lsps.lsp.isis_sh_lsp_header")
 }
 
-func init() { proto.RegisterFile("isis_sh_lsp.proto", fileDescriptor_a4dc830fe33b9450) }
+func init() { proto.RegisterFile("isis_sh_lsp.proto", fileDescriptor_isis_sh_lsp_993f5f51d850fc66) }
 
-var fileDescriptor_a4dc830fe33b9450 = []byte{
+var fileDescriptor_isis_sh_lsp_993f5f51d850fc66 = []byte{
 	// 487 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x93, 0xdf, 0x8a, 0x13, 0x31,
 	0x14, 0xc6, 0x19, 0xeb, 0x76, 0xdb, 0xb4, 0x55, 0x1b, 0x15, 0x46, 0x44, 0xa9, 0x55, 0x64, 0xf0,

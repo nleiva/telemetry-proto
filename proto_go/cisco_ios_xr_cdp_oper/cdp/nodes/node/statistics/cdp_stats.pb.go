@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_cdp_oper_cdp_nodes_node_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // CDP statistics
 type CdpStats_KEYS struct {
@@ -32,17 +30,16 @@ func (m *CdpStats_KEYS) Reset()         { *m = CdpStats_KEYS{} }
 func (m *CdpStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*CdpStats_KEYS) ProtoMessage()    {}
 func (*CdpStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_199d7e9b9c21175c, []int{0}
+	return fileDescriptor_cdp_stats_fcfc2ce05abb826e, []int{0}
 }
-
 func (m *CdpStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpStats_KEYS.Unmarshal(m, b)
 }
 func (m *CdpStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *CdpStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpStats_KEYS.Merge(m, src)
+func (dst *CdpStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpStats_KEYS.Merge(dst, src)
 }
 func (m *CdpStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_CdpStats_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *CdpStats) Reset()         { *m = CdpStats{} }
 func (m *CdpStats) String() string { return proto.CompactTextString(m) }
 func (*CdpStats) ProtoMessage()    {}
 func (*CdpStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_199d7e9b9c21175c, []int{1}
+	return fileDescriptor_cdp_stats_fcfc2ce05abb826e, []int{1}
 }
-
 func (m *CdpStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpStats.Unmarshal(m, b)
 }
 func (m *CdpStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpStats.Marshal(b, m, deterministic)
 }
-func (m *CdpStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpStats.Merge(m, src)
+func (dst *CdpStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpStats.Merge(dst, src)
 }
 func (m *CdpStats) XXX_Size() int {
 	return xxx_messageInfo_CdpStats.Size(m)
@@ -222,9 +218,9 @@ func init() {
 	proto.RegisterType((*CdpStats)(nil), "cisco_ios_xr_cdp_oper.cdp.nodes.node.statistics.cdp_stats")
 }
 
-func init() { proto.RegisterFile("cdp_stats.proto", fileDescriptor_199d7e9b9c21175c) }
+func init() { proto.RegisterFile("cdp_stats.proto", fileDescriptor_cdp_stats_fcfc2ce05abb826e) }
 
-var fileDescriptor_199d7e9b9c21175c = []byte{
+var fileDescriptor_cdp_stats_fcfc2ce05abb826e = []byte{
 	// 398 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x93, 0x4d, 0xaf, 0xd2, 0x40,
 	0x14, 0x86, 0xc3, 0x42, 0x23, 0x27, 0xf2, 0x35, 0x80, 0x36, 0x71, 0x43, 0x70, 0x21, 0x9a, 0x58,

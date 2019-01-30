@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_arp_oper_arp_gmp_vrfs_vrf_configured_ip_addresses_configured_ip_address
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // ARP GMP configuration entry
 type ArpGmpConfigEntry_KEYS struct {
@@ -33,17 +31,16 @@ func (m *ArpGmpConfigEntry_KEYS) Reset()         { *m = ArpGmpConfigEntry_KEYS{}
 func (m *ArpGmpConfigEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*ArpGmpConfigEntry_KEYS) ProtoMessage()    {}
 func (*ArpGmpConfigEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2f2c8d8f53841dcb, []int{0}
+	return fileDescriptor_arp_gmp_config_entry_1ea5cb7576370d1b, []int{0}
 }
-
 func (m *ArpGmpConfigEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ArpGmpConfigEntry_KEYS.Unmarshal(m, b)
 }
 func (m *ArpGmpConfigEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ArpGmpConfigEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *ArpGmpConfigEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ArpGmpConfigEntry_KEYS.Merge(m, src)
+func (dst *ArpGmpConfigEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ArpGmpConfigEntry_KEYS.Merge(dst, src)
 }
 func (m *ArpGmpConfigEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_ArpGmpConfigEntry_KEYS.Size(m)
@@ -86,17 +83,16 @@ func (m *ArpGmpConfigEntry) Reset()         { *m = ArpGmpConfigEntry{} }
 func (m *ArpGmpConfigEntry) String() string { return proto.CompactTextString(m) }
 func (*ArpGmpConfigEntry) ProtoMessage()    {}
 func (*ArpGmpConfigEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2f2c8d8f53841dcb, []int{1}
+	return fileDescriptor_arp_gmp_config_entry_1ea5cb7576370d1b, []int{1}
 }
-
 func (m *ArpGmpConfigEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ArpGmpConfigEntry.Unmarshal(m, b)
 }
 func (m *ArpGmpConfigEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ArpGmpConfigEntry.Marshal(b, m, deterministic)
 }
-func (m *ArpGmpConfigEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ArpGmpConfigEntry.Merge(m, src)
+func (dst *ArpGmpConfigEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ArpGmpConfigEntry.Merge(dst, src)
 }
 func (m *ArpGmpConfigEntry) XXX_Size() int {
 	return xxx_messageInfo_ArpGmpConfigEntry.Size(m)
@@ -140,9 +136,11 @@ func init() {
 	proto.RegisterType((*ArpGmpConfigEntry)(nil), "cisco_ios_xr_ipv4_arp_oper.arp_gmp.vrfs.vrf.configured_ip_addresses.configured_ip_address.arp_gmp_config_entry")
 }
 
-func init() { proto.RegisterFile("arp_gmp_config_entry.proto", fileDescriptor_2f2c8d8f53841dcb) }
+func init() {
+	proto.RegisterFile("arp_gmp_config_entry.proto", fileDescriptor_arp_gmp_config_entry_1ea5cb7576370d1b)
+}
 
-var fileDescriptor_2f2c8d8f53841dcb = []byte{
+var fileDescriptor_arp_gmp_config_entry_1ea5cb7576370d1b = []byte{
 	// 247 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x90, 0x31, 0x4b, 0x04, 0x31,
 	0x10, 0x85, 0x59, 0x0b, 0xcf, 0x9b, 0x46, 0x0d, 0x16, 0x39, 0x41, 0x10, 0x2b, 0x2d, 0xdc, 0xc2,

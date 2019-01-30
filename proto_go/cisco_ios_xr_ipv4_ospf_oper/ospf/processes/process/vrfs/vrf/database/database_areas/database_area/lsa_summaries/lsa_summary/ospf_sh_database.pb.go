@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_vrfs_vrf_database_database_areas_database_area_lsa_summaries_lsa_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Database Information
 type OspfShDatabase_KEYS struct {
@@ -39,17 +37,16 @@ func (m *OspfShDatabase_KEYS) Reset()         { *m = OspfShDatabase_KEYS{} }
 func (m *OspfShDatabase_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShDatabase_KEYS) ProtoMessage()    {}
 func (*OspfShDatabase_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b9f78b00611f1589, []int{0}
+	return fileDescriptor_ospf_sh_database_f4f3a9753e13462a, []int{0}
 }
-
 func (m *OspfShDatabase_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDatabase_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShDatabase_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDatabase_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShDatabase_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDatabase_KEYS.Merge(m, src)
+func (dst *OspfShDatabase_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDatabase_KEYS.Merge(dst, src)
 }
 func (m *OspfShDatabase_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShDatabase_KEYS.Size(m)
@@ -132,17 +129,16 @@ func (m *OspfShDatabase) Reset()         { *m = OspfShDatabase{} }
 func (m *OspfShDatabase) String() string { return proto.CompactTextString(m) }
 func (*OspfShDatabase) ProtoMessage()    {}
 func (*OspfShDatabase) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b9f78b00611f1589, []int{1}
+	return fileDescriptor_ospf_sh_database_f4f3a9753e13462a, []int{1}
 }
-
 func (m *OspfShDatabase) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDatabase.Unmarshal(m, b)
 }
 func (m *OspfShDatabase) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDatabase.Marshal(b, m, deterministic)
 }
-func (m *OspfShDatabase) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDatabase.Merge(m, src)
+func (dst *OspfShDatabase) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDatabase.Merge(dst, src)
 }
 func (m *OspfShDatabase) XXX_Size() int {
 	return xxx_messageInfo_OspfShDatabase.Size(m)
@@ -203,17 +199,16 @@ func (m *OspfShDbHeader) Reset()         { *m = OspfShDbHeader{} }
 func (m *OspfShDbHeader) String() string { return proto.CompactTextString(m) }
 func (*OspfShDbHeader) ProtoMessage()    {}
 func (*OspfShDbHeader) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b9f78b00611f1589, []int{2}
+	return fileDescriptor_ospf_sh_database_f4f3a9753e13462a, []int{2}
 }
-
 func (m *OspfShDbHeader) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDbHeader.Unmarshal(m, b)
 }
 func (m *OspfShDbHeader) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDbHeader.Marshal(b, m, deterministic)
 }
-func (m *OspfShDbHeader) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDbHeader.Merge(m, src)
+func (dst *OspfShDbHeader) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDbHeader.Merge(dst, src)
 }
 func (m *OspfShDbHeader) XXX_Size() int {
 	return xxx_messageInfo_OspfShDbHeader.Size(m)
@@ -293,9 +288,11 @@ func init() {
 	proto.RegisterType((*OspfShDbHeader)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.vrfs.vrf.database.database_areas.database_area.lsa_summaries.lsa_summary.ospf_sh_db_header")
 }
 
-func init() { proto.RegisterFile("ospf_sh_database.proto", fileDescriptor_b9f78b00611f1589) }
+func init() {
+	proto.RegisterFile("ospf_sh_database.proto", fileDescriptor_ospf_sh_database_f4f3a9753e13462a)
+}
 
-var fileDescriptor_b9f78b00611f1589 = []byte{
+var fileDescriptor_ospf_sh_database_f4f3a9753e13462a = []byte{
 	// 500 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x53, 0xcd, 0x6e, 0xd3, 0x5c,
 	0x10, 0x95, 0x93, 0x34, 0x71, 0x26, 0x5f, 0xfa, 0xb5, 0x17, 0x01, 0xa6, 0x02, 0x14, 0x22, 0x21,

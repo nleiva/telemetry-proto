@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_fib_summaries_fib_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB summary statistics
 type FibShSum_KEYS struct {
@@ -35,17 +33,16 @@ func (m *FibShSum_KEYS) Reset()         { *m = FibShSum_KEYS{} }
 func (m *FibShSum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibShSum_KEYS) ProtoMessage()    {}
 func (*FibShSum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{0}
+	return fileDescriptor_fib_sh_sum_6a53d1029f573e42, []int{0}
 }
-
 func (m *FibShSum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShSum_KEYS.Unmarshal(m, b)
 }
 func (m *FibShSum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShSum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibShSum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShSum_KEYS.Merge(m, src)
+func (dst *FibShSum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShSum_KEYS.Merge(dst, src)
 }
 func (m *FibShSum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibShSum_KEYS.Size(m)
@@ -182,17 +179,16 @@ func (m *FibShSum) Reset()         { *m = FibShSum{} }
 func (m *FibShSum) String() string { return proto.CompactTextString(m) }
 func (*FibShSum) ProtoMessage()    {}
 func (*FibShSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{1}
+	return fileDescriptor_fib_sh_sum_6a53d1029f573e42, []int{1}
 }
-
 func (m *FibShSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShSum.Unmarshal(m, b)
 }
 func (m *FibShSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShSum.Marshal(b, m, deterministic)
 }
-func (m *FibShSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShSum.Merge(m, src)
+func (dst *FibShSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShSum.Merge(dst, src)
 }
 func (m *FibShSum) XXX_Size() int {
 	return xxx_messageInfo_FibShSum.Size(m)
@@ -540,17 +536,16 @@ func (m *FibPlLdiCount) Reset()         { *m = FibPlLdiCount{} }
 func (m *FibPlLdiCount) String() string { return proto.CompactTextString(m) }
 func (*FibPlLdiCount) ProtoMessage()    {}
 func (*FibPlLdiCount) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{2}
+	return fileDescriptor_fib_sh_sum_6a53d1029f573e42, []int{2}
 }
-
 func (m *FibPlLdiCount) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibPlLdiCount.Unmarshal(m, b)
 }
 func (m *FibPlLdiCount) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibPlLdiCount.Marshal(b, m, deterministic)
 }
-func (m *FibPlLdiCount) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibPlLdiCount.Merge(m, src)
+func (dst *FibPlLdiCount) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibPlLdiCount.Merge(dst, src)
 }
 func (m *FibPlLdiCount) XXX_Size() int {
 	return xxx_messageInfo_FibPlLdiCount.Size(m)
@@ -639,17 +634,16 @@ func (m *FibShPfxMasklenCnt) Reset()         { *m = FibShPfxMasklenCnt{} }
 func (m *FibShPfxMasklenCnt) String() string { return proto.CompactTextString(m) }
 func (*FibShPfxMasklenCnt) ProtoMessage()    {}
 func (*FibShPfxMasklenCnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{3}
+	return fileDescriptor_fib_sh_sum_6a53d1029f573e42, []int{3}
 }
-
 func (m *FibShPfxMasklenCnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShPfxMasklenCnt.Unmarshal(m, b)
 }
 func (m *FibShPfxMasklenCnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShPfxMasklenCnt.Marshal(b, m, deterministic)
 }
-func (m *FibShPfxMasklenCnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShPfxMasklenCnt.Merge(m, src)
+func (dst *FibShPfxMasklenCnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShPfxMasklenCnt.Merge(dst, src)
 }
 func (m *FibShPfxMasklenCnt) XXX_Size() int {
 	return xxx_messageInfo_FibShPfxMasklenCnt.Size(m)
@@ -691,17 +685,16 @@ func (m *FibShPfxMasklenDistrib) Reset()         { *m = FibShPfxMasklenDistrib{}
 func (m *FibShPfxMasklenDistrib) String() string { return proto.CompactTextString(m) }
 func (*FibShPfxMasklenDistrib) ProtoMessage()    {}
 func (*FibShPfxMasklenDistrib) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{4}
+	return fileDescriptor_fib_sh_sum_6a53d1029f573e42, []int{4}
 }
-
 func (m *FibShPfxMasklenDistrib) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShPfxMasklenDistrib.Unmarshal(m, b)
 }
 func (m *FibShPfxMasklenDistrib) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShPfxMasklenDistrib.Marshal(b, m, deterministic)
 }
-func (m *FibShPfxMasklenDistrib) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShPfxMasklenDistrib.Merge(m, src)
+func (dst *FibShPfxMasklenDistrib) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShPfxMasklenDistrib.Merge(dst, src)
 }
 func (m *FibShPfxMasklenDistrib) XXX_Size() int {
 	return xxx_messageInfo_FibShPfxMasklenDistrib.Size(m)
@@ -741,9 +734,9 @@ func init() {
 	proto.RegisterType((*FibShPfxMasklenDistrib)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.fib_summaries.fib_summary.fib_sh_pfx_masklen_distrib")
 }
 
-func init() { proto.RegisterFile("fib_sh_sum.proto", fileDescriptor_6b124c48422c0f95) }
+func init() { proto.RegisterFile("fib_sh_sum.proto", fileDescriptor_fib_sh_sum_6a53d1029f573e42) }
 
-var fileDescriptor_6b124c48422c0f95 = []byte{
+var fileDescriptor_fib_sh_sum_6a53d1029f573e42 = []byte{
 	// 1456 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x56, 0xdf, 0x57, 0x14, 0x39,
 	0x16, 0x3e, 0x0d, 0x2e, 0x42, 0x14, 0x81, 0x02, 0xb4, 0x10, 0x75, 0x11, 0x8f, 0xbb, 0xb8, 0xba,

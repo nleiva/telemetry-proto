@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_route_information_external_routes_external_route
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF External Route Information
 type OspfShRouteExt_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShRouteExt_KEYS) Reset()         { *m = OspfShRouteExt_KEYS{} }
 func (m *OspfShRouteExt_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShRouteExt_KEYS) ProtoMessage()    {}
 func (*OspfShRouteExt_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{0}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{0}
 }
-
 func (m *OspfShRouteExt_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRouteExt_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShRouteExt_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRouteExt_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShRouteExt_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRouteExt_KEYS.Merge(m, src)
+func (dst *OspfShRouteExt_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRouteExt_KEYS.Merge(dst, src)
 }
 func (m *OspfShRouteExt_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShRouteExt_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *OspfShRouteExt) Reset()         { *m = OspfShRouteExt{} }
 func (m *OspfShRouteExt) String() string { return proto.CompactTextString(m) }
 func (*OspfShRouteExt) ProtoMessage()    {}
 func (*OspfShRouteExt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{1}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{1}
 }
-
 func (m *OspfShRouteExt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRouteExt.Unmarshal(m, b)
 }
 func (m *OspfShRouteExt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRouteExt.Marshal(b, m, deterministic)
 }
-func (m *OspfShRouteExt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRouteExt.Merge(m, src)
+func (dst *OspfShRouteExt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRouteExt.Merge(dst, src)
 }
 func (m *OspfShRouteExt) XXX_Size() int {
 	return xxx_messageInfo_OspfShRouteExt.Size(m)
@@ -146,17 +142,16 @@ func (m *OspfShTime) Reset()         { *m = OspfShTime{} }
 func (m *OspfShTime) String() string { return proto.CompactTextString(m) }
 func (*OspfShTime) ProtoMessage()    {}
 func (*OspfShTime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{2}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{2}
 }
-
 func (m *OspfShTime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTime.Unmarshal(m, b)
 }
 func (m *OspfShTime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTime.Marshal(b, m, deterministic)
 }
-func (m *OspfShTime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTime.Merge(m, src)
+func (dst *OspfShTime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTime.Merge(dst, src)
 }
 func (m *OspfShTime) XXX_Size() int {
 	return xxx_messageInfo_OspfShTime.Size(m)
@@ -192,17 +187,16 @@ func (m *StringType) Reset()         { *m = StringType{} }
 func (m *StringType) String() string { return proto.CompactTextString(m) }
 func (*StringType) ProtoMessage()    {}
 func (*StringType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{3}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{3}
 }
-
 func (m *StringType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StringType.Unmarshal(m, b)
 }
 func (m *StringType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StringType.Marshal(b, m, deterministic)
 }
-func (m *StringType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StringType.Merge(m, src)
+func (dst *StringType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StringType.Merge(dst, src)
 }
 func (m *StringType) XXX_Size() int {
 	return xxx_messageInfo_StringType.Size(m)
@@ -242,17 +236,16 @@ func (m *OspfShRedistProto) Reset()         { *m = OspfShRedistProto{} }
 func (m *OspfShRedistProto) String() string { return proto.CompactTextString(m) }
 func (*OspfShRedistProto) ProtoMessage()    {}
 func (*OspfShRedistProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{4}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{4}
 }
-
 func (m *OspfShRedistProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRedistProto.Unmarshal(m, b)
 }
 func (m *OspfShRedistProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRedistProto.Marshal(b, m, deterministic)
 }
-func (m *OspfShRedistProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRedistProto.Merge(m, src)
+func (dst *OspfShRedistProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRedistProto.Merge(dst, src)
 }
 func (m *OspfShRedistProto) XXX_Size() int {
 	return xxx_messageInfo_OspfShRedistProto.Size(m)
@@ -328,17 +321,16 @@ func (m *OspfShRouteExtendedComm) Reset()         { *m = OspfShRouteExtendedComm
 func (m *OspfShRouteExtendedComm) String() string { return proto.CompactTextString(m) }
 func (*OspfShRouteExtendedComm) ProtoMessage()    {}
 func (*OspfShRouteExtendedComm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{5}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{5}
 }
-
 func (m *OspfShRouteExtendedComm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRouteExtendedComm.Unmarshal(m, b)
 }
 func (m *OspfShRouteExtendedComm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRouteExtendedComm.Marshal(b, m, deterministic)
 }
-func (m *OspfShRouteExtendedComm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRouteExtendedComm.Merge(m, src)
+func (dst *OspfShRouteExtendedComm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRouteExtendedComm.Merge(dst, src)
 }
 func (m *OspfShRouteExtendedComm) XXX_Size() int {
 	return xxx_messageInfo_OspfShRouteExtendedComm.Size(m)
@@ -426,17 +418,16 @@ func (m *OspfShTopCommon) Reset()         { *m = OspfShTopCommon{} }
 func (m *OspfShTopCommon) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopCommon) ProtoMessage()    {}
 func (*OspfShTopCommon) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{6}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{6}
 }
-
 func (m *OspfShTopCommon) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopCommon.Unmarshal(m, b)
 }
 func (m *OspfShTopCommon) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopCommon.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopCommon) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopCommon.Merge(m, src)
+func (dst *OspfShTopCommon) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopCommon.Merge(dst, src)
 }
 func (m *OspfShTopCommon) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopCommon.Size(m)
@@ -562,17 +553,16 @@ func (m *OspfShTopPath) Reset()         { *m = OspfShTopPath{} }
 func (m *OspfShTopPath) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopPath) ProtoMessage()    {}
 func (*OspfShTopPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{7}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{7}
 }
-
 func (m *OspfShTopPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopPath.Unmarshal(m, b)
 }
 func (m *OspfShTopPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopPath.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopPath.Merge(m, src)
+func (dst *OspfShTopPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopPath.Merge(dst, src)
 }
 func (m *OspfShTopPath) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopPath.Size(m)
@@ -678,17 +668,16 @@ func (m *OspfShTopology) Reset()         { *m = OspfShTopology{} }
 func (m *OspfShTopology) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopology) ProtoMessage()    {}
 func (*OspfShTopology) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5115045e98cfb91c, []int{8}
+	return fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd, []int{8}
 }
-
 func (m *OspfShTopology) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopology.Unmarshal(m, b)
 }
 func (m *OspfShTopology) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopology.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopology) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopology.Merge(m, src)
+func (dst *OspfShTopology) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopology.Merge(dst, src)
 }
 func (m *OspfShTopology) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopology.Size(m)
@@ -760,9 +749,11 @@ func init() {
 	proto.RegisterType((*OspfShTopology)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.route_information.external_routes.external_route.ospf_sh_topology")
 }
 
-func init() { proto.RegisterFile("ospf_sh_route_ext.proto", fileDescriptor_5115045e98cfb91c) }
+func init() {
+	proto.RegisterFile("ospf_sh_route_ext.proto", fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd)
+}
 
-var fileDescriptor_5115045e98cfb91c = []byte{
+var fileDescriptor_ospf_sh_route_ext_2351bdaceb4f40dd = []byte{
 	// 1200 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x57, 0xcb, 0x6f, 0xdc, 0x44,
 	0x18, 0x97, 0xbb, 0x69, 0x76, 0x33, 0x9b, 0x6d, 0x93, 0x21, 0x4a, 0x9c, 0x40, 0xdb, 0xe0, 0x4a,

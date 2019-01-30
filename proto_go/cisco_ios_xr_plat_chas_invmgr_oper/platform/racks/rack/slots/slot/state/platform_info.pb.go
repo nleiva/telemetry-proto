@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_plat_chas_invmgr_oper_platform_racks_rack_slots_slot_state
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Platform information
 type PlatformInfo_KEYS struct {
@@ -33,17 +31,16 @@ func (m *PlatformInfo_KEYS) Reset()         { *m = PlatformInfo_KEYS{} }
 func (m *PlatformInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*PlatformInfo_KEYS) ProtoMessage()    {}
 func (*PlatformInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_83c645cda97a4b41, []int{0}
+	return fileDescriptor_platform_info_386b6faf1bfa6e80, []int{0}
 }
-
 func (m *PlatformInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_PlatformInfo_KEYS.Unmarshal(m, b)
 }
 func (m *PlatformInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_PlatformInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *PlatformInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_PlatformInfo_KEYS.Merge(m, src)
+func (dst *PlatformInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_PlatformInfo_KEYS.Merge(dst, src)
 }
 func (m *PlatformInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_PlatformInfo_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *PlatformInfo) Reset()         { *m = PlatformInfo{} }
 func (m *PlatformInfo) String() string { return proto.CompactTextString(m) }
 func (*PlatformInfo) ProtoMessage()    {}
 func (*PlatformInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_83c645cda97a4b41, []int{1}
+	return fileDescriptor_platform_info_386b6faf1bfa6e80, []int{1}
 }
-
 func (m *PlatformInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_PlatformInfo.Unmarshal(m, b)
 }
 func (m *PlatformInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_PlatformInfo.Marshal(b, m, deterministic)
 }
-func (m *PlatformInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_PlatformInfo.Merge(m, src)
+func (dst *PlatformInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_PlatformInfo.Merge(dst, src)
 }
 func (m *PlatformInfo) XXX_Size() int {
 	return xxx_messageInfo_PlatformInfo.Size(m)
@@ -176,9 +172,9 @@ func init() {
 	proto.RegisterType((*PlatformInfo)(nil), "cisco_ios_xr_plat_chas_invmgr_oper.platform.racks.rack.slots.slot.state.platform_info")
 }
 
-func init() { proto.RegisterFile("platform_info.proto", fileDescriptor_83c645cda97a4b41) }
+func init() { proto.RegisterFile("platform_info.proto", fileDescriptor_platform_info_386b6faf1bfa6e80) }
 
-var fileDescriptor_83c645cda97a4b41 = []byte{
+var fileDescriptor_platform_info_386b6faf1bfa6e80 = []byte{
 	// 306 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x91, 0xcb, 0x4e, 0x2a, 0x41,
 	0x10, 0x40, 0x03, 0xb9, 0xf7, 0x06, 0x9a, 0xeb, 0xa6, 0xd1, 0x64, 0x12, 0x63, 0x44, 0x56, 0xac,

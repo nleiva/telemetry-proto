@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_proxy_profiles_profile_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 proxy profile parameters
 type Ipv6Dhcpv6DProxyProfile_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6Dhcpv6DProxyProfile_KEYS) Reset()         { *m = Ipv6Dhcpv6DProxyPr
 func (m *Ipv6Dhcpv6DProxyProfile_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyProfile_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyProfile_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DProxyProfile_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyProfile_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyProfile_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyProfile_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyProfile_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyProfile_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyProfile_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *Ipv6Dhcpv6DProxyProfile) Reset()         { *m = Ipv6Dhcpv6DProxyProfile
 func (m *Ipv6Dhcpv6DProxyProfile) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyProfile) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyProfile) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DProxyProfile) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyProfile) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyProfile) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyProfile.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyProfile) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyProfile.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyProfile) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyProfile.Size(m)
@@ -192,17 +188,16 @@ func (m *IPV6AddressType) Reset()         { *m = IPV6AddressType{} }
 func (m *IPV6AddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV6AddressType) ProtoMessage()    {}
 func (*IPV6AddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{2}
 }
-
 func (m *IPV6AddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV6AddressType.Unmarshal(m, b)
 }
 func (m *IPV6AddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV6AddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV6AddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV6AddressType.Merge(m, src)
+func (dst *IPV6AddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV6AddressType.Merge(dst, src)
 }
 func (m *IPV6AddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV6AddressType.Size(m)
@@ -231,17 +226,16 @@ func (m *StringVrf) Reset()         { *m = StringVrf{} }
 func (m *StringVrf) String() string { return proto.CompactTextString(m) }
 func (*StringVrf) ProtoMessage()    {}
 func (*StringVrf) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{3}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{3}
 }
-
 func (m *StringVrf) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StringVrf.Unmarshal(m, b)
 }
 func (m *StringVrf) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StringVrf.Marshal(b, m, deterministic)
 }
-func (m *StringVrf) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StringVrf.Merge(m, src)
+func (dst *StringVrf) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StringVrf.Merge(dst, src)
 }
 func (m *StringVrf) XXX_Size() int {
 	return xxx_messageInfo_StringVrf.Size(m)
@@ -270,17 +264,16 @@ func (m *StringIfname) Reset()         { *m = StringIfname{} }
 func (m *StringIfname) String() string { return proto.CompactTextString(m) }
 func (*StringIfname) ProtoMessage()    {}
 func (*StringIfname) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{4}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{4}
 }
-
 func (m *StringIfname) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StringIfname.Unmarshal(m, b)
 }
 func (m *StringIfname) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StringIfname.Marshal(b, m, deterministic)
 }
-func (m *StringIfname) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StringIfname.Merge(m, src)
+func (dst *StringIfname) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StringIfname.Merge(dst, src)
 }
 func (m *StringIfname) XXX_Size() int {
 	return xxx_messageInfo_StringIfname.Size(m)
@@ -311,17 +304,16 @@ func (m *Ipv6Dhcpv6DProxyVrfReference) Reset()         { *m = Ipv6Dhcpv6DProxyVr
 func (m *Ipv6Dhcpv6DProxyVrfReference) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyVrfReference) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyVrfReference) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{5}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{5}
 }
-
 func (m *Ipv6Dhcpv6DProxyVrfReference) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReference.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyVrfReference) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReference.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyVrfReference) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReference.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyVrfReference) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReference.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyVrfReference) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReference.Size(m)
@@ -351,17 +343,16 @@ func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) Reset()         { *m = Ipv6Dhcpv6DPro
 func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyVrfReferenceItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyVrfReferenceItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{6}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{6}
 }
-
 func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReferenceItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReferenceItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReferenceItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyVrfReferenceItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReferenceItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyVrfReferenceItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyVrfReferenceItem.Size(m)
@@ -392,17 +383,16 @@ func (m *Ipv6Dhcpv6DProxyInterfaceReference) Reset()         { *m = Ipv6Dhcpv6DP
 func (m *Ipv6Dhcpv6DProxyInterfaceReference) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyInterfaceReference) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyInterfaceReference) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{7}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{7}
 }
-
 func (m *Ipv6Dhcpv6DProxyInterfaceReference) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReference.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyInterfaceReference) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReference.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyInterfaceReference) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReference.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyInterfaceReference) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReference.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyInterfaceReference) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReference.Size(m)
@@ -434,17 +424,16 @@ func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) Reset() {
 func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyInterfaceReferenceItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyInterfaceReferenceItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{8}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{8}
 }
-
 func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReferenceItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReferenceItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReferenceItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyInterfaceReferenceItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReferenceItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyInterfaceReferenceItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyInterfaceReferenceItem.Size(m)
@@ -475,17 +464,16 @@ func (m *Ipv6Dhcpv6DProxyIidReference) Reset()         { *m = Ipv6Dhcpv6DProxyIi
 func (m *Ipv6Dhcpv6DProxyIidReference) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyIidReference) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyIidReference) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{9}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{9}
 }
-
 func (m *Ipv6Dhcpv6DProxyIidReference) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReference.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyIidReference) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReference.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyIidReference) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyIidReference.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyIidReference) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyIidReference.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyIidReference) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReference.Size(m)
@@ -517,17 +505,16 @@ func (m *Ipv6Dhcpv6DProxyIidReferenceItem) Reset()         { *m = Ipv6Dhcpv6DPro
 func (m *Ipv6Dhcpv6DProxyIidReferenceItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DProxyIidReferenceItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DProxyIidReferenceItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_78aa0d2748cc147d, []int{10}
+	return fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00, []int{10}
 }
-
 func (m *Ipv6Dhcpv6DProxyIidReferenceItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReferenceItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DProxyIidReferenceItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReferenceItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DProxyIidReferenceItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DProxyIidReferenceItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DProxyIidReferenceItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DProxyIidReferenceItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DProxyIidReferenceItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DProxyIidReferenceItem.Size(m)
@@ -566,9 +553,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DProxyIidReferenceItem)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.proxy.profiles.profile.info.ipv6_dhcpv6d_proxy_iid_reference_item")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_proxy_profile.proto", fileDescriptor_78aa0d2748cc147d) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_proxy_profile.proto", fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00)
+}
 
-var fileDescriptor_78aa0d2748cc147d = []byte{
+var fileDescriptor_ipv6_dhcpv6d_proxy_profile_1d383ad1f583af00 = []byte{
 	// 624 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x56, 0x4d, 0xab, 0xd3, 0x40,
 	0x14, 0x65, 0x14, 0xf5, 0xf5, 0xd6, 0x3e, 0x65, 0xec, 0xd3, 0x60, 0x45, 0x6b, 0xe0, 0x69, 0x41,

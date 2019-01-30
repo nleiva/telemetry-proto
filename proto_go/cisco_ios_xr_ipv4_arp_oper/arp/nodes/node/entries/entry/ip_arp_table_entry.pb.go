@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_arp_oper_arp_nodes_node_entries_entry
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IP ARP Table entry
 type IpArpTableEntry_KEYS struct {
@@ -34,17 +32,16 @@ func (m *IpArpTableEntry_KEYS) Reset()         { *m = IpArpTableEntry_KEYS{} }
 func (m *IpArpTableEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IpArpTableEntry_KEYS) ProtoMessage()    {}
 func (*IpArpTableEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_619c9e11a0588998, []int{0}
+	return fileDescriptor_ip_arp_table_entry_f07a015569f4a79a, []int{0}
 }
-
 func (m *IpArpTableEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpArpTableEntry_KEYS.Unmarshal(m, b)
 }
 func (m *IpArpTableEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpArpTableEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IpArpTableEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpArpTableEntry_KEYS.Merge(m, src)
+func (dst *IpArpTableEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpArpTableEntry_KEYS.Merge(dst, src)
 }
 func (m *IpArpTableEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IpArpTableEntry_KEYS.Size(m)
@@ -100,17 +97,16 @@ func (m *IpArpTableEntry) Reset()         { *m = IpArpTableEntry{} }
 func (m *IpArpTableEntry) String() string { return proto.CompactTextString(m) }
 func (*IpArpTableEntry) ProtoMessage()    {}
 func (*IpArpTableEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_619c9e11a0588998, []int{1}
+	return fileDescriptor_ip_arp_table_entry_f07a015569f4a79a, []int{1}
 }
-
 func (m *IpArpTableEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpArpTableEntry.Unmarshal(m, b)
 }
 func (m *IpArpTableEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpArpTableEntry.Marshal(b, m, deterministic)
 }
-func (m *IpArpTableEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpArpTableEntry.Merge(m, src)
+func (dst *IpArpTableEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpArpTableEntry.Merge(dst, src)
 }
 func (m *IpArpTableEntry) XXX_Size() int {
 	return xxx_messageInfo_IpArpTableEntry.Size(m)
@@ -175,9 +171,11 @@ func init() {
 	proto.RegisterType((*IpArpTableEntry)(nil), "cisco_ios_xr_ipv4_arp_oper.arp.nodes.node.entries.entry.ip_arp_table_entry")
 }
 
-func init() { proto.RegisterFile("ip_arp_table_entry.proto", fileDescriptor_619c9e11a0588998) }
+func init() {
+	proto.RegisterFile("ip_arp_table_entry.proto", fileDescriptor_ip_arp_table_entry_f07a015569f4a79a)
+}
 
-var fileDescriptor_619c9e11a0588998 = []byte{
+var fileDescriptor_ip_arp_table_entry_f07a015569f4a79a = []byte{
 	// 302 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x91, 0x4f, 0x4b, 0x03, 0x31,
 	0x10, 0xc5, 0x59, 0x5b, 0xff, 0x74, 0xa0, 0xb5, 0x0e, 0x82, 0x01, 0x11, 0x4a, 0x41, 0xac, 0x07,

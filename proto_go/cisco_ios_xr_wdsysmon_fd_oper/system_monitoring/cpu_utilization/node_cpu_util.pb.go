@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_wdsysmon_fd_oper_system_monitoring_cpu_utilization
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Node CPU utilization information
 type NodeCpuUtil_KEYS struct {
@@ -32,17 +30,16 @@ func (m *NodeCpuUtil_KEYS) Reset()         { *m = NodeCpuUtil_KEYS{} }
 func (m *NodeCpuUtil_KEYS) String() string { return proto.CompactTextString(m) }
 func (*NodeCpuUtil_KEYS) ProtoMessage()    {}
 func (*NodeCpuUtil_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b085845089ac9f1b, []int{0}
+	return fileDescriptor_node_cpu_util_01f96c29d1cf061d, []int{0}
 }
-
 func (m *NodeCpuUtil_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NodeCpuUtil_KEYS.Unmarshal(m, b)
 }
 func (m *NodeCpuUtil_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NodeCpuUtil_KEYS.Marshal(b, m, deterministic)
 }
-func (m *NodeCpuUtil_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NodeCpuUtil_KEYS.Merge(m, src)
+func (dst *NodeCpuUtil_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NodeCpuUtil_KEYS.Merge(dst, src)
 }
 func (m *NodeCpuUtil_KEYS) XXX_Size() int {
 	return xxx_messageInfo_NodeCpuUtil_KEYS.Size(m)
@@ -78,17 +75,16 @@ func (m *NodeCpuUtil) Reset()         { *m = NodeCpuUtil{} }
 func (m *NodeCpuUtil) String() string { return proto.CompactTextString(m) }
 func (*NodeCpuUtil) ProtoMessage()    {}
 func (*NodeCpuUtil) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b085845089ac9f1b, []int{1}
+	return fileDescriptor_node_cpu_util_01f96c29d1cf061d, []int{1}
 }
-
 func (m *NodeCpuUtil) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NodeCpuUtil.Unmarshal(m, b)
 }
 func (m *NodeCpuUtil) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NodeCpuUtil.Marshal(b, m, deterministic)
 }
-func (m *NodeCpuUtil) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NodeCpuUtil.Merge(m, src)
+func (dst *NodeCpuUtil) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NodeCpuUtil.Merge(dst, src)
 }
 func (m *NodeCpuUtil) XXX_Size() int {
 	return xxx_messageInfo_NodeCpuUtil.Size(m)
@@ -148,17 +144,16 @@ func (m *ProcessCpuUtil) Reset()         { *m = ProcessCpuUtil{} }
 func (m *ProcessCpuUtil) String() string { return proto.CompactTextString(m) }
 func (*ProcessCpuUtil) ProtoMessage()    {}
 func (*ProcessCpuUtil) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b085845089ac9f1b, []int{2}
+	return fileDescriptor_node_cpu_util_01f96c29d1cf061d, []int{2}
 }
-
 func (m *ProcessCpuUtil) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ProcessCpuUtil.Unmarshal(m, b)
 }
 func (m *ProcessCpuUtil) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ProcessCpuUtil.Marshal(b, m, deterministic)
 }
-func (m *ProcessCpuUtil) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ProcessCpuUtil.Merge(m, src)
+func (dst *ProcessCpuUtil) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ProcessCpuUtil.Merge(dst, src)
 }
 func (m *ProcessCpuUtil) XXX_Size() int {
 	return xxx_messageInfo_ProcessCpuUtil.Size(m)
@@ -210,9 +205,9 @@ func init() {
 	proto.RegisterType((*ProcessCpuUtil)(nil), "cisco_ios_xr_wdsysmon_fd_oper.system_monitoring.cpu_utilization.process_cpu_util")
 }
 
-func init() { proto.RegisterFile("node_cpu_util.proto", fileDescriptor_b085845089ac9f1b) }
+func init() { proto.RegisterFile("node_cpu_util.proto", fileDescriptor_node_cpu_util_01f96c29d1cf061d) }
 
-var fileDescriptor_b085845089ac9f1b = []byte{
+var fileDescriptor_node_cpu_util_01f96c29d1cf061d = []byte{
 	// 335 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0xd2, 0xc1, 0x4a, 0xc3, 0x40,
 	0x10, 0x06, 0x60, 0xd2, 0xaa, 0xd8, 0xa9, 0x05, 0xdd, 0xb6, 0x36, 0x28, 0x42, 0xed, 0xa9, 0xa7,

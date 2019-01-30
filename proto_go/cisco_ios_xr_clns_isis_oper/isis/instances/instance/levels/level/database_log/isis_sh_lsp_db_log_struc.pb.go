@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_levels_level_database_log
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // LSP Database Log
 type IsisShLspDbLogStruc_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShLspDbLogStruc_KEYS) Reset()         { *m = IsisShLspDbLogStruc_KE
 func (m *IsisShLspDbLogStruc_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbLogStruc_KEYS) ProtoMessage()    {}
 func (*IsisShLspDbLogStruc_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{0}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{0}
 }
-
 func (m *IsisShLspDbLogStruc_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbLogStruc_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShLspDbLogStruc_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbLogStruc_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbLogStruc_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbLogStruc_KEYS.Merge(m, src)
+func (dst *IsisShLspDbLogStruc_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbLogStruc_KEYS.Merge(dst, src)
 }
 func (m *IsisShLspDbLogStruc_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbLogStruc_KEYS.Size(m)
@@ -80,17 +77,16 @@ func (m *IsisShLspDbLogStruc) Reset()         { *m = IsisShLspDbLogStruc{} }
 func (m *IsisShLspDbLogStruc) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbLogStruc) ProtoMessage()    {}
 func (*IsisShLspDbLogStruc) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{1}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{1}
 }
-
 func (m *IsisShLspDbLogStruc) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbLogStruc.Unmarshal(m, b)
 }
 func (m *IsisShLspDbLogStruc) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbLogStruc.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbLogStruc) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbLogStruc.Merge(m, src)
+func (dst *IsisShLspDbLogStruc) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbLogStruc.Merge(dst, src)
 }
 func (m *IsisShLspDbLogStruc) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbLogStruc.Size(m)
@@ -123,17 +119,16 @@ func (m *IsisShTimestampType) Reset()         { *m = IsisShTimestampType{} }
 func (m *IsisShTimestampType) String() string { return proto.CompactTextString(m) }
 func (*IsisShTimestampType) ProtoMessage()    {}
 func (*IsisShTimestampType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{2}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{2}
 }
-
 func (m *IsisShTimestampType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTimestampType.Unmarshal(m, b)
 }
 func (m *IsisShTimestampType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTimestampType.Marshal(b, m, deterministic)
 }
-func (m *IsisShTimestampType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTimestampType.Merge(m, src)
+func (dst *IsisShTimestampType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTimestampType.Merge(dst, src)
 }
 func (m *IsisShTimestampType) XXX_Size() int {
 	return xxx_messageInfo_IsisShTimestampType.Size(m)
@@ -171,17 +166,16 @@ func (m *IsisShGenericLogEnt) Reset()         { *m = IsisShGenericLogEnt{} }
 func (m *IsisShGenericLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShGenericLogEnt) ProtoMessage()    {}
 func (*IsisShGenericLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{3}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{3}
 }
-
 func (m *IsisShGenericLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShGenericLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShGenericLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShGenericLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShGenericLogEnt.Merge(m, src)
+func (dst *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShGenericLogEnt.Merge(dst, src)
 }
 func (m *IsisShGenericLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShGenericLogEnt.Size(m)
@@ -234,17 +228,16 @@ func (m *IsisShLspHeader) Reset()         { *m = IsisShLspHeader{} }
 func (m *IsisShLspHeader) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspHeader) ProtoMessage()    {}
 func (*IsisShLspHeader) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{4}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{4}
 }
-
 func (m *IsisShLspHeader) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspHeader.Unmarshal(m, b)
 }
 func (m *IsisShLspHeader) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspHeader.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspHeader) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspHeader.Merge(m, src)
+func (dst *IsisShLspHeader) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspHeader.Merge(dst, src)
 }
 func (m *IsisShLspHeader) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspHeader.Size(m)
@@ -358,17 +351,16 @@ func (m *IsisShLspDbLogEnt) Reset()         { *m = IsisShLspDbLogEnt{} }
 func (m *IsisShLspDbLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbLogEnt) ProtoMessage()    {}
 func (*IsisShLspDbLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f73922a0bf04e811, []int{5}
+	return fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a, []int{5}
 }
-
 func (m *IsisShLspDbLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShLspDbLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbLogEnt.Merge(m, src)
+func (dst *IsisShLspDbLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbLogEnt.Merge(dst, src)
 }
 func (m *IsisShLspDbLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbLogEnt.Size(m)
@@ -416,9 +408,11 @@ func init() {
 	proto.RegisterType((*IsisShLspDbLogEnt)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.levels.level.database_log.isis_sh_lsp_db_log_ent")
 }
 
-func init() { proto.RegisterFile("isis_sh_lsp_db_log_struc.proto", fileDescriptor_f73922a0bf04e811) }
+func init() {
+	proto.RegisterFile("isis_sh_lsp_db_log_struc.proto", fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a)
+}
 
-var fileDescriptor_f73922a0bf04e811 = []byte{
+var fileDescriptor_isis_sh_lsp_db_log_struc_b75c4c8dda08633a = []byte{
 	// 642 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x55, 0xdb, 0x6e, 0x13, 0x3d,
 	0x10, 0xd6, 0x36, 0x3d, 0x24, 0x4e, 0xd2, 0x5f, 0xf5, 0xcf, 0x61, 0x25, 0xd4, 0xaa, 0x0d, 0x08,

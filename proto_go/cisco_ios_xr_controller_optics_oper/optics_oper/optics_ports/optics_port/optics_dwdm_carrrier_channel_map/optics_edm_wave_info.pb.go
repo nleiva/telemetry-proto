@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_controller_optics_oper_optics_oper_optics_ports_optics_port_optics_dwdm_carrrier_channel_map
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // wavelength channel mapping information
 type OpticsEdmWaveInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *OpticsEdmWaveInfo_KEYS) Reset()         { *m = OpticsEdmWaveInfo_KEYS{}
 func (m *OpticsEdmWaveInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmWaveInfo_KEYS) ProtoMessage()    {}
 func (*OpticsEdmWaveInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc52397cdce6e3f2, []int{0}
+	return fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28, []int{0}
 }
-
 func (m *OpticsEdmWaveInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmWaveInfo_KEYS.Unmarshal(m, b)
 }
 func (m *OpticsEdmWaveInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmWaveInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmWaveInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmWaveInfo_KEYS.Merge(m, src)
+func (dst *OpticsEdmWaveInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmWaveInfo_KEYS.Merge(dst, src)
 }
 func (m *OpticsEdmWaveInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmWaveInfo_KEYS.Size(m)
@@ -78,17 +75,16 @@ func (m *OpticsEdmWaveInfo) Reset()         { *m = OpticsEdmWaveInfo{} }
 func (m *OpticsEdmWaveInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmWaveInfo) ProtoMessage()    {}
 func (*OpticsEdmWaveInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc52397cdce6e3f2, []int{1}
+	return fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28, []int{1}
 }
-
 func (m *OpticsEdmWaveInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmWaveInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmWaveInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmWaveInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmWaveInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmWaveInfo.Merge(m, src)
+func (dst *OpticsEdmWaveInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmWaveInfo.Merge(dst, src)
 }
 func (m *OpticsEdmWaveInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmWaveInfo.Size(m)
@@ -145,17 +141,16 @@ func (m *OpticsEdmChannelWavelengthMapInfo) Reset()         { *m = OpticsEdmChan
 func (m *OpticsEdmChannelWavelengthMapInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmChannelWavelengthMapInfo) ProtoMessage()    {}
 func (*OpticsEdmChannelWavelengthMapInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc52397cdce6e3f2, []int{2}
+	return fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28, []int{2}
 }
-
 func (m *OpticsEdmChannelWavelengthMapInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmChannelWavelengthMapInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmChannelWavelengthMapInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmChannelWavelengthMapInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmChannelWavelengthMapInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmChannelWavelengthMapInfo.Merge(m, src)
+func (dst *OpticsEdmChannelWavelengthMapInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmChannelWavelengthMapInfo.Merge(dst, src)
 }
 func (m *OpticsEdmChannelWavelengthMapInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmChannelWavelengthMapInfo.Size(m)
@@ -213,17 +208,16 @@ func (m *OpticsEdmWaveInfo_COMBINED) Reset()         { *m = OpticsEdmWaveInfo_CO
 func (m *OpticsEdmWaveInfo_COMBINED) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmWaveInfo_COMBINED) ProtoMessage()    {}
 func (*OpticsEdmWaveInfo_COMBINED) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc52397cdce6e3f2, []int{3}
+	return fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28, []int{3}
 }
-
 func (m *OpticsEdmWaveInfo_COMBINED) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmWaveInfo_COMBINED.Unmarshal(m, b)
 }
 func (m *OpticsEdmWaveInfo_COMBINED) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmWaveInfo_COMBINED.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmWaveInfo_COMBINED) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmWaveInfo_COMBINED.Merge(m, src)
+func (dst *OpticsEdmWaveInfo_COMBINED) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmWaveInfo_COMBINED.Merge(dst, src)
 }
 func (m *OpticsEdmWaveInfo_COMBINED) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmWaveInfo_COMBINED.Size(m)
@@ -276,9 +270,11 @@ func init() {
 	proto.RegisterType((*OpticsEdmWaveInfo_COMBINED)(nil), "cisco_ios_xr_controller_optics_oper.optics_oper.optics_ports.optics_port.optics_dwdm_carrrier_channel_map.optics_edm_wave_info_COMBINED")
 }
 
-func init() { proto.RegisterFile("optics_edm_wave_info.proto", fileDescriptor_cc52397cdce6e3f2) }
+func init() {
+	proto.RegisterFile("optics_edm_wave_info.proto", fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28)
+}
 
-var fileDescriptor_cc52397cdce6e3f2 = []byte{
+var fileDescriptor_optics_edm_wave_info_aa0a1adc0ff06f28 = []byte{
 	// 373 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xec, 0x94, 0xc1, 0x4e, 0xf2, 0x40,
 	0x14, 0x85, 0x53, 0x20, 0x7f, 0xc2, 0xe5, 0x47, 0x65, 0xa2, 0x49, 0x35, 0x6a, 0x9a, 0x2e, 0x4c,

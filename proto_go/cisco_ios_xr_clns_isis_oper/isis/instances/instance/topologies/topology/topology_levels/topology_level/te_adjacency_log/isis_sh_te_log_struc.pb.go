@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_topology_levels_topology_level_te_adjacency_log
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // MPLS TE log
 type IsisShTeLogStruc_KEYS struct {
@@ -36,17 +34,16 @@ func (m *IsisShTeLogStruc_KEYS) Reset()         { *m = IsisShTeLogStruc_KEYS{} }
 func (m *IsisShTeLogStruc_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShTeLogStruc_KEYS) ProtoMessage()    {}
 func (*IsisShTeLogStruc_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42c9ca0c161ac0e8, []int{0}
+	return fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18, []int{0}
 }
-
 func (m *IsisShTeLogStruc_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTeLogStruc_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShTeLogStruc_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTeLogStruc_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShTeLogStruc_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTeLogStruc_KEYS.Merge(m, src)
+func (dst *IsisShTeLogStruc_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTeLogStruc_KEYS.Merge(dst, src)
 }
 func (m *IsisShTeLogStruc_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShTeLogStruc_KEYS.Size(m)
@@ -104,17 +101,16 @@ func (m *IsisShTeLogStruc) Reset()         { *m = IsisShTeLogStruc{} }
 func (m *IsisShTeLogStruc) String() string { return proto.CompactTextString(m) }
 func (*IsisShTeLogStruc) ProtoMessage()    {}
 func (*IsisShTeLogStruc) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42c9ca0c161ac0e8, []int{1}
+	return fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18, []int{1}
 }
-
 func (m *IsisShTeLogStruc) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTeLogStruc.Unmarshal(m, b)
 }
 func (m *IsisShTeLogStruc) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTeLogStruc.Marshal(b, m, deterministic)
 }
-func (m *IsisShTeLogStruc) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTeLogStruc.Merge(m, src)
+func (dst *IsisShTeLogStruc) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTeLogStruc.Merge(dst, src)
 }
 func (m *IsisShTeLogStruc) XXX_Size() int {
 	return xxx_messageInfo_IsisShTeLogStruc.Size(m)
@@ -147,17 +143,16 @@ func (m *IsisShTimestampType) Reset()         { *m = IsisShTimestampType{} }
 func (m *IsisShTimestampType) String() string { return proto.CompactTextString(m) }
 func (*IsisShTimestampType) ProtoMessage()    {}
 func (*IsisShTimestampType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42c9ca0c161ac0e8, []int{2}
+	return fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18, []int{2}
 }
-
 func (m *IsisShTimestampType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTimestampType.Unmarshal(m, b)
 }
 func (m *IsisShTimestampType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTimestampType.Marshal(b, m, deterministic)
 }
-func (m *IsisShTimestampType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTimestampType.Merge(m, src)
+func (dst *IsisShTimestampType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTimestampType.Merge(dst, src)
 }
 func (m *IsisShTimestampType) XXX_Size() int {
 	return xxx_messageInfo_IsisShTimestampType.Size(m)
@@ -195,17 +190,16 @@ func (m *IsisShGenericLogEnt) Reset()         { *m = IsisShGenericLogEnt{} }
 func (m *IsisShGenericLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShGenericLogEnt) ProtoMessage()    {}
 func (*IsisShGenericLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42c9ca0c161ac0e8, []int{3}
+	return fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18, []int{3}
 }
-
 func (m *IsisShGenericLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShGenericLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShGenericLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShGenericLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShGenericLogEnt.Merge(m, src)
+func (dst *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShGenericLogEnt.Merge(dst, src)
 }
 func (m *IsisShGenericLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShGenericLogEnt.Size(m)
@@ -244,17 +238,16 @@ func (m *IsisShTeLogEnt) Reset()         { *m = IsisShTeLogEnt{} }
 func (m *IsisShTeLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShTeLogEnt) ProtoMessage()    {}
 func (*IsisShTeLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42c9ca0c161ac0e8, []int{4}
+	return fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18, []int{4}
 }
-
 func (m *IsisShTeLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTeLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShTeLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTeLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShTeLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTeLogEnt.Merge(m, src)
+func (dst *IsisShTeLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTeLogEnt.Merge(dst, src)
 }
 func (m *IsisShTeLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShTeLogEnt.Size(m)
@@ -308,9 +301,11 @@ func init() {
 	proto.RegisterType((*IsisShTeLogEnt)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.topology_levels.topology_level.te_adjacency_log.isis_sh_te_log_ent")
 }
 
-func init() { proto.RegisterFile("isis_sh_te_log_struc.proto", fileDescriptor_42c9ca0c161ac0e8) }
+func init() {
+	proto.RegisterFile("isis_sh_te_log_struc.proto", fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18)
+}
 
-var fileDescriptor_42c9ca0c161ac0e8 = []byte{
+var fileDescriptor_isis_sh_te_log_struc_b93c811850e9ed18 = []byte{
 	// 463 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x94, 0xbf, 0x6e, 0x14, 0x31,
 	0x10, 0xc6, 0xe5, 0x0b, 0xb9, 0x3f, 0x73, 0x77, 0x05, 0x26, 0x24, 0x77, 0x54, 0xe1, 0xd2, 0xa4,

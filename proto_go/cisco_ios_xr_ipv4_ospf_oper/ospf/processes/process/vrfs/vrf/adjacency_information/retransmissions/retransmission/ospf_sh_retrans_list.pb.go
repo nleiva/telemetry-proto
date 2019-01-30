@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_vrfs_vrf_adjacency_information_retransmissions_retransmission
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Retransmission List
 type OspfShRetransList_KEYS struct {
@@ -35,17 +33,16 @@ func (m *OspfShRetransList_KEYS) Reset()         { *m = OspfShRetransList_KEYS{}
 func (m *OspfShRetransList_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShRetransList_KEYS) ProtoMessage()    {}
 func (*OspfShRetransList_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_513be076a78114a4, []int{0}
+	return fileDescriptor_ospf_sh_retrans_list_0b7d67bedbfe20cb, []int{0}
 }
-
 func (m *OspfShRetransList_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRetransList_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShRetransList_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRetransList_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShRetransList_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRetransList_KEYS.Merge(m, src)
+func (dst *OspfShRetransList_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRetransList_KEYS.Merge(dst, src)
 }
 func (m *OspfShRetransList_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShRetransList_KEYS.Size(m)
@@ -108,17 +105,16 @@ func (m *OspfShRetransList) Reset()         { *m = OspfShRetransList{} }
 func (m *OspfShRetransList) String() string { return proto.CompactTextString(m) }
 func (*OspfShRetransList) ProtoMessage()    {}
 func (*OspfShRetransList) Descriptor() ([]byte, []int) {
-	return fileDescriptor_513be076a78114a4, []int{1}
+	return fileDescriptor_ospf_sh_retrans_list_0b7d67bedbfe20cb, []int{1}
 }
-
 func (m *OspfShRetransList) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRetransList.Unmarshal(m, b)
 }
 func (m *OspfShRetransList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRetransList.Marshal(b, m, deterministic)
 }
-func (m *OspfShRetransList) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRetransList.Merge(m, src)
+func (dst *OspfShRetransList) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRetransList.Merge(dst, src)
 }
 func (m *OspfShRetransList) XXX_Size() int {
 	return xxx_messageInfo_OspfShRetransList.Size(m)
@@ -201,17 +197,16 @@ func (m *OspfShLsaSum) Reset()         { *m = OspfShLsaSum{} }
 func (m *OspfShLsaSum) String() string { return proto.CompactTextString(m) }
 func (*OspfShLsaSum) ProtoMessage()    {}
 func (*OspfShLsaSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_513be076a78114a4, []int{2}
+	return fileDescriptor_ospf_sh_retrans_list_0b7d67bedbfe20cb, []int{2}
 }
-
 func (m *OspfShLsaSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShLsaSum.Unmarshal(m, b)
 }
 func (m *OspfShLsaSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShLsaSum.Marshal(b, m, deterministic)
 }
-func (m *OspfShLsaSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShLsaSum.Merge(m, src)
+func (dst *OspfShLsaSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShLsaSum.Merge(dst, src)
 }
 func (m *OspfShLsaSum) XXX_Size() int {
 	return xxx_messageInfo_OspfShLsaSum.Size(m)
@@ -270,9 +265,11 @@ func init() {
 	proto.RegisterType((*OspfShLsaSum)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.vrfs.vrf.adjacency_information.retransmissions.retransmission.ospf_sh_lsa_sum")
 }
 
-func init() { proto.RegisterFile("ospf_sh_retrans_list.proto", fileDescriptor_513be076a78114a4) }
+func init() {
+	proto.RegisterFile("ospf_sh_retrans_list.proto", fileDescriptor_ospf_sh_retrans_list_0b7d67bedbfe20cb)
+}
 
-var fileDescriptor_513be076a78114a4 = []byte{
+var fileDescriptor_ospf_sh_retrans_list_0b7d67bedbfe20cb = []byte{
 	// 539 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x94, 0xcd, 0x6e, 0xd3, 0x40,
 	0x10, 0xc7, 0xe5, 0x96, 0x16, 0x98, 0x36, 0x0d, 0x6c, 0xa3, 0xe2, 0x14, 0x21, 0x42, 0x04, 0x28,

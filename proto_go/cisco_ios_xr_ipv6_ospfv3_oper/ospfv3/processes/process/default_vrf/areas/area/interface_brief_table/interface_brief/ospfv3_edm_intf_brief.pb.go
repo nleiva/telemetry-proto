@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_areas_area_interface_brief_table_interface_brief
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 brief interface information
 type Ospfv3EdmIntfBrief_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3EdmIntfBrief_KEYS) Reset()         { *m = Ospfv3EdmIntfBrief_KEYS
 func (m *Ospfv3EdmIntfBrief_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmIntfBrief_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmIntfBrief_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f427722ca06b929e, []int{0}
+	return fileDescriptor_ospfv3_edm_intf_brief_1d5ffc2d9061e078, []int{0}
 }
-
 func (m *Ospfv3EdmIntfBrief_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmIntfBrief_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmIntfBrief_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmIntfBrief_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmIntfBrief_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmIntfBrief_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmIntfBrief_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *Ospfv3EdmIntfBrief) Reset()         { *m = Ospfv3EdmIntfBrief{} }
 func (m *Ospfv3EdmIntfBrief) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmIntfBrief) ProtoMessage()    {}
 func (*Ospfv3EdmIntfBrief) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f427722ca06b929e, []int{1}
+	return fileDescriptor_ospfv3_edm_intf_brief_1d5ffc2d9061e078, []int{1}
 }
-
 func (m *Ospfv3EdmIntfBrief) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmIntfBrief) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmIntfBrief) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmIntfBrief.Merge(m, src)
+func (dst *Ospfv3EdmIntfBrief) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmIntfBrief.Merge(dst, src)
 }
 func (m *Ospfv3EdmIntfBrief) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmIntfBrief.Size(m)
@@ -166,9 +162,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmIntfBrief)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.areas.area.interface_brief_table.interface_brief.ospfv3_edm_intf_brief")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_intf_brief.proto", fileDescriptor_f427722ca06b929e) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_intf_brief.proto", fileDescriptor_ospfv3_edm_intf_brief_1d5ffc2d9061e078)
+}
 
-var fileDescriptor_f427722ca06b929e = []byte{
+var fileDescriptor_ospfv3_edm_intf_brief_1d5ffc2d9061e078 = []byte{
 	// 344 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x52, 0x4f, 0x4b, 0xf3, 0x30,
 	0x18, 0x67, 0x7b, 0x61, 0x2f, 0x6f, 0xde, 0x4d, 0x34, 0x2a, 0x96, 0xe9, 0x61, 0x1b, 0x08, 0x03,

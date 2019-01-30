@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_checkpoint_adjacencies_checkpoint_adjacency
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Checkpointed adjacency
 type IsisShChkptAdj_KEYS struct {
@@ -35,17 +33,16 @@ func (m *IsisShChkptAdj_KEYS) Reset()         { *m = IsisShChkptAdj_KEYS{} }
 func (m *IsisShChkptAdj_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptAdj_KEYS) ProtoMessage()    {}
 func (*IsisShChkptAdj_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_00bafb0ca22b5830, []int{0}
+	return fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f, []int{0}
 }
-
 func (m *IsisShChkptAdj_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptAdj_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShChkptAdj_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptAdj_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptAdj_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptAdj_KEYS.Merge(m, src)
+func (dst *IsisShChkptAdj_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptAdj_KEYS.Merge(dst, src)
 }
 func (m *IsisShChkptAdj_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptAdj_KEYS.Size(m)
@@ -112,17 +109,16 @@ func (m *IsisShChkptAdj) Reset()         { *m = IsisShChkptAdj{} }
 func (m *IsisShChkptAdj) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptAdj) ProtoMessage()    {}
 func (*IsisShChkptAdj) Descriptor() ([]byte, []int) {
-	return fileDescriptor_00bafb0ca22b5830, []int{1}
+	return fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f, []int{1}
 }
-
 func (m *IsisShChkptAdj) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptAdj.Unmarshal(m, b)
 }
 func (m *IsisShChkptAdj) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptAdj.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptAdj) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptAdj.Merge(m, src)
+func (dst *IsisShChkptAdj) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptAdj.Merge(dst, src)
 }
 func (m *IsisShChkptAdj) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptAdj.Size(m)
@@ -207,17 +203,16 @@ func (m *IsisIpv6AddressType) Reset()         { *m = IsisIpv6AddressType{} }
 func (m *IsisIpv6AddressType) String() string { return proto.CompactTextString(m) }
 func (*IsisIpv6AddressType) ProtoMessage()    {}
 func (*IsisIpv6AddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_00bafb0ca22b5830, []int{2}
+	return fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f, []int{2}
 }
-
 func (m *IsisIpv6AddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisIpv6AddressType.Unmarshal(m, b)
 }
 func (m *IsisIpv6AddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisIpv6AddressType.Marshal(b, m, deterministic)
 }
-func (m *IsisIpv6AddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisIpv6AddressType.Merge(m, src)
+func (dst *IsisIpv6AddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisIpv6AddressType.Merge(dst, src)
 }
 func (m *IsisIpv6AddressType) XXX_Size() int {
 	return xxx_messageInfo_IsisIpv6AddressType.Size(m)
@@ -250,17 +245,16 @@ func (m *IsisIpAddrType) Reset()         { *m = IsisIpAddrType{} }
 func (m *IsisIpAddrType) String() string { return proto.CompactTextString(m) }
 func (*IsisIpAddrType) ProtoMessage()    {}
 func (*IsisIpAddrType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_00bafb0ca22b5830, []int{3}
+	return fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f, []int{3}
 }
-
 func (m *IsisIpAddrType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisIpAddrType.Unmarshal(m, b)
 }
 func (m *IsisIpAddrType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisIpAddrType.Marshal(b, m, deterministic)
 }
-func (m *IsisIpAddrType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisIpAddrType.Merge(m, src)
+func (dst *IsisIpAddrType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisIpAddrType.Merge(dst, src)
 }
 func (m *IsisIpAddrType) XXX_Size() int {
 	return xxx_messageInfo_IsisIpAddrType.Size(m)
@@ -299,9 +293,11 @@ func init() {
 	proto.RegisterType((*IsisIpAddrType)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.checkpoint_adjacencies.checkpoint_adjacency.isis_ip_addr_type")
 }
 
-func init() { proto.RegisterFile("isis_sh_chkpt_adj.proto", fileDescriptor_00bafb0ca22b5830) }
+func init() {
+	proto.RegisterFile("isis_sh_chkpt_adj.proto", fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f)
+}
 
-var fileDescriptor_00bafb0ca22b5830 = []byte{
+var fileDescriptor_isis_sh_chkpt_adj_3c455a21515d882f = []byte{
 	// 516 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x94, 0xc1, 0x6e, 0x13, 0x31,
 	0x10, 0x86, 0xb5, 0xb4, 0x04, 0xea, 0x12, 0x24, 0x2c, 0x44, 0x16, 0x0a, 0x55, 0x48, 0x85, 0x14,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_proxy_vrfs_vrf_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 packets
 type Ipv6Dhcpv6DType_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6Dhcpv6DType_KEYS) Reset()         { *m = Ipv6Dhcpv6DType_KEYS{} }
 func (m *Ipv6Dhcpv6DType_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DType_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DType_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_aa2cb0c06afea8a3, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_type_c81955e7866bd68e, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DType_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DType_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DType_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DType_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DType_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DType_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DType_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DType_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DType_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DType_KEYS.Size(m)
@@ -112,17 +109,16 @@ func (m *Ipv6Dhcpv6DType) Reset()         { *m = Ipv6Dhcpv6DType{} }
 func (m *Ipv6Dhcpv6DType) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DType) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_aa2cb0c06afea8a3, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_type_c81955e7866bd68e, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DType.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DType.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DType.Merge(m, src)
+func (dst *Ipv6Dhcpv6DType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DType.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DType) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DType.Size(m)
@@ -269,17 +265,16 @@ func (m *Ipv6Dhcpv6DFilteredStats) Reset()         { *m = Ipv6Dhcpv6DFilteredSta
 func (m *Ipv6Dhcpv6DFilteredStats) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DFilteredStats) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DFilteredStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_aa2cb0c06afea8a3, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_type_c81955e7866bd68e, []int{2}
 }
-
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(m, src)
+func (dst *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Size(m)
@@ -317,9 +312,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DFilteredStats)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.proxy.vrfs.vrf.statistics.ipv6_dhcpv6d_filtered_stats")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_type.proto", fileDescriptor_aa2cb0c06afea8a3) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_type.proto", fileDescriptor_ipv6_dhcpv6d_type_c81955e7866bd68e)
+}
 
-var fileDescriptor_aa2cb0c06afea8a3 = []byte{
+var fileDescriptor_ipv6_dhcpv6d_type_c81955e7866bd68e = []byte{
 	// 537 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x96, 0xcf, 0x6b, 0xd4, 0x40,
 	0x14, 0xc7, 0x99, 0xaa, 0x6d, 0x77, 0xaa, 0xdd, 0x76, 0x04, 0x1d, 0xe9, 0xa5, 0xec, 0xc5, 0x7a,

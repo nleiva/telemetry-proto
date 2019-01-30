@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_route_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 route summary information
 type Ospfv3EdmRouteSum_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ospfv3EdmRouteSum_KEYS) Reset()         { *m = Ospfv3EdmRouteSum_KEYS{}
 func (m *Ospfv3EdmRouteSum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRouteSum_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmRouteSum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_175224b5a8ab135f, []int{0}
+	return fileDescriptor_ospfv3_edm_route_sum_316df4c0205ddd92, []int{0}
 }
-
 func (m *Ospfv3EdmRouteSum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRouteSum_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRouteSum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRouteSum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRouteSum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRouteSum_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmRouteSum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRouteSum_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmRouteSum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRouteSum_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *Ospfv3EdmRouteSum) Reset()         { *m = Ospfv3EdmRouteSum{} }
 func (m *Ospfv3EdmRouteSum) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRouteSum) ProtoMessage()    {}
 func (*Ospfv3EdmRouteSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_175224b5a8ab135f, []int{1}
+	return fileDescriptor_ospfv3_edm_route_sum_316df4c0205ddd92, []int{1}
 }
-
 func (m *Ospfv3EdmRouteSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRouteSum.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRouteSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRouteSum.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRouteSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRouteSum.Merge(m, src)
+func (dst *Ospfv3EdmRouteSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRouteSum.Merge(dst, src)
 }
 func (m *Ospfv3EdmRouteSum) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRouteSum.Size(m)
@@ -195,9 +191,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmRouteSum)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.route_summary.ospfv3_edm_route_sum")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_route_sum.proto", fileDescriptor_175224b5a8ab135f) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_route_sum.proto", fileDescriptor_ospfv3_edm_route_sum_316df4c0205ddd92)
+}
 
-var fileDescriptor_175224b5a8ab135f = []byte{
+var fileDescriptor_ospfv3_edm_route_sum_316df4c0205ddd92 = []byte{
 	// 352 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0xd2, 0x5f, 0x4b, 0xf3, 0x30,
 	0x14, 0x06, 0x70, 0xc6, 0x0b, 0xaf, 0x1a, 0xe7, 0x1c, 0x75, 0x17, 0x9d, 0x57, 0x73, 0x08, 0xf6,

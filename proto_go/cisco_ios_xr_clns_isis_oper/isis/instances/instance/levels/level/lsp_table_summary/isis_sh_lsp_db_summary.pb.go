@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_levels_level_lsp_table_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Summary Statistics for an IS-IS LSP Database
 type IsisShLspDbSummary_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShLspDbSummary_KEYS) Reset()         { *m = IsisShLspDbSummary_KEYS
 func (m *IsisShLspDbSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummary_KEYS) ProtoMessage()    {}
 func (*IsisShLspDbSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{0}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{0}
 }
-
 func (m *IsisShLspDbSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummary_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummary_KEYS.Merge(m, src)
+func (dst *IsisShLspDbSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummary_KEYS.Merge(dst, src)
 }
 func (m *IsisShLspDbSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummary_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *IsisShLspDbSummary) Reset()         { *m = IsisShLspDbSummary{} }
 func (m *IsisShLspDbSummary) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummary) ProtoMessage()    {}
 func (*IsisShLspDbSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{1}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{1}
 }
-
 func (m *IsisShLspDbSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummary.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummary.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummary.Merge(m, src)
+func (dst *IsisShLspDbSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummary.Merge(dst, src)
 }
 func (m *IsisShLspDbSummary) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummary.Size(m)
@@ -136,17 +132,16 @@ func (m *IsisTopoIdType) Reset()         { *m = IsisTopoIdType{} }
 func (m *IsisTopoIdType) String() string { return proto.CompactTextString(m) }
 func (*IsisTopoIdType) ProtoMessage()    {}
 func (*IsisTopoIdType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{2}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{2}
 }
-
 func (m *IsisTopoIdType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisTopoIdType.Unmarshal(m, b)
 }
 func (m *IsisTopoIdType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisTopoIdType.Marshal(b, m, deterministic)
 }
-func (m *IsisTopoIdType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisTopoIdType.Merge(m, src)
+func (dst *IsisTopoIdType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisTopoIdType.Merge(dst, src)
 }
 func (m *IsisTopoIdType) XXX_Size() int {
 	return xxx_messageInfo_IsisTopoIdType.Size(m)
@@ -200,17 +195,16 @@ func (m *IsisShLspDbSummaryStatusClassCounters) Reset()         { *m = IsisShLsp
 func (m *IsisShLspDbSummaryStatusClassCounters) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummaryStatusClassCounters) ProtoMessage()    {}
 func (*IsisShLspDbSummaryStatusClassCounters) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{3}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{3}
 }
-
 func (m *IsisShLspDbSummaryStatusClassCounters) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummaryStatusClassCounters.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummaryStatusClassCounters) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummaryStatusClassCounters.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummaryStatusClassCounters) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummaryStatusClassCounters.Merge(m, src)
+func (dst *IsisShLspDbSummaryStatusClassCounters) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummaryStatusClassCounters.Merge(dst, src)
 }
 func (m *IsisShLspDbSummaryStatusClassCounters) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummaryStatusClassCounters.Size(m)
@@ -250,17 +244,16 @@ func (m *IsisShLspDbSummaryNodeClassCounters) Reset()         { *m = IsisShLspDb
 func (m *IsisShLspDbSummaryNodeClassCounters) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummaryNodeClassCounters) ProtoMessage()    {}
 func (*IsisShLspDbSummaryNodeClassCounters) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{4}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{4}
 }
-
 func (m *IsisShLspDbSummaryNodeClassCounters) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummaryNodeClassCounters.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummaryNodeClassCounters) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummaryNodeClassCounters.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummaryNodeClassCounters) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummaryNodeClassCounters.Merge(m, src)
+func (dst *IsisShLspDbSummaryNodeClassCounters) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummaryNodeClassCounters.Merge(dst, src)
 }
 func (m *IsisShLspDbSummaryNodeClassCounters) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummaryNodeClassCounters.Size(m)
@@ -302,17 +295,16 @@ func (m *IsisShLspDbSummaryTopoClassCounters) Reset()         { *m = IsisShLspDb
 func (m *IsisShLspDbSummaryTopoClassCounters) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummaryTopoClassCounters) ProtoMessage()    {}
 func (*IsisShLspDbSummaryTopoClassCounters) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{5}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{5}
 }
-
 func (m *IsisShLspDbSummaryTopoClassCounters) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummaryTopoClassCounters.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummaryTopoClassCounters) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummaryTopoClassCounters.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummaryTopoClassCounters) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummaryTopoClassCounters.Merge(m, src)
+func (dst *IsisShLspDbSummaryTopoClassCounters) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummaryTopoClassCounters.Merge(dst, src)
 }
 func (m *IsisShLspDbSummaryTopoClassCounters) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummaryTopoClassCounters.Size(m)
@@ -359,17 +351,16 @@ func (m *IsisShLspDbSummaryFragment_0Stats) Reset()         { *m = IsisShLspDbSu
 func (m *IsisShLspDbSummaryFragment_0Stats) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummaryFragment_0Stats) ProtoMessage()    {}
 func (*IsisShLspDbSummaryFragment_0Stats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{6}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{6}
 }
-
 func (m *IsisShLspDbSummaryFragment_0Stats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummaryFragment_0Stats.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummaryFragment_0Stats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummaryFragment_0Stats.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummaryFragment_0Stats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummaryFragment_0Stats.Merge(m, src)
+func (dst *IsisShLspDbSummaryFragment_0Stats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummaryFragment_0Stats.Merge(dst, src)
 }
 func (m *IsisShLspDbSummaryFragment_0Stats) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummaryFragment_0Stats.Size(m)
@@ -407,17 +398,16 @@ func (m *IsisShLspDbSummaryAllFragmentsStats) Reset()         { *m = IsisShLspDb
 func (m *IsisShLspDbSummaryAllFragmentsStats) String() string { return proto.CompactTextString(m) }
 func (*IsisShLspDbSummaryAllFragmentsStats) ProtoMessage()    {}
 func (*IsisShLspDbSummaryAllFragmentsStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d60c89beb731926e, []int{7}
+	return fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5, []int{7}
 }
-
 func (m *IsisShLspDbSummaryAllFragmentsStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShLspDbSummaryAllFragmentsStats.Unmarshal(m, b)
 }
 func (m *IsisShLspDbSummaryAllFragmentsStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShLspDbSummaryAllFragmentsStats.Marshal(b, m, deterministic)
 }
-func (m *IsisShLspDbSummaryAllFragmentsStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShLspDbSummaryAllFragmentsStats.Merge(m, src)
+func (dst *IsisShLspDbSummaryAllFragmentsStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShLspDbSummaryAllFragmentsStats.Merge(dst, src)
 }
 func (m *IsisShLspDbSummaryAllFragmentsStats) XXX_Size() int {
 	return xxx_messageInfo_IsisShLspDbSummaryAllFragmentsStats.Size(m)
@@ -446,9 +436,11 @@ func init() {
 	proto.RegisterType((*IsisShLspDbSummaryAllFragmentsStats)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.levels.level.lsp_table_summary.isis_sh_lsp_db_summary_all_fragments_stats")
 }
 
-func init() { proto.RegisterFile("isis_sh_lsp_db_summary.proto", fileDescriptor_d60c89beb731926e) }
+func init() {
+	proto.RegisterFile("isis_sh_lsp_db_summary.proto", fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5)
+}
 
-var fileDescriptor_d60c89beb731926e = []byte{
+var fileDescriptor_isis_sh_lsp_db_summary_c5a92dc6b12582b5 = []byte{
 	// 584 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x96, 0x41, 0x6f, 0xd3, 0x30,
 	0x14, 0xc7, 0xe5, 0x74, 0x6c, 0xe0, 0xad, 0xb0, 0xa5, 0x63, 0x14, 0xc1, 0xa1, 0xca, 0x0e, 0x54,

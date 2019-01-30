@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_system_up_time
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP sysUpTime in centi seconds
 type SnmpSysuptime_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpSysuptime_KEYS) Reset()         { *m = SnmpSysuptime_KEYS{} }
 func (m *SnmpSysuptime_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpSysuptime_KEYS) ProtoMessage()    {}
 func (*SnmpSysuptime_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2bd9e30c7010ed38, []int{0}
+	return fileDescriptor_snmp_sysuptime_56fc2cd088654993, []int{0}
 }
-
 func (m *SnmpSysuptime_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpSysuptime_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpSysuptime_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpSysuptime_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpSysuptime_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpSysuptime_KEYS.Merge(m, src)
+func (dst *SnmpSysuptime_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpSysuptime_KEYS.Merge(dst, src)
 }
 func (m *SnmpSysuptime_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpSysuptime_KEYS.Size(m)
@@ -64,17 +61,16 @@ func (m *SnmpSysuptime) Reset()         { *m = SnmpSysuptime{} }
 func (m *SnmpSysuptime) String() string { return proto.CompactTextString(m) }
 func (*SnmpSysuptime) ProtoMessage()    {}
 func (*SnmpSysuptime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2bd9e30c7010ed38, []int{1}
+	return fileDescriptor_snmp_sysuptime_56fc2cd088654993, []int{1}
 }
-
 func (m *SnmpSysuptime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpSysuptime.Unmarshal(m, b)
 }
 func (m *SnmpSysuptime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpSysuptime.Marshal(b, m, deterministic)
 }
-func (m *SnmpSysuptime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpSysuptime.Merge(m, src)
+func (dst *SnmpSysuptime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpSysuptime.Merge(dst, src)
 }
 func (m *SnmpSysuptime) XXX_Size() int {
 	return xxx_messageInfo_SnmpSysuptime.Size(m)
@@ -97,9 +93,11 @@ func init() {
 	proto.RegisterType((*SnmpSysuptime)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.system_up_time.snmp_sysuptime")
 }
 
-func init() { proto.RegisterFile("snmp_sysuptime.proto", fileDescriptor_2bd9e30c7010ed38) }
+func init() {
+	proto.RegisterFile("snmp_sysuptime.proto", fileDescriptor_snmp_sysuptime_56fc2cd088654993)
+}
 
-var fileDescriptor_2bd9e30c7010ed38 = []byte{
+var fileDescriptor_snmp_sysuptime_56fc2cd088654993 = []byte{
 	// 145 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x29, 0xce, 0xcb, 0x2d,
 	0x88, 0x2f, 0xae, 0x2c, 0x2e, 0x2d, 0x28, 0xc9, 0xcc, 0x4d, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9,

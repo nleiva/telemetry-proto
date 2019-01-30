@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_pfi_im_cmd_oper_interfaces_node_type_sets_node_type_set_interface_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Interface summary bag
 type ImIfSummaryInfo_KEYS struct {
@@ -33,17 +31,16 @@ func (m *ImIfSummaryInfo_KEYS) Reset()         { *m = ImIfSummaryInfo_KEYS{} }
 func (m *ImIfSummaryInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*ImIfSummaryInfo_KEYS) ProtoMessage()    {}
 func (*ImIfSummaryInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1f1e7e171affb549, []int{0}
+	return fileDescriptor_im_if_summary_info_c13454873e951bc0, []int{0}
 }
-
 func (m *ImIfSummaryInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImIfSummaryInfo_KEYS.Unmarshal(m, b)
 }
 func (m *ImIfSummaryInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImIfSummaryInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *ImIfSummaryInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImIfSummaryInfo_KEYS.Merge(m, src)
+func (dst *ImIfSummaryInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImIfSummaryInfo_KEYS.Merge(dst, src)
 }
 func (m *ImIfSummaryInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_ImIfSummaryInfo_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *ImIfSummaryInfo) Reset()         { *m = ImIfSummaryInfo{} }
 func (m *ImIfSummaryInfo) String() string { return proto.CompactTextString(m) }
 func (*ImIfSummaryInfo) ProtoMessage()    {}
 func (*ImIfSummaryInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1f1e7e171affb549, []int{1}
+	return fileDescriptor_im_if_summary_info_c13454873e951bc0, []int{1}
 }
-
 func (m *ImIfSummaryInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImIfSummaryInfo.Unmarshal(m, b)
 }
 func (m *ImIfSummaryInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImIfSummaryInfo.Marshal(b, m, deterministic)
 }
-func (m *ImIfSummaryInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImIfSummaryInfo.Merge(m, src)
+func (dst *ImIfSummaryInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImIfSummaryInfo.Merge(dst, src)
 }
 func (m *ImIfSummaryInfo) XXX_Size() int {
 	return xxx_messageInfo_ImIfSummaryInfo.Size(m)
@@ -135,17 +131,16 @@ func (m *ImIfGroupCountsSt) Reset()         { *m = ImIfGroupCountsSt{} }
 func (m *ImIfGroupCountsSt) String() string { return proto.CompactTextString(m) }
 func (*ImIfGroupCountsSt) ProtoMessage()    {}
 func (*ImIfGroupCountsSt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1f1e7e171affb549, []int{2}
+	return fileDescriptor_im_if_summary_info_c13454873e951bc0, []int{2}
 }
-
 func (m *ImIfGroupCountsSt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImIfGroupCountsSt.Unmarshal(m, b)
 }
 func (m *ImIfGroupCountsSt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImIfGroupCountsSt.Marshal(b, m, deterministic)
 }
-func (m *ImIfGroupCountsSt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImIfGroupCountsSt.Merge(m, src)
+func (dst *ImIfGroupCountsSt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImIfGroupCountsSt.Merge(dst, src)
 }
 func (m *ImIfGroupCountsSt) XXX_Size() int {
 	return xxx_messageInfo_ImIfGroupCountsSt.Size(m)
@@ -200,17 +195,16 @@ func (m *ImIfTypeSummarySt) Reset()         { *m = ImIfTypeSummarySt{} }
 func (m *ImIfTypeSummarySt) String() string { return proto.CompactTextString(m) }
 func (*ImIfTypeSummarySt) ProtoMessage()    {}
 func (*ImIfTypeSummarySt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1f1e7e171affb549, []int{3}
+	return fileDescriptor_im_if_summary_info_c13454873e951bc0, []int{3}
 }
-
 func (m *ImIfTypeSummarySt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImIfTypeSummarySt.Unmarshal(m, b)
 }
 func (m *ImIfTypeSummarySt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImIfTypeSummarySt.Marshal(b, m, deterministic)
 }
-func (m *ImIfTypeSummarySt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImIfTypeSummarySt.Merge(m, src)
+func (dst *ImIfTypeSummarySt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImIfTypeSummarySt.Merge(dst, src)
 }
 func (m *ImIfTypeSummarySt) XXX_Size() int {
 	return xxx_messageInfo_ImIfTypeSummarySt.Size(m)
@@ -249,9 +243,11 @@ func init() {
 	proto.RegisterType((*ImIfTypeSummarySt)(nil), "cisco_ios_xr_pfi_im_cmd_oper.interfaces.node_type_sets.node_type_set.interface_summary.im_if_type_summary_st")
 }
 
-func init() { proto.RegisterFile("im_if_summary_info.proto", fileDescriptor_1f1e7e171affb549) }
+func init() {
+	proto.RegisterFile("im_if_summary_info.proto", fileDescriptor_im_if_summary_info_c13454873e951bc0)
+}
 
-var fileDescriptor_1f1e7e171affb549 = []byte{
+var fileDescriptor_im_if_summary_info_c13454873e951bc0 = []byte{
 	// 372 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x94, 0x4d, 0x4b, 0xfb, 0x40,
 	0x10, 0xc6, 0x49, 0xfa, 0xe7, 0x8f, 0xdd, 0x52, 0x5b, 0x57, 0xa5, 0xa1, 0x5e, 0x4a, 0x2e, 0xf6,

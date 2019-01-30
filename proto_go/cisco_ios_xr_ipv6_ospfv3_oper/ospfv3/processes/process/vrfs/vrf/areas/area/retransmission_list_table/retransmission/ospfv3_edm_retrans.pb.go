@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_vrfs_vrf_areas_area_retransmission_list_table_retransmission
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 retransmission list information
 type Ospfv3EdmRetrans_KEYS struct {
@@ -36,17 +34,16 @@ func (m *Ospfv3EdmRetrans_KEYS) Reset()         { *m = Ospfv3EdmRetrans_KEYS{} }
 func (m *Ospfv3EdmRetrans_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRetrans_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmRetrans_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a67392e7e502b23, []int{0}
+	return fileDescriptor_ospfv3_edm_retrans_b0f3269124081bce, []int{0}
 }
-
 func (m *Ospfv3EdmRetrans_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRetrans_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRetrans_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRetrans_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRetrans_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRetrans_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmRetrans_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRetrans_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmRetrans_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRetrans_KEYS.Size(m)
@@ -122,17 +119,16 @@ func (m *Ospfv3EdmRetrans) Reset()         { *m = Ospfv3EdmRetrans{} }
 func (m *Ospfv3EdmRetrans) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRetrans) ProtoMessage()    {}
 func (*Ospfv3EdmRetrans) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a67392e7e502b23, []int{1}
+	return fileDescriptor_ospfv3_edm_retrans_b0f3269124081bce, []int{1}
 }
-
 func (m *Ospfv3EdmRetrans) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRetrans.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRetrans) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRetrans.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRetrans) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRetrans.Merge(m, src)
+func (dst *Ospfv3EdmRetrans) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRetrans.Merge(dst, src)
 }
 func (m *Ospfv3EdmRetrans) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRetrans.Size(m)
@@ -234,17 +230,16 @@ func (m *Ospfv3EdmLsaSum) Reset()         { *m = Ospfv3EdmLsaSum{} }
 func (m *Ospfv3EdmLsaSum) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaSum) ProtoMessage()    {}
 func (*Ospfv3EdmLsaSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a67392e7e502b23, []int{2}
+	return fileDescriptor_ospfv3_edm_retrans_b0f3269124081bce, []int{2}
 }
-
 func (m *Ospfv3EdmLsaSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaSum.Merge(m, src)
+func (dst *Ospfv3EdmLsaSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaSum.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaSum) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Size(m)
@@ -296,9 +291,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmLsaSum)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.vrfs.vrf.areas.area.retransmission_list_table.retransmission.ospfv3_edm_lsa_sum")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_retrans.proto", fileDescriptor_7a67392e7e502b23) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_retrans.proto", fileDescriptor_ospfv3_edm_retrans_b0f3269124081bce)
+}
 
-var fileDescriptor_7a67392e7e502b23 = []byte{
+var fileDescriptor_ospfv3_edm_retrans_b0f3269124081bce = []byte{
 	// 604 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x55, 0xcd, 0x6e, 0xd3, 0x4c,
 	0x14, 0x95, 0xbf, 0x7e, 0xf4, 0x67, 0xda, 0xb4, 0x30, 0x94, 0xd6, 0x55, 0x04, 0x0d, 0xe1, 0x47,

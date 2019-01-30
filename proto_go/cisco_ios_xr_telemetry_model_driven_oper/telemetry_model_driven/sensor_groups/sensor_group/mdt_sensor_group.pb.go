@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_telemetry_model_driven_oper_telemetry_model_driven_sensor_groups_sensor_group
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Per sensor group information
 type MdtSensorGroup_KEYS struct {
@@ -32,17 +30,16 @@ func (m *MdtSensorGroup_KEYS) Reset()         { *m = MdtSensorGroup_KEYS{} }
 func (m *MdtSensorGroup_KEYS) String() string { return proto.CompactTextString(m) }
 func (*MdtSensorGroup_KEYS) ProtoMessage()    {}
 func (*MdtSensorGroup_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e715b38714f9296d, []int{0}
+	return fileDescriptor_mdt_sensor_group_8dd59f1418adce10, []int{0}
 }
-
 func (m *MdtSensorGroup_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtSensorGroup_KEYS.Unmarshal(m, b)
 }
 func (m *MdtSensorGroup_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtSensorGroup_KEYS.Marshal(b, m, deterministic)
 }
-func (m *MdtSensorGroup_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtSensorGroup_KEYS.Merge(m, src)
+func (dst *MdtSensorGroup_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtSensorGroup_KEYS.Merge(dst, src)
 }
 func (m *MdtSensorGroup_KEYS) XXX_Size() int {
 	return xxx_messageInfo_MdtSensorGroup_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *MdtSensorGroup) Reset()         { *m = MdtSensorGroup{} }
 func (m *MdtSensorGroup) String() string { return proto.CompactTextString(m) }
 func (*MdtSensorGroup) ProtoMessage()    {}
 func (*MdtSensorGroup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e715b38714f9296d, []int{1}
+	return fileDescriptor_mdt_sensor_group_8dd59f1418adce10, []int{1}
 }
-
 func (m *MdtSensorGroup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtSensorGroup.Unmarshal(m, b)
 }
 func (m *MdtSensorGroup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtSensorGroup.Marshal(b, m, deterministic)
 }
-func (m *MdtSensorGroup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtSensorGroup.Merge(m, src)
+func (dst *MdtSensorGroup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtSensorGroup.Merge(dst, src)
 }
 func (m *MdtSensorGroup) XXX_Size() int {
 	return xxx_messageInfo_MdtSensorGroup.Size(m)
@@ -135,17 +131,16 @@ func (m *MdtSensorPaths) Reset()         { *m = MdtSensorPaths{} }
 func (m *MdtSensorPaths) String() string { return proto.CompactTextString(m) }
 func (*MdtSensorPaths) ProtoMessage()    {}
 func (*MdtSensorPaths) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e715b38714f9296d, []int{2}
+	return fileDescriptor_mdt_sensor_group_8dd59f1418adce10, []int{2}
 }
-
 func (m *MdtSensorPaths) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtSensorPaths.Unmarshal(m, b)
 }
 func (m *MdtSensorPaths) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtSensorPaths.Marshal(b, m, deterministic)
 }
-func (m *MdtSensorPaths) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtSensorPaths.Merge(m, src)
+func (dst *MdtSensorPaths) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtSensorPaths.Merge(dst, src)
 }
 func (m *MdtSensorPaths) XXX_Size() int {
 	return xxx_messageInfo_MdtSensorPaths.Size(m)
@@ -183,9 +178,11 @@ func init() {
 	proto.RegisterType((*MdtSensorPaths)(nil), "cisco_ios_xr_telemetry_model_driven_oper.telemetry_model_driven.sensor_groups.sensor_group.mdt_sensor_paths")
 }
 
-func init() { proto.RegisterFile("mdt_sensor_group.proto", fileDescriptor_e715b38714f9296d) }
+func init() {
+	proto.RegisterFile("mdt_sensor_group.proto", fileDescriptor_mdt_sensor_group_8dd59f1418adce10)
+}
 
-var fileDescriptor_e715b38714f9296d = []byte{
+var fileDescriptor_mdt_sensor_group_8dd59f1418adce10 = []byte{
 	// 265 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x91, 0x31, 0x4f, 0xc3, 0x30,
 	0x10, 0x85, 0x95, 0x14, 0x90, 0x7a, 0xa5, 0x80, 0x2c, 0x40, 0x5e, 0x40, 0x51, 0x06, 0x94, 0xc9,

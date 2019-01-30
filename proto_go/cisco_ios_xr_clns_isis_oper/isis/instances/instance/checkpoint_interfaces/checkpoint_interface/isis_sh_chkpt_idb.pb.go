@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_checkpoint_interfaces_checkpoint_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Checkpointed interface
 type IsisShChkptIdb_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShChkptIdb_KEYS) Reset()         { *m = IsisShChkptIdb_KEYS{} }
 func (m *IsisShChkptIdb_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptIdb_KEYS) ProtoMessage()    {}
 func (*IsisShChkptIdb_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_62426d60f492bdfa, []int{0}
+	return fileDescriptor_isis_sh_chkpt_idb_89e2ed3c3fa90d41, []int{0}
 }
-
 func (m *IsisShChkptIdb_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptIdb_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShChkptIdb_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptIdb_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptIdb_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptIdb_KEYS.Merge(m, src)
+func (dst *IsisShChkptIdb_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptIdb_KEYS.Merge(dst, src)
 }
 func (m *IsisShChkptIdb_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptIdb_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *IsisShChkptIdb) Reset()         { *m = IsisShChkptIdb{} }
 func (m *IsisShChkptIdb) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptIdb) ProtoMessage()    {}
 func (*IsisShChkptIdb) Descriptor() ([]byte, []int) {
-	return fileDescriptor_62426d60f492bdfa, []int{1}
+	return fileDescriptor_isis_sh_chkpt_idb_89e2ed3c3fa90d41, []int{1}
 }
-
 func (m *IsisShChkptIdb) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptIdb.Unmarshal(m, b)
 }
 func (m *IsisShChkptIdb) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptIdb.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptIdb) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptIdb.Merge(m, src)
+func (dst *IsisShChkptIdb) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptIdb.Merge(dst, src)
 }
 func (m *IsisShChkptIdb) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptIdb.Size(m)
@@ -194,9 +190,11 @@ func init() {
 	proto.RegisterType((*IsisShChkptIdb)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.checkpoint_interfaces.checkpoint_interface.isis_sh_chkpt_idb")
 }
 
-func init() { proto.RegisterFile("isis_sh_chkpt_idb.proto", fileDescriptor_62426d60f492bdfa) }
+func init() {
+	proto.RegisterFile("isis_sh_chkpt_idb.proto", fileDescriptor_isis_sh_chkpt_idb_89e2ed3c3fa90d41)
+}
 
-var fileDescriptor_62426d60f492bdfa = []byte{
+var fileDescriptor_isis_sh_chkpt_idb_89e2ed3c3fa90d41 = []byte{
 	// 405 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x92, 0x6d, 0x6b, 0x13, 0x41,
 	0x10, 0xc7, 0x89, 0x82, 0x34, 0x4b, 0x23, 0xb8, 0xd6, 0xba, 0x52, 0x84, 0x50, 0x11, 0xf2, 0x2a,

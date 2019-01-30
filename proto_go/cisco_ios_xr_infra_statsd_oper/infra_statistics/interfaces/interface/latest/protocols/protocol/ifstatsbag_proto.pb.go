@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_infra_statsd_oper_infra_statistics_interfaces_interface_latest_protocols_protocol
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Interface counters per protocol
 type IfstatsbagProto_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IfstatsbagProto_KEYS) Reset()         { *m = IfstatsbagProto_KEYS{} }
 func (m *IfstatsbagProto_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IfstatsbagProto_KEYS) ProtoMessage()    {}
 func (*IfstatsbagProto_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4e305d2d18a94ee6, []int{0}
+	return fileDescriptor_ifstatsbag_proto_846fe86144bc8f50, []int{0}
 }
-
 func (m *IfstatsbagProto_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IfstatsbagProto_KEYS.Unmarshal(m, b)
 }
 func (m *IfstatsbagProto_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IfstatsbagProto_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IfstatsbagProto_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IfstatsbagProto_KEYS.Merge(m, src)
+func (dst *IfstatsbagProto_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IfstatsbagProto_KEYS.Merge(dst, src)
 }
 func (m *IfstatsbagProto_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IfstatsbagProto_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *IfstatsbagProto) Reset()         { *m = IfstatsbagProto{} }
 func (m *IfstatsbagProto) String() string { return proto.CompactTextString(m) }
 func (*IfstatsbagProto) ProtoMessage()    {}
 func (*IfstatsbagProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4e305d2d18a94ee6, []int{1}
+	return fileDescriptor_ifstatsbag_proto_846fe86144bc8f50, []int{1}
 }
-
 func (m *IfstatsbagProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IfstatsbagProto.Unmarshal(m, b)
 }
 func (m *IfstatsbagProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IfstatsbagProto.Marshal(b, m, deterministic)
 }
-func (m *IfstatsbagProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IfstatsbagProto.Merge(m, src)
+func (dst *IfstatsbagProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IfstatsbagProto.Merge(dst, src)
 }
 func (m *IfstatsbagProto) XXX_Size() int {
 	return xxx_messageInfo_IfstatsbagProto.Size(m)
@@ -194,9 +190,11 @@ func init() {
 	proto.RegisterType((*IfstatsbagProto)(nil), "cisco_ios_xr_infra_statsd_oper.infra_statistics.interfaces.interface.latest.protocols.protocol.ifstatsbag_proto")
 }
 
-func init() { proto.RegisterFile("ifstatsbag_proto.proto", fileDescriptor_4e305d2d18a94ee6) }
+func init() {
+	proto.RegisterFile("ifstatsbag_proto.proto", fileDescriptor_ifstatsbag_proto_846fe86144bc8f50)
+}
 
-var fileDescriptor_4e305d2d18a94ee6 = []byte{
+var fileDescriptor_ifstatsbag_proto_846fe86144bc8f50 = []byte{
 	// 347 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x5c, 0x8f, 0x4b, 0x4b, 0xeb, 0x40,
 	0x14, 0x80, 0xc9, 0xbd, 0x97, 0x8b, 0x1d, 0x9b, 0xb6, 0x0e, 0x28, 0x41, 0x10, 0x6a, 0x7d, 0x10,

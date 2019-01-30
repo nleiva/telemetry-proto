@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_controller_optics_oper_optics_oper_optics_ports_optics_port_optics_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // optics transponder information
 type OpticsEdmInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *OpticsEdmInfo_KEYS) Reset()         { *m = OpticsEdmInfo_KEYS{} }
 func (m *OpticsEdmInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmInfo_KEYS) ProtoMessage()    {}
 func (*OpticsEdmInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{0}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{0}
 }
-
 func (m *OpticsEdmInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmInfo_KEYS.Unmarshal(m, b)
 }
 func (m *OpticsEdmInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmInfo_KEYS.Merge(m, src)
+func (dst *OpticsEdmInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmInfo_KEYS.Merge(dst, src)
 }
 func (m *OpticsEdmInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmInfo_KEYS.Size(m)
@@ -238,17 +235,16 @@ func (m *OpticsEdmInfo) Reset()         { *m = OpticsEdmInfo{} }
 func (m *OpticsEdmInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmInfo) ProtoMessage()    {}
 func (*OpticsEdmInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{1}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{1}
 }
-
 func (m *OpticsEdmInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmInfo.Merge(m, src)
+func (dst *OpticsEdmInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmInfo.Merge(dst, src)
 }
 func (m *OpticsEdmInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmInfo.Size(m)
@@ -911,17 +907,16 @@ func (m *LaneAlarmDetail) Reset()         { *m = LaneAlarmDetail{} }
 func (m *LaneAlarmDetail) String() string { return proto.CompactTextString(m) }
 func (*LaneAlarmDetail) ProtoMessage()    {}
 func (*LaneAlarmDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{2}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{2}
 }
-
 func (m *LaneAlarmDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LaneAlarmDetail.Unmarshal(m, b)
 }
 func (m *LaneAlarmDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LaneAlarmDetail.Marshal(b, m, deterministic)
 }
-func (m *LaneAlarmDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LaneAlarmDetail.Merge(m, src)
+func (dst *LaneAlarmDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LaneAlarmDetail.Merge(dst, src)
 }
 func (m *LaneAlarmDetail) XXX_Size() int {
 	return xxx_messageInfo_LaneAlarmDetail.Size(m)
@@ -967,17 +962,16 @@ func (m *LaneEdmAlarmInfo) Reset()         { *m = LaneEdmAlarmInfo{} }
 func (m *LaneEdmAlarmInfo) String() string { return proto.CompactTextString(m) }
 func (*LaneEdmAlarmInfo) ProtoMessage()    {}
 func (*LaneEdmAlarmInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{3}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{3}
 }
-
 func (m *LaneEdmAlarmInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Unmarshal(m, b)
 }
 func (m *LaneEdmAlarmInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Marshal(b, m, deterministic)
 }
-func (m *LaneEdmAlarmInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LaneEdmAlarmInfo.Merge(m, src)
+func (dst *LaneEdmAlarmInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LaneEdmAlarmInfo.Merge(dst, src)
 }
 func (m *LaneEdmAlarmInfo) XXX_Size() int {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Size(m)
@@ -1052,17 +1046,16 @@ func (m *OpticsEdmLaneData) Reset()         { *m = OpticsEdmLaneData{} }
 func (m *OpticsEdmLaneData) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmLaneData) ProtoMessage()    {}
 func (*OpticsEdmLaneData) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{4}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{4}
 }
-
 func (m *OpticsEdmLaneData) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmLaneData.Unmarshal(m, b)
 }
 func (m *OpticsEdmLaneData) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmLaneData.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmLaneData) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmLaneData.Merge(m, src)
+func (dst *OpticsEdmLaneData) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmLaneData.Merge(dst, src)
 }
 func (m *OpticsEdmLaneData) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmLaneData.Size(m)
@@ -1167,17 +1160,16 @@ func (m *OpticsTransceiverData) Reset()         { *m = OpticsTransceiverData{} }
 func (m *OpticsTransceiverData) String() string { return proto.CompactTextString(m) }
 func (*OpticsTransceiverData) ProtoMessage()    {}
 func (*OpticsTransceiverData) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{5}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{5}
 }
-
 func (m *OpticsTransceiverData) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsTransceiverData.Unmarshal(m, b)
 }
 func (m *OpticsTransceiverData) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsTransceiverData.Marshal(b, m, deterministic)
 }
-func (m *OpticsTransceiverData) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsTransceiverData.Merge(m, src)
+func (dst *OpticsTransceiverData) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsTransceiverData.Merge(dst, src)
 }
 func (m *OpticsTransceiverData) XXX_Size() int {
 	return xxx_messageInfo_OpticsTransceiverData.Size(m)
@@ -1273,17 +1265,16 @@ func (m *OpticsEdmNetworkSrlgStructure) Reset()         { *m = OpticsEdmNetworkS
 func (m *OpticsEdmNetworkSrlgStructure) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmNetworkSrlgStructure) ProtoMessage()    {}
 func (*OpticsEdmNetworkSrlgStructure) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{6}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{6}
 }
-
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Unmarshal(m, b)
 }
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmNetworkSrlgStructure) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Merge(m, src)
+func (dst *OpticsEdmNetworkSrlgStructure) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Merge(dst, src)
 }
 func (m *OpticsEdmNetworkSrlgStructure) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgStructure.Size(m)
@@ -1321,17 +1312,16 @@ func (m *OpticsEdmNetworkSrlgInfo) Reset()         { *m = OpticsEdmNetworkSrlgIn
 func (m *OpticsEdmNetworkSrlgInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmNetworkSrlgInfo) ProtoMessage()    {}
 func (*OpticsEdmNetworkSrlgInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{7}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{7}
 }
-
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmNetworkSrlgInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Merge(m, src)
+func (dst *OpticsEdmNetworkSrlgInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Merge(dst, src)
 }
 func (m *OpticsEdmNetworkSrlgInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmNetworkSrlgInfo.Size(m)
@@ -1364,17 +1354,16 @@ func (m *OpticsAlarmDetail) Reset()         { *m = OpticsAlarmDetail{} }
 func (m *OpticsAlarmDetail) String() string { return proto.CompactTextString(m) }
 func (*OpticsAlarmDetail) ProtoMessage()    {}
 func (*OpticsAlarmDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{8}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{8}
 }
-
 func (m *OpticsAlarmDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsAlarmDetail.Unmarshal(m, b)
 }
 func (m *OpticsAlarmDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsAlarmDetail.Marshal(b, m, deterministic)
 }
-func (m *OpticsAlarmDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsAlarmDetail.Merge(m, src)
+func (dst *OpticsAlarmDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsAlarmDetail.Merge(dst, src)
 }
 func (m *OpticsAlarmDetail) XXX_Size() int {
 	return xxx_messageInfo_OpticsAlarmDetail.Size(m)
@@ -1496,17 +1485,16 @@ func (m *OpticsEdmAlarmInfo) Reset()         { *m = OpticsEdmAlarmInfo{} }
 func (m *OpticsEdmAlarmInfo) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmAlarmInfo) ProtoMessage()    {}
 func (*OpticsEdmAlarmInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{9}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{9}
 }
-
 func (m *OpticsEdmAlarmInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmAlarmInfo.Unmarshal(m, b)
 }
 func (m *OpticsEdmAlarmInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmAlarmInfo.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmAlarmInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmAlarmInfo.Merge(m, src)
+func (dst *OpticsEdmAlarmInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmAlarmInfo.Merge(dst, src)
 }
 func (m *OpticsEdmAlarmInfo) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmAlarmInfo.Size(m)
@@ -1851,17 +1839,16 @@ func (m *OtsEdmAlarmInfo) Reset()         { *m = OtsEdmAlarmInfo{} }
 func (m *OtsEdmAlarmInfo) String() string { return proto.CompactTextString(m) }
 func (*OtsEdmAlarmInfo) ProtoMessage()    {}
 func (*OtsEdmAlarmInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{10}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{10}
 }
-
 func (m *OtsEdmAlarmInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OtsEdmAlarmInfo.Unmarshal(m, b)
 }
 func (m *OtsEdmAlarmInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OtsEdmAlarmInfo.Marshal(b, m, deterministic)
 }
-func (m *OtsEdmAlarmInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OtsEdmAlarmInfo.Merge(m, src)
+func (dst *OtsEdmAlarmInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OtsEdmAlarmInfo.Merge(dst, src)
 }
 func (m *OtsEdmAlarmInfo) XXX_Size() int {
 	return xxx_messageInfo_OtsEdmAlarmInfo.Size(m)
@@ -2004,17 +1991,16 @@ func (m *OpticsExtParam) Reset()         { *m = OpticsExtParam{} }
 func (m *OpticsExtParam) String() string { return proto.CompactTextString(m) }
 func (*OpticsExtParam) ProtoMessage()    {}
 func (*OpticsExtParam) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{11}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{11}
 }
-
 func (m *OpticsExtParam) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsExtParam.Unmarshal(m, b)
 }
 func (m *OpticsExtParam) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsExtParam.Marshal(b, m, deterministic)
 }
-func (m *OpticsExtParam) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsExtParam.Merge(m, src)
+func (dst *OpticsExtParam) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsExtParam.Merge(dst, src)
 }
 func (m *OpticsExtParam) XXX_Size() int {
 	return xxx_messageInfo_OpticsExtParam.Size(m)
@@ -2318,17 +2304,16 @@ func (m *OpticsExtThresholdParam) Reset()         { *m = OpticsExtThresholdParam
 func (m *OpticsExtThresholdParam) String() string { return proto.CompactTextString(m) }
 func (*OpticsExtThresholdParam) ProtoMessage()    {}
 func (*OpticsExtThresholdParam) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{12}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{12}
 }
-
 func (m *OpticsExtThresholdParam) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsExtThresholdParam.Unmarshal(m, b)
 }
 func (m *OpticsExtThresholdParam) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsExtThresholdParam.Marshal(b, m, deterministic)
 }
-func (m *OpticsExtThresholdParam) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsExtThresholdParam.Merge(m, src)
+func (dst *OpticsExtThresholdParam) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsExtThresholdParam.Merge(dst, src)
 }
 func (m *OpticsExtThresholdParam) XXX_Size() int {
 	return xxx_messageInfo_OpticsExtThresholdParam.Size(m)
@@ -2966,17 +2951,16 @@ func (m *OpticsEdmInfo_COMBINED) Reset()         { *m = OpticsEdmInfo_COMBINED{}
 func (m *OpticsEdmInfo_COMBINED) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmInfo_COMBINED) ProtoMessage()    {}
 func (*OpticsEdmInfo_COMBINED) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4c9721f0da9c660c, []int{13}
+	return fileDescriptor_optics_edm_info_63900a6afaf6df91, []int{13}
 }
-
 func (m *OpticsEdmInfo_COMBINED) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmInfo_COMBINED.Unmarshal(m, b)
 }
 func (m *OpticsEdmInfo_COMBINED) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmInfo_COMBINED.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmInfo_COMBINED) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmInfo_COMBINED.Merge(m, src)
+func (dst *OpticsEdmInfo_COMBINED) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmInfo_COMBINED.Merge(dst, src)
 }
 func (m *OpticsEdmInfo_COMBINED) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmInfo_COMBINED.Size(m)
@@ -3648,9 +3632,11 @@ func init() {
 	proto.RegisterType((*OpticsEdmInfo_COMBINED)(nil), "cisco_ios_xr_controller_optics_oper.optics_oper.optics_ports.optics_port.optics_info.optics_edm_info_COMBINED")
 }
 
-func init() { proto.RegisterFile("optics_edm_info.proto", fileDescriptor_4c9721f0da9c660c) }
+func init() {
+	proto.RegisterFile("optics_edm_info.proto", fileDescriptor_optics_edm_info_63900a6afaf6df91)
+}
 
-var fileDescriptor_4c9721f0da9c660c = []byte{
+var fileDescriptor_optics_edm_info_63900a6afaf6df91 = []byte{
 	// 4498 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xec, 0x5d, 0x5b, 0x73, 0xdc, 0x46,
 	0x76, 0xae, 0xb1, 0x6e, 0xe4, 0xa1, 0x78, 0x03, 0x6f, 0xa0, 0x28, 0x4a, 0xd4, 0x48, 0xb2, 0xa8,

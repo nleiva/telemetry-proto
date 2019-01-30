@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_hosts_host_host_information
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP host xml information
 type SnmpSnmpHostXml_KEYS struct {
@@ -33,17 +31,16 @@ func (m *SnmpSnmpHostXml_KEYS) Reset()         { *m = SnmpSnmpHostXml_KEYS{} }
 func (m *SnmpSnmpHostXml_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpSnmpHostXml_KEYS) ProtoMessage()    {}
 func (*SnmpSnmpHostXml_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_af38331d77b0a1a0, []int{0}
+	return fileDescriptor_snmp_snmpHostXml_3c1e7f34c8903360, []int{0}
 }
-
 func (m *SnmpSnmpHostXml_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpSnmpHostXml_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpSnmpHostXml_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpSnmpHostXml_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpSnmpHostXml_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpSnmpHostXml_KEYS.Merge(m, src)
+func (dst *SnmpSnmpHostXml_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpSnmpHostXml_KEYS.Merge(dst, src)
 }
 func (m *SnmpSnmpHostXml_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpSnmpHostXml_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *SnmpSnmpHostXml) Reset()         { *m = SnmpSnmpHostXml{} }
 func (m *SnmpSnmpHostXml) String() string { return proto.CompactTextString(m) }
 func (*SnmpSnmpHostXml) ProtoMessage()    {}
 func (*SnmpSnmpHostXml) Descriptor() ([]byte, []int) {
-	return fileDescriptor_af38331d77b0a1a0, []int{1}
+	return fileDescriptor_snmp_snmpHostXml_3c1e7f34c8903360, []int{1}
 }
-
 func (m *SnmpSnmpHostXml) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpSnmpHostXml.Unmarshal(m, b)
 }
 func (m *SnmpSnmpHostXml) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpSnmpHostXml.Marshal(b, m, deterministic)
 }
-func (m *SnmpSnmpHostXml) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpSnmpHostXml.Merge(m, src)
+func (dst *SnmpSnmpHostXml) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpSnmpHostXml.Merge(dst, src)
 }
 func (m *SnmpSnmpHostXml) XXX_Size() int {
 	return xxx_messageInfo_SnmpSnmpHostXml.Size(m)
@@ -158,9 +154,11 @@ func init() {
 	proto.RegisterType((*SnmpSnmpHostXml)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.hosts.host.host_information.snmp_snmpHostXml")
 }
 
-func init() { proto.RegisterFile("snmp_snmpHostXml.proto", fileDescriptor_af38331d77b0a1a0) }
+func init() {
+	proto.RegisterFile("snmp_snmpHostXml.proto", fileDescriptor_snmp_snmpHostXml_3c1e7f34c8903360)
+}
 
-var fileDescriptor_af38331d77b0a1a0 = []byte{
+var fileDescriptor_snmp_snmpHostXml_3c1e7f34c8903360 = []byte{
 	// 294 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x92, 0x4f, 0x4b, 0x03, 0x31,
 	0x10, 0xc5, 0xa9, 0x8a, 0x60, 0x4e, 0x12, 0xa8, 0x06, 0x51, 0xa8, 0x3d, 0x79, 0xda, 0x83, 0xd5,

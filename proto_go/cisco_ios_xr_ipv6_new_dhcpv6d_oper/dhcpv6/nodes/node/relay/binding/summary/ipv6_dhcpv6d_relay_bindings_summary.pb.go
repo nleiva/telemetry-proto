@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_relay_binding_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 relay binding summary
 type Ipv6Dhcpv6DRelayBindingsSummary_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) Reset()         { *m = Ipv6Dhcpv6
 func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DRelayBindingsSummary_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DRelayBindingsSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bbe2bd8d2007ff51, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_relay_bindings_summary_a5827dbb4a7fbe28, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DRelayBindingsSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *Ipv6Dhcpv6DRelayBindingsSummary) Reset()         { *m = Ipv6Dhcpv6DRela
 func (m *Ipv6Dhcpv6DRelayBindingsSummary) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DRelayBindingsSummary) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DRelayBindingsSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bbe2bd8d2007ff51, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_relay_bindings_summary_a5827dbb4a7fbe28, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DRelayBindingsSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DRelayBindingsSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DRelayBindingsSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary.Merge(m, src)
+func (dst *Ipv6Dhcpv6DRelayBindingsSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DRelayBindingsSummary) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayBindingsSummary.Size(m)
@@ -106,10 +102,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("ipv6_dhcpv6d_relay_bindings_summary.proto", fileDescriptor_bbe2bd8d2007ff51)
+	proto.RegisterFile("ipv6_dhcpv6d_relay_bindings_summary.proto", fileDescriptor_ipv6_dhcpv6d_relay_bindings_summary_a5827dbb4a7fbe28)
 }
 
-var fileDescriptor_bbe2bd8d2007ff51 = []byte{
+var fileDescriptor_ipv6_dhcpv6d_relay_bindings_summary_a5827dbb4a7fbe28 = []byte{
 	// 181 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0xd2, 0xcc, 0x2c, 0x28, 0x33,
 	0x8b, 0x4f, 0xc9, 0x48, 0x2e, 0x28, 0x33, 0x4b, 0x89, 0x2f, 0x4a, 0xcd, 0x49, 0xac, 0x8c, 0x4f,

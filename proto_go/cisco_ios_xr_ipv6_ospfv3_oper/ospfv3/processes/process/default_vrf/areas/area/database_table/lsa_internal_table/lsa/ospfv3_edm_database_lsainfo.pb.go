@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_areas_area_database_table_lsa_internal_table_lsa
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 LSA Information
 type Ospfv3EdmDatabaseLsainfo_KEYS struct {
@@ -38,17 +36,16 @@ func (m *Ospfv3EdmDatabaseLsainfo_KEYS) Reset()         { *m = Ospfv3EdmDatabase
 func (m *Ospfv3EdmDatabaseLsainfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmDatabaseLsainfo_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmDatabaseLsainfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{0}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{0}
 }
-
 func (m *Ospfv3EdmDatabaseLsainfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmDatabaseLsainfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmDatabaseLsainfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmDatabaseLsainfo_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmDatabaseLsainfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmDatabaseLsainfo_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmDatabaseLsainfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo_KEYS.Size(m)
@@ -120,17 +117,16 @@ func (m *Ospfv3EdmDatabaseLsainfo) Reset()         { *m = Ospfv3EdmDatabaseLsain
 func (m *Ospfv3EdmDatabaseLsainfo) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmDatabaseLsainfo) ProtoMessage()    {}
 func (*Ospfv3EdmDatabaseLsainfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{1}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{1}
 }
-
 func (m *Ospfv3EdmDatabaseLsainfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmDatabaseLsainfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmDatabaseLsainfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmDatabaseLsainfo.Merge(m, src)
+func (dst *Ospfv3EdmDatabaseLsainfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmDatabaseLsainfo.Merge(dst, src)
 }
 func (m *Ospfv3EdmDatabaseLsainfo) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmDatabaseLsainfo.Size(m)
@@ -169,17 +165,16 @@ func (m *Ospfv3EdmPrefix) Reset()         { *m = Ospfv3EdmPrefix{} }
 func (m *Ospfv3EdmPrefix) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmPrefix) ProtoMessage()    {}
 func (*Ospfv3EdmPrefix) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{2}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{2}
 }
-
 func (m *Ospfv3EdmPrefix) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmPrefix.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmPrefix) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmPrefix.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmPrefix) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmPrefix.Merge(m, src)
+func (dst *Ospfv3EdmPrefix) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmPrefix.Merge(dst, src)
 }
 func (m *Ospfv3EdmPrefix) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmPrefix.Size(m)
@@ -254,17 +249,16 @@ func (m *Ospfv3EdmDbHeader) Reset()         { *m = Ospfv3EdmDbHeader{} }
 func (m *Ospfv3EdmDbHeader) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmDbHeader) ProtoMessage()    {}
 func (*Ospfv3EdmDbHeader) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{3}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{3}
 }
-
 func (m *Ospfv3EdmDbHeader) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmDbHeader.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmDbHeader) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmDbHeader.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmDbHeader) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmDbHeader.Merge(m, src)
+func (dst *Ospfv3EdmDbHeader) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmDbHeader.Merge(dst, src)
 }
 func (m *Ospfv3EdmDbHeader) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmDbHeader.Size(m)
@@ -387,17 +381,16 @@ func (m *Ospfv3EdmDbDetail) Reset()         { *m = Ospfv3EdmDbDetail{} }
 func (m *Ospfv3EdmDbDetail) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmDbDetail) ProtoMessage()    {}
 func (*Ospfv3EdmDbDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{4}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{4}
 }
-
 func (m *Ospfv3EdmDbDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmDbDetail.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmDbDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmDbDetail.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmDbDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmDbDetail.Merge(m, src)
+func (dst *Ospfv3EdmDbDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmDbDetail.Merge(dst, src)
 }
 func (m *Ospfv3EdmDbDetail) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmDbDetail.Size(m)
@@ -572,17 +565,16 @@ func (m *Ospfv3EdmLsaExternal) Reset()         { *m = Ospfv3EdmLsaExternal{} }
 func (m *Ospfv3EdmLsaExternal) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaExternal) ProtoMessage()    {}
 func (*Ospfv3EdmLsaExternal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{5}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{5}
 }
-
 func (m *Ospfv3EdmLsaExternal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaExternal.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaExternal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaExternal.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaExternal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaExternal.Merge(m, src)
+func (dst *Ospfv3EdmLsaExternal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaExternal.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaExternal) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaExternal.Size(m)
@@ -684,17 +676,16 @@ func (m *Ospfv3EdmLsaIapfx) Reset()         { *m = Ospfv3EdmLsaIapfx{} }
 func (m *Ospfv3EdmLsaIapfx) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaIapfx) ProtoMessage()    {}
 func (*Ospfv3EdmLsaIapfx) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{6}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{6}
 }
-
 func (m *Ospfv3EdmLsaIapfx) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaIapfx.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaIapfx) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaIapfx.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaIapfx) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaIapfx.Merge(m, src)
+func (dst *Ospfv3EdmLsaIapfx) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaIapfx.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaIapfx) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaIapfx.Size(m)
@@ -757,17 +748,16 @@ func (m *Ospfv3EdmLsaIartr) Reset()         { *m = Ospfv3EdmLsaIartr{} }
 func (m *Ospfv3EdmLsaIartr) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaIartr) ProtoMessage()    {}
 func (*Ospfv3EdmLsaIartr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{7}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{7}
 }
-
 func (m *Ospfv3EdmLsaIartr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaIartr.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaIartr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaIartr.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaIartr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaIartr.Merge(m, src)
+func (dst *Ospfv3EdmLsaIartr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaIartr.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaIartr) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaIartr.Size(m)
@@ -830,17 +820,16 @@ func (m *Ospfv3EdmLsaLink) Reset()         { *m = Ospfv3EdmLsaLink{} }
 func (m *Ospfv3EdmLsaLink) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaLink) ProtoMessage()    {}
 func (*Ospfv3EdmLsaLink) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{8}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{8}
 }
-
 func (m *Ospfv3EdmLsaLink) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaLink.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaLink) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaLink.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaLink) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaLink.Merge(m, src)
+func (dst *Ospfv3EdmLsaLink) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaLink.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaLink) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaLink.Size(m)
@@ -938,17 +927,16 @@ func (m *Ospfv3EdmLsaNetwork) Reset()         { *m = Ospfv3EdmLsaNetwork{} }
 func (m *Ospfv3EdmLsaNetwork) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaNetwork) ProtoMessage()    {}
 func (*Ospfv3EdmLsaNetwork) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{9}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{9}
 }
-
 func (m *Ospfv3EdmLsaNetwork) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaNetwork.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaNetwork) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaNetwork.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaNetwork) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaNetwork.Merge(m, src)
+func (dst *Ospfv3EdmLsaNetwork) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaNetwork.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaNetwork) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaNetwork.Size(m)
@@ -999,17 +987,16 @@ func (m *Ospfv3EdmLsaGrace) Reset()         { *m = Ospfv3EdmLsaGrace{} }
 func (m *Ospfv3EdmLsaGrace) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaGrace) ProtoMessage()    {}
 func (*Ospfv3EdmLsaGrace) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{10}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{10}
 }
-
 func (m *Ospfv3EdmLsaGrace) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaGrace.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaGrace) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaGrace.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaGrace) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaGrace.Merge(m, src)
+func (dst *Ospfv3EdmLsaGrace) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaGrace.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaGrace) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaGrace.Size(m)
@@ -1071,17 +1058,16 @@ func (m *Ospfv3EdmLsaPrefix) Reset()         { *m = Ospfv3EdmLsaPrefix{} }
 func (m *Ospfv3EdmLsaPrefix) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaPrefix) ProtoMessage()    {}
 func (*Ospfv3EdmLsaPrefix) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{11}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{11}
 }
-
 func (m *Ospfv3EdmLsaPrefix) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaPrefix.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaPrefix) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaPrefix.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaPrefix) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaPrefix.Merge(m, src)
+func (dst *Ospfv3EdmLsaPrefix) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaPrefix.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaPrefix) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaPrefix.Size(m)
@@ -1155,17 +1141,16 @@ func (m *Ospfv3EdmLink) Reset()         { *m = Ospfv3EdmLink{} }
 func (m *Ospfv3EdmLink) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLink) ProtoMessage()    {}
 func (*Ospfv3EdmLink) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{12}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{12}
 }
-
 func (m *Ospfv3EdmLink) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLink.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLink) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLink.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLink) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLink.Merge(m, src)
+func (dst *Ospfv3EdmLink) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLink.Merge(dst, src)
 }
 func (m *Ospfv3EdmLink) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLink.Size(m)
@@ -1226,17 +1211,16 @@ func (m *Ospfv3EdmRpfPath) Reset()         { *m = Ospfv3EdmRpfPath{} }
 func (m *Ospfv3EdmRpfPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmRpfPath) ProtoMessage()    {}
 func (*Ospfv3EdmRpfPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{13}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{13}
 }
-
 func (m *Ospfv3EdmRpfPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmRpfPath.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmRpfPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmRpfPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmRpfPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmRpfPath.Merge(m, src)
+func (dst *Ospfv3EdmRpfPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmRpfPath.Merge(dst, src)
 }
 func (m *Ospfv3EdmRpfPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmRpfPath.Size(m)
@@ -1282,17 +1266,16 @@ func (m *Ospfv3EdmLsaRouter) Reset()         { *m = Ospfv3EdmLsaRouter{} }
 func (m *Ospfv3EdmLsaRouter) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaRouter) ProtoMessage()    {}
 func (*Ospfv3EdmLsaRouter) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{14}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{14}
 }
-
 func (m *Ospfv3EdmLsaRouter) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaRouter.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaRouter) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaRouter.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaRouter) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaRouter.Merge(m, src)
+func (dst *Ospfv3EdmLsaRouter) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaRouter.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaRouter) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaRouter.Size(m)
@@ -1363,17 +1346,16 @@ func (m *Ospfv3EdmLsaUnknown) Reset()         { *m = Ospfv3EdmLsaUnknown{} }
 func (m *Ospfv3EdmLsaUnknown) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaUnknown) ProtoMessage()    {}
 func (*Ospfv3EdmLsaUnknown) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{15}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{15}
 }
-
 func (m *Ospfv3EdmLsaUnknown) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaUnknown.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaUnknown) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaUnknown.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaUnknown) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaUnknown.Merge(m, src)
+func (dst *Ospfv3EdmLsaUnknown) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaUnknown.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaUnknown) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaUnknown.Size(m)
@@ -1472,17 +1454,16 @@ func (m *Ospfv3EdmDatabase) Reset()         { *m = Ospfv3EdmDatabase{} }
 func (m *Ospfv3EdmDatabase) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmDatabase) ProtoMessage()    {}
 func (*Ospfv3EdmDatabase) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{16}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{16}
 }
-
 func (m *Ospfv3EdmDatabase) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmDatabase.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmDatabase) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmDatabase.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmDatabase) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmDatabase.Merge(m, src)
+func (dst *Ospfv3EdmDatabase) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmDatabase.Merge(dst, src)
 }
 func (m *Ospfv3EdmDatabase) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmDatabase.Size(m)
@@ -1631,17 +1612,16 @@ func (m *Ospfv3LsaInfoUnion) Reset()         { *m = Ospfv3LsaInfoUnion{} }
 func (m *Ospfv3LsaInfoUnion) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3LsaInfoUnion) ProtoMessage()    {}
 func (*Ospfv3LsaInfoUnion) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6571162e0fae4870, []int{17}
+	return fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb, []int{17}
 }
-
 func (m *Ospfv3LsaInfoUnion) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3LsaInfoUnion.Unmarshal(m, b)
 }
 func (m *Ospfv3LsaInfoUnion) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3LsaInfoUnion.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3LsaInfoUnion) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3LsaInfoUnion.Merge(m, src)
+func (dst *Ospfv3LsaInfoUnion) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3LsaInfoUnion.Merge(dst, src)
 }
 func (m *Ospfv3LsaInfoUnion) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3LsaInfoUnion.Size(m)
@@ -1778,9 +1758,11 @@ func init() {
 	proto.RegisterType((*Ospfv3LsaInfoUnion)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.areas.area.database_table.lsa_internal_table.lsa.ospfv3_lsa_info_union")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_database_lsainfo.proto", fileDescriptor_6571162e0fae4870) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_database_lsainfo.proto", fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb)
+}
 
-var fileDescriptor_6571162e0fae4870 = []byte{
+var fileDescriptor_ospfv3_edm_database_lsainfo_2ce2b630180438cb = []byte{
 	// 2139 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xec, 0x5a, 0x4f, 0x6f, 0x23, 0x49,
 	0x15, 0x57, 0x4f, 0x12, 0xc7, 0x2e, 0xff, 0x49, 0x52, 0x93, 0x4d, 0x3c, 0x19, 0x60, 0x32, 0x66,

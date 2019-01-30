@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_protocol
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information about an IS-IS instance
 type IsisShProto_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IsisShProto_KEYS) Reset()         { *m = IsisShProto_KEYS{} }
 func (m *IsisShProto_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShProto_KEYS) ProtoMessage()    {}
 func (*IsisShProto_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{0}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{0}
 }
-
 func (m *IsisShProto_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShProto_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShProto_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShProto_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShProto_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShProto_KEYS.Merge(m, src)
+func (dst *IsisShProto_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShProto_KEYS.Merge(dst, src)
 }
 func (m *IsisShProto_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShProto_KEYS.Size(m)
@@ -102,17 +99,16 @@ func (m *IsisShProto) Reset()         { *m = IsisShProto{} }
 func (m *IsisShProto) String() string { return proto.CompactTextString(m) }
 func (*IsisShProto) ProtoMessage()    {}
 func (*IsisShProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{1}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{1}
 }
-
 func (m *IsisShProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShProto.Unmarshal(m, b)
 }
 func (m *IsisShProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShProto.Marshal(b, m, deterministic)
 }
-func (m *IsisShProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShProto.Merge(m, src)
+func (dst *IsisShProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShProto.Merge(dst, src)
 }
 func (m *IsisShProto) XXX_Size() int {
 	return xxx_messageInfo_IsisShProto.Size(m)
@@ -246,17 +242,16 @@ func (m *IsisStringType) Reset()         { *m = IsisStringType{} }
 func (m *IsisStringType) String() string { return proto.CompactTextString(m) }
 func (*IsisStringType) ProtoMessage()    {}
 func (*IsisStringType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{2}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{2}
 }
-
 func (m *IsisStringType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisStringType.Unmarshal(m, b)
 }
 func (m *IsisStringType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisStringType.Marshal(b, m, deterministic)
 }
-func (m *IsisStringType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisStringType.Merge(m, src)
+func (dst *IsisStringType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisStringType.Merge(dst, src)
 }
 func (m *IsisStringType) XXX_Size() int {
 	return xxx_messageInfo_IsisStringType.Size(m)
@@ -293,17 +288,16 @@ func (m *IsisTopoIdType) Reset()         { *m = IsisTopoIdType{} }
 func (m *IsisTopoIdType) String() string { return proto.CompactTextString(m) }
 func (*IsisTopoIdType) ProtoMessage()    {}
 func (*IsisTopoIdType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{3}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{3}
 }
-
 func (m *IsisTopoIdType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisTopoIdType.Unmarshal(m, b)
 }
 func (m *IsisTopoIdType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisTopoIdType.Marshal(b, m, deterministic)
 }
-func (m *IsisTopoIdType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisTopoIdType.Merge(m, src)
+func (dst *IsisTopoIdType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisTopoIdType.Merge(dst, src)
 }
 func (m *IsisTopoIdType) XXX_Size() int {
 	return xxx_messageInfo_IsisTopoIdType.Size(m)
@@ -353,17 +347,16 @@ func (m *OsiAreaAddressType) Reset()         { *m = OsiAreaAddressType{} }
 func (m *OsiAreaAddressType) String() string { return proto.CompactTextString(m) }
 func (*OsiAreaAddressType) ProtoMessage()    {}
 func (*OsiAreaAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{4}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{4}
 }
-
 func (m *OsiAreaAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OsiAreaAddressType.Unmarshal(m, b)
 }
 func (m *OsiAreaAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OsiAreaAddressType.Marshal(b, m, deterministic)
 }
-func (m *OsiAreaAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OsiAreaAddressType.Merge(m, src)
+func (dst *OsiAreaAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OsiAreaAddressType.Merge(dst, src)
 }
 func (m *OsiAreaAddressType) XXX_Size() int {
 	return xxx_messageInfo_OsiAreaAddressType.Size(m)
@@ -404,17 +397,16 @@ func (m *IsisShRedistEntryProto) Reset()         { *m = IsisShRedistEntryProto{}
 func (m *IsisShRedistEntryProto) String() string { return proto.CompactTextString(m) }
 func (*IsisShRedistEntryProto) ProtoMessage()    {}
 func (*IsisShRedistEntryProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{5}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{5}
 }
-
 func (m *IsisShRedistEntryProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRedistEntryProto.Unmarshal(m, b)
 }
 func (m *IsisShRedistEntryProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRedistEntryProto.Marshal(b, m, deterministic)
 }
-func (m *IsisShRedistEntryProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRedistEntryProto.Merge(m, src)
+func (dst *IsisShRedistEntryProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRedistEntryProto.Merge(dst, src)
 }
 func (m *IsisShRedistEntryProto) XXX_Size() int {
 	return xxx_messageInfo_IsisShRedistEntryProto.Size(m)
@@ -487,17 +479,16 @@ func (m *IsisShRedistEntry) Reset()         { *m = IsisShRedistEntry{} }
 func (m *IsisShRedistEntry) String() string { return proto.CompactTextString(m) }
 func (*IsisShRedistEntry) ProtoMessage()    {}
 func (*IsisShRedistEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{6}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{6}
 }
-
 func (m *IsisShRedistEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRedistEntry.Unmarshal(m, b)
 }
 func (m *IsisShRedistEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRedistEntry.Marshal(b, m, deterministic)
 }
-func (m *IsisShRedistEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRedistEntry.Merge(m, src)
+func (dst *IsisShRedistEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRedistEntry.Merge(dst, src)
 }
 func (m *IsisShRedistEntry) XXX_Size() int {
 	return xxx_messageInfo_IsisShRedistEntry.Size(m)
@@ -527,17 +518,16 @@ func (m *IsisShRedistEntryItem) Reset()         { *m = IsisShRedistEntryItem{} }
 func (m *IsisShRedistEntryItem) String() string { return proto.CompactTextString(m) }
 func (*IsisShRedistEntryItem) ProtoMessage()    {}
 func (*IsisShRedistEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{7}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{7}
 }
-
 func (m *IsisShRedistEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRedistEntryItem.Unmarshal(m, b)
 }
 func (m *IsisShRedistEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRedistEntryItem.Marshal(b, m, deterministic)
 }
-func (m *IsisShRedistEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRedistEntryItem.Merge(m, src)
+func (dst *IsisShRedistEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRedistEntryItem.Merge(dst, src)
 }
 func (m *IsisShRedistEntryItem) XXX_Size() int {
 	return xxx_messageInfo_IsisShRedistEntryItem.Size(m)
@@ -580,17 +570,16 @@ func (m *IsisShTopoArea) Reset()         { *m = IsisShTopoArea{} }
 func (m *IsisShTopoArea) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopoArea) ProtoMessage()    {}
 func (*IsisShTopoArea) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{8}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{8}
 }
-
 func (m *IsisShTopoArea) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopoArea.Unmarshal(m, b)
 }
 func (m *IsisShTopoArea) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopoArea.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopoArea) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopoArea.Merge(m, src)
+func (dst *IsisShTopoArea) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopoArea.Merge(dst, src)
 }
 func (m *IsisShTopoArea) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopoArea.Size(m)
@@ -671,17 +660,16 @@ func (m *IsisShTopo) Reset()         { *m = IsisShTopo{} }
 func (m *IsisShTopo) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopo) ProtoMessage()    {}
 func (*IsisShTopo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6dbfd5ed09c11621, []int{9}
+	return fileDescriptor_isis_sh_proto_a00ba6e9404536ef, []int{9}
 }
-
 func (m *IsisShTopo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopo.Unmarshal(m, b)
 }
 func (m *IsisShTopo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopo.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopo.Merge(m, src)
+func (dst *IsisShTopo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopo.Merge(dst, src)
 }
 func (m *IsisShTopo) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopo.Size(m)
@@ -740,9 +728,9 @@ func init() {
 	proto.RegisterType((*IsisShTopo)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.protocol.isis_sh_topo")
 }
 
-func init() { proto.RegisterFile("isis_sh_proto.proto", fileDescriptor_6dbfd5ed09c11621) }
+func init() { proto.RegisterFile("isis_sh_proto.proto", fileDescriptor_isis_sh_proto_a00ba6e9404536ef) }
 
-var fileDescriptor_6dbfd5ed09c11621 = []byte{
+var fileDescriptor_isis_sh_proto_a00ba6e9404536ef = []byte{
 	// 1128 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x56, 0xdd, 0x6e, 0x1b, 0x45,
 	0x14, 0x96, 0xd3, 0xe6, 0x6f, 0x1c, 0xe7, 0x67, 0xec, 0x34, 0xdb, 0x22, 0x20, 0x72, 0x00, 0xf9,

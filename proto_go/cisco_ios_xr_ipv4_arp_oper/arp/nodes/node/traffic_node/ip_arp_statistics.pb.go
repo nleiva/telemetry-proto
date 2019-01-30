@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_arp_oper_arp_nodes_node_traffic_node
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IP ARP Statistics information
 type IpArpStatistics_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IpArpStatistics_KEYS) Reset()         { *m = IpArpStatistics_KEYS{} }
 func (m *IpArpStatistics_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IpArpStatistics_KEYS) ProtoMessage()    {}
 func (*IpArpStatistics_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_394adc8d84b7147b, []int{0}
+	return fileDescriptor_ip_arp_statistics_19d3c320d42f95d3, []int{0}
 }
-
 func (m *IpArpStatistics_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpArpStatistics_KEYS.Unmarshal(m, b)
 }
 func (m *IpArpStatistics_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpArpStatistics_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IpArpStatistics_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpArpStatistics_KEYS.Merge(m, src)
+func (dst *IpArpStatistics_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpArpStatistics_KEYS.Merge(dst, src)
 }
 func (m *IpArpStatistics_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IpArpStatistics_KEYS.Size(m)
@@ -126,17 +123,16 @@ func (m *IpArpStatistics) Reset()         { *m = IpArpStatistics{} }
 func (m *IpArpStatistics) String() string { return proto.CompactTextString(m) }
 func (*IpArpStatistics) ProtoMessage()    {}
 func (*IpArpStatistics) Descriptor() ([]byte, []int) {
-	return fileDescriptor_394adc8d84b7147b, []int{1}
+	return fileDescriptor_ip_arp_statistics_19d3c320d42f95d3, []int{1}
 }
-
 func (m *IpArpStatistics) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IpArpStatistics.Unmarshal(m, b)
 }
 func (m *IpArpStatistics) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IpArpStatistics.Marshal(b, m, deterministic)
 }
-func (m *IpArpStatistics) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IpArpStatistics.Merge(m, src)
+func (dst *IpArpStatistics) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IpArpStatistics.Merge(dst, src)
 }
 func (m *IpArpStatistics) XXX_Size() int {
 	return xxx_messageInfo_IpArpStatistics.Size(m)
@@ -348,9 +344,11 @@ func init() {
 	proto.RegisterType((*IpArpStatistics)(nil), "cisco_ios_xr_ipv4_arp_oper.arp.nodes.node.traffic_node.ip_arp_statistics")
 }
 
-func init() { proto.RegisterFile("ip_arp_statistics.proto", fileDescriptor_394adc8d84b7147b) }
+func init() {
+	proto.RegisterFile("ip_arp_statistics.proto", fileDescriptor_ip_arp_statistics_19d3c320d42f95d3)
+}
 
-var fileDescriptor_394adc8d84b7147b = []byte{
+var fileDescriptor_ip_arp_statistics_19d3c320d42f95d3 = []byte{
 	// 668 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x94, 0xdb, 0x4f, 0xdb, 0x4c,
 	0x10, 0xc5, 0xc5, 0xcb, 0xa7, 0x8f, 0x29, 0x01, 0xe2, 0x52, 0x30, 0x05, 0x24, 0x2e, 0x42, 0xa5,

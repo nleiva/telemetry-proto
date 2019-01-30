@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_infra_statsd_oper_infra_statistics_interfaces_interface_cache_data_rate
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Datarate information
 type StatsdbagDatarate_KEYS struct {
@@ -32,17 +30,16 @@ func (m *StatsdbagDatarate_KEYS) Reset()         { *m = StatsdbagDatarate_KEYS{}
 func (m *StatsdbagDatarate_KEYS) String() string { return proto.CompactTextString(m) }
 func (*StatsdbagDatarate_KEYS) ProtoMessage()    {}
 func (*StatsdbagDatarate_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8120ce2916544edb, []int{0}
+	return fileDescriptor_statsdbag_datarate_eec82b0848feda5c, []int{0}
 }
-
 func (m *StatsdbagDatarate_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StatsdbagDatarate_KEYS.Unmarshal(m, b)
 }
 func (m *StatsdbagDatarate_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StatsdbagDatarate_KEYS.Marshal(b, m, deterministic)
 }
-func (m *StatsdbagDatarate_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StatsdbagDatarate_KEYS.Merge(m, src)
+func (dst *StatsdbagDatarate_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StatsdbagDatarate_KEYS.Merge(dst, src)
 }
 func (m *StatsdbagDatarate_KEYS) XXX_Size() int {
 	return xxx_messageInfo_StatsdbagDatarate_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *StatsdbagDatarate) Reset()         { *m = StatsdbagDatarate{} }
 func (m *StatsdbagDatarate) String() string { return proto.CompactTextString(m) }
 func (*StatsdbagDatarate) ProtoMessage()    {}
 func (*StatsdbagDatarate) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8120ce2916544edb, []int{1}
+	return fileDescriptor_statsdbag_datarate_eec82b0848feda5c, []int{1}
 }
-
 func (m *StatsdbagDatarate) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StatsdbagDatarate.Unmarshal(m, b)
 }
 func (m *StatsdbagDatarate) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StatsdbagDatarate.Marshal(b, m, deterministic)
 }
-func (m *StatsdbagDatarate) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StatsdbagDatarate.Merge(m, src)
+func (dst *StatsdbagDatarate) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StatsdbagDatarate.Merge(dst, src)
 }
 func (m *StatsdbagDatarate) XXX_Size() int {
 	return xxx_messageInfo_StatsdbagDatarate.Size(m)
@@ -213,9 +209,11 @@ func init() {
 	proto.RegisterType((*StatsdbagDatarate)(nil), "cisco_ios_xr_infra_statsd_oper.infra_statistics.interfaces.interface.cache.data_rate.statsdbag_datarate")
 }
 
-func init() { proto.RegisterFile("statsdbag_datarate.proto", fileDescriptor_8120ce2916544edb) }
+func init() {
+	proto.RegisterFile("statsdbag_datarate.proto", fileDescriptor_statsdbag_datarate_eec82b0848feda5c)
+}
 
-var fileDescriptor_8120ce2916544edb = []byte{
+var fileDescriptor_statsdbag_datarate_eec82b0848feda5c = []byte{
 	// 384 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x92, 0x4f, 0x6b, 0xdb, 0x40,
 	0x14, 0xc4, 0x11, 0x98, 0x82, 0x9f, 0x6b, 0xb7, 0xde, 0xba, 0xb5, 0x0e, 0x2d, 0x15, 0x2e, 0x2d,

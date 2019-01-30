@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_database_database_summary_as
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF AS Scope LSA Database Summary counters
 type OspfShDbAsSum_KEYS struct {
@@ -32,17 +30,16 @@ func (m *OspfShDbAsSum_KEYS) Reset()         { *m = OspfShDbAsSum_KEYS{} }
 func (m *OspfShDbAsSum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShDbAsSum_KEYS) ProtoMessage()    {}
 func (*OspfShDbAsSum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b4dd6c9f4478cf1b, []int{0}
+	return fileDescriptor_ospf_sh_db_as_sum_ff7dca0c2a3a0a7a, []int{0}
 }
-
 func (m *OspfShDbAsSum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDbAsSum_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShDbAsSum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDbAsSum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShDbAsSum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDbAsSum_KEYS.Merge(m, src)
+func (dst *OspfShDbAsSum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDbAsSum_KEYS.Merge(dst, src)
 }
 func (m *OspfShDbAsSum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShDbAsSum_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *OspfShDbAsSum) Reset()         { *m = OspfShDbAsSum{} }
 func (m *OspfShDbAsSum) String() string { return proto.CompactTextString(m) }
 func (*OspfShDbAsSum) ProtoMessage()    {}
 func (*OspfShDbAsSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b4dd6c9f4478cf1b, []int{1}
+	return fileDescriptor_ospf_sh_db_as_sum_ff7dca0c2a3a0a7a, []int{1}
 }
-
 func (m *OspfShDbAsSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDbAsSum.Unmarshal(m, b)
 }
 func (m *OspfShDbAsSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDbAsSum.Marshal(b, m, deterministic)
 }
-func (m *OspfShDbAsSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDbAsSum.Merge(m, src)
+func (dst *OspfShDbAsSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDbAsSum.Merge(dst, src)
 }
 func (m *OspfShDbAsSum) XXX_Size() int {
 	return xxx_messageInfo_OspfShDbAsSum.Size(m)
@@ -121,17 +117,16 @@ func (m *OspfShDbSumCntr) Reset()         { *m = OspfShDbSumCntr{} }
 func (m *OspfShDbSumCntr) String() string { return proto.CompactTextString(m) }
 func (*OspfShDbSumCntr) ProtoMessage()    {}
 func (*OspfShDbSumCntr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b4dd6c9f4478cf1b, []int{2}
+	return fileDescriptor_ospf_sh_db_as_sum_ff7dca0c2a3a0a7a, []int{2}
 }
-
 func (m *OspfShDbSumCntr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDbSumCntr.Unmarshal(m, b)
 }
 func (m *OspfShDbSumCntr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDbSumCntr.Marshal(b, m, deterministic)
 }
-func (m *OspfShDbSumCntr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDbSumCntr.Merge(m, src)
+func (dst *OspfShDbSumCntr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDbSumCntr.Merge(dst, src)
 }
 func (m *OspfShDbSumCntr) XXX_Size() int {
 	return xxx_messageInfo_OspfShDbSumCntr.Size(m)
@@ -183,9 +178,11 @@ func init() {
 	proto.RegisterType((*OspfShDbSumCntr)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.database.database_summary_as.ospf_sh_db_sum_cntr")
 }
 
-func init() { proto.RegisterFile("ospf_sh_db_as_sum.proto", fileDescriptor_b4dd6c9f4478cf1b) }
+func init() {
+	proto.RegisterFile("ospf_sh_db_as_sum.proto", fileDescriptor_ospf_sh_db_as_sum_ff7dca0c2a3a0a7a)
+}
 
-var fileDescriptor_b4dd6c9f4478cf1b = []byte{
+var fileDescriptor_ospf_sh_db_as_sum_ff7dca0c2a3a0a7a = []byte{
 	// 311 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0xd2, 0xbb, 0x4e, 0xeb, 0x40,
 	0x10, 0x06, 0x60, 0xf9, 0xe4, 0x70, 0xc9, 0x26, 0x5c, 0xb2, 0x48, 0x10, 0x44, 0x13, 0x22, 0x0a,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_bgp_oper_bgp_instances_instance_instance_active_default_vrf_afs_af_advertised_path_counts_advertised_path_count
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // BGP Neighbor adv cnt bag
 type BgpNbrAdvCntBag_KEYS struct {
@@ -34,17 +32,16 @@ func (m *BgpNbrAdvCntBag_KEYS) Reset()         { *m = BgpNbrAdvCntBag_KEYS{} }
 func (m *BgpNbrAdvCntBag_KEYS) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrAdvCntBag_KEYS) ProtoMessage()    {}
 func (*BgpNbrAdvCntBag_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7eff091a80afdb29, []int{0}
+	return fileDescriptor_bgp_nbr_adv_cnt_bag_a3a573c40e6308ae, []int{0}
 }
-
 func (m *BgpNbrAdvCntBag_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrAdvCntBag_KEYS.Unmarshal(m, b)
 }
 func (m *BgpNbrAdvCntBag_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrAdvCntBag_KEYS.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrAdvCntBag_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrAdvCntBag_KEYS.Merge(m, src)
+func (dst *BgpNbrAdvCntBag_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrAdvCntBag_KEYS.Merge(dst, src)
 }
 func (m *BgpNbrAdvCntBag_KEYS) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrAdvCntBag_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *BgpNbrAdvCntBag) Reset()         { *m = BgpNbrAdvCntBag{} }
 func (m *BgpNbrAdvCntBag) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrAdvCntBag) ProtoMessage()    {}
 func (*BgpNbrAdvCntBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7eff091a80afdb29, []int{1}
+	return fileDescriptor_bgp_nbr_adv_cnt_bag_a3a573c40e6308ae, []int{1}
 }
-
 func (m *BgpNbrAdvCntBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrAdvCntBag.Unmarshal(m, b)
 }
 func (m *BgpNbrAdvCntBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrAdvCntBag.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrAdvCntBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrAdvCntBag.Merge(m, src)
+func (dst *BgpNbrAdvCntBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrAdvCntBag.Merge(dst, src)
 }
 func (m *BgpNbrAdvCntBag) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrAdvCntBag.Size(m)
@@ -121,9 +117,11 @@ func init() {
 	proto.RegisterType((*BgpNbrAdvCntBag)(nil), "cisco_ios_xr_ipv4_bgp_oper.bgp.instances.instance.instance_active.default_vrf.afs.af.advertised_path_counts.advertised_path_count.bgp_nbr_adv_cnt_bag")
 }
 
-func init() { proto.RegisterFile("bgp_nbr_adv_cnt_bag.proto", fileDescriptor_7eff091a80afdb29) }
+func init() {
+	proto.RegisterFile("bgp_nbr_adv_cnt_bag.proto", fileDescriptor_bgp_nbr_adv_cnt_bag_a3a573c40e6308ae)
+}
 
-var fileDescriptor_7eff091a80afdb29 = []byte{
+var fileDescriptor_bgp_nbr_adv_cnt_bag_a3a573c40e6308ae = []byte{
 	// 255 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x90, 0xb1, 0x4b, 0x03, 0x31,
 	0x14, 0xc6, 0x39, 0x85, 0x8a, 0xc1, 0xa2, 0x9c, 0x83, 0xd1, 0xa9, 0xd4, 0xa5, 0x2e, 0x19, 0xd4,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_telemetry_model_driven_oper_telemetry_model_driven_destinations_destination
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Per Destination Group detail information
 type MdtDestinationGroupDetail_KEYS struct {
@@ -32,17 +30,16 @@ func (m *MdtDestinationGroupDetail_KEYS) Reset()         { *m = MdtDestinationGr
 func (m *MdtDestinationGroupDetail_KEYS) String() string { return proto.CompactTextString(m) }
 func (*MdtDestinationGroupDetail_KEYS) ProtoMessage()    {}
 func (*MdtDestinationGroupDetail_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{0}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{0}
 }
-
 func (m *MdtDestinationGroupDetail_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtDestinationGroupDetail_KEYS.Unmarshal(m, b)
 }
 func (m *MdtDestinationGroupDetail_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtDestinationGroupDetail_KEYS.Marshal(b, m, deterministic)
 }
-func (m *MdtDestinationGroupDetail_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtDestinationGroupDetail_KEYS.Merge(m, src)
+func (dst *MdtDestinationGroupDetail_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtDestinationGroupDetail_KEYS.Merge(dst, src)
 }
 func (m *MdtDestinationGroupDetail_KEYS) XXX_Size() int {
 	return xxx_messageInfo_MdtDestinationGroupDetail_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *MdtDestinationGroupDetail) Reset()         { *m = MdtDestinationGroupDe
 func (m *MdtDestinationGroupDetail) String() string { return proto.CompactTextString(m) }
 func (*MdtDestinationGroupDetail) ProtoMessage()    {}
 func (*MdtDestinationGroupDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{1}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{1}
 }
-
 func (m *MdtDestinationGroupDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtDestinationGroupDetail.Unmarshal(m, b)
 }
 func (m *MdtDestinationGroupDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtDestinationGroupDetail.Marshal(b, m, deterministic)
 }
-func (m *MdtDestinationGroupDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtDestinationGroupDetail.Merge(m, src)
+func (dst *MdtDestinationGroupDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtDestinationGroupDetail.Merge(dst, src)
 }
 func (m *MdtDestinationGroupDetail) XXX_Size() int {
 	return xxx_messageInfo_MdtDestinationGroupDetail.Size(m)
@@ -129,17 +125,16 @@ func (m *MdtIn6AddrT) Reset()         { *m = MdtIn6AddrT{} }
 func (m *MdtIn6AddrT) String() string { return proto.CompactTextString(m) }
 func (*MdtIn6AddrT) ProtoMessage()    {}
 func (*MdtIn6AddrT) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{2}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{2}
 }
-
 func (m *MdtIn6AddrT) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtIn6AddrT.Unmarshal(m, b)
 }
 func (m *MdtIn6AddrT) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtIn6AddrT.Marshal(b, m, deterministic)
 }
-func (m *MdtIn6AddrT) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtIn6AddrT.Merge(m, src)
+func (dst *MdtIn6AddrT) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtIn6AddrT.Merge(dst, src)
 }
 func (m *MdtIn6AddrT) XXX_Size() int {
 	return xxx_messageInfo_MdtIn6AddrT.Size(m)
@@ -172,17 +167,16 @@ func (m *MdtDestinationIPAddress) Reset()         { *m = MdtDestinationIPAddress
 func (m *MdtDestinationIPAddress) String() string { return proto.CompactTextString(m) }
 func (*MdtDestinationIPAddress) ProtoMessage()    {}
 func (*MdtDestinationIPAddress) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{3}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{3}
 }
-
 func (m *MdtDestinationIPAddress) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtDestinationIPAddress.Unmarshal(m, b)
 }
 func (m *MdtDestinationIPAddress) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtDestinationIPAddress.Marshal(b, m, deterministic)
 }
-func (m *MdtDestinationIPAddress) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtDestinationIPAddress.Merge(m, src)
+func (dst *MdtDestinationIPAddress) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtDestinationIPAddress.Merge(dst, src)
 }
 func (m *MdtDestinationIPAddress) XXX_Size() int {
 	return xxx_messageInfo_MdtDestinationIPAddress.Size(m)
@@ -231,17 +225,16 @@ func (m *MdtSensorPaths) Reset()         { *m = MdtSensorPaths{} }
 func (m *MdtSensorPaths) String() string { return proto.CompactTextString(m) }
 func (*MdtSensorPaths) ProtoMessage()    {}
 func (*MdtSensorPaths) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{4}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{4}
 }
-
 func (m *MdtSensorPaths) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtSensorPaths.Unmarshal(m, b)
 }
 func (m *MdtSensorPaths) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtSensorPaths.Marshal(b, m, deterministic)
 }
-func (m *MdtSensorPaths) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtSensorPaths.Merge(m, src)
+func (dst *MdtSensorPaths) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtSensorPaths.Merge(dst, src)
 }
 func (m *MdtSensorPaths) XXX_Size() int {
 	return xxx_messageInfo_MdtSensorPaths.Size(m)
@@ -338,17 +331,16 @@ func (m *MdtCollectionSysdbGroup) Reset()         { *m = MdtCollectionSysdbGroup
 func (m *MdtCollectionSysdbGroup) String() string { return proto.CompactTextString(m) }
 func (*MdtCollectionSysdbGroup) ProtoMessage()    {}
 func (*MdtCollectionSysdbGroup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{5}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{5}
 }
-
 func (m *MdtCollectionSysdbGroup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtCollectionSysdbGroup.Unmarshal(m, b)
 }
 func (m *MdtCollectionSysdbGroup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtCollectionSysdbGroup.Marshal(b, m, deterministic)
 }
-func (m *MdtCollectionSysdbGroup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtCollectionSysdbGroup.Merge(m, src)
+func (dst *MdtCollectionSysdbGroup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtCollectionSysdbGroup.Merge(dst, src)
 }
 func (m *MdtCollectionSysdbGroup) XXX_Size() int {
 	return xxx_messageInfo_MdtCollectionSysdbGroup.Size(m)
@@ -593,17 +585,16 @@ func (m *MdtCollectionGroup) Reset()         { *m = MdtCollectionGroup{} }
 func (m *MdtCollectionGroup) String() string { return proto.CompactTextString(m) }
 func (*MdtCollectionGroup) ProtoMessage()    {}
 func (*MdtCollectionGroup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{6}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{6}
 }
-
 func (m *MdtCollectionGroup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtCollectionGroup.Unmarshal(m, b)
 }
 func (m *MdtCollectionGroup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtCollectionGroup.Marshal(b, m, deterministic)
 }
-func (m *MdtCollectionGroup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtCollectionGroup.Merge(m, src)
+func (dst *MdtCollectionGroup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtCollectionGroup.Merge(dst, src)
 }
 func (m *MdtCollectionGroup) XXX_Size() int {
 	return xxx_messageInfo_MdtCollectionGroup.Size(m)
@@ -776,17 +767,16 @@ func (m *MdtDestination) Reset()         { *m = MdtDestination{} }
 func (m *MdtDestination) String() string { return proto.CompactTextString(m) }
 func (*MdtDestination) ProtoMessage()    {}
 func (*MdtDestination) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{7}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{7}
 }
-
 func (m *MdtDestination) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtDestination.Unmarshal(m, b)
 }
 func (m *MdtDestination) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtDestination.Marshal(b, m, deterministic)
 }
-func (m *MdtDestination) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtDestination.Merge(m, src)
+func (dst *MdtDestination) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtDestination.Merge(dst, src)
 }
 func (m *MdtDestination) XXX_Size() int {
 	return xxx_messageInfo_MdtDestination.Size(m)
@@ -924,17 +914,16 @@ func (m *MdtDestinationDetail) Reset()         { *m = MdtDestinationDetail{} }
 func (m *MdtDestinationDetail) String() string { return proto.CompactTextString(m) }
 func (*MdtDestinationDetail) ProtoMessage()    {}
 func (*MdtDestinationDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d11db6a3ca922731, []int{8}
+	return fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29, []int{8}
 }
-
 func (m *MdtDestinationDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MdtDestinationDetail.Unmarshal(m, b)
 }
 func (m *MdtDestinationDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MdtDestinationDetail.Marshal(b, m, deterministic)
 }
-func (m *MdtDestinationDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MdtDestinationDetail.Merge(m, src)
+func (dst *MdtDestinationDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MdtDestinationDetail.Merge(dst, src)
 }
 func (m *MdtDestinationDetail) XXX_Size() int {
 	return xxx_messageInfo_MdtDestinationDetail.Size(m)
@@ -971,9 +960,11 @@ func init() {
 	proto.RegisterType((*MdtDestinationDetail)(nil), "cisco_ios_xr_telemetry_model_driven_oper.telemetry_model_driven.destinations.destination.mdt_destination_detail")
 }
 
-func init() { proto.RegisterFile("mdt_destination_group_detail.proto", fileDescriptor_d11db6a3ca922731) }
+func init() {
+	proto.RegisterFile("mdt_destination_group_detail.proto", fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29)
+}
 
-var fileDescriptor_d11db6a3ca922731 = []byte{
+var fileDescriptor_mdt_destination_group_detail_b7f3e54db96e1a29 = []byte{
 	// 1342 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x57, 0xcd, 0x6e, 0x1b, 0xb7,
 	0x16, 0xc6, 0xd8, 0xb2, 0x64, 0x1d, 0x59, 0x92, 0xcd, 0xd8, 0xd6, 0xd8, 0xc9, 0xbd, 0x70, 0x84,

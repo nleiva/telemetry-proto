@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv4_oper_rib_vrfs_vrf_afs_af_safs_saf_ip_rib_route_table_names_ip_rib_route_table_name_opaques_opaque
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Informaton of an opaque data
 type RibEdmOpaqueObj_KEYS struct {
@@ -41,17 +39,16 @@ func (m *RibEdmOpaqueObj_KEYS) Reset()         { *m = RibEdmOpaqueObj_KEYS{} }
 func (m *RibEdmOpaqueObj_KEYS) String() string { return proto.CompactTextString(m) }
 func (*RibEdmOpaqueObj_KEYS) ProtoMessage()    {}
 func (*RibEdmOpaqueObj_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_14e185dab9eb515e, []int{0}
+	return fileDescriptor_rib_edm_opaque_obj_c5ab2a4a517faa00, []int{0}
 }
-
 func (m *RibEdmOpaqueObj_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmOpaqueObj_KEYS.Unmarshal(m, b)
 }
 func (m *RibEdmOpaqueObj_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmOpaqueObj_KEYS.Marshal(b, m, deterministic)
 }
-func (m *RibEdmOpaqueObj_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmOpaqueObj_KEYS.Merge(m, src)
+func (dst *RibEdmOpaqueObj_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmOpaqueObj_KEYS.Merge(dst, src)
 }
 func (m *RibEdmOpaqueObj_KEYS) XXX_Size() int {
 	return xxx_messageInfo_RibEdmOpaqueObj_KEYS.Size(m)
@@ -144,17 +141,16 @@ func (m *RibEdmOpaqueObj) Reset()         { *m = RibEdmOpaqueObj{} }
 func (m *RibEdmOpaqueObj) String() string { return proto.CompactTextString(m) }
 func (*RibEdmOpaqueObj) ProtoMessage()    {}
 func (*RibEdmOpaqueObj) Descriptor() ([]byte, []int) {
-	return fileDescriptor_14e185dab9eb515e, []int{1}
+	return fileDescriptor_rib_edm_opaque_obj_c5ab2a4a517faa00, []int{1}
 }
-
 func (m *RibEdmOpaqueObj) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmOpaqueObj.Unmarshal(m, b)
 }
 func (m *RibEdmOpaqueObj) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmOpaqueObj.Marshal(b, m, deterministic)
 }
-func (m *RibEdmOpaqueObj) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmOpaqueObj.Merge(m, src)
+func (dst *RibEdmOpaqueObj) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmOpaqueObj.Merge(dst, src)
 }
 func (m *RibEdmOpaqueObj) XXX_Size() int {
 	return xxx_messageInfo_RibEdmOpaqueObj.Size(m)
@@ -184,9 +180,11 @@ func init() {
 	proto.RegisterType((*RibEdmOpaqueObj)(nil), "cisco_ios_xr_ip_rib_ipv4_oper.rib.vrfs.vrf.afs.af.safs.saf.ip_rib_route_table_names.ip_rib_route_table_name.opaques.opaque.rib_edm_opaque_obj")
 }
 
-func init() { proto.RegisterFile("rib_edm_opaque_obj.proto", fileDescriptor_14e185dab9eb515e) }
+func init() {
+	proto.RegisterFile("rib_edm_opaque_obj.proto", fileDescriptor_rib_edm_opaque_obj_c5ab2a4a517faa00)
+}
 
-var fileDescriptor_14e185dab9eb515e = []byte{
+var fileDescriptor_rib_edm_opaque_obj_c5ab2a4a517faa00 = []byte{
 	// 343 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x91, 0xcb, 0x6f, 0xe2, 0x30,
 	0x10, 0x87, 0x95, 0x85, 0xe5, 0x61, 0x01, 0x8b, 0x7c, 0xc1, 0xdc, 0x10, 0xab, 0xdd, 0xe6, 0xe4,

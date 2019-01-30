@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_acl_oper_ipv6_acl_and_prefix_list_oor_details
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Oor deatil config BAG
 type Ipv6AclEdmOorDetail_KEYS struct {
@@ -31,17 +29,16 @@ func (m *Ipv6AclEdmOorDetail_KEYS) Reset()         { *m = Ipv6AclEdmOorDetail_KE
 func (m *Ipv6AclEdmOorDetail_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclEdmOorDetail_KEYS) ProtoMessage()    {}
 func (*Ipv6AclEdmOorDetail_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_87905997d003422c, []int{0}
+	return fileDescriptor_ipv6_acl_edm_oor_detail_8e473a938cb849ae, []int{0}
 }
-
 func (m *Ipv6AclEdmOorDetail_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6AclEdmOorDetail_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclEdmOorDetail_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclEdmOorDetail_KEYS.Merge(m, src)
+func (dst *Ipv6AclEdmOorDetail_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclEdmOorDetail_KEYS.Merge(dst, src)
 }
 func (m *Ipv6AclEdmOorDetail_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail_KEYS.Size(m)
@@ -78,17 +75,16 @@ func (m *Ipv6AclEdmOorDetail) Reset()         { *m = Ipv6AclEdmOorDetail{} }
 func (m *Ipv6AclEdmOorDetail) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclEdmOorDetail) ProtoMessage()    {}
 func (*Ipv6AclEdmOorDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_87905997d003422c, []int{1}
+	return fileDescriptor_ipv6_acl_edm_oor_detail_8e473a938cb849ae, []int{1}
 }
-
 func (m *Ipv6AclEdmOorDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail.Unmarshal(m, b)
 }
 func (m *Ipv6AclEdmOorDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclEdmOorDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclEdmOorDetail.Merge(m, src)
+func (dst *Ipv6AclEdmOorDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclEdmOorDetail.Merge(dst, src)
 }
 func (m *Ipv6AclEdmOorDetail) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclEdmOorDetail.Size(m)
@@ -160,9 +156,11 @@ func init() {
 	proto.RegisterType((*Ipv6AclEdmOorDetail)(nil), "cisco_ios_xr_ipv6_acl_oper.ipv6_acl_and_prefix_list.oor.details.ipv6_acl_edm_oor_detail")
 }
 
-func init() { proto.RegisterFile("ipv6_acl_edm_oor_detail.proto", fileDescriptor_87905997d003422c) }
+func init() {
+	proto.RegisterFile("ipv6_acl_edm_oor_detail.proto", fileDescriptor_ipv6_acl_edm_oor_detail_8e473a938cb849ae)
+}
 
-var fileDescriptor_87905997d003422c = []byte{
+var fileDescriptor_ipv6_acl_edm_oor_detail_8e473a938cb849ae = []byte{
 	// 288 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x92, 0x3d, 0x4b, 0xc4, 0x40,
 	0x10, 0x86, 0x11, 0xc4, 0x62, 0xc1, 0x26, 0xcd, 0xad, 0x1f, 0x27, 0xc7, 0xa1, 0x60, 0x95, 0xc2,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_correlator_buffer_status
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Correlator buffer usage information
 type SnmpCorrBufferInfoBag_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpCorrBufferInfoBag_KEYS) Reset()         { *m = SnmpCorrBufferInfoBa
 func (m *SnmpCorrBufferInfoBag_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpCorrBufferInfoBag_KEYS) ProtoMessage()    {}
 func (*SnmpCorrBufferInfoBag_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_182e6f90b53c1cb2, []int{0}
+	return fileDescriptor_snmp_corr_buffer_info_bag_743297b60e49bbaa, []int{0}
 }
-
 func (m *SnmpCorrBufferInfoBag_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpCorrBufferInfoBag_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpCorrBufferInfoBag_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpCorrBufferInfoBag_KEYS.Merge(m, src)
+func (dst *SnmpCorrBufferInfoBag_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpCorrBufferInfoBag_KEYS.Merge(dst, src)
 }
 func (m *SnmpCorrBufferInfoBag_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag_KEYS.Size(m)
@@ -66,17 +63,16 @@ func (m *SnmpCorrBufferInfoBag) Reset()         { *m = SnmpCorrBufferInfoBag{} }
 func (m *SnmpCorrBufferInfoBag) String() string { return proto.CompactTextString(m) }
 func (*SnmpCorrBufferInfoBag) ProtoMessage()    {}
 func (*SnmpCorrBufferInfoBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_182e6f90b53c1cb2, []int{1}
+	return fileDescriptor_snmp_corr_buffer_info_bag_743297b60e49bbaa, []int{1}
 }
-
 func (m *SnmpCorrBufferInfoBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag.Unmarshal(m, b)
 }
 func (m *SnmpCorrBufferInfoBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag.Marshal(b, m, deterministic)
 }
-func (m *SnmpCorrBufferInfoBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpCorrBufferInfoBag.Merge(m, src)
+func (dst *SnmpCorrBufferInfoBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpCorrBufferInfoBag.Merge(dst, src)
 }
 func (m *SnmpCorrBufferInfoBag) XXX_Size() int {
 	return xxx_messageInfo_SnmpCorrBufferInfoBag.Size(m)
@@ -106,9 +102,11 @@ func init() {
 	proto.RegisterType((*SnmpCorrBufferInfoBag)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.correlator.buffer_status.snmp_corr_buffer_info_bag")
 }
 
-func init() { proto.RegisterFile("snmp_corr_buffer_info_bag.proto", fileDescriptor_182e6f90b53c1cb2) }
+func init() {
+	proto.RegisterFile("snmp_corr_buffer_info_bag.proto", fileDescriptor_snmp_corr_buffer_info_bag_743297b60e49bbaa)
+}
 
-var fileDescriptor_182e6f90b53c1cb2 = []byte{
+var fileDescriptor_snmp_corr_buffer_info_bag_743297b60e49bbaa = []byte{
 	// 178 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0xcf, 0x3f, 0xcb, 0xc2, 0x30,
 	0x10, 0x06, 0x70, 0xde, 0xe5, 0x1d, 0xe2, 0x3f, 0xe8, 0xa4, 0x8b, 0xd6, 0x2e, 0x3a, 0x65, 0xb0,

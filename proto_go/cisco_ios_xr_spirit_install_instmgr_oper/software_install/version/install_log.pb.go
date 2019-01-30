@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_spirit_install_instmgr_oper_software_install_version
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Install Log
 type InstallLog_KEYS struct {
@@ -31,17 +29,16 @@ func (m *InstallLog_KEYS) Reset()         { *m = InstallLog_KEYS{} }
 func (m *InstallLog_KEYS) String() string { return proto.CompactTextString(m) }
 func (*InstallLog_KEYS) ProtoMessage()    {}
 func (*InstallLog_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_fa0e50cc9d3e98eb, []int{0}
+	return fileDescriptor_install_log_a1acffca3072a233, []int{0}
 }
-
 func (m *InstallLog_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstallLog_KEYS.Unmarshal(m, b)
 }
 func (m *InstallLog_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstallLog_KEYS.Marshal(b, m, deterministic)
 }
-func (m *InstallLog_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstallLog_KEYS.Merge(m, src)
+func (dst *InstallLog_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstallLog_KEYS.Merge(dst, src)
 }
 func (m *InstallLog_KEYS) XXX_Size() int {
 	return xxx_messageInfo_InstallLog_KEYS.Size(m)
@@ -64,17 +61,16 @@ func (m *InstallLog) Reset()         { *m = InstallLog{} }
 func (m *InstallLog) String() string { return proto.CompactTextString(m) }
 func (*InstallLog) ProtoMessage()    {}
 func (*InstallLog) Descriptor() ([]byte, []int) {
-	return fileDescriptor_fa0e50cc9d3e98eb, []int{1}
+	return fileDescriptor_install_log_a1acffca3072a233, []int{1}
 }
-
 func (m *InstallLog) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstallLog.Unmarshal(m, b)
 }
 func (m *InstallLog) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstallLog.Marshal(b, m, deterministic)
 }
-func (m *InstallLog) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstallLog.Merge(m, src)
+func (dst *InstallLog) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstallLog.Merge(dst, src)
 }
 func (m *InstallLog) XXX_Size() int {
 	return xxx_messageInfo_InstallLog.Size(m)
@@ -97,9 +93,9 @@ func init() {
 	proto.RegisterType((*InstallLog)(nil), "cisco_ios_xr_spirit_install_instmgr_oper.software_install.version.install_log")
 }
 
-func init() { proto.RegisterFile("install_log.proto", fileDescriptor_fa0e50cc9d3e98eb) }
+func init() { proto.RegisterFile("install_log.proto", fileDescriptor_install_log_a1acffca3072a233) }
 
-var fileDescriptor_fa0e50cc9d3e98eb = []byte{
+var fileDescriptor_install_log_a1acffca3072a233 = []byte{
 	// 134 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0xcc, 0xcc, 0x2b, 0x2e,
 	0x49, 0xcc, 0xc9, 0x89, 0xcf, 0xc9, 0x4f, 0xd7, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x72, 0x4c,

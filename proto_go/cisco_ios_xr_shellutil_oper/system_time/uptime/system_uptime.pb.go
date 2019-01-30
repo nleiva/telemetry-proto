@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_shellutil_oper_system_time_uptime
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // System uptime
 type SystemUptime_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SystemUptime_KEYS) Reset()         { *m = SystemUptime_KEYS{} }
 func (m *SystemUptime_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SystemUptime_KEYS) ProtoMessage()    {}
 func (*SystemUptime_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab9e335b6d31486f, []int{0}
+	return fileDescriptor_system_uptime_6da7d6b349cc41a5, []int{0}
 }
-
 func (m *SystemUptime_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SystemUptime_KEYS.Unmarshal(m, b)
 }
 func (m *SystemUptime_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SystemUptime_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SystemUptime_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SystemUptime_KEYS.Merge(m, src)
+func (dst *SystemUptime_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SystemUptime_KEYS.Merge(dst, src)
 }
 func (m *SystemUptime_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SystemUptime_KEYS.Size(m)
@@ -66,17 +63,16 @@ func (m *SystemUptime) Reset()         { *m = SystemUptime{} }
 func (m *SystemUptime) String() string { return proto.CompactTextString(m) }
 func (*SystemUptime) ProtoMessage()    {}
 func (*SystemUptime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ab9e335b6d31486f, []int{1}
+	return fileDescriptor_system_uptime_6da7d6b349cc41a5, []int{1}
 }
-
 func (m *SystemUptime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SystemUptime.Unmarshal(m, b)
 }
 func (m *SystemUptime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SystemUptime.Marshal(b, m, deterministic)
 }
-func (m *SystemUptime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SystemUptime.Merge(m, src)
+func (dst *SystemUptime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SystemUptime.Merge(dst, src)
 }
 func (m *SystemUptime) XXX_Size() int {
 	return xxx_messageInfo_SystemUptime.Size(m)
@@ -106,9 +102,9 @@ func init() {
 	proto.RegisterType((*SystemUptime)(nil), "cisco_ios_xr_shellutil_oper.system_time.uptime.system_uptime")
 }
 
-func init() { proto.RegisterFile("system_uptime.proto", fileDescriptor_ab9e335b6d31486f) }
+func init() { proto.RegisterFile("system_uptime.proto", fileDescriptor_system_uptime_6da7d6b349cc41a5) }
 
-var fileDescriptor_ab9e335b6d31486f = []byte{
+var fileDescriptor_system_uptime_6da7d6b349cc41a5 = []byte{
 	// 139 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x2e, 0xae, 0x2c, 0x2e,
 	0x49, 0xcd, 0x8d, 0x2f, 0x2d, 0x28, 0xc9, 0xcc, 0x4d, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17,

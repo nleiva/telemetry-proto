@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_nd_oper_ipv6_node_discovery_nodes_node_bundle_interfaces_bundle_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Detailed Info of ND IPv6 Interface entry
 type Ipv6NdIfEntry_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6NdIfEntry_KEYS) Reset()         { *m = Ipv6NdIfEntry_KEYS{} }
 func (m *Ipv6NdIfEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdIfEntry_KEYS) ProtoMessage()    {}
 func (*Ipv6NdIfEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_abee8767647ed8d3, []int{0}
+	return fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b, []int{0}
 }
-
 func (m *Ipv6NdIfEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdIfEntry_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6NdIfEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdIfEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdIfEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdIfEntry_KEYS.Merge(m, src)
+func (dst *Ipv6NdIfEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdIfEntry_KEYS.Merge(dst, src)
 }
 func (m *Ipv6NdIfEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdIfEntry_KEYS.Size(m)
@@ -108,17 +105,16 @@ func (m *Ipv6NdIfEntry) Reset()         { *m = Ipv6NdIfEntry{} }
 func (m *Ipv6NdIfEntry) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdIfEntry) ProtoMessage()    {}
 func (*Ipv6NdIfEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_abee8767647ed8d3, []int{1}
+	return fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b, []int{1}
 }
-
 func (m *Ipv6NdIfEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdIfEntry.Unmarshal(m, b)
 }
 func (m *Ipv6NdIfEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdIfEntry.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdIfEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdIfEntry.Merge(m, src)
+func (dst *Ipv6NdIfEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdIfEntry.Merge(dst, src)
 }
 func (m *Ipv6NdIfEntry) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdIfEntry.Size(m)
@@ -281,17 +277,16 @@ func (m *Ipv6NdIfParams) Reset()         { *m = Ipv6NdIfParams{} }
 func (m *Ipv6NdIfParams) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdIfParams) ProtoMessage()    {}
 func (*Ipv6NdIfParams) Descriptor() ([]byte, []int) {
-	return fileDescriptor_abee8767647ed8d3, []int{2}
+	return fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b, []int{2}
 }
-
 func (m *Ipv6NdIfParams) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdIfParams.Unmarshal(m, b)
 }
 func (m *Ipv6NdIfParams) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdIfParams.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdIfParams) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdIfParams.Merge(m, src)
+func (dst *Ipv6NdIfParams) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdIfParams.Merge(dst, src)
 }
 func (m *Ipv6NdIfParams) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdIfParams.Size(m)
@@ -441,17 +436,16 @@ func (m *Ipv6NdAddr) Reset()         { *m = Ipv6NdAddr{} }
 func (m *Ipv6NdAddr) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdAddr) ProtoMessage()    {}
 func (*Ipv6NdAddr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_abee8767647ed8d3, []int{3}
+	return fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b, []int{3}
 }
-
 func (m *Ipv6NdAddr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdAddr.Unmarshal(m, b)
 }
 func (m *Ipv6NdAddr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdAddr.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdAddr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdAddr.Merge(m, src)
+func (dst *Ipv6NdAddr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdAddr.Merge(dst, src)
 }
 func (m *Ipv6NdAddr) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdAddr.Size(m)
@@ -484,17 +478,16 @@ func (m *Ipv6NdGspnode) Reset()         { *m = Ipv6NdGspnode{} }
 func (m *Ipv6NdGspnode) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdGspnode) ProtoMessage()    {}
 func (*Ipv6NdGspnode) Descriptor() ([]byte, []int) {
-	return fileDescriptor_abee8767647ed8d3, []int{4}
+	return fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b, []int{4}
 }
-
 func (m *Ipv6NdGspnode) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdGspnode.Unmarshal(m, b)
 }
 func (m *Ipv6NdGspnode) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdGspnode.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdGspnode) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdGspnode.Merge(m, src)
+func (dst *Ipv6NdGspnode) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdGspnode.Merge(dst, src)
 }
 func (m *Ipv6NdGspnode) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdGspnode.Size(m)
@@ -527,9 +520,11 @@ func init() {
 	proto.RegisterType((*Ipv6NdGspnode)(nil), "cisco_ios_xr_ipv6_nd_oper.ipv6_node_discovery.nodes.node.bundle_interfaces.bundle_interface.ipv6_nd_gspnode")
 }
 
-func init() { proto.RegisterFile("ipv6_nd_if_entry.proto", fileDescriptor_abee8767647ed8d3) }
+func init() {
+	proto.RegisterFile("ipv6_nd_if_entry.proto", fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b)
+}
 
-var fileDescriptor_abee8767647ed8d3 = []byte{
+var fileDescriptor_ipv6_nd_if_entry_21927ea4d3fda74b = []byte{
 	// 926 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x56, 0x5b, 0x6f, 0x1b, 0x45,
 	0x14, 0xd6, 0x12, 0x9a, 0xcb, 0xb1, 0xd7, 0x71, 0x26, 0x97, 0x6e, 0xe0, 0x01, 0x63, 0x0a, 0xb2,

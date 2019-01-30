@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_nd_oper_ipv6_node_discovery_nodes_node_nd_virtual_routers_nd_virtual_router
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Detailed Info of ND IPv6 Virtual Router entry
 type Ipv6NdVrEntry_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6NdVrEntry_KEYS) Reset()         { *m = Ipv6NdVrEntry_KEYS{} }
 func (m *Ipv6NdVrEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdVrEntry_KEYS) ProtoMessage()    {}
 func (*Ipv6NdVrEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2a4a3a96b19770d7, []int{0}
+	return fileDescriptor_ipv6_nd_vr_entry_673f4afaa2a098c9, []int{0}
 }
-
 func (m *Ipv6NdVrEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdVrEntry_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6NdVrEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdVrEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdVrEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdVrEntry_KEYS.Merge(m, src)
+func (dst *Ipv6NdVrEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdVrEntry_KEYS.Merge(dst, src)
 }
 func (m *Ipv6NdVrEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdVrEntry_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *Ipv6NdVrEntry) Reset()         { *m = Ipv6NdVrEntry{} }
 func (m *Ipv6NdVrEntry) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdVrEntry) ProtoMessage()    {}
 func (*Ipv6NdVrEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2a4a3a96b19770d7, []int{1}
+	return fileDescriptor_ipv6_nd_vr_entry_673f4afaa2a098c9, []int{1}
 }
-
 func (m *Ipv6NdVrEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdVrEntry.Unmarshal(m, b)
 }
 func (m *Ipv6NdVrEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdVrEntry.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdVrEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdVrEntry.Merge(m, src)
+func (dst *Ipv6NdVrEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdVrEntry.Merge(dst, src)
 }
 func (m *Ipv6NdVrEntry) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdVrEntry.Size(m)
@@ -175,17 +171,16 @@ func (m *Ipv6NdAddr) Reset()         { *m = Ipv6NdAddr{} }
 func (m *Ipv6NdAddr) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdAddr) ProtoMessage()    {}
 func (*Ipv6NdAddr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2a4a3a96b19770d7, []int{2}
+	return fileDescriptor_ipv6_nd_vr_entry_673f4afaa2a098c9, []int{2}
 }
-
 func (m *Ipv6NdAddr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdAddr.Unmarshal(m, b)
 }
 func (m *Ipv6NdAddr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdAddr.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdAddr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdAddr.Merge(m, src)
+func (dst *Ipv6NdAddr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdAddr.Merge(dst, src)
 }
 func (m *Ipv6NdAddr) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdAddr.Size(m)
@@ -209,9 +204,11 @@ func init() {
 	proto.RegisterType((*Ipv6NdAddr)(nil), "cisco_ios_xr_ipv6_nd_oper.ipv6_node_discovery.nodes.node.nd_virtual_routers.nd_virtual_router.ipv6_nd_addr")
 }
 
-func init() { proto.RegisterFile("ipv6_nd_vr_entry.proto", fileDescriptor_2a4a3a96b19770d7) }
+func init() {
+	proto.RegisterFile("ipv6_nd_vr_entry.proto", fileDescriptor_ipv6_nd_vr_entry_673f4afaa2a098c9)
+}
 
-var fileDescriptor_2a4a3a96b19770d7 = []byte{
+var fileDescriptor_ipv6_nd_vr_entry_673f4afaa2a098c9 = []byte{
 	// 356 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x92, 0xcf, 0x4a, 0x2b, 0x31,
 	0x14, 0xc6, 0x99, 0x5b, 0xee, 0xbd, 0x36, 0xed, 0x48, 0x89, 0x5a, 0x02, 0x6e, 0xa6, 0x05, 0xa1,

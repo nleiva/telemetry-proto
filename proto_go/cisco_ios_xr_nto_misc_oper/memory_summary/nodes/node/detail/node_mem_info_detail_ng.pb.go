@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_nto_misc_oper_memory_summary_nodes_node_detail
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Detail Node memory information
 type NodeMemInfoDetailNg_KEYS struct {
@@ -32,17 +30,16 @@ func (m *NodeMemInfoDetailNg_KEYS) Reset()         { *m = NodeMemInfoDetailNg_KE
 func (m *NodeMemInfoDetailNg_KEYS) String() string { return proto.CompactTextString(m) }
 func (*NodeMemInfoDetailNg_KEYS) ProtoMessage()    {}
 func (*NodeMemInfoDetailNg_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc54f1ab1e165123, []int{0}
+	return fileDescriptor_node_mem_info_detail_ng_6448bc574af39f5d, []int{0}
 }
-
 func (m *NodeMemInfoDetailNg_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NodeMemInfoDetailNg_KEYS.Unmarshal(m, b)
 }
 func (m *NodeMemInfoDetailNg_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NodeMemInfoDetailNg_KEYS.Marshal(b, m, deterministic)
 }
-func (m *NodeMemInfoDetailNg_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NodeMemInfoDetailNg_KEYS.Merge(m, src)
+func (dst *NodeMemInfoDetailNg_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NodeMemInfoDetailNg_KEYS.Merge(dst, src)
 }
 func (m *NodeMemInfoDetailNg_KEYS) XXX_Size() int {
 	return xxx_messageInfo_NodeMemInfoDetailNg_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *NodeMemInfoDetailNg) Reset()         { *m = NodeMemInfoDetailNg{} }
 func (m *NodeMemInfoDetailNg) String() string { return proto.CompactTextString(m) }
 func (*NodeMemInfoDetailNg) ProtoMessage()    {}
 func (*NodeMemInfoDetailNg) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cc54f1ab1e165123, []int{1}
+	return fileDescriptor_node_mem_info_detail_ng_6448bc574af39f5d, []int{1}
 }
-
 func (m *NodeMemInfoDetailNg) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NodeMemInfoDetailNg.Unmarshal(m, b)
 }
 func (m *NodeMemInfoDetailNg) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NodeMemInfoDetailNg.Marshal(b, m, deterministic)
 }
-func (m *NodeMemInfoDetailNg) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NodeMemInfoDetailNg.Merge(m, src)
+func (dst *NodeMemInfoDetailNg) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NodeMemInfoDetailNg.Merge(dst, src)
 }
 func (m *NodeMemInfoDetailNg) XXX_Size() int {
 	return xxx_messageInfo_NodeMemInfoDetailNg.Size(m)
@@ -186,9 +182,11 @@ func init() {
 	proto.RegisterType((*NodeMemInfoDetailNg)(nil), "cisco_ios_xr_nto_misc_oper.memory_summary.nodes.node.detail.node_mem_info_detail_ng")
 }
 
-func init() { proto.RegisterFile("node_mem_info_detail_ng.proto", fileDescriptor_cc54f1ab1e165123) }
+func init() {
+	proto.RegisterFile("node_mem_info_detail_ng.proto", fileDescriptor_node_mem_info_detail_ng_6448bc574af39f5d)
+}
 
-var fileDescriptor_cc54f1ab1e165123 = []byte{
+var fileDescriptor_node_mem_info_detail_ng_6448bc574af39f5d = []byte{
 	// 345 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x92, 0xcf, 0x4a, 0xf3, 0x40,
 	0x14, 0xc5, 0x09, 0xdf, 0x87, 0x34, 0xa3, 0xb5, 0x18, 0x94, 0x06, 0x6a, 0xa1, 0x76, 0x63, 0x71,

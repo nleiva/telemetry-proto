@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_vrfs_vrf_bad_checksums_bad_checksum
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 Bad Checksum
 type Ospfv3ShBadChecksum_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3ShBadChecksum_KEYS) Reset()         { *m = Ospfv3ShBadChecksum_KE
 func (m *Ospfv3ShBadChecksum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShBadChecksum_KEYS) ProtoMessage()    {}
 func (*Ospfv3ShBadChecksum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_560d5f238b8b8509, []int{0}
+	return fileDescriptor_ospfv3_sh_bad_checksum_7a5490714032d160, []int{0}
 }
-
 func (m *Ospfv3ShBadChecksum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShBadChecksum_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3ShBadChecksum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShBadChecksum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShBadChecksum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShBadChecksum_KEYS.Merge(m, src)
+func (dst *Ospfv3ShBadChecksum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShBadChecksum_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3ShBadChecksum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShBadChecksum_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *Ospfv3ShBadChecksum) Reset()         { *m = Ospfv3ShBadChecksum{} }
 func (m *Ospfv3ShBadChecksum) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShBadChecksum) ProtoMessage()    {}
 func (*Ospfv3ShBadChecksum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_560d5f238b8b8509, []int{1}
+	return fileDescriptor_ospfv3_sh_bad_checksum_7a5490714032d160, []int{1}
 }
-
 func (m *Ospfv3ShBadChecksum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShBadChecksum.Unmarshal(m, b)
 }
 func (m *Ospfv3ShBadChecksum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShBadChecksum.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShBadChecksum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShBadChecksum.Merge(m, src)
+func (dst *Ospfv3ShBadChecksum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShBadChecksum.Merge(dst, src)
 }
 func (m *Ospfv3ShBadChecksum) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShBadChecksum.Size(m)
@@ -158,17 +154,16 @@ func (m *Ospfv3EdmTime) Reset()         { *m = Ospfv3EdmTime{} }
 func (m *Ospfv3EdmTime) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTime) ProtoMessage()    {}
 func (*Ospfv3EdmTime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_560d5f238b8b8509, []int{2}
+	return fileDescriptor_ospfv3_sh_bad_checksum_7a5490714032d160, []int{2}
 }
-
 func (m *Ospfv3EdmTime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTime.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTime.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTime.Merge(m, src)
+func (dst *Ospfv3EdmTime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTime.Merge(dst, src)
 }
 func (m *Ospfv3EdmTime) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTime.Size(m)
@@ -199,9 +194,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmTime)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.vrfs.vrf.bad_checksums.bad_checksum.ospfv3_edm_time")
 }
 
-func init() { proto.RegisterFile("ospfv3_sh_bad_checksum.proto", fileDescriptor_560d5f238b8b8509) }
+func init() {
+	proto.RegisterFile("ospfv3_sh_bad_checksum.proto", fileDescriptor_ospfv3_sh_bad_checksum_7a5490714032d160)
+}
 
-var fileDescriptor_560d5f238b8b8509 = []byte{
+var fileDescriptor_ospfv3_sh_bad_checksum_7a5490714032d160 = []byte{
 	// 322 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x92, 0x41, 0x4b, 0xc3, 0x30,
 	0x14, 0xc7, 0xc9, 0x84, 0xe9, 0xb2, 0x0e, 0xb5, 0x87, 0x51, 0x51, 0xa4, 0xce, 0x4b, 0x41, 0xe8,

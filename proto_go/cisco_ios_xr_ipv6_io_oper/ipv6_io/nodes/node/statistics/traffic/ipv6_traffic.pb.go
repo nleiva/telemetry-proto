@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_io_oper_ipv6_io_nodes_node_statistics_traffic
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 and ICMPv6 Traffic Information
 type Ipv6Traffic_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ipv6Traffic_KEYS) Reset()         { *m = Ipv6Traffic_KEYS{} }
 func (m *Ipv6Traffic_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Traffic_KEYS) ProtoMessage()    {}
 func (*Ipv6Traffic_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c086efc23775588e, []int{0}
+	return fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4, []int{0}
 }
-
 func (m *Ipv6Traffic_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Traffic_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Traffic_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Traffic_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Traffic_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Traffic_KEYS.Merge(m, src)
+func (dst *Ipv6Traffic_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Traffic_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Traffic_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Traffic_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *Ipv6Traffic) Reset()         { *m = Ipv6Traffic{} }
 func (m *Ipv6Traffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Traffic) ProtoMessage()    {}
 func (*Ipv6Traffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c086efc23775588e, []int{1}
+	return fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4, []int{1}
 }
-
 func (m *Ipv6Traffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Traffic.Unmarshal(m, b)
 }
 func (m *Ipv6Traffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Traffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Traffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Traffic.Merge(m, src)
+func (dst *Ipv6Traffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Traffic.Merge(dst, src)
 }
 func (m *Ipv6Traffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Traffic.Size(m)
@@ -191,17 +187,16 @@ func (m *Ipv6IoTraffic) Reset()         { *m = Ipv6IoTraffic{} }
 func (m *Ipv6IoTraffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv6IoTraffic) ProtoMessage()    {}
 func (*Ipv6IoTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c086efc23775588e, []int{2}
+	return fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4, []int{2}
 }
-
 func (m *Ipv6IoTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6IoTraffic.Unmarshal(m, b)
 }
 func (m *Ipv6IoTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6IoTraffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv6IoTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6IoTraffic.Merge(m, src)
+func (dst *Ipv6IoTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6IoTraffic.Merge(dst, src)
 }
 func (m *Ipv6IoTraffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv6IoTraffic.Size(m)
@@ -516,17 +511,16 @@ func (m *Ipv6IoIcmpTraffic) Reset()         { *m = Ipv6IoIcmpTraffic{} }
 func (m *Ipv6IoIcmpTraffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv6IoIcmpTraffic) ProtoMessage()    {}
 func (*Ipv6IoIcmpTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c086efc23775588e, []int{3}
+	return fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4, []int{3}
 }
-
 func (m *Ipv6IoIcmpTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6IoIcmpTraffic.Unmarshal(m, b)
 }
 func (m *Ipv6IoIcmpTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6IoIcmpTraffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv6IoIcmpTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6IoIcmpTraffic.Merge(m, src)
+func (dst *Ipv6IoIcmpTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6IoIcmpTraffic.Merge(dst, src)
 }
 func (m *Ipv6IoIcmpTraffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv6IoIcmpTraffic.Size(m)
@@ -834,17 +828,16 @@ func (m *Ipv6NdTraffic) Reset()         { *m = Ipv6NdTraffic{} }
 func (m *Ipv6NdTraffic) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdTraffic) ProtoMessage()    {}
 func (*Ipv6NdTraffic) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c086efc23775588e, []int{4}
+	return fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4, []int{4}
 }
-
 func (m *Ipv6NdTraffic) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdTraffic.Unmarshal(m, b)
 }
 func (m *Ipv6NdTraffic) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdTraffic.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdTraffic) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdTraffic.Merge(m, src)
+func (dst *Ipv6NdTraffic) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdTraffic.Merge(dst, src)
 }
 func (m *Ipv6NdTraffic) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdTraffic.Size(m)
@@ -933,9 +926,9 @@ func init() {
 	proto.RegisterType((*Ipv6NdTraffic)(nil), "cisco_ios_xr_ipv6_io_oper.ipv6_io.nodes.node.statistics.traffic.ipv6_nd_traffic")
 }
 
-func init() { proto.RegisterFile("ipv6_traffic.proto", fileDescriptor_c086efc23775588e) }
+func init() { proto.RegisterFile("ipv6_traffic.proto", fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4) }
 
-var fileDescriptor_c086efc23775588e = []byte{
+var fileDescriptor_ipv6_traffic_aa4ba22d2ae918d4 = []byte{
 	// 1611 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x58, 0x5d, 0x53, 0xdc, 0x36,
 	0x17, 0x1e, 0x12, 0x5e, 0x12, 0x94, 0x00, 0xc1, 0x7c, 0x99, 0x8f, 0x00, 0x59, 0x02, 0x61, 0x92,

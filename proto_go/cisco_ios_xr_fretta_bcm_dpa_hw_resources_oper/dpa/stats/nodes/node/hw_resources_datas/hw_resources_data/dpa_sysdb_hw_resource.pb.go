@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fretta_bcm_dpa_hw_resources_oper_dpa_stats_nodes_node_hw_resources_datas_hw_resources_data
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type DpaSysdbHwResource_KEYS struct {
 	NodeName             string   `protobuf:"bytes,1,opt,name=node_name,json=nodeName,proto3" json:"node_name,omitempty"`
@@ -32,17 +30,16 @@ func (m *DpaSysdbHwResource_KEYS) Reset()         { *m = DpaSysdbHwResource_KEYS
 func (m *DpaSysdbHwResource_KEYS) String() string { return proto.CompactTextString(m) }
 func (*DpaSysdbHwResource_KEYS) ProtoMessage()    {}
 func (*DpaSysdbHwResource_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b35bbb2e1f9511c, []int{0}
+	return fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c, []int{0}
 }
-
 func (m *DpaSysdbHwResource_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaSysdbHwResource_KEYS.Unmarshal(m, b)
 }
 func (m *DpaSysdbHwResource_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaSysdbHwResource_KEYS.Marshal(b, m, deterministic)
 }
-func (m *DpaSysdbHwResource_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaSysdbHwResource_KEYS.Merge(m, src)
+func (dst *DpaSysdbHwResource_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaSysdbHwResource_KEYS.Merge(dst, src)
 }
 func (m *DpaSysdbHwResource_KEYS) XXX_Size() int {
 	return xxx_messageInfo_DpaSysdbHwResource_KEYS.Size(m)
@@ -81,17 +78,16 @@ func (m *DpaSysdbHwResource) Reset()         { *m = DpaSysdbHwResource{} }
 func (m *DpaSysdbHwResource) String() string { return proto.CompactTextString(m) }
 func (*DpaSysdbHwResource) ProtoMessage()    {}
 func (*DpaSysdbHwResource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b35bbb2e1f9511c, []int{1}
+	return fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c, []int{1}
 }
-
 func (m *DpaSysdbHwResource) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaSysdbHwResource.Unmarshal(m, b)
 }
 func (m *DpaSysdbHwResource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaSysdbHwResource.Marshal(b, m, deterministic)
 }
-func (m *DpaSysdbHwResource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaSysdbHwResource.Merge(m, src)
+func (dst *DpaSysdbHwResource) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaSysdbHwResource.Merge(dst, src)
 }
 func (m *DpaSysdbHwResource) XXX_Size() int {
 	return xxx_messageInfo_DpaSysdbHwResource.Size(m)
@@ -144,17 +140,16 @@ func (m *DpaSysdbLtHwResource) Reset()         { *m = DpaSysdbLtHwResource{} }
 func (m *DpaSysdbLtHwResource) String() string { return proto.CompactTextString(m) }
 func (*DpaSysdbLtHwResource) ProtoMessage()    {}
 func (*DpaSysdbLtHwResource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b35bbb2e1f9511c, []int{2}
+	return fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c, []int{2}
 }
-
 func (m *DpaSysdbLtHwResource) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaSysdbLtHwResource.Unmarshal(m, b)
 }
 func (m *DpaSysdbLtHwResource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaSysdbLtHwResource.Marshal(b, m, deterministic)
 }
-func (m *DpaSysdbLtHwResource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaSysdbLtHwResource.Merge(m, src)
+func (dst *DpaSysdbLtHwResource) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaSysdbLtHwResource.Merge(dst, src)
 }
 func (m *DpaSysdbLtHwResource) XXX_Size() int {
 	return xxx_messageInfo_DpaSysdbLtHwResource.Size(m)
@@ -217,17 +212,16 @@ func (m *DpaSysdbNpuHwResource) Reset()         { *m = DpaSysdbNpuHwResource{} }
 func (m *DpaSysdbNpuHwResource) String() string { return proto.CompactTextString(m) }
 func (*DpaSysdbNpuHwResource) ProtoMessage()    {}
 func (*DpaSysdbNpuHwResource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b35bbb2e1f9511c, []int{3}
+	return fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c, []int{3}
 }
-
 func (m *DpaSysdbNpuHwResource) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_DpaSysdbNpuHwResource.Unmarshal(m, b)
 }
 func (m *DpaSysdbNpuHwResource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_DpaSysdbNpuHwResource.Marshal(b, m, deterministic)
 }
-func (m *DpaSysdbNpuHwResource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_DpaSysdbNpuHwResource.Merge(m, src)
+func (dst *DpaSysdbNpuHwResource) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_DpaSysdbNpuHwResource.Merge(dst, src)
 }
 func (m *DpaSysdbNpuHwResource) XXX_Size() int {
 	return xxx_messageInfo_DpaSysdbNpuHwResource.Size(m)
@@ -343,9 +337,11 @@ func init() {
 	proto.RegisterType((*DpaSysdbNpuHwResource)(nil), "cisco_ios_xr_fretta_bcm_dpa_hw_resources_oper.dpa.stats.nodes.node.hw_resources_datas.hw_resources_data.dpa_sysdb_npu_hw_resource")
 }
 
-func init() { proto.RegisterFile("dpa_sysdb_hw_resource.proto", fileDescriptor_6b35bbb2e1f9511c) }
+func init() {
+	proto.RegisterFile("dpa_sysdb_hw_resource.proto", fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c)
+}
 
-var fileDescriptor_6b35bbb2e1f9511c = []byte{
+var fileDescriptor_dpa_sysdb_hw_resource_6420017c06cdfa2c = []byte{
 	// 585 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x94, 0xcd, 0x6e, 0xd3, 0x4e,
 	0x14, 0xc5, 0xe5, 0xb6, 0x69, 0x93, 0x9b, 0xa4, 0xff, 0x3f, 0x53, 0x5a, 0x4d, 0x5a, 0x10, 0x51,

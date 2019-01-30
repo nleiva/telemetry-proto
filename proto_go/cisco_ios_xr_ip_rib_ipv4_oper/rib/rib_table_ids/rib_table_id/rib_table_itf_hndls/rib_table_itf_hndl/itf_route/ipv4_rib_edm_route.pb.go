@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv4_oper_rib_rib_table_ids_rib_table_id_rib_table_itf_hndls_rib_table_itf_hndl_itf_route
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information of a rib route head and rib proto route
 type Ipv4RibEdmRoute_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ipv4RibEdmRoute_KEYS) Reset()         { *m = Ipv4RibEdmRoute_KEYS{} }
 func (m *Ipv4RibEdmRoute_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmRoute_KEYS) ProtoMessage()    {}
 func (*Ipv4RibEdmRoute_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_44c1b2f42127243a, []int{0}
+	return fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d, []int{0}
 }
-
 func (m *Ipv4RibEdmRoute_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmRoute_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmRoute_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmRoute_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmRoute_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmRoute_KEYS.Merge(m, src)
+func (dst *Ipv4RibEdmRoute_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmRoute_KEYS.Merge(dst, src)
 }
 func (m *Ipv4RibEdmRoute_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmRoute_KEYS.Size(m)
@@ -152,17 +149,16 @@ func (m *Ipv4RibEdmRoute) Reset()         { *m = Ipv4RibEdmRoute{} }
 func (m *Ipv4RibEdmRoute) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmRoute) ProtoMessage()    {}
 func (*Ipv4RibEdmRoute) Descriptor() ([]byte, []int) {
-	return fileDescriptor_44c1b2f42127243a, []int{1}
+	return fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d, []int{1}
 }
-
 func (m *Ipv4RibEdmRoute) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmRoute.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmRoute) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmRoute.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmRoute) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmRoute.Merge(m, src)
+func (dst *Ipv4RibEdmRoute) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmRoute.Merge(dst, src)
 }
 func (m *Ipv4RibEdmRoute) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmRoute.Size(m)
@@ -417,17 +413,16 @@ func (m *Ipv4RibEdmPath) Reset()         { *m = Ipv4RibEdmPath{} }
 func (m *Ipv4RibEdmPath) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmPath) ProtoMessage()    {}
 func (*Ipv4RibEdmPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_44c1b2f42127243a, []int{2}
+	return fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d, []int{2}
 }
-
 func (m *Ipv4RibEdmPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmPath.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmPath.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmPath.Merge(m, src)
+func (dst *Ipv4RibEdmPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmPath.Merge(dst, src)
 }
 func (m *Ipv4RibEdmPath) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmPath.Size(m)
@@ -525,17 +520,16 @@ func (m *Ipv4RibEdmPathItem) Reset()         { *m = Ipv4RibEdmPathItem{} }
 func (m *Ipv4RibEdmPathItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmPathItem) ProtoMessage()    {}
 func (*Ipv4RibEdmPathItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_44c1b2f42127243a, []int{3}
+	return fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d, []int{3}
 }
-
 func (m *Ipv4RibEdmPathItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmPathItem.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmPathItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmPathItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmPathItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmPathItem.Merge(m, src)
+func (dst *Ipv4RibEdmPathItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmPathItem.Merge(dst, src)
 }
 func (m *Ipv4RibEdmPathItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmPathItem.Size(m)
@@ -832,17 +826,16 @@ func (m *RibEdmLocalLabel) Reset()         { *m = RibEdmLocalLabel{} }
 func (m *RibEdmLocalLabel) String() string { return proto.CompactTextString(m) }
 func (*RibEdmLocalLabel) ProtoMessage()    {}
 func (*RibEdmLocalLabel) Descriptor() ([]byte, []int) {
-	return fileDescriptor_44c1b2f42127243a, []int{4}
+	return fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d, []int{4}
 }
-
 func (m *RibEdmLocalLabel) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmLocalLabel.Unmarshal(m, b)
 }
 func (m *RibEdmLocalLabel) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmLocalLabel.Marshal(b, m, deterministic)
 }
-func (m *RibEdmLocalLabel) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmLocalLabel.Merge(m, src)
+func (dst *RibEdmLocalLabel) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmLocalLabel.Merge(dst, src)
 }
 func (m *RibEdmLocalLabel) XXX_Size() int {
 	return xxx_messageInfo_RibEdmLocalLabel.Size(m)
@@ -917,9 +910,11 @@ func init() {
 	proto.RegisterType((*RibEdmLocalLabel)(nil), "cisco_ios_xr_ip_rib_ipv4_oper.rib.rib_table_ids.rib_table_id.rib_table_itf_hndls.rib_table_itf_hndl.itf_route.rib_edm_local_label")
 }
 
-func init() { proto.RegisterFile("ipv4_rib_edm_route.proto", fileDescriptor_44c1b2f42127243a) }
+func init() {
+	proto.RegisterFile("ipv4_rib_edm_route.proto", fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d)
+}
 
-var fileDescriptor_44c1b2f42127243a = []byte{
+var fileDescriptor_ipv4_rib_edm_route_0f61da4677ee5d3d = []byte{
 	// 1442 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x56, 0xdb, 0x72, 0x13, 0x49,
 	0x12, 0x0d, 0x61, 0xb0, 0xad, 0xb2, 0x65, 0xac, 0xb6, 0xd7, 0x14, 0x98, 0x8b, 0x30, 0x4b, 0x84,

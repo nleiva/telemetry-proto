@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_drivers_media_eth_oper_ethernet_interface_statistics_statistic
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Port stats counters
 type EthernetPortStatsType_KEYS struct {
@@ -32,17 +30,16 @@ func (m *EthernetPortStatsType_KEYS) Reset()         { *m = EthernetPortStatsTyp
 func (m *EthernetPortStatsType_KEYS) String() string { return proto.CompactTextString(m) }
 func (*EthernetPortStatsType_KEYS) ProtoMessage()    {}
 func (*EthernetPortStatsType_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1982f68fad60746a, []int{0}
+	return fileDescriptor_ethernet_port_stats_type_6f8a83f5007e345c, []int{0}
 }
-
 func (m *EthernetPortStatsType_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthernetPortStatsType_KEYS.Unmarshal(m, b)
 }
 func (m *EthernetPortStatsType_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthernetPortStatsType_KEYS.Marshal(b, m, deterministic)
 }
-func (m *EthernetPortStatsType_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthernetPortStatsType_KEYS.Merge(m, src)
+func (dst *EthernetPortStatsType_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthernetPortStatsType_KEYS.Merge(dst, src)
 }
 func (m *EthernetPortStatsType_KEYS) XXX_Size() int {
 	return xxx_messageInfo_EthernetPortStatsType_KEYS.Size(m)
@@ -180,17 +177,16 @@ func (m *EthernetPortStatsType) Reset()         { *m = EthernetPortStatsType{} }
 func (m *EthernetPortStatsType) String() string { return proto.CompactTextString(m) }
 func (*EthernetPortStatsType) ProtoMessage()    {}
 func (*EthernetPortStatsType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1982f68fad60746a, []int{1}
+	return fileDescriptor_ethernet_port_stats_type_6f8a83f5007e345c, []int{1}
 }
-
 func (m *EthernetPortStatsType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthernetPortStatsType.Unmarshal(m, b)
 }
 func (m *EthernetPortStatsType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthernetPortStatsType.Marshal(b, m, deterministic)
 }
-func (m *EthernetPortStatsType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthernetPortStatsType.Merge(m, src)
+func (dst *EthernetPortStatsType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthernetPortStatsType.Merge(dst, src)
 }
 func (m *EthernetPortStatsType) XXX_Size() int {
 	return xxx_messageInfo_EthernetPortStatsType.Size(m)
@@ -591,9 +587,11 @@ func init() {
 	proto.RegisterType((*EthernetPortStatsType)(nil), "cisco_ios_xr_drivers_media_eth_oper.ethernet_interface.statistics.statistic.ethernet_port_stats_type")
 }
 
-func init() { proto.RegisterFile("ethernet_port_stats_type.proto", fileDescriptor_1982f68fad60746a) }
+func init() {
+	proto.RegisterFile("ethernet_port_stats_type.proto", fileDescriptor_ethernet_port_stats_type_6f8a83f5007e345c)
+}
 
-var fileDescriptor_1982f68fad60746a = []byte{
+var fileDescriptor_ethernet_port_stats_type_6f8a83f5007e345c = []byte{
 	// 1346 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x97, 0x79, 0x73, 0x13, 0x37,
 	0x18, 0xc6, 0x87, 0x99, 0x4e, 0x67, 0xaa, 0x29, 0x9d, 0xe9, 0x72, 0x89, 0x23, 0x69, 0x08, 0x50,

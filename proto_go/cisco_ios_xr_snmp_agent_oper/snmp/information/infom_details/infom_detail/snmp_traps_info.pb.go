@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_infom_details_infom_detail
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type SnmpTrapsInfo_KEYS struct {
 	TrapHost             string   `protobuf:"bytes,1,opt,name=trap_host,json=trapHost,proto3" json:"trap_host,omitempty"`
@@ -32,17 +30,16 @@ func (m *SnmpTrapsInfo_KEYS) Reset()         { *m = SnmpTrapsInfo_KEYS{} }
 func (m *SnmpTrapsInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpTrapsInfo_KEYS) ProtoMessage()    {}
 func (*SnmpTrapsInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e8232c8f3baaf2bf, []int{0}
+	return fileDescriptor_snmp_traps_info_1e2e565aea169eeb, []int{0}
 }
-
 func (m *SnmpTrapsInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpTrapsInfo_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpTrapsInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpTrapsInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpTrapsInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpTrapsInfo_KEYS.Merge(m, src)
+func (dst *SnmpTrapsInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpTrapsInfo_KEYS.Merge(dst, src)
 }
 func (m *SnmpTrapsInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpTrapsInfo_KEYS.Size(m)
@@ -85,17 +82,16 @@ func (m *SnmpTrapsInfo) Reset()         { *m = SnmpTrapsInfo{} }
 func (m *SnmpTrapsInfo) String() string { return proto.CompactTextString(m) }
 func (*SnmpTrapsInfo) ProtoMessage()    {}
 func (*SnmpTrapsInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e8232c8f3baaf2bf, []int{1}
+	return fileDescriptor_snmp_traps_info_1e2e565aea169eeb, []int{1}
 }
-
 func (m *SnmpTrapsInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpTrapsInfo.Unmarshal(m, b)
 }
 func (m *SnmpTrapsInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpTrapsInfo.Marshal(b, m, deterministic)
 }
-func (m *SnmpTrapsInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpTrapsInfo.Merge(m, src)
+func (dst *SnmpTrapsInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpTrapsInfo.Merge(dst, src)
 }
 func (m *SnmpTrapsInfo) XXX_Size() int {
 	return xxx_messageInfo_SnmpTrapsInfo.Size(m)
@@ -156,17 +152,16 @@ func (m *SnmpTrapOidInfo) Reset()         { *m = SnmpTrapOidInfo{} }
 func (m *SnmpTrapOidInfo) String() string { return proto.CompactTextString(m) }
 func (*SnmpTrapOidInfo) ProtoMessage()    {}
 func (*SnmpTrapOidInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e8232c8f3baaf2bf, []int{2}
+	return fileDescriptor_snmp_traps_info_1e2e565aea169eeb, []int{2}
 }
-
 func (m *SnmpTrapOidInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpTrapOidInfo.Unmarshal(m, b)
 }
 func (m *SnmpTrapOidInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpTrapOidInfo.Marshal(b, m, deterministic)
 }
-func (m *SnmpTrapOidInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpTrapOidInfo.Merge(m, src)
+func (dst *SnmpTrapOidInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpTrapOidInfo.Merge(dst, src)
 }
 func (m *SnmpTrapOidInfo) XXX_Size() int {
 	return xxx_messageInfo_SnmpTrapOidInfo.Size(m)
@@ -225,9 +220,11 @@ func init() {
 	proto.RegisterType((*SnmpTrapOidInfo)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.infom_details.infom_detail.snmp_trap_oid_info")
 }
 
-func init() { proto.RegisterFile("snmp_traps_info.proto", fileDescriptor_e8232c8f3baaf2bf) }
+func init() {
+	proto.RegisterFile("snmp_traps_info.proto", fileDescriptor_snmp_traps_info_1e2e565aea169eeb)
+}
 
-var fileDescriptor_e8232c8f3baaf2bf = []byte{
+var fileDescriptor_snmp_traps_info_1e2e565aea169eeb = []byte{
 	// 329 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x92, 0xcf, 0x4a, 0x03, 0x41,
 	0x0c, 0xc6, 0x59, 0xfb, 0xc7, 0x36, 0x6d, 0x15, 0x86, 0x0a, 0x2b, 0x22, 0x96, 0xea, 0xa1, 0xa7,

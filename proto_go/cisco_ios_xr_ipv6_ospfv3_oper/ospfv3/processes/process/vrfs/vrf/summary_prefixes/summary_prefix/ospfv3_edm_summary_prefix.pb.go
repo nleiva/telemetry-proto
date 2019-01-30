@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_vrfs_vrf_summary_prefixes_summary_prefix
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 summary prefix information
 type Ospfv3EdmSummaryPrefix_KEYS struct {
@@ -35,17 +33,16 @@ func (m *Ospfv3EdmSummaryPrefix_KEYS) Reset()         { *m = Ospfv3EdmSummaryPre
 func (m *Ospfv3EdmSummaryPrefix_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmSummaryPrefix_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmSummaryPrefix_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a201f7d8e80ab6fe, []int{0}
+	return fileDescriptor_ospfv3_edm_summary_prefix_930fccff986c2b23, []int{0}
 }
-
 func (m *Ospfv3EdmSummaryPrefix_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmSummaryPrefix_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmSummaryPrefix_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmSummaryPrefix_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmSummaryPrefix_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmSummaryPrefix_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmSummaryPrefix_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix_KEYS.Size(m)
@@ -100,17 +97,16 @@ func (m *Ospfv3EdmSummaryPrefix) Reset()         { *m = Ospfv3EdmSummaryPrefix{}
 func (m *Ospfv3EdmSummaryPrefix) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmSummaryPrefix) ProtoMessage()    {}
 func (*Ospfv3EdmSummaryPrefix) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a201f7d8e80ab6fe, []int{1}
+	return fileDescriptor_ospfv3_edm_summary_prefix_930fccff986c2b23, []int{1}
 }
-
 func (m *Ospfv3EdmSummaryPrefix) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmSummaryPrefix) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmSummaryPrefix) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmSummaryPrefix.Merge(m, src)
+func (dst *Ospfv3EdmSummaryPrefix) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmSummaryPrefix.Merge(dst, src)
 }
 func (m *Ospfv3EdmSummaryPrefix) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmSummaryPrefix.Size(m)
@@ -147,9 +143,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmSummaryPrefix)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.vrfs.vrf.summary_prefixes.summary_prefix.ospfv3_edm_summary_prefix")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_summary_prefix.proto", fileDescriptor_a201f7d8e80ab6fe) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_summary_prefix.proto", fileDescriptor_ospfv3_edm_summary_prefix_930fccff986c2b23)
+}
 
-var fileDescriptor_a201f7d8e80ab6fe = []byte{
+var fileDescriptor_ospfv3_edm_summary_prefix_930fccff986c2b23 = []byte{
 	// 259 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x91, 0xcf, 0x4a, 0x03, 0x31,
 	0x18, 0xc4, 0x89, 0x95, 0xaa, 0xb1, 0x85, 0x92, 0x83, 0xa4, 0x17, 0xad, 0xf5, 0xd2, 0x83, 0xec,

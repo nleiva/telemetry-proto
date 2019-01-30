@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_server_binding_options_duid_bind_options_duid_bind_option
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 server binding inserted option values
 type Ipv6Dhcpv6DServerBindingOptions_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) Reset()         { *m = Ipv6Dhcpv6
 func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerBindingOptions_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerBindingOptions_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c0286bae149069f3, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_server_binding_options_ea9bebb0c3aa9e80, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerBindingOptions_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerBindingOptions_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *Ipv6Dhcpv6DServerBindingOptions) Reset()         { *m = Ipv6Dhcpv6DServ
 func (m *Ipv6Dhcpv6DServerBindingOptions) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerBindingOptions) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerBindingOptions) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c0286bae149069f3, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_server_binding_options_ea9bebb0c3aa9e80, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DServerBindingOptions) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerBindingOptions) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerBindingOptions) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerBindingOptions) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerBindingOptions) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingOptions.Size(m)
@@ -156,17 +152,16 @@ func (m *IPV6AddressType) Reset()         { *m = IPV6AddressType{} }
 func (m *IPV6AddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV6AddressType) ProtoMessage()    {}
 func (*IPV6AddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c0286bae149069f3, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_server_binding_options_ea9bebb0c3aa9e80, []int{2}
 }
-
 func (m *IPV6AddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV6AddressType.Unmarshal(m, b)
 }
 func (m *IPV6AddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV6AddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV6AddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV6AddressType.Merge(m, src)
+func (dst *IPV6AddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV6AddressType.Merge(dst, src)
 }
 func (m *IPV6AddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV6AddressType.Size(m)
@@ -191,10 +186,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("ipv6_dhcpv6d_server_binding_options.proto", fileDescriptor_c0286bae149069f3)
+	proto.RegisterFile("ipv6_dhcpv6d_server_binding_options.proto", fileDescriptor_ipv6_dhcpv6d_server_binding_options_ea9bebb0c3aa9e80)
 }
 
-var fileDescriptor_c0286bae149069f3 = []byte{
+var fileDescriptor_ipv6_dhcpv6d_server_binding_options_ea9bebb0c3aa9e80 = []byte{
 	// 299 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x92, 0xcf, 0x4a, 0xc4, 0x30,
 	0x10, 0xc6, 0xe9, 0xfa, 0x87, 0xdd, 0x2c, 0x22, 0x04, 0x0f, 0x05, 0x0f, 0x2e, 0xf5, 0x60, 0xbd,

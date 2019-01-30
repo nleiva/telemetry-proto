@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_nd_oper_ipv6_node_discovery_nodes_node_neighbor_interfaces_neighbor_interface_host_addresses_host_address
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 ND neighbor entry
 type Ipv6NdNeighborEntry_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ipv6NdNeighborEntry_KEYS) Reset()         { *m = Ipv6NdNeighborEntry_KE
 func (m *Ipv6NdNeighborEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdNeighborEntry_KEYS) ProtoMessage()    {}
 func (*Ipv6NdNeighborEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a853b2f12f0146e, []int{0}
+	return fileDescriptor_ipv6_nd_neighbor_entry_4f11a784a68241af, []int{0}
 }
-
 func (m *Ipv6NdNeighborEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdNeighborEntry_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6NdNeighborEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdNeighborEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdNeighborEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdNeighborEntry_KEYS.Merge(m, src)
+func (dst *Ipv6NdNeighborEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdNeighborEntry_KEYS.Merge(dst, src)
 }
 func (m *Ipv6NdNeighborEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdNeighborEntry_KEYS.Size(m)
@@ -104,17 +101,16 @@ func (m *Ipv6NdNeighborEntry) Reset()         { *m = Ipv6NdNeighborEntry{} }
 func (m *Ipv6NdNeighborEntry) String() string { return proto.CompactTextString(m) }
 func (*Ipv6NdNeighborEntry) ProtoMessage()    {}
 func (*Ipv6NdNeighborEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a853b2f12f0146e, []int{1}
+	return fileDescriptor_ipv6_nd_neighbor_entry_4f11a784a68241af, []int{1}
 }
-
 func (m *Ipv6NdNeighborEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6NdNeighborEntry.Unmarshal(m, b)
 }
 func (m *Ipv6NdNeighborEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6NdNeighborEntry.Marshal(b, m, deterministic)
 }
-func (m *Ipv6NdNeighborEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6NdNeighborEntry.Merge(m, src)
+func (dst *Ipv6NdNeighborEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6NdNeighborEntry.Merge(dst, src)
 }
 func (m *Ipv6NdNeighborEntry) XXX_Size() int {
 	return xxx_messageInfo_Ipv6NdNeighborEntry.Size(m)
@@ -201,17 +197,16 @@ func (m *BagTimespec) Reset()         { *m = BagTimespec{} }
 func (m *BagTimespec) String() string { return proto.CompactTextString(m) }
 func (*BagTimespec) ProtoMessage()    {}
 func (*BagTimespec) Descriptor() ([]byte, []int) {
-	return fileDescriptor_7a853b2f12f0146e, []int{2}
+	return fileDescriptor_ipv6_nd_neighbor_entry_4f11a784a68241af, []int{2}
 }
-
 func (m *BagTimespec) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BagTimespec.Unmarshal(m, b)
 }
 func (m *BagTimespec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BagTimespec.Marshal(b, m, deterministic)
 }
-func (m *BagTimespec) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BagTimespec.Merge(m, src)
+func (dst *BagTimespec) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BagTimespec.Merge(dst, src)
 }
 func (m *BagTimespec) XXX_Size() int {
 	return xxx_messageInfo_BagTimespec.Size(m)
@@ -235,9 +230,11 @@ func init() {
 	proto.RegisterType((*BagTimespec)(nil), "cisco_ios_xr_ipv6_nd_oper.ipv6_node_discovery.nodes.node.neighbor_interfaces.neighbor_interface.host_addresses.host_address.bag_timespec")
 }
 
-func init() { proto.RegisterFile("ipv6_nd_neighbor_entry.proto", fileDescriptor_7a853b2f12f0146e) }
+func init() {
+	proto.RegisterFile("ipv6_nd_neighbor_entry.proto", fileDescriptor_ipv6_nd_neighbor_entry_4f11a784a68241af)
+}
 
-var fileDescriptor_7a853b2f12f0146e = []byte{
+var fileDescriptor_ipv6_nd_neighbor_entry_4f11a784a68241af = []byte{
 	// 421 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x53, 0x4d, 0x8f, 0xd3, 0x30,
 	0x14, 0x54, 0x00, 0x41, 0xd6, 0xbb, 0x05, 0xd6, 0xc0, 0x2a, 0x62, 0x39, 0x94, 0x15, 0x48, 0x39,

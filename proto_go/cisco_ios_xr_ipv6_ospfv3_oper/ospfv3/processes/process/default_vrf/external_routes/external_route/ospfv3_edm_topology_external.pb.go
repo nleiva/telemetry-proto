@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_external_routes_external_route
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 Topology External Information
 type Ospfv3EdmTopologyExternal_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3EdmTopologyExternal_KEYS) Reset()         { *m = Ospfv3EdmTopolog
 func (m *Ospfv3EdmTopologyExternal_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopologyExternal_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmTopologyExternal_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{0}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{0}
 }
-
 func (m *Ospfv3EdmTopologyExternal_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopologyExternal_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopologyExternal_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopologyExternal_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmTopologyExternal_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopologyExternal_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopologyExternal_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *Ospfv3EdmTopologyExternal) Reset()         { *m = Ospfv3EdmTopologyExte
 func (m *Ospfv3EdmTopologyExternal) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopologyExternal) ProtoMessage()    {}
 func (*Ospfv3EdmTopologyExternal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{1}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{1}
 }
-
 func (m *Ospfv3EdmTopologyExternal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopologyExternal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopologyExternal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopologyExternal.Merge(m, src)
+func (dst *Ospfv3EdmTopologyExternal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopologyExternal.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopologyExternal) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopologyExternal.Size(m)
@@ -163,17 +159,16 @@ func (m *Ospfv3ShBackupPath) Reset()         { *m = Ospfv3ShBackupPath{} }
 func (m *Ospfv3ShBackupPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShBackupPath) ProtoMessage()    {}
 func (*Ospfv3ShBackupPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{2}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{2}
 }
-
 func (m *Ospfv3ShBackupPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Unmarshal(m, b)
 }
 func (m *Ospfv3ShBackupPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShBackupPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShBackupPath.Merge(m, src)
+func (dst *Ospfv3ShBackupPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShBackupPath.Merge(dst, src)
 }
 func (m *Ospfv3ShBackupPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Size(m)
@@ -266,17 +261,16 @@ func (m *Ospfv3EdmTopPath) Reset()         { *m = Ospfv3EdmTopPath{} }
 func (m *Ospfv3EdmTopPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopPath) ProtoMessage()    {}
 func (*Ospfv3EdmTopPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{3}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{3}
 }
-
 func (m *Ospfv3EdmTopPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopPath.Merge(m, src)
+func (dst *Ospfv3EdmTopPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopPath.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Size(m)
@@ -338,17 +332,16 @@ func (m *Ospfv3ShRouteExtendedComm) Reset()         { *m = Ospfv3ShRouteExtended
 func (m *Ospfv3ShRouteExtendedComm) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShRouteExtendedComm) ProtoMessage()    {}
 func (*Ospfv3ShRouteExtendedComm) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{4}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{4}
 }
-
 func (m *Ospfv3ShRouteExtendedComm) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShRouteExtendedComm.Unmarshal(m, b)
 }
 func (m *Ospfv3ShRouteExtendedComm) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShRouteExtendedComm.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShRouteExtendedComm) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShRouteExtendedComm.Merge(m, src)
+func (dst *Ospfv3ShRouteExtendedComm) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShRouteExtendedComm.Merge(dst, src)
 }
 func (m *Ospfv3ShRouteExtendedComm) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShRouteExtendedComm.Size(m)
@@ -420,17 +413,16 @@ func (m *Ospfv3EdmTopology) Reset()         { *m = Ospfv3EdmTopology{} }
 func (m *Ospfv3EdmTopology) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopology) ProtoMessage()    {}
 func (*Ospfv3EdmTopology) Descriptor() ([]byte, []int) {
-	return fileDescriptor_b36ab0046955ae4e, []int{5}
+	return fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1, []int{5}
 }
-
 func (m *Ospfv3EdmTopology) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopology.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopology) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopology.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopology) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopology.Merge(m, src)
+func (dst *Ospfv3EdmTopology) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopology.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopology) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopology.Size(m)
@@ -478,9 +470,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmTopology)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.external_routes.external_route.ospfv3_edm_topology")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_topology_external.proto", fileDescriptor_b36ab0046955ae4e) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_topology_external.proto", fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1)
+}
 
-var fileDescriptor_b36ab0046955ae4e = []byte{
+var fileDescriptor_ospfv3_edm_topology_external_3062e4c73a5aadf1 = []byte{
 	// 786 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x56, 0x4d, 0x4f, 0x1b, 0x39,
 	0x18, 0xd6, 0x90, 0xf0, 0x11, 0x27, 0x61, 0xc1, 0x68, 0xd9, 0x81, 0x25, 0x28, 0xcc, 0x6a, 0xa5,

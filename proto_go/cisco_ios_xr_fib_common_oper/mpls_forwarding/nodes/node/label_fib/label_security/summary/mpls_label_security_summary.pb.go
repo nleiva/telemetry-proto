@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_mpls_forwarding_nodes_node_label_fib_label_security_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type MplsLabelSecuritySummary_KEYS struct {
 	NodeName             string   `protobuf:"bytes,1,opt,name=node_name,json=nodeName,proto3" json:"node_name,omitempty"`
@@ -31,17 +29,16 @@ func (m *MplsLabelSecuritySummary_KEYS) Reset()         { *m = MplsLabelSecurity
 func (m *MplsLabelSecuritySummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*MplsLabelSecuritySummary_KEYS) ProtoMessage()    {}
 func (*MplsLabelSecuritySummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_054bc47dffdaecba, []int{0}
+	return fileDescriptor_mpls_label_security_summary_b47dcb4cc6b0adb6, []int{0}
 }
-
 func (m *MplsLabelSecuritySummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsLabelSecuritySummary_KEYS.Unmarshal(m, b)
 }
 func (m *MplsLabelSecuritySummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsLabelSecuritySummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *MplsLabelSecuritySummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsLabelSecuritySummary_KEYS.Merge(m, src)
+func (dst *MplsLabelSecuritySummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsLabelSecuritySummary_KEYS.Merge(dst, src)
 }
 func (m *MplsLabelSecuritySummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_MplsLabelSecuritySummary_KEYS.Size(m)
@@ -73,17 +70,16 @@ func (m *MplsLabelSecuritySummary) Reset()         { *m = MplsLabelSecuritySumma
 func (m *MplsLabelSecuritySummary) String() string { return proto.CompactTextString(m) }
 func (*MplsLabelSecuritySummary) ProtoMessage()    {}
 func (*MplsLabelSecuritySummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_054bc47dffdaecba, []int{1}
+	return fileDescriptor_mpls_label_security_summary_b47dcb4cc6b0adb6, []int{1}
 }
-
 func (m *MplsLabelSecuritySummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsLabelSecuritySummary.Unmarshal(m, b)
 }
 func (m *MplsLabelSecuritySummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsLabelSecuritySummary.Marshal(b, m, deterministic)
 }
-func (m *MplsLabelSecuritySummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsLabelSecuritySummary.Merge(m, src)
+func (dst *MplsLabelSecuritySummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsLabelSecuritySummary.Merge(dst, src)
 }
 func (m *MplsLabelSecuritySummary) XXX_Size() int {
 	return xxx_messageInfo_MplsLabelSecuritySummary.Size(m)
@@ -113,9 +109,11 @@ func init() {
 	proto.RegisterType((*MplsLabelSecuritySummary)(nil), "cisco_ios_xr_fib_common_oper.mpls_forwarding.nodes.node.label_fib.label_security.summary.mpls_label_security_summary")
 }
 
-func init() { proto.RegisterFile("mpls_label_security_summary.proto", fileDescriptor_054bc47dffdaecba) }
+func init() {
+	proto.RegisterFile("mpls_label_security_summary.proto", fileDescriptor_mpls_label_security_summary_b47dcb4cc6b0adb6)
+}
 
-var fileDescriptor_054bc47dffdaecba = []byte{
+var fileDescriptor_mpls_label_security_summary_b47dcb4cc6b0adb6 = []byte{
 	// 214 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x90, 0xb1, 0x4a, 0x04, 0x31,
 	0x10, 0x86, 0x59, 0x10, 0xb9, 0x4b, 0x23, 0x6e, 0x75, 0x70, 0xcd, 0x7a, 0xd5, 0x61, 0x91, 0xc2,

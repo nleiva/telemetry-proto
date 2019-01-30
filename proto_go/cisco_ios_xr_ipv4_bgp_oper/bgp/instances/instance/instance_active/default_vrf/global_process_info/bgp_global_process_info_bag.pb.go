@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_bgp_oper_bgp_instances_instance_instance_active_default_vrf_global_process_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // BGP process information common to all BGP processes
 type BgpGlobalProcessInfoBag_KEYS struct {
@@ -32,17 +30,16 @@ func (m *BgpGlobalProcessInfoBag_KEYS) Reset()         { *m = BgpGlobalProcessIn
 func (m *BgpGlobalProcessInfoBag_KEYS) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoBag_KEYS) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoBag_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_99316a6dde1b0219, []int{0}
+	return fileDescriptor_bgp_global_process_info_bag_599688baecd9833f, []int{0}
 }
-
 func (m *BgpGlobalProcessInfoBag_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag_KEYS.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoBag_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag_KEYS.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoBag_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoBag_KEYS.Merge(m, src)
+func (dst *BgpGlobalProcessInfoBag_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoBag_KEYS.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoBag_KEYS) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag_KEYS.Size(m)
@@ -78,17 +75,16 @@ func (m *BgpGlobalProcessInfoBag) Reset()         { *m = BgpGlobalProcessInfoBag
 func (m *BgpGlobalProcessInfoBag) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoBag) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_99316a6dde1b0219, []int{1}
+	return fileDescriptor_bgp_global_process_info_bag_599688baecd9833f, []int{1}
 }
-
 func (m *BgpGlobalProcessInfoBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoBag.Merge(m, src)
+func (dst *BgpGlobalProcessInfoBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoBag.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoBag) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoBag.Size(m)
@@ -141,17 +137,16 @@ func (m *ClusterIdBag_) Reset()         { *m = ClusterIdBag_{} }
 func (m *ClusterIdBag_) String() string { return proto.CompactTextString(m) }
 func (*ClusterIdBag_) ProtoMessage()    {}
 func (*ClusterIdBag_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_99316a6dde1b0219, []int{2}
+	return fileDescriptor_bgp_global_process_info_bag_599688baecd9833f, []int{2}
 }
-
 func (m *ClusterIdBag_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ClusterIdBag_.Unmarshal(m, b)
 }
 func (m *ClusterIdBag_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ClusterIdBag_.Marshal(b, m, deterministic)
 }
-func (m *ClusterIdBag_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ClusterIdBag_.Merge(m, src)
+func (dst *ClusterIdBag_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ClusterIdBag_.Merge(dst, src)
 }
 func (m *ClusterIdBag_) XXX_Size() int {
 	return xxx_messageInfo_ClusterIdBag_.Size(m)
@@ -224,17 +219,16 @@ func (m *BgpGlobalProcessInfoGbl_) Reset()         { *m = BgpGlobalProcessInfoGb
 func (m *BgpGlobalProcessInfoGbl_) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoGbl_) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoGbl_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_99316a6dde1b0219, []int{3}
+	return fileDescriptor_bgp_global_process_info_bag_599688baecd9833f, []int{3}
 }
-
 func (m *BgpGlobalProcessInfoGbl_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoGbl_.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoGbl_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoGbl_.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoGbl_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoGbl_.Merge(m, src)
+func (dst *BgpGlobalProcessInfoGbl_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoGbl_.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoGbl_) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoGbl_.Size(m)
@@ -444,17 +438,16 @@ func (m *BgpGlobalProcessInfoVrf_) Reset()         { *m = BgpGlobalProcessInfoVr
 func (m *BgpGlobalProcessInfoVrf_) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoVrf_) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoVrf_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_99316a6dde1b0219, []int{4}
+	return fileDescriptor_bgp_global_process_info_bag_599688baecd9833f, []int{4}
 }
-
 func (m *BgpGlobalProcessInfoVrf_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoVrf_.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoVrf_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoVrf_.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoVrf_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoVrf_.Merge(m, src)
+func (dst *BgpGlobalProcessInfoVrf_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoVrf_.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoVrf_) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoVrf_.Size(m)
@@ -669,9 +662,11 @@ func init() {
 	proto.RegisterType((*BgpGlobalProcessInfoVrf_)(nil), "cisco_ios_xr_ipv4_bgp_oper.bgp.instances.instance.instance_active.default_vrf.global_process_info.bgp_global_process_info_vrf_")
 }
 
-func init() { proto.RegisterFile("bgp_global_process_info_bag.proto", fileDescriptor_99316a6dde1b0219) }
+func init() {
+	proto.RegisterFile("bgp_global_process_info_bag.proto", fileDescriptor_bgp_global_process_info_bag_599688baecd9833f)
+}
 
-var fileDescriptor_99316a6dde1b0219 = []byte{
+var fileDescriptor_bgp_global_process_info_bag_599688baecd9833f = []byte{
 	// 1406 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x57, 0x4b, 0x6f, 0xdc, 0xb6,
 	0x16, 0x86, 0xf3, 0xf0, 0x83, 0xf6, 0xd8, 0xb1, 0x6c, 0x27, 0xca, 0xb5, 0x8d, 0xd8, 0x73, 0x6f,

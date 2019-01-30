@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_adjacency_information_neighbors_neighbor
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Neighbor Summary Information
 type OspfShNeighbor_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShNeighbor_KEYS) Reset()         { *m = OspfShNeighbor_KEYS{} }
 func (m *OspfShNeighbor_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShNeighbor_KEYS) ProtoMessage()    {}
 func (*OspfShNeighbor_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_776818f2d81e6901, []int{0}
+	return fileDescriptor_ospf_sh_neighbor_be312bf75ae1ec1b, []int{0}
 }
-
 func (m *OspfShNeighbor_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShNeighbor_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShNeighbor_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShNeighbor_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShNeighbor_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShNeighbor_KEYS.Merge(m, src)
+func (dst *OspfShNeighbor_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShNeighbor_KEYS.Merge(dst, src)
 }
 func (m *OspfShNeighbor_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShNeighbor_KEYS.Size(m)
@@ -106,17 +103,16 @@ func (m *OspfShNeighbor) Reset()         { *m = OspfShNeighbor{} }
 func (m *OspfShNeighbor) String() string { return proto.CompactTextString(m) }
 func (*OspfShNeighbor) ProtoMessage()    {}
 func (*OspfShNeighbor) Descriptor() ([]byte, []int) {
-	return fileDescriptor_776818f2d81e6901, []int{1}
+	return fileDescriptor_ospf_sh_neighbor_be312bf75ae1ec1b, []int{1}
 }
-
 func (m *OspfShNeighbor) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShNeighbor.Unmarshal(m, b)
 }
 func (m *OspfShNeighbor) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShNeighbor.Marshal(b, m, deterministic)
 }
-func (m *OspfShNeighbor) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShNeighbor.Merge(m, src)
+func (dst *OspfShNeighbor) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShNeighbor.Merge(dst, src)
 }
 func (m *OspfShNeighbor) XXX_Size() int {
 	return xxx_messageInfo_OspfShNeighbor.Size(m)
@@ -212,17 +208,16 @@ func (m *OspfShNeighborBfd) Reset()         { *m = OspfShNeighborBfd{} }
 func (m *OspfShNeighborBfd) String() string { return proto.CompactTextString(m) }
 func (*OspfShNeighborBfd) ProtoMessage()    {}
 func (*OspfShNeighborBfd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_776818f2d81e6901, []int{2}
+	return fileDescriptor_ospf_sh_neighbor_be312bf75ae1ec1b, []int{2}
 }
-
 func (m *OspfShNeighborBfd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShNeighborBfd.Unmarshal(m, b)
 }
 func (m *OspfShNeighborBfd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShNeighborBfd.Marshal(b, m, deterministic)
 }
-func (m *OspfShNeighborBfd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShNeighborBfd.Merge(m, src)
+func (dst *OspfShNeighborBfd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShNeighborBfd.Merge(dst, src)
 }
 func (m *OspfShNeighborBfd) XXX_Size() int {
 	return xxx_messageInfo_OspfShNeighborBfd.Size(m)
@@ -253,9 +248,11 @@ func init() {
 	proto.RegisterType((*OspfShNeighborBfd)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.adjacency_information.neighbors.neighbor.ospf_sh_neighbor_bfd")
 }
 
-func init() { proto.RegisterFile("ospf_sh_neighbor.proto", fileDescriptor_776818f2d81e6901) }
+func init() {
+	proto.RegisterFile("ospf_sh_neighbor.proto", fileDescriptor_ospf_sh_neighbor_be312bf75ae1ec1b)
+}
 
-var fileDescriptor_776818f2d81e6901 = []byte{
+var fileDescriptor_ospf_sh_neighbor_be312bf75ae1ec1b = []byte{
 	// 476 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x53, 0x4f, 0x6f, 0xd4, 0x3e,
 	0x10, 0x55, 0x7e, 0x3f, 0x84, 0xc0, 0xdb, 0xd0, 0xd6, 0x6c, 0x8b, 0x6f, 0x84, 0x95, 0x40, 0xe1,

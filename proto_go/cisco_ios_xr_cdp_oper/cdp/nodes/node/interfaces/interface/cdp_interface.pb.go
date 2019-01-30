@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_cdp_oper_cdp_nodes_node_interfaces_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information about an interface that CDP is running on
 type CdpInterface_KEYS struct {
@@ -33,17 +31,16 @@ func (m *CdpInterface_KEYS) Reset()         { *m = CdpInterface_KEYS{} }
 func (m *CdpInterface_KEYS) String() string { return proto.CompactTextString(m) }
 func (*CdpInterface_KEYS) ProtoMessage()    {}
 func (*CdpInterface_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_14edbabf22c583dd, []int{0}
+	return fileDescriptor_cdp_interface_54f0b43af69dc46b, []int{0}
 }
-
 func (m *CdpInterface_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpInterface_KEYS.Unmarshal(m, b)
 }
 func (m *CdpInterface_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpInterface_KEYS.Marshal(b, m, deterministic)
 }
-func (m *CdpInterface_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpInterface_KEYS.Merge(m, src)
+func (dst *CdpInterface_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpInterface_KEYS.Merge(dst, src)
 }
 func (m *CdpInterface_KEYS) XXX_Size() int {
 	return xxx_messageInfo_CdpInterface_KEYS.Size(m)
@@ -86,17 +83,16 @@ func (m *CdpInterface) Reset()         { *m = CdpInterface{} }
 func (m *CdpInterface) String() string { return proto.CompactTextString(m) }
 func (*CdpInterface) ProtoMessage()    {}
 func (*CdpInterface) Descriptor() ([]byte, []int) {
-	return fileDescriptor_14edbabf22c583dd, []int{1}
+	return fileDescriptor_cdp_interface_54f0b43af69dc46b, []int{1}
 }
-
 func (m *CdpInterface) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpInterface.Unmarshal(m, b)
 }
 func (m *CdpInterface) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpInterface.Marshal(b, m, deterministic)
 }
-func (m *CdpInterface) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpInterface.Merge(m, src)
+func (dst *CdpInterface) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpInterface.Merge(dst, src)
 }
 func (m *CdpInterface) XXX_Size() int {
 	return xxx_messageInfo_CdpInterface.Size(m)
@@ -140,9 +136,9 @@ func init() {
 	proto.RegisterType((*CdpInterface)(nil), "cisco_ios_xr_cdp_oper.cdp.nodes.node.interfaces.interface.cdp_interface")
 }
 
-func init() { proto.RegisterFile("cdp_interface.proto", fileDescriptor_14edbabf22c583dd) }
+func init() { proto.RegisterFile("cdp_interface.proto", fileDescriptor_cdp_interface_54f0b43af69dc46b) }
 
-var fileDescriptor_14edbabf22c583dd = []byte{
+var fileDescriptor_cdp_interface_54f0b43af69dc46b = []byte{
 	// 234 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x5c, 0x90, 0xc1, 0x4a, 0x03, 0x31,
 	0x14, 0x45, 0x89, 0x0b, 0xb1, 0x81, 0x68, 0x89, 0x9b, 0x80, 0x9b, 0x52, 0x10, 0x2a, 0x48, 0x16,

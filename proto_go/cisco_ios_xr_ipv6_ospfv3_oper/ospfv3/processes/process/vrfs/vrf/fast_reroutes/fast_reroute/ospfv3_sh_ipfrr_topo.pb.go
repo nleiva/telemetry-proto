@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_vrfs_vrf_fast_reroutes_fast_reroute
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF IPFRR Topology Information
 type Ospfv3ShIpfrrTopo_KEYS struct {
@@ -35,17 +33,16 @@ func (m *Ospfv3ShIpfrrTopo_KEYS) Reset()         { *m = Ospfv3ShIpfrrTopo_KEYS{}
 func (m *Ospfv3ShIpfrrTopo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShIpfrrTopo_KEYS) ProtoMessage()    {}
 func (*Ospfv3ShIpfrrTopo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2837dbf1c4c39301, []int{0}
+	return fileDescriptor_ospfv3_sh_ipfrr_topo_621454de2dda8ae4, []int{0}
 }
-
 func (m *Ospfv3ShIpfrrTopo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3ShIpfrrTopo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShIpfrrTopo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShIpfrrTopo_KEYS.Merge(m, src)
+func (dst *Ospfv3ShIpfrrTopo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShIpfrrTopo_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3ShIpfrrTopo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo_KEYS.Size(m)
@@ -102,17 +99,16 @@ func (m *Ospfv3ShIpfrrTopo) Reset()         { *m = Ospfv3ShIpfrrTopo{} }
 func (m *Ospfv3ShIpfrrTopo) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShIpfrrTopo) ProtoMessage()    {}
 func (*Ospfv3ShIpfrrTopo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2837dbf1c4c39301, []int{1}
+	return fileDescriptor_ospfv3_sh_ipfrr_topo_621454de2dda8ae4, []int{1}
 }
-
 func (m *Ospfv3ShIpfrrTopo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo.Unmarshal(m, b)
 }
 func (m *Ospfv3ShIpfrrTopo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShIpfrrTopo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShIpfrrTopo.Merge(m, src)
+func (dst *Ospfv3ShIpfrrTopo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShIpfrrTopo.Merge(dst, src)
 }
 func (m *Ospfv3ShIpfrrTopo) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShIpfrrTopo.Size(m)
@@ -176,17 +172,16 @@ func (m *OspfShIpfrrTopoEntry) Reset()         { *m = OspfShIpfrrTopoEntry{} }
 func (m *OspfShIpfrrTopoEntry) String() string { return proto.CompactTextString(m) }
 func (*OspfShIpfrrTopoEntry) ProtoMessage()    {}
 func (*OspfShIpfrrTopoEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2837dbf1c4c39301, []int{2}
+	return fileDescriptor_ospfv3_sh_ipfrr_topo_621454de2dda8ae4, []int{2}
 }
-
 func (m *OspfShIpfrrTopoEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShIpfrrTopoEntry.Unmarshal(m, b)
 }
 func (m *OspfShIpfrrTopoEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShIpfrrTopoEntry.Marshal(b, m, deterministic)
 }
-func (m *OspfShIpfrrTopoEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShIpfrrTopoEntry.Merge(m, src)
+func (dst *OspfShIpfrrTopoEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShIpfrrTopoEntry.Merge(dst, src)
 }
 func (m *OspfShIpfrrTopoEntry) XXX_Size() int {
 	return xxx_messageInfo_OspfShIpfrrTopoEntry.Size(m)
@@ -252,9 +247,11 @@ func init() {
 	proto.RegisterType((*OspfShIpfrrTopoEntry)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.vrfs.vrf.fast_reroutes.fast_reroute.ospf_sh_ipfrr_topo_entry")
 }
 
-func init() { proto.RegisterFile("ospfv3_sh_ipfrr_topo.proto", fileDescriptor_2837dbf1c4c39301) }
+func init() {
+	proto.RegisterFile("ospfv3_sh_ipfrr_topo.proto", fileDescriptor_ospfv3_sh_ipfrr_topo_621454de2dda8ae4)
+}
 
-var fileDescriptor_2837dbf1c4c39301 = []byte{
+var fileDescriptor_ospfv3_sh_ipfrr_topo_621454de2dda8ae4 = []byte{
 	// 408 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x52, 0xc1, 0x8e, 0xd3, 0x30,
 	0x14, 0x54, 0xb2, 0x6c, 0x9a, 0xbe, 0x25, 0x2c, 0x98, 0x95, 0xc8, 0x2e, 0x97, 0xd2, 0x03, 0x2a,

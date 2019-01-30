@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_ipv6frr_backups_ipv6frr_backup
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IS-IS IPv6 route
 type IsisShIpv6Route_KEYS struct {
@@ -37,17 +35,16 @@ func (m *IsisShIpv6Route_KEYS) Reset()         { *m = IsisShIpv6Route_KEYS{} }
 func (m *IsisShIpv6Route_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6Route_KEYS) ProtoMessage()    {}
 func (*IsisShIpv6Route_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{0}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{0}
 }
-
 func (m *IsisShIpv6Route_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6Route_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShIpv6Route_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6Route_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6Route_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6Route_KEYS.Merge(m, src)
+func (dst *IsisShIpv6Route_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6Route_KEYS.Merge(dst, src)
 }
 func (m *IsisShIpv6Route_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6Route_KEYS.Size(m)
@@ -118,17 +115,16 @@ func (m *IsisShIpv6Route) Reset()         { *m = IsisShIpv6Route{} }
 func (m *IsisShIpv6Route) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6Route) ProtoMessage()    {}
 func (*IsisShIpv6Route) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{1}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{1}
 }
-
 func (m *IsisShIpv6Route) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6Route.Unmarshal(m, b)
 }
 func (m *IsisShIpv6Route) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6Route.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6Route) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6Route.Merge(m, src)
+func (dst *IsisShIpv6Route) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6Route.Merge(dst, src)
 }
 func (m *IsisShIpv6Route) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6Route.Size(m)
@@ -185,17 +181,16 @@ func (m *IsisNodalSidType) Reset()         { *m = IsisNodalSidType{} }
 func (m *IsisNodalSidType) String() string { return proto.CompactTextString(m) }
 func (*IsisNodalSidType) ProtoMessage()    {}
 func (*IsisNodalSidType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{2}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{2}
 }
-
 func (m *IsisNodalSidType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisNodalSidType.Unmarshal(m, b)
 }
 func (m *IsisNodalSidType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisNodalSidType.Marshal(b, m, deterministic)
 }
-func (m *IsisNodalSidType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisNodalSidType.Merge(m, src)
+func (dst *IsisNodalSidType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisNodalSidType.Merge(dst, src)
 }
 func (m *IsisNodalSidType) XXX_Size() int {
 	return xxx_messageInfo_IsisNodalSidType.Size(m)
@@ -273,17 +268,16 @@ func (m *IsisStringType) Reset()         { *m = IsisStringType{} }
 func (m *IsisStringType) String() string { return proto.CompactTextString(m) }
 func (*IsisStringType) ProtoMessage()    {}
 func (*IsisStringType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{3}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{3}
 }
-
 func (m *IsisStringType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisStringType.Unmarshal(m, b)
 }
 func (m *IsisStringType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisStringType.Marshal(b, m, deterministic)
 }
-func (m *IsisStringType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisStringType.Merge(m, src)
+func (dst *IsisStringType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisStringType.Merge(dst, src)
 }
 func (m *IsisStringType) XXX_Size() int {
 	return xxx_messageInfo_IsisStringType.Size(m)
@@ -316,17 +310,16 @@ func (m *IsisIpv6PrefixType) Reset()         { *m = IsisIpv6PrefixType{} }
 func (m *IsisIpv6PrefixType) String() string { return proto.CompactTextString(m) }
 func (*IsisIpv6PrefixType) ProtoMessage()    {}
 func (*IsisIpv6PrefixType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{4}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{4}
 }
-
 func (m *IsisIpv6PrefixType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisIpv6PrefixType.Unmarshal(m, b)
 }
 func (m *IsisIpv6PrefixType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisIpv6PrefixType.Marshal(b, m, deterministic)
 }
-func (m *IsisIpv6PrefixType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisIpv6PrefixType.Merge(m, src)
+func (dst *IsisIpv6PrefixType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisIpv6PrefixType.Merge(dst, src)
 }
 func (m *IsisIpv6PrefixType) XXX_Size() int {
 	return xxx_messageInfo_IsisIpv6PrefixType.Size(m)
@@ -362,17 +355,16 @@ func (m *IsisSnpaType) Reset()         { *m = IsisSnpaType{} }
 func (m *IsisSnpaType) String() string { return proto.CompactTextString(m) }
 func (*IsisSnpaType) ProtoMessage()    {}
 func (*IsisSnpaType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{5}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{5}
 }
-
 func (m *IsisSnpaType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisSnpaType.Unmarshal(m, b)
 }
 func (m *IsisSnpaType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisSnpaType.Marshal(b, m, deterministic)
 }
-func (m *IsisSnpaType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisSnpaType.Merge(m, src)
+func (dst *IsisSnpaType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisSnpaType.Merge(dst, src)
 }
 func (m *IsisSnpaType) XXX_Size() int {
 	return xxx_messageInfo_IsisSnpaType.Size(m)
@@ -401,17 +393,16 @@ func (m *IsisShInterfaceName) Reset()         { *m = IsisShInterfaceName{} }
 func (m *IsisShInterfaceName) String() string { return proto.CompactTextString(m) }
 func (*IsisShInterfaceName) ProtoMessage()    {}
 func (*IsisShInterfaceName) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{6}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{6}
 }
-
 func (m *IsisShInterfaceName) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShInterfaceName.Unmarshal(m, b)
 }
 func (m *IsisShInterfaceName) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShInterfaceName.Marshal(b, m, deterministic)
 }
-func (m *IsisShInterfaceName) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShInterfaceName.Merge(m, src)
+func (dst *IsisShInterfaceName) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShInterfaceName.Merge(dst, src)
 }
 func (m *IsisShInterfaceName) XXX_Size() int {
 	return xxx_messageInfo_IsisShInterfaceName.Size(m)
@@ -450,17 +441,16 @@ func (m *IsisShRepEl) Reset()         { *m = IsisShRepEl{} }
 func (m *IsisShRepEl) String() string { return proto.CompactTextString(m) }
 func (*IsisShRepEl) ProtoMessage()    {}
 func (*IsisShRepEl) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{7}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{7}
 }
-
 func (m *IsisShRepEl) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRepEl.Unmarshal(m, b)
 }
 func (m *IsisShRepEl) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRepEl.Marshal(b, m, deterministic)
 }
-func (m *IsisShRepEl) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRepEl.Merge(m, src)
+func (dst *IsisShRepEl) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRepEl.Merge(dst, src)
 }
 func (m *IsisShRepEl) XXX_Size() int {
 	return xxx_messageInfo_IsisShRepEl.Size(m)
@@ -567,17 +557,16 @@ func (m *IsisShIpv6FrrBackup) Reset()         { *m = IsisShIpv6FrrBackup{} }
 func (m *IsisShIpv6FrrBackup) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6FrrBackup) ProtoMessage()    {}
 func (*IsisShIpv6FrrBackup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{8}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{8}
 }
-
 func (m *IsisShIpv6FrrBackup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Unmarshal(m, b)
 }
 func (m *IsisShIpv6FrrBackup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6FrrBackup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6FrrBackup.Merge(m, src)
+func (dst *IsisShIpv6FrrBackup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6FrrBackup.Merge(dst, src)
 }
 func (m *IsisShIpv6FrrBackup) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Size(m)
@@ -794,17 +783,16 @@ func (m *IsisShIpv6Path) Reset()         { *m = IsisShIpv6Path{} }
 func (m *IsisShIpv6Path) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6Path) ProtoMessage()    {}
 func (*IsisShIpv6Path) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{9}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{9}
 }
-
 func (m *IsisShIpv6Path) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6Path.Unmarshal(m, b)
 }
 func (m *IsisShIpv6Path) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6Path.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6Path) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6Path.Merge(m, src)
+func (dst *IsisShIpv6Path) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6Path.Merge(dst, src)
 }
 func (m *IsisShIpv6Path) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6Path.Size(m)
@@ -914,17 +902,16 @@ func (m *IsisShIpv6UcmpPath) Reset()         { *m = IsisShIpv6UcmpPath{} }
 func (m *IsisShIpv6UcmpPath) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6UcmpPath) ProtoMessage()    {}
 func (*IsisShIpv6UcmpPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{10}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{10}
 }
-
 func (m *IsisShIpv6UcmpPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6UcmpPath.Unmarshal(m, b)
 }
 func (m *IsisShIpv6UcmpPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6UcmpPath.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6UcmpPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6UcmpPath.Merge(m, src)
+func (dst *IsisShIpv6UcmpPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6UcmpPath.Merge(dst, src)
 }
 func (m *IsisShIpv6UcmpPath) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6UcmpPath.Size(m)
@@ -1015,17 +1002,16 @@ func (m *IsisShRedistEntryProto) Reset()         { *m = IsisShRedistEntryProto{}
 func (m *IsisShRedistEntryProto) String() string { return proto.CompactTextString(m) }
 func (*IsisShRedistEntryProto) ProtoMessage()    {}
 func (*IsisShRedistEntryProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{11}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{11}
 }
-
 func (m *IsisShRedistEntryProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRedistEntryProto.Unmarshal(m, b)
 }
 func (m *IsisShRedistEntryProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRedistEntryProto.Marshal(b, m, deterministic)
 }
-func (m *IsisShRedistEntryProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRedistEntryProto.Merge(m, src)
+func (dst *IsisShRedistEntryProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRedistEntryProto.Merge(dst, src)
 }
 func (m *IsisShRedistEntryProto) XXX_Size() int {
 	return xxx_messageInfo_IsisShRedistEntryProto.Size(m)
@@ -1098,17 +1084,16 @@ func (m *IsisShRouteConnDetails) Reset()         { *m = IsisShRouteConnDetails{}
 func (m *IsisShRouteConnDetails) String() string { return proto.CompactTextString(m) }
 func (*IsisShRouteConnDetails) ProtoMessage()    {}
 func (*IsisShRouteConnDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{12}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{12}
 }
-
 func (m *IsisShRouteConnDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRouteConnDetails.Unmarshal(m, b)
 }
 func (m *IsisShRouteConnDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRouteConnDetails.Marshal(b, m, deterministic)
 }
-func (m *IsisShRouteConnDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRouteConnDetails.Merge(m, src)
+func (dst *IsisShRouteConnDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRouteConnDetails.Merge(dst, src)
 }
 func (m *IsisShRouteConnDetails) XXX_Size() int {
 	return xxx_messageInfo_IsisShRouteConnDetails.Size(m)
@@ -1140,17 +1125,16 @@ func (m *IsisShRouteConnStatus) Reset()         { *m = IsisShRouteConnStatus{} }
 func (m *IsisShRouteConnStatus) String() string { return proto.CompactTextString(m) }
 func (*IsisShRouteConnStatus) ProtoMessage()    {}
 func (*IsisShRouteConnStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{13}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{13}
 }
-
 func (m *IsisShRouteConnStatus) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRouteConnStatus.Unmarshal(m, b)
 }
 func (m *IsisShRouteConnStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRouteConnStatus.Marshal(b, m, deterministic)
 }
-func (m *IsisShRouteConnStatus) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRouteConnStatus.Merge(m, src)
+func (dst *IsisShRouteConnStatus) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRouteConnStatus.Merge(dst, src)
 }
 func (m *IsisShRouteConnStatus) XXX_Size() int {
 	return xxx_messageInfo_IsisShRouteConnStatus.Size(m)
@@ -1187,17 +1171,16 @@ func (m *IsisShRouteRedistLevelDetails) Reset()         { *m = IsisShRouteRedist
 func (m *IsisShRouteRedistLevelDetails) String() string { return proto.CompactTextString(m) }
 func (*IsisShRouteRedistLevelDetails) ProtoMessage()    {}
 func (*IsisShRouteRedistLevelDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{14}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{14}
 }
-
 func (m *IsisShRouteRedistLevelDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRouteRedistLevelDetails.Unmarshal(m, b)
 }
 func (m *IsisShRouteRedistLevelDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRouteRedistLevelDetails.Marshal(b, m, deterministic)
 }
-func (m *IsisShRouteRedistLevelDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRouteRedistLevelDetails.Merge(m, src)
+func (dst *IsisShRouteRedistLevelDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRouteRedistLevelDetails.Merge(dst, src)
 }
 func (m *IsisShRouteRedistLevelDetails) XXX_Size() int {
 	return xxx_messageInfo_IsisShRouteRedistLevelDetails.Size(m)
@@ -1233,17 +1216,16 @@ func (m *IsisShRouteRedistDetails) Reset()         { *m = IsisShRouteRedistDetai
 func (m *IsisShRouteRedistDetails) String() string { return proto.CompactTextString(m) }
 func (*IsisShRouteRedistDetails) ProtoMessage()    {}
 func (*IsisShRouteRedistDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{15}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{15}
 }
-
 func (m *IsisShRouteRedistDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRouteRedistDetails.Unmarshal(m, b)
 }
 func (m *IsisShRouteRedistDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRouteRedistDetails.Marshal(b, m, deterministic)
 }
-func (m *IsisShRouteRedistDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRouteRedistDetails.Merge(m, src)
+func (dst *IsisShRouteRedistDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRouteRedistDetails.Merge(dst, src)
 }
 func (m *IsisShRouteRedistDetails) XXX_Size() int {
 	return xxx_messageInfo_IsisShRouteRedistDetails.Size(m)
@@ -1275,17 +1257,16 @@ func (m *IsisShRouteRedistStatus) Reset()         { *m = IsisShRouteRedistStatus
 func (m *IsisShRouteRedistStatus) String() string { return proto.CompactTextString(m) }
 func (*IsisShRouteRedistStatus) ProtoMessage()    {}
 func (*IsisShRouteRedistStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{16}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{16}
 }
-
 func (m *IsisShRouteRedistStatus) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRouteRedistStatus.Unmarshal(m, b)
 }
 func (m *IsisShRouteRedistStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRouteRedistStatus.Marshal(b, m, deterministic)
 }
-func (m *IsisShRouteRedistStatus) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRouteRedistStatus.Merge(m, src)
+func (dst *IsisShRouteRedistStatus) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRouteRedistStatus.Merge(dst, src)
 }
 func (m *IsisShRouteRedistStatus) XXX_Size() int {
 	return xxx_messageInfo_IsisShRouteRedistStatus.Size(m)
@@ -1329,17 +1310,16 @@ func (m *IsisShIpv6RouteNativeSource) Reset()         { *m = IsisShIpv6RouteNati
 func (m *IsisShIpv6RouteNativeSource) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteNativeSource) ProtoMessage()    {}
 func (*IsisShIpv6RouteNativeSource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{17}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{17}
 }
-
 func (m *IsisShIpv6RouteNativeSource) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteNativeSource.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteNativeSource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteNativeSource.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteNativeSource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteNativeSource.Merge(m, src)
+func (dst *IsisShIpv6RouteNativeSource) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteNativeSource.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteNativeSource) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteNativeSource.Size(m)
@@ -1413,17 +1393,16 @@ func (m *IsisShIpv6RouteNativePreference) Reset()         { *m = IsisShIpv6Route
 func (m *IsisShIpv6RouteNativePreference) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteNativePreference) ProtoMessage()    {}
 func (*IsisShIpv6RouteNativePreference) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{18}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{18}
 }
-
 func (m *IsisShIpv6RouteNativePreference) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteNativePreference.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteNativePreference) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteNativePreference.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteNativePreference) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteNativePreference.Merge(m, src)
+func (dst *IsisShIpv6RouteNativePreference) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteNativePreference.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteNativePreference) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteNativePreference.Size(m)
@@ -1535,17 +1514,16 @@ func (m *IsisShIpv6RouteNativeDetails) Reset()         { *m = IsisShIpv6RouteNat
 func (m *IsisShIpv6RouteNativeDetails) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteNativeDetails) ProtoMessage()    {}
 func (*IsisShIpv6RouteNativeDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{19}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{19}
 }
-
 func (m *IsisShIpv6RouteNativeDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteNativeDetails.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteNativeDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteNativeDetails.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteNativeDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteNativeDetails.Merge(m, src)
+func (dst *IsisShIpv6RouteNativeDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteNativeDetails.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteNativeDetails) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteNativeDetails.Size(m)
@@ -1591,17 +1569,16 @@ func (m *IsisShIpv6RouteNativeStatus) Reset()         { *m = IsisShIpv6RouteNati
 func (m *IsisShIpv6RouteNativeStatus) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteNativeStatus) ProtoMessage()    {}
 func (*IsisShIpv6RouteNativeStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{20}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{20}
 }
-
 func (m *IsisShIpv6RouteNativeStatus) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteNativeStatus.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteNativeStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteNativeStatus.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteNativeStatus) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteNativeStatus.Merge(m, src)
+func (dst *IsisShIpv6RouteNativeStatus) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteNativeStatus.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteNativeStatus) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteNativeStatus.Size(m)
@@ -1640,17 +1617,16 @@ func (m *IsisShIpv6RouteSummarizationStatus) Reset()         { *m = IsisShIpv6Ro
 func (m *IsisShIpv6RouteSummarizationStatus) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteSummarizationStatus) ProtoMessage()    {}
 func (*IsisShIpv6RouteSummarizationStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{21}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{21}
 }
-
 func (m *IsisShIpv6RouteSummarizationStatus) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteSummarizationStatus.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteSummarizationStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteSummarizationStatus.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteSummarizationStatus) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteSummarizationStatus.Merge(m, src)
+func (dst *IsisShIpv6RouteSummarizationStatus) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteSummarizationStatus.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteSummarizationStatus) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteSummarizationStatus.Size(m)
@@ -1706,17 +1682,16 @@ func (m *IsisShIpv6RouteAdv) Reset()         { *m = IsisShIpv6RouteAdv{} }
 func (m *IsisShIpv6RouteAdv) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6RouteAdv) ProtoMessage()    {}
 func (*IsisShIpv6RouteAdv) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5729880b73ebcb3c, []int{22}
+	return fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3, []int{22}
 }
-
 func (m *IsisShIpv6RouteAdv) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6RouteAdv.Unmarshal(m, b)
 }
 func (m *IsisShIpv6RouteAdv) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6RouteAdv.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6RouteAdv) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6RouteAdv.Merge(m, src)
+func (dst *IsisShIpv6RouteAdv) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6RouteAdv.Merge(dst, src)
 }
 func (m *IsisShIpv6RouteAdv) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6RouteAdv.Size(m)
@@ -1823,9 +1798,11 @@ func init() {
 	proto.RegisterType((*IsisShIpv6RouteAdv)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.ipv6frr_backups.ipv6frr_backup.isis_sh_ipv6_route_adv")
 }
 
-func init() { proto.RegisterFile("isis_sh_ipv6_route.proto", fileDescriptor_5729880b73ebcb3c) }
+func init() {
+	proto.RegisterFile("isis_sh_ipv6_route.proto", fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3)
+}
 
-var fileDescriptor_5729880b73ebcb3c = []byte{
+var fileDescriptor_isis_sh_ipv6_route_713edddd234bf3c3 = []byte{
 	// 2237 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xec, 0x5a, 0xcf, 0x8f, 0x23, 0x39,
 	0xf5, 0x97, 0xa7, 0x7f, 0xa4, 0xf3, 0x92, 0x74, 0x27, 0xee, 0x5f, 0x35, 0xb3, 0xfb, 0xd5, 0xb7,

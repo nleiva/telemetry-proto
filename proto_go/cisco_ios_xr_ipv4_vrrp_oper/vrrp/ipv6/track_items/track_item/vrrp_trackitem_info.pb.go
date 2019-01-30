@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_vrrp_oper_vrrp_ipv6_track_items_track_item
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Tracked item information
 type VrrpTrackitemInfo_KEYS struct {
@@ -34,17 +32,16 @@ func (m *VrrpTrackitemInfo_KEYS) Reset()         { *m = VrrpTrackitemInfo_KEYS{}
 func (m *VrrpTrackitemInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*VrrpTrackitemInfo_KEYS) ProtoMessage()    {}
 func (*VrrpTrackitemInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_75247e93c2102220, []int{0}
+	return fileDescriptor_vrrp_trackitem_info_e03bb4922024f2a6, []int{0}
 }
-
 func (m *VrrpTrackitemInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpTrackitemInfo_KEYS.Unmarshal(m, b)
 }
 func (m *VrrpTrackitemInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpTrackitemInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *VrrpTrackitemInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpTrackitemInfo_KEYS.Merge(m, src)
+func (dst *VrrpTrackitemInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpTrackitemInfo_KEYS.Merge(dst, src)
 }
 func (m *VrrpTrackitemInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_VrrpTrackitemInfo_KEYS.Size(m)
@@ -98,17 +95,16 @@ func (m *VrrpTrackitemInfo) Reset()         { *m = VrrpTrackitemInfo{} }
 func (m *VrrpTrackitemInfo) String() string { return proto.CompactTextString(m) }
 func (*VrrpTrackitemInfo) ProtoMessage()    {}
 func (*VrrpTrackitemInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_75247e93c2102220, []int{1}
+	return fileDescriptor_vrrp_trackitem_info_e03bb4922024f2a6, []int{1}
 }
-
 func (m *VrrpTrackitemInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpTrackitemInfo.Unmarshal(m, b)
 }
 func (m *VrrpTrackitemInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpTrackitemInfo.Marshal(b, m, deterministic)
 }
-func (m *VrrpTrackitemInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpTrackitemInfo.Merge(m, src)
+func (dst *VrrpTrackitemInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpTrackitemInfo.Merge(dst, src)
 }
 func (m *VrrpTrackitemInfo) XXX_Size() int {
 	return xxx_messageInfo_VrrpTrackitemInfo.Size(m)
@@ -166,9 +162,11 @@ func init() {
 	proto.RegisterType((*VrrpTrackitemInfo)(nil), "cisco_ios_xr_ipv4_vrrp_oper.vrrp.ipv6.track_items.track_item.vrrp_trackitem_info")
 }
 
-func init() { proto.RegisterFile("vrrp_trackitem_info.proto", fileDescriptor_75247e93c2102220) }
+func init() {
+	proto.RegisterFile("vrrp_trackitem_info.proto", fileDescriptor_vrrp_trackitem_info_e03bb4922024f2a6)
+}
 
-var fileDescriptor_75247e93c2102220 = []byte{
+var fileDescriptor_vrrp_trackitem_info_e03bb4922024f2a6 = []byte{
 	// 292 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x91, 0x41, 0x4b, 0xfb, 0x40,
 	0x10, 0xc5, 0xc9, 0xff, 0x8f, 0x62, 0x17, 0xaa, 0x76, 0x2d, 0xb2, 0x8a, 0x87, 0x52, 0x10, 0x4a,

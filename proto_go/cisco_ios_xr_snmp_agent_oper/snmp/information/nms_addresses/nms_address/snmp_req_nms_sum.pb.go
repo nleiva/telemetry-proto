@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_nms_addresses_nms_address
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP Agent Req NMS Summary
 type SnmpReqNmsSum_KEYS struct {
@@ -32,17 +30,16 @@ func (m *SnmpReqNmsSum_KEYS) Reset()         { *m = SnmpReqNmsSum_KEYS{} }
 func (m *SnmpReqNmsSum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpReqNmsSum_KEYS) ProtoMessage()    {}
 func (*SnmpReqNmsSum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6474988c3482263d, []int{0}
+	return fileDescriptor_snmp_req_nms_sum_930371e510763a6e, []int{0}
 }
-
 func (m *SnmpReqNmsSum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpReqNmsSum_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpReqNmsSum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpReqNmsSum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpReqNmsSum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpReqNmsSum_KEYS.Merge(m, src)
+func (dst *SnmpReqNmsSum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpReqNmsSum_KEYS.Merge(dst, src)
 }
 func (m *SnmpReqNmsSum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpReqNmsSum_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *SnmpReqNmsSum) Reset()         { *m = SnmpReqNmsSum{} }
 func (m *SnmpReqNmsSum) String() string { return proto.CompactTextString(m) }
 func (*SnmpReqNmsSum) ProtoMessage()    {}
 func (*SnmpReqNmsSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6474988c3482263d, []int{1}
+	return fileDescriptor_snmp_req_nms_sum_930371e510763a6e, []int{1}
 }
-
 func (m *SnmpReqNmsSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpReqNmsSum.Unmarshal(m, b)
 }
 func (m *SnmpReqNmsSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpReqNmsSum.Marshal(b, m, deterministic)
 }
-func (m *SnmpReqNmsSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpReqNmsSum.Merge(m, src)
+func (dst *SnmpReqNmsSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpReqNmsSum.Merge(dst, src)
 }
 func (m *SnmpReqNmsSum) XXX_Size() int {
 	return xxx_messageInfo_SnmpReqNmsSum.Size(m)
@@ -150,9 +146,11 @@ func init() {
 	proto.RegisterType((*SnmpReqNmsSum)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.nms_addresses.nms_address.snmp_req_nms_sum")
 }
 
-func init() { proto.RegisterFile("snmp_req_nms_sum.proto", fileDescriptor_6474988c3482263d) }
+func init() {
+	proto.RegisterFile("snmp_req_nms_sum.proto", fileDescriptor_snmp_req_nms_sum_930371e510763a6e)
+}
 
-var fileDescriptor_6474988c3482263d = []byte{
+var fileDescriptor_snmp_req_nms_sum_930371e510763a6e = []byte{
 	// 254 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x91, 0x4d, 0x4b, 0xc3, 0x40,
 	0x10, 0x86, 0x89, 0x07, 0x3f, 0x46, 0xc4, 0x76, 0xa5, 0x12, 0x4f, 0x96, 0x9e, 0x4a, 0x91, 0x1c,

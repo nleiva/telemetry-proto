@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_spirit_install_instmgr_oper_software_install_active
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Calvados show install active info
 type InstmgrCalvShowInstActTd_KEYS struct {
@@ -31,17 +29,16 @@ func (m *InstmgrCalvShowInstActTd_KEYS) Reset()         { *m = InstmgrCalvShowIn
 func (m *InstmgrCalvShowInstActTd_KEYS) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstActTd_KEYS) ProtoMessage()    {}
 func (*InstmgrCalvShowInstActTd_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4a8b5fabc84ca7ff, []int{0}
+	return fileDescriptor_instmgr_calv_show_inst_act_td_e283ff1d3390a8d3, []int{0}
 }
-
 func (m *InstmgrCalvShowInstActTd_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd_KEYS.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstActTd_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd_KEYS.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstActTd_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstActTd_KEYS.Merge(m, src)
+func (dst *InstmgrCalvShowInstActTd_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstActTd_KEYS.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstActTd_KEYS) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd_KEYS.Size(m)
@@ -63,17 +60,16 @@ func (m *InstmgrCalvShowInstActTd) Reset()         { *m = InstmgrCalvShowInstAct
 func (m *InstmgrCalvShowInstActTd) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstActTd) ProtoMessage()    {}
 func (*InstmgrCalvShowInstActTd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4a8b5fabc84ca7ff, []int{1}
+	return fileDescriptor_instmgr_calv_show_inst_act_td_e283ff1d3390a8d3, []int{1}
 }
-
 func (m *InstmgrCalvShowInstActTd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstActTd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstActTd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstActTd.Merge(m, src)
+func (dst *InstmgrCalvShowInstActTd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstActTd.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstActTd) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstActTd.Size(m)
@@ -107,17 +103,16 @@ func (m *InstmgrCalvShowInstActRow) Reset()         { *m = InstmgrCalvShowInstAc
 func (m *InstmgrCalvShowInstActRow) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstActRow) ProtoMessage()    {}
 func (*InstmgrCalvShowInstActRow) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4a8b5fabc84ca7ff, []int{2}
+	return fileDescriptor_instmgr_calv_show_inst_act_td_e283ff1d3390a8d3, []int{2}
 }
-
 func (m *InstmgrCalvShowInstActRow) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstActRow.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstActRow) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstActRow.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstActRow) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstActRow.Merge(m, src)
+func (dst *InstmgrCalvShowInstActRow) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstActRow.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstActRow) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstActRow.Size(m)
@@ -177,10 +172,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("instmgr_calv_show_inst_act_td.proto", fileDescriptor_4a8b5fabc84ca7ff)
+	proto.RegisterFile("instmgr_calv_show_inst_act_td.proto", fileDescriptor_instmgr_calv_show_inst_act_td_e283ff1d3390a8d3)
 }
 
-var fileDescriptor_4a8b5fabc84ca7ff = []byte{
+var fileDescriptor_instmgr_calv_show_inst_act_td_e283ff1d3390a8d3 = []byte{
 	// 323 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0x92, 0xb1, 0x4e, 0xf3, 0x30,
 	0x14, 0x85, 0x95, 0xf6, 0xff, 0x2b, 0x6a, 0x28, 0xa8, 0xae, 0x84, 0x02, 0x08, 0x54, 0xa5, 0x48,

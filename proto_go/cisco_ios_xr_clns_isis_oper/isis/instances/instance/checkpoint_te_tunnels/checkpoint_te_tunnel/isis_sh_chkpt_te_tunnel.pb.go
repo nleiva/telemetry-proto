@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_checkpoint_te_tunnels_checkpoint_te_tunnel
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Checkpointed TE tunnel
 type IsisShChkptTeTunnel_KEYS struct {
@@ -34,17 +32,16 @@ func (m *IsisShChkptTeTunnel_KEYS) Reset()         { *m = IsisShChkptTeTunnel_KE
 func (m *IsisShChkptTeTunnel_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptTeTunnel_KEYS) ProtoMessage()    {}
 func (*IsisShChkptTeTunnel_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1dddcd4beb159174, []int{0}
+	return fileDescriptor_isis_sh_chkpt_te_tunnel_fb47602a5445cff4, []int{0}
 }
-
 func (m *IsisShChkptTeTunnel_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptTeTunnel_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShChkptTeTunnel_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptTeTunnel_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptTeTunnel_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptTeTunnel_KEYS.Merge(m, src)
+func (dst *IsisShChkptTeTunnel_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptTeTunnel_KEYS.Merge(dst, src)
 }
 func (m *IsisShChkptTeTunnel_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptTeTunnel_KEYS.Size(m)
@@ -104,17 +101,16 @@ func (m *IsisShChkptTeTunnel) Reset()         { *m = IsisShChkptTeTunnel{} }
 func (m *IsisShChkptTeTunnel) String() string { return proto.CompactTextString(m) }
 func (*IsisShChkptTeTunnel) ProtoMessage()    {}
 func (*IsisShChkptTeTunnel) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1dddcd4beb159174, []int{1}
+	return fileDescriptor_isis_sh_chkpt_te_tunnel_fb47602a5445cff4, []int{1}
 }
-
 func (m *IsisShChkptTeTunnel) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShChkptTeTunnel.Unmarshal(m, b)
 }
 func (m *IsisShChkptTeTunnel) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShChkptTeTunnel.Marshal(b, m, deterministic)
 }
-func (m *IsisShChkptTeTunnel) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShChkptTeTunnel.Merge(m, src)
+func (dst *IsisShChkptTeTunnel) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShChkptTeTunnel.Merge(dst, src)
 }
 func (m *IsisShChkptTeTunnel) XXX_Size() int {
 	return xxx_messageInfo_IsisShChkptTeTunnel.Size(m)
@@ -193,9 +189,11 @@ func init() {
 	proto.RegisterType((*IsisShChkptTeTunnel)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.checkpoint_te_tunnels.checkpoint_te_tunnel.isis_sh_chkpt_te_tunnel")
 }
 
-func init() { proto.RegisterFile("isis_sh_chkpt_te_tunnel.proto", fileDescriptor_1dddcd4beb159174) }
+func init() {
+	proto.RegisterFile("isis_sh_chkpt_te_tunnel.proto", fileDescriptor_isis_sh_chkpt_te_tunnel_fb47602a5445cff4)
+}
 
-var fileDescriptor_1dddcd4beb159174 = []byte{
+var fileDescriptor_isis_sh_chkpt_te_tunnel_fb47602a5445cff4 = []byte{
 	// 369 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x92, 0xc1, 0x6b, 0xe2, 0x40,
 	0x14, 0x87, 0xc9, 0xca, 0x2e, 0xec, 0xb0, 0x2e, 0x38, 0xea, 0x3a, 0x0b, 0xbb, 0x20, 0x2e, 0x0b,

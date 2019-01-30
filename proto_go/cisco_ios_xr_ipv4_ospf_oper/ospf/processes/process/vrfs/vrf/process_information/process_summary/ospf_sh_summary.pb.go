@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_vrfs_vrf_process_information_process_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Summary
 type OspfShSummary_KEYS struct {
@@ -33,17 +31,16 @@ func (m *OspfShSummary_KEYS) Reset()         { *m = OspfShSummary_KEYS{} }
 func (m *OspfShSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShSummary_KEYS) ProtoMessage()    {}
 func (*OspfShSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{0}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{0}
 }
-
 func (m *OspfShSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShSummary_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShSummary_KEYS.Merge(m, src)
+func (dst *OspfShSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShSummary_KEYS.Merge(dst, src)
 }
 func (m *OspfShSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShSummary_KEYS.Size(m)
@@ -258,17 +255,16 @@ func (m *OspfShSummary) Reset()         { *m = OspfShSummary{} }
 func (m *OspfShSummary) String() string { return proto.CompactTextString(m) }
 func (*OspfShSummary) ProtoMessage()    {}
 func (*OspfShSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{1}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{1}
 }
-
 func (m *OspfShSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShSummary.Unmarshal(m, b)
 }
 func (m *OspfShSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShSummary.Marshal(b, m, deterministic)
 }
-func (m *OspfShSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShSummary.Merge(m, src)
+func (dst *OspfShSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShSummary.Merge(dst, src)
 }
 func (m *OspfShSummary) XXX_Size() int {
 	return xxx_messageInfo_OspfShSummary.Size(m)
@@ -921,17 +917,16 @@ func (m *OspfShTime) Reset()         { *m = OspfShTime{} }
 func (m *OspfShTime) String() string { return proto.CompactTextString(m) }
 func (*OspfShTime) ProtoMessage()    {}
 func (*OspfShTime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{2}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{2}
 }
-
 func (m *OspfShTime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTime.Unmarshal(m, b)
 }
 func (m *OspfShTime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTime.Marshal(b, m, deterministic)
 }
-func (m *OspfShTime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTime.Merge(m, src)
+func (dst *OspfShTime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTime.Merge(dst, src)
 }
 func (m *OspfShTime) XXX_Size() int {
 	return xxx_messageInfo_OspfShTime.Size(m)
@@ -967,17 +962,16 @@ func (m *StringType) Reset()         { *m = StringType{} }
 func (m *StringType) String() string { return proto.CompactTextString(m) }
 func (*StringType) ProtoMessage()    {}
 func (*StringType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{3}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{3}
 }
-
 func (m *StringType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_StringType.Unmarshal(m, b)
 }
 func (m *StringType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_StringType.Marshal(b, m, deterministic)
 }
-func (m *StringType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_StringType.Merge(m, src)
+func (dst *StringType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_StringType.Merge(dst, src)
 }
 func (m *StringType) XXX_Size() int {
 	return xxx_messageInfo_StringType.Size(m)
@@ -1017,17 +1011,16 @@ func (m *OspfShRedistProto) Reset()         { *m = OspfShRedistProto{} }
 func (m *OspfShRedistProto) String() string { return proto.CompactTextString(m) }
 func (*OspfShRedistProto) ProtoMessage()    {}
 func (*OspfShRedistProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{4}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{4}
 }
-
 func (m *OspfShRedistProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRedistProto.Unmarshal(m, b)
 }
 func (m *OspfShRedistProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRedistProto.Marshal(b, m, deterministic)
 }
-func (m *OspfShRedistProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRedistProto.Merge(m, src)
+func (dst *OspfShRedistProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRedistProto.Merge(dst, src)
 }
 func (m *OspfShRedistProto) XXX_Size() int {
 	return xxx_messageInfo_OspfShRedistProto.Size(m)
@@ -1101,17 +1094,16 @@ func (m *OspfShRedist) Reset()         { *m = OspfShRedist{} }
 func (m *OspfShRedist) String() string { return proto.CompactTextString(m) }
 func (*OspfShRedist) ProtoMessage()    {}
 func (*OspfShRedist) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{5}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{5}
 }
-
 func (m *OspfShRedist) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRedist.Unmarshal(m, b)
 }
 func (m *OspfShRedist) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRedist.Marshal(b, m, deterministic)
 }
-func (m *OspfShRedist) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRedist.Merge(m, src)
+func (dst *OspfShRedist) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRedist.Merge(dst, src)
 }
 func (m *OspfShRedist) XXX_Size() int {
 	return xxx_messageInfo_OspfShRedist.Size(m)
@@ -1172,17 +1164,16 @@ func (m *OspfShDomainIdEntry) Reset()         { *m = OspfShDomainIdEntry{} }
 func (m *OspfShDomainIdEntry) String() string { return proto.CompactTextString(m) }
 func (*OspfShDomainIdEntry) ProtoMessage()    {}
 func (*OspfShDomainIdEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{6}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{6}
 }
-
 func (m *OspfShDomainIdEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDomainIdEntry.Unmarshal(m, b)
 }
 func (m *OspfShDomainIdEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDomainIdEntry.Marshal(b, m, deterministic)
 }
-func (m *OspfShDomainIdEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDomainIdEntry.Merge(m, src)
+func (dst *OspfShDomainIdEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDomainIdEntry.Merge(dst, src)
 }
 func (m *OspfShDomainIdEntry) XXX_Size() int {
 	return xxx_messageInfo_OspfShDomainIdEntry.Size(m)
@@ -1222,17 +1213,16 @@ func (m *OspfShDomainId) Reset()         { *m = OspfShDomainId{} }
 func (m *OspfShDomainId) String() string { return proto.CompactTextString(m) }
 func (*OspfShDomainId) ProtoMessage()    {}
 func (*OspfShDomainId) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{7}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{7}
 }
-
 func (m *OspfShDomainId) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShDomainId.Unmarshal(m, b)
 }
 func (m *OspfShDomainId) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShDomainId.Marshal(b, m, deterministic)
 }
-func (m *OspfShDomainId) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShDomainId.Merge(m, src)
+func (dst *OspfShDomainId) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShDomainId.Merge(dst, src)
 }
 func (m *OspfShDomainId) XXX_Size() int {
 	return xxx_messageInfo_OspfShDomainId.Size(m)
@@ -1296,17 +1286,16 @@ func (m *OspfShMaxMetric) Reset()         { *m = OspfShMaxMetric{} }
 func (m *OspfShMaxMetric) String() string { return proto.CompactTextString(m) }
 func (*OspfShMaxMetric) ProtoMessage()    {}
 func (*OspfShMaxMetric) Descriptor() ([]byte, []int) {
-	return fileDescriptor_baf3042e63c4ef92, []int{8}
+	return fileDescriptor_ospf_sh_summary_59613acaa2c7e10e, []int{8}
 }
-
 func (m *OspfShMaxMetric) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShMaxMetric.Unmarshal(m, b)
 }
 func (m *OspfShMaxMetric) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShMaxMetric.Marshal(b, m, deterministic)
 }
-func (m *OspfShMaxMetric) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShMaxMetric.Merge(m, src)
+func (dst *OspfShMaxMetric) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShMaxMetric.Merge(dst, src)
 }
 func (m *OspfShMaxMetric) XXX_Size() int {
 	return xxx_messageInfo_OspfShMaxMetric.Size(m)
@@ -1427,9 +1416,11 @@ func init() {
 	proto.RegisterType((*OspfShMaxMetric)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.vrfs.vrf.process_information.process_summary.ospf_sh_max_metric")
 }
 
-func init() { proto.RegisterFile("ospf_sh_summary.proto", fileDescriptor_baf3042e63c4ef92) }
+func init() {
+	proto.RegisterFile("ospf_sh_summary.proto", fileDescriptor_ospf_sh_summary_59613acaa2c7e10e)
+}
 
-var fileDescriptor_baf3042e63c4ef92 = []byte{
+var fileDescriptor_ospf_sh_summary_59613acaa2c7e10e = []byte{
 	// 2557 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x59, 0x4b, 0x93, 0x1c, 0x47,
 	0x11, 0x8e, 0x91, 0x2d, 0x69, 0xb7, 0xf6, 0x5d, 0x5a, 0x49, 0x25, 0x59, 0x36, 0xeb, 0x35, 0x88,

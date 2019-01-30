@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_server_binding_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 server bindings summary
 type Ipv6Dhcpv6DServerBindingsSummary_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) Reset()         { *m = Ipv6Dhcpv
 func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerBindingsSummary_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerBindingsSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e546b90cab1ea30d, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_server_bindings_summary_317544500e868c1c, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerBindingsSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerBindingsSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *Ipv6Dhcpv6DServerBindingsSummary) Reset()         { *m = Ipv6Dhcpv6DSer
 func (m *Ipv6Dhcpv6DServerBindingsSummary) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DServerBindingsSummary) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DServerBindingsSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e546b90cab1ea30d, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_server_bindings_summary_317544500e868c1c, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DServerBindingsSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DServerBindingsSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DServerBindingsSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary.Merge(m, src)
+func (dst *Ipv6Dhcpv6DServerBindingsSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DServerBindingsSummary) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DServerBindingsSummary.Size(m)
@@ -143,17 +139,16 @@ func (m *BagDhcpv6DServerBindingsSummary) Reset()         { *m = BagDhcpv6DServe
 func (m *BagDhcpv6DServerBindingsSummary) String() string { return proto.CompactTextString(m) }
 func (*BagDhcpv6DServerBindingsSummary) ProtoMessage()    {}
 func (*BagDhcpv6DServerBindingsSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e546b90cab1ea30d, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_server_bindings_summary_317544500e868c1c, []int{2}
 }
-
 func (m *BagDhcpv6DServerBindingsSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BagDhcpv6DServerBindingsSummary.Unmarshal(m, b)
 }
 func (m *BagDhcpv6DServerBindingsSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BagDhcpv6DServerBindingsSummary.Marshal(b, m, deterministic)
 }
-func (m *BagDhcpv6DServerBindingsSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BagDhcpv6DServerBindingsSummary.Merge(m, src)
+func (dst *BagDhcpv6DServerBindingsSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BagDhcpv6DServerBindingsSummary.Merge(dst, src)
 }
 func (m *BagDhcpv6DServerBindingsSummary) XXX_Size() int {
 	return xxx_messageInfo_BagDhcpv6DServerBindingsSummary.Size(m)
@@ -220,10 +215,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("ipv6_dhcpv6d_server_bindings_summary.proto", fileDescriptor_e546b90cab1ea30d)
+	proto.RegisterFile("ipv6_dhcpv6d_server_bindings_summary.proto", fileDescriptor_ipv6_dhcpv6d_server_bindings_summary_317544500e868c1c)
 }
 
-var fileDescriptor_e546b90cab1ea30d = []byte{
+var fileDescriptor_ipv6_dhcpv6d_server_bindings_summary_317544500e868c1c = []byte{
 	// 358 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x93, 0xcf, 0x4a, 0xf3, 0x40,
 	0x14, 0xc5, 0x49, 0xbf, 0x7e, 0xad, 0xbd, 0xda, 0x85, 0x69, 0x8b, 0x01, 0x37, 0xa5, 0x75, 0x51,

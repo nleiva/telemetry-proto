@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_vrrp_oper_vrrp_ipv4_interfaces_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // VRRP Interface statistics
 type VrrpInterfaceInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *VrrpInterfaceInfo_KEYS) Reset()         { *m = VrrpInterfaceInfo_KEYS{}
 func (m *VrrpInterfaceInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*VrrpInterfaceInfo_KEYS) ProtoMessage()    {}
 func (*VrrpInterfaceInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_76aa910590caf3c8, []int{0}
+	return fileDescriptor_vrrp_interface_info_a5586567d8d1ccb5, []int{0}
 }
-
 func (m *VrrpInterfaceInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpInterfaceInfo_KEYS.Unmarshal(m, b)
 }
 func (m *VrrpInterfaceInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpInterfaceInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *VrrpInterfaceInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpInterfaceInfo_KEYS.Merge(m, src)
+func (dst *VrrpInterfaceInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpInterfaceInfo_KEYS.Merge(dst, src)
 }
 func (m *VrrpInterfaceInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_VrrpInterfaceInfo_KEYS.Size(m)
@@ -80,17 +77,16 @@ func (m *VrrpInterfaceInfo) Reset()         { *m = VrrpInterfaceInfo{} }
 func (m *VrrpInterfaceInfo) String() string { return proto.CompactTextString(m) }
 func (*VrrpInterfaceInfo) ProtoMessage()    {}
 func (*VrrpInterfaceInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_76aa910590caf3c8, []int{1}
+	return fileDescriptor_vrrp_interface_info_a5586567d8d1ccb5, []int{1}
 }
-
 func (m *VrrpInterfaceInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpInterfaceInfo.Unmarshal(m, b)
 }
 func (m *VrrpInterfaceInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpInterfaceInfo.Marshal(b, m, deterministic)
 }
-func (m *VrrpInterfaceInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpInterfaceInfo.Merge(m, src)
+func (dst *VrrpInterfaceInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpInterfaceInfo.Merge(dst, src)
 }
 func (m *VrrpInterfaceInfo) XXX_Size() int {
 	return xxx_messageInfo_VrrpInterfaceInfo.Size(m)
@@ -141,9 +137,11 @@ func init() {
 	proto.RegisterType((*VrrpInterfaceInfo)(nil), "cisco_ios_xr_ipv4_vrrp_oper.vrrp.ipv4.interfaces.interface.vrrp_interface_info")
 }
 
-func init() { proto.RegisterFile("vrrp_interface_info.proto", fileDescriptor_76aa910590caf3c8) }
+func init() {
+	proto.RegisterFile("vrrp_interface_info.proto", fileDescriptor_vrrp_interface_info_a5586567d8d1ccb5)
+}
 
-var fileDescriptor_76aa910590caf3c8 = []byte{
+var fileDescriptor_vrrp_interface_info_a5586567d8d1ccb5 = []byte{
 	// 264 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0xd1, 0xc1, 0x4b, 0xc3, 0x30,
 	0x14, 0x06, 0x70, 0xea, 0x41, 0x58, 0x60, 0x22, 0x99, 0x4a, 0x44, 0x0f, 0x63, 0x20, 0xec, 0x20,

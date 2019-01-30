@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_vrrp_oper_vrrp_mgo_sessions_mgo_session
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // MGO group data
 type VrrpMgoInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *VrrpMgoInfo_KEYS) Reset()         { *m = VrrpMgoInfo_KEYS{} }
 func (m *VrrpMgoInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*VrrpMgoInfo_KEYS) ProtoMessage()    {}
 func (*VrrpMgoInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_fbf7b5b3fa8a6ce2, []int{0}
+	return fileDescriptor_vrrp_mgo_info_c6e424b818e64ceb, []int{0}
 }
-
 func (m *VrrpMgoInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpMgoInfo_KEYS.Unmarshal(m, b)
 }
 func (m *VrrpMgoInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpMgoInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *VrrpMgoInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpMgoInfo_KEYS.Merge(m, src)
+func (dst *VrrpMgoInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpMgoInfo_KEYS.Merge(dst, src)
 }
 func (m *VrrpMgoInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_VrrpMgoInfo_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *VrrpMgoInfo) Reset()         { *m = VrrpMgoInfo{} }
 func (m *VrrpMgoInfo) String() string { return proto.CompactTextString(m) }
 func (*VrrpMgoInfo) ProtoMessage()    {}
 func (*VrrpMgoInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_fbf7b5b3fa8a6ce2, []int{1}
+	return fileDescriptor_vrrp_mgo_info_c6e424b818e64ceb, []int{1}
 }
-
 func (m *VrrpMgoInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpMgoInfo.Unmarshal(m, b)
 }
 func (m *VrrpMgoInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpMgoInfo.Marshal(b, m, deterministic)
 }
-func (m *VrrpMgoInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpMgoInfo.Merge(m, src)
+func (dst *VrrpMgoInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpMgoInfo.Merge(dst, src)
 }
 func (m *VrrpMgoInfo) XXX_Size() int {
 	return xxx_messageInfo_VrrpMgoInfo.Size(m)
@@ -160,17 +156,16 @@ func (m *VrrpSlaveInfoType) Reset()         { *m = VrrpSlaveInfoType{} }
 func (m *VrrpSlaveInfoType) String() string { return proto.CompactTextString(m) }
 func (*VrrpSlaveInfoType) ProtoMessage()    {}
 func (*VrrpSlaveInfoType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_fbf7b5b3fa8a6ce2, []int{2}
+	return fileDescriptor_vrrp_mgo_info_c6e424b818e64ceb, []int{2}
 }
-
 func (m *VrrpSlaveInfoType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpSlaveInfoType.Unmarshal(m, b)
 }
 func (m *VrrpSlaveInfoType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpSlaveInfoType.Marshal(b, m, deterministic)
 }
-func (m *VrrpSlaveInfoType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpSlaveInfoType.Merge(m, src)
+func (dst *VrrpSlaveInfoType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpSlaveInfoType.Merge(dst, src)
 }
 func (m *VrrpSlaveInfoType) XXX_Size() int {
 	return xxx_messageInfo_VrrpSlaveInfoType.Size(m)
@@ -201,9 +196,9 @@ func init() {
 	proto.RegisterType((*VrrpSlaveInfoType)(nil), "cisco_ios_xr_ipv4_vrrp_oper.vrrp.mgo_sessions.mgo_session.vrrp_slave_info_type")
 }
 
-func init() { proto.RegisterFile("vrrp_mgo_info.proto", fileDescriptor_fbf7b5b3fa8a6ce2) }
+func init() { proto.RegisterFile("vrrp_mgo_info.proto", fileDescriptor_vrrp_mgo_info_c6e424b818e64ceb) }
 
-var fileDescriptor_fbf7b5b3fa8a6ce2 = []byte{
+var fileDescriptor_vrrp_mgo_info_c6e424b818e64ceb = []byte{
 	// 330 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x9c, 0x92, 0x4f, 0x4b, 0xc3, 0x40,
 	0x10, 0xc5, 0x69, 0x05, 0xa1, 0x53, 0x6b, 0x61, 0x5b, 0x6d, 0xbc, 0xd5, 0x1e, 0xb4, 0xa7, 0x20,

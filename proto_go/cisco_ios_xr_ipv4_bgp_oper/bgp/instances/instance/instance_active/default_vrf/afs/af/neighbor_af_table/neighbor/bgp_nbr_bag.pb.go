@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_bgp_oper_bgp_instances_instance_instance_active_default_vrf_afs_af_neighbor_af_table_neighbor
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // BGP Neighbor Information
 type BgpNbrBag_KEYS struct {
@@ -34,17 +32,16 @@ func (m *BgpNbrBag_KEYS) Reset()         { *m = BgpNbrBag_KEYS{} }
 func (m *BgpNbrBag_KEYS) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrBag_KEYS) ProtoMessage()    {}
 func (*BgpNbrBag_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{0}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{0}
 }
-
 func (m *BgpNbrBag_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrBag_KEYS.Unmarshal(m, b)
 }
 func (m *BgpNbrBag_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrBag_KEYS.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrBag_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrBag_KEYS.Merge(m, src)
+func (dst *BgpNbrBag_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrBag_KEYS.Merge(dst, src)
 }
 func (m *BgpNbrBag_KEYS) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrBag_KEYS.Size(m)
@@ -392,17 +389,16 @@ func (m *BgpNbrBag) Reset()         { *m = BgpNbrBag{} }
 func (m *BgpNbrBag) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrBag) ProtoMessage()    {}
 func (*BgpNbrBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{1}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{1}
 }
-
 func (m *BgpNbrBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrBag.Unmarshal(m, b)
 }
 func (m *BgpNbrBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrBag.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrBag.Merge(m, src)
+func (dst *BgpNbrBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrBag.Merge(dst, src)
 }
 func (m *BgpNbrBag) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrBag.Size(m)
@@ -1498,17 +1494,16 @@ func (m *BgpTimespec) Reset()         { *m = BgpTimespec{} }
 func (m *BgpTimespec) String() string { return proto.CompactTextString(m) }
 func (*BgpTimespec) ProtoMessage()    {}
 func (*BgpTimespec) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{2}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{2}
 }
-
 func (m *BgpTimespec) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpTimespec.Unmarshal(m, b)
 }
 func (m *BgpTimespec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpTimespec.Marshal(b, m, deterministic)
 }
-func (m *BgpTimespec) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpTimespec.Merge(m, src)
+func (dst *BgpTimespec) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpTimespec.Merge(dst, src)
 }
 func (m *BgpTimespec) XXX_Size() int {
 	return xxx_messageInfo_BgpTimespec.Size(m)
@@ -1545,17 +1540,16 @@ func (m *IPV4TunnelAddressType) Reset()         { *m = IPV4TunnelAddressType{} }
 func (m *IPV4TunnelAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV4TunnelAddressType) ProtoMessage()    {}
 func (*IPV4TunnelAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{3}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{3}
 }
-
 func (m *IPV4TunnelAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV4TunnelAddressType.Unmarshal(m, b)
 }
 func (m *IPV4TunnelAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV4TunnelAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV4TunnelAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV4TunnelAddressType.Merge(m, src)
+func (dst *IPV4TunnelAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV4TunnelAddressType.Merge(dst, src)
 }
 func (m *IPV4TunnelAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV4TunnelAddressType.Size(m)
@@ -1585,17 +1579,16 @@ func (m *IPV4MDTAddressType) Reset()         { *m = IPV4MDTAddressType{} }
 func (m *IPV4MDTAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV4MDTAddressType) ProtoMessage()    {}
 func (*IPV4MDTAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{4}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{4}
 }
-
 func (m *IPV4MDTAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV4MDTAddressType.Unmarshal(m, b)
 }
 func (m *IPV4MDTAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV4MDTAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV4MDTAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV4MDTAddressType.Merge(m, src)
+func (dst *IPV4MDTAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV4MDTAddressType.Merge(dst, src)
 }
 func (m *IPV4MDTAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV4MDTAddressType.Size(m)
@@ -1625,17 +1618,16 @@ func (m *RTConstraintAddressType) Reset()         { *m = RTConstraintAddressType
 func (m *RTConstraintAddressType) String() string { return proto.CompactTextString(m) }
 func (*RTConstraintAddressType) ProtoMessage()    {}
 func (*RTConstraintAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{5}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{5}
 }
-
 func (m *RTConstraintAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RTConstraintAddressType.Unmarshal(m, b)
 }
 func (m *RTConstraintAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RTConstraintAddressType.Marshal(b, m, deterministic)
 }
-func (m *RTConstraintAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RTConstraintAddressType.Merge(m, src)
+func (dst *RTConstraintAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RTConstraintAddressType.Merge(dst, src)
 }
 func (m *RTConstraintAddressType) XXX_Size() int {
 	return xxx_messageInfo_RTConstraintAddressType.Size(m)
@@ -1665,17 +1657,16 @@ func (m *IPV6AddressType) Reset()         { *m = IPV6AddressType{} }
 func (m *IPV6AddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV6AddressType) ProtoMessage()    {}
 func (*IPV6AddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{6}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{6}
 }
-
 func (m *IPV6AddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV6AddressType.Unmarshal(m, b)
 }
 func (m *IPV6AddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV6AddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV6AddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV6AddressType.Merge(m, src)
+func (dst *IPV6AddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV6AddressType.Merge(dst, src)
 }
 func (m *IPV6AddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV6AddressType.Size(m)
@@ -1704,17 +1695,16 @@ func (m *BgpIpv4SrpolicyAddrT) Reset()         { *m = BgpIpv4SrpolicyAddrT{} }
 func (m *BgpIpv4SrpolicyAddrT) String() string { return proto.CompactTextString(m) }
 func (*BgpIpv4SrpolicyAddrT) ProtoMessage()    {}
 func (*BgpIpv4SrpolicyAddrT) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{7}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{7}
 }
-
 func (m *BgpIpv4SrpolicyAddrT) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpIpv4SrpolicyAddrT.Unmarshal(m, b)
 }
 func (m *BgpIpv4SrpolicyAddrT) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpIpv4SrpolicyAddrT.Marshal(b, m, deterministic)
 }
-func (m *BgpIpv4SrpolicyAddrT) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpIpv4SrpolicyAddrT.Merge(m, src)
+func (dst *BgpIpv4SrpolicyAddrT) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpIpv4SrpolicyAddrT.Merge(dst, src)
 }
 func (m *BgpIpv4SrpolicyAddrT) XXX_Size() int {
 	return xxx_messageInfo_BgpIpv4SrpolicyAddrT.Size(m)
@@ -1743,17 +1733,16 @@ func (m *BgpIpv6SrpolicyAddrT) Reset()         { *m = BgpIpv6SrpolicyAddrT{} }
 func (m *BgpIpv6SrpolicyAddrT) String() string { return proto.CompactTextString(m) }
 func (*BgpIpv6SrpolicyAddrT) ProtoMessage()    {}
 func (*BgpIpv6SrpolicyAddrT) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{8}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{8}
 }
-
 func (m *BgpIpv6SrpolicyAddrT) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpIpv6SrpolicyAddrT.Unmarshal(m, b)
 }
 func (m *BgpIpv6SrpolicyAddrT) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpIpv6SrpolicyAddrT.Marshal(b, m, deterministic)
 }
-func (m *BgpIpv6SrpolicyAddrT) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpIpv6SrpolicyAddrT.Merge(m, src)
+func (dst *BgpIpv6SrpolicyAddrT) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpIpv6SrpolicyAddrT.Merge(dst, src)
 }
 func (m *BgpIpv6SrpolicyAddrT) XXX_Size() int {
 	return xxx_messageInfo_BgpIpv6SrpolicyAddrT.Size(m)
@@ -1782,17 +1771,16 @@ func (m *BgpL2VpnAddrT) Reset()         { *m = BgpL2VpnAddrT{} }
 func (m *BgpL2VpnAddrT) String() string { return proto.CompactTextString(m) }
 func (*BgpL2VpnAddrT) ProtoMessage()    {}
 func (*BgpL2VpnAddrT) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{9}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{9}
 }
-
 func (m *BgpL2VpnAddrT) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpL2VpnAddrT.Unmarshal(m, b)
 }
 func (m *BgpL2VpnAddrT) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpL2VpnAddrT.Marshal(b, m, deterministic)
 }
-func (m *BgpL2VpnAddrT) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpL2VpnAddrT.Merge(m, src)
+func (dst *BgpL2VpnAddrT) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpL2VpnAddrT.Merge(dst, src)
 }
 func (m *BgpL2VpnAddrT) XXX_Size() int {
 	return xxx_messageInfo_BgpL2VpnAddrT.Size(m)
@@ -1822,17 +1810,16 @@ func (m *L2VPNEVPNAddressType) Reset()         { *m = L2VPNEVPNAddressType{} }
 func (m *L2VPNEVPNAddressType) String() string { return proto.CompactTextString(m) }
 func (*L2VPNEVPNAddressType) ProtoMessage()    {}
 func (*L2VPNEVPNAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{10}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{10}
 }
-
 func (m *L2VPNEVPNAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_L2VPNEVPNAddressType.Unmarshal(m, b)
 }
 func (m *L2VPNEVPNAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_L2VPNEVPNAddressType.Marshal(b, m, deterministic)
 }
-func (m *L2VPNEVPNAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_L2VPNEVPNAddressType.Merge(m, src)
+func (dst *L2VPNEVPNAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_L2VPNEVPNAddressType.Merge(dst, src)
 }
 func (m *L2VPNEVPNAddressType) XXX_Size() int {
 	return xxx_messageInfo_L2VPNEVPNAddressType.Size(m)
@@ -1861,17 +1848,16 @@ func (m *BgpL2VpnMspwAddrT) Reset()         { *m = BgpL2VpnMspwAddrT{} }
 func (m *BgpL2VpnMspwAddrT) String() string { return proto.CompactTextString(m) }
 func (*BgpL2VpnMspwAddrT) ProtoMessage()    {}
 func (*BgpL2VpnMspwAddrT) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{11}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{11}
 }
-
 func (m *BgpL2VpnMspwAddrT) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpL2VpnMspwAddrT.Unmarshal(m, b)
 }
 func (m *BgpL2VpnMspwAddrT) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpL2VpnMspwAddrT.Marshal(b, m, deterministic)
 }
-func (m *BgpL2VpnMspwAddrT) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpL2VpnMspwAddrT.Merge(m, src)
+func (dst *BgpL2VpnMspwAddrT) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpL2VpnMspwAddrT.Merge(dst, src)
 }
 func (m *BgpL2VpnMspwAddrT) XXX_Size() int {
 	return xxx_messageInfo_BgpL2VpnMspwAddrT.Size(m)
@@ -1901,17 +1887,16 @@ func (m *IPV6MVPNAddressType) Reset()         { *m = IPV6MVPNAddressType{} }
 func (m *IPV6MVPNAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV6MVPNAddressType) ProtoMessage()    {}
 func (*IPV6MVPNAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{12}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{12}
 }
-
 func (m *IPV6MVPNAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV6MVPNAddressType.Unmarshal(m, b)
 }
 func (m *IPV6MVPNAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV6MVPNAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV6MVPNAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV6MVPNAddressType.Merge(m, src)
+func (dst *IPV6MVPNAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV6MVPNAddressType.Merge(dst, src)
 }
 func (m *IPV6MVPNAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV6MVPNAddressType.Size(m)
@@ -1941,17 +1926,16 @@ func (m *IPV4MVPNAddressType) Reset()         { *m = IPV4MVPNAddressType{} }
 func (m *IPV4MVPNAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPV4MVPNAddressType) ProtoMessage()    {}
 func (*IPV4MVPNAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{13}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{13}
 }
-
 func (m *IPV4MVPNAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPV4MVPNAddressType.Unmarshal(m, b)
 }
 func (m *IPV4MVPNAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPV4MVPNAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPV4MVPNAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPV4MVPNAddressType.Merge(m, src)
+func (dst *IPV4MVPNAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPV4MVPNAddressType.Merge(dst, src)
 }
 func (m *IPV4MVPNAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPV4MVPNAddressType.Size(m)
@@ -1981,17 +1965,16 @@ func (m *LS_LSAddressType) Reset()         { *m = LS_LSAddressType{} }
 func (m *LS_LSAddressType) String() string { return proto.CompactTextString(m) }
 func (*LS_LSAddressType) ProtoMessage()    {}
 func (*LS_LSAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{14}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{14}
 }
-
 func (m *LS_LSAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LS_LSAddressType.Unmarshal(m, b)
 }
 func (m *LS_LSAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LS_LSAddressType.Marshal(b, m, deterministic)
 }
-func (m *LS_LSAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LS_LSAddressType.Merge(m, src)
+func (dst *LS_LSAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LS_LSAddressType.Merge(dst, src)
 }
 func (m *LS_LSAddressType) XXX_Size() int {
 	return xxx_messageInfo_LS_LSAddressType.Size(m)
@@ -2021,17 +2004,16 @@ func (m *IPv4FlowspecAddressType) Reset()         { *m = IPv4FlowspecAddressType
 func (m *IPv4FlowspecAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPv4FlowspecAddressType) ProtoMessage()    {}
 func (*IPv4FlowspecAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{15}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{15}
 }
-
 func (m *IPv4FlowspecAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPv4FlowspecAddressType.Unmarshal(m, b)
 }
 func (m *IPv4FlowspecAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPv4FlowspecAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPv4FlowspecAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPv4FlowspecAddressType.Merge(m, src)
+func (dst *IPv4FlowspecAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPv4FlowspecAddressType.Merge(dst, src)
 }
 func (m *IPv4FlowspecAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPv4FlowspecAddressType.Size(m)
@@ -2061,17 +2043,16 @@ func (m *IPv6FlowspecAddressType) Reset()         { *m = IPv6FlowspecAddressType
 func (m *IPv6FlowspecAddressType) String() string { return proto.CompactTextString(m) }
 func (*IPv6FlowspecAddressType) ProtoMessage()    {}
 func (*IPv6FlowspecAddressType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{16}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{16}
 }
-
 func (m *IPv6FlowspecAddressType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IPv6FlowspecAddressType.Unmarshal(m, b)
 }
 func (m *IPv6FlowspecAddressType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IPv6FlowspecAddressType.Marshal(b, m, deterministic)
 }
-func (m *IPv6FlowspecAddressType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IPv6FlowspecAddressType.Merge(m, src)
+func (dst *IPv6FlowspecAddressType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IPv6FlowspecAddressType.Merge(dst, src)
 }
 func (m *IPv6FlowspecAddressType) XXX_Size() int {
 	return xxx_messageInfo_IPv6FlowspecAddressType.Size(m)
@@ -2150,17 +2131,16 @@ func (m *BgpAddrtype) Reset()         { *m = BgpAddrtype{} }
 func (m *BgpAddrtype) String() string { return proto.CompactTextString(m) }
 func (*BgpAddrtype) ProtoMessage()    {}
 func (*BgpAddrtype) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{17}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{17}
 }
-
 func (m *BgpAddrtype) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpAddrtype.Unmarshal(m, b)
 }
 func (m *BgpAddrtype) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpAddrtype.Marshal(b, m, deterministic)
 }
-func (m *BgpAddrtype) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpAddrtype.Merge(m, src)
+func (dst *BgpAddrtype) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpAddrtype.Merge(dst, src)
 }
 func (m *BgpAddrtype) XXX_Size() int {
 	return xxx_messageInfo_BgpAddrtype.Size(m)
@@ -2370,17 +2350,16 @@ func (m *BgpPerfNbrAf_) Reset()         { *m = BgpPerfNbrAf_{} }
 func (m *BgpPerfNbrAf_) String() string { return proto.CompactTextString(m) }
 func (*BgpPerfNbrAf_) ProtoMessage()    {}
 func (*BgpPerfNbrAf_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{18}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{18}
 }
-
 func (m *BgpPerfNbrAf_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpPerfNbrAf_.Unmarshal(m, b)
 }
 func (m *BgpPerfNbrAf_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpPerfNbrAf_.Marshal(b, m, deterministic)
 }
-func (m *BgpPerfNbrAf_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpPerfNbrAf_.Merge(m, src)
+func (dst *BgpPerfNbrAf_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpPerfNbrAf_.Merge(dst, src)
 }
 func (m *BgpPerfNbrAf_) XXX_Size() int {
 	return xxx_messageInfo_BgpPerfNbrAf_.Size(m)
@@ -2524,17 +2503,16 @@ func (m *BgpPerfNbr_) Reset()         { *m = BgpPerfNbr_{} }
 func (m *BgpPerfNbr_) String() string { return proto.CompactTextString(m) }
 func (*BgpPerfNbr_) ProtoMessage()    {}
 func (*BgpPerfNbr_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{19}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{19}
 }
-
 func (m *BgpPerfNbr_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpPerfNbr_.Unmarshal(m, b)
 }
 func (m *BgpPerfNbr_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpPerfNbr_.Marshal(b, m, deterministic)
 }
-func (m *BgpPerfNbr_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpPerfNbr_.Merge(m, src)
+func (dst *BgpPerfNbr_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpPerfNbr_.Merge(dst, src)
 }
 func (m *BgpPerfNbr_) XXX_Size() int {
 	return xxx_messageInfo_BgpPerfNbr_.Size(m)
@@ -2826,17 +2804,16 @@ func (m *BgpNbrGshut_) Reset()         { *m = BgpNbrGshut_{} }
 func (m *BgpNbrGshut_) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrGshut_) ProtoMessage()    {}
 func (*BgpNbrGshut_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{20}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{20}
 }
-
 func (m *BgpNbrGshut_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrGshut_.Unmarshal(m, b)
 }
 func (m *BgpNbrGshut_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrGshut_.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrGshut_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrGshut_.Merge(m, src)
+func (dst *BgpNbrGshut_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrGshut_.Merge(dst, src)
 }
 func (m *BgpNbrGshut_) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrGshut_.Size(m)
@@ -3035,17 +3012,16 @@ func (m *BgpNbrAf_) Reset()         { *m = BgpNbrAf_{} }
 func (m *BgpNbrAf_) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrAf_) ProtoMessage()    {}
 func (*BgpNbrAf_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{21}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{21}
 }
-
 func (m *BgpNbrAf_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrAf_.Unmarshal(m, b)
 }
 func (m *BgpNbrAf_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrAf_.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrAf_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrAf_.Merge(m, src)
+func (dst *BgpNbrAf_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrAf_.Merge(dst, src)
 }
 func (m *BgpNbrAf_) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrAf_.Size(m)
@@ -4019,17 +3995,16 @@ func (m *NbrAfP) Reset()         { *m = NbrAfP{} }
 func (m *NbrAfP) String() string { return proto.CompactTextString(m) }
 func (*NbrAfP) ProtoMessage()    {}
 func (*NbrAfP) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{22}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{22}
 }
-
 func (m *NbrAfP) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NbrAfP.Unmarshal(m, b)
 }
 func (m *NbrAfP) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NbrAfP.Marshal(b, m, deterministic)
 }
-func (m *NbrAfP) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NbrAfP.Merge(m, src)
+func (dst *NbrAfP) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NbrAfP.Merge(dst, src)
 }
 func (m *NbrAfP) XXX_Size() int {
 	return xxx_messageInfo_NbrAfP.Size(m)
@@ -4065,17 +4040,16 @@ func (m *BgpNotfntype_) Reset()         { *m = BgpNotfntype_{} }
 func (m *BgpNotfntype_) String() string { return proto.CompactTextString(m) }
 func (*BgpNotfntype_) ProtoMessage()    {}
 func (*BgpNotfntype_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{23}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{23}
 }
-
 func (m *BgpNotfntype_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNotfntype_.Unmarshal(m, b)
 }
 func (m *BgpNotfntype_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNotfntype_.Marshal(b, m, deterministic)
 }
-func (m *BgpNotfntype_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNotfntype_.Merge(m, src)
+func (dst *BgpNotfntype_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNotfntype_.Merge(dst, src)
 }
 func (m *BgpNotfntype_) XXX_Size() int {
 	return xxx_messageInfo_BgpNotfntype_.Size(m)
@@ -4128,17 +4102,16 @@ func (m *BgpNbrMsgStatsUnit) Reset()         { *m = BgpNbrMsgStatsUnit{} }
 func (m *BgpNbrMsgStatsUnit) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrMsgStatsUnit) ProtoMessage()    {}
 func (*BgpNbrMsgStatsUnit) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{24}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{24}
 }
-
 func (m *BgpNbrMsgStatsUnit) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrMsgStatsUnit.Unmarshal(m, b)
 }
 func (m *BgpNbrMsgStatsUnit) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrMsgStatsUnit.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrMsgStatsUnit) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrMsgStatsUnit.Merge(m, src)
+func (dst *BgpNbrMsgStatsUnit) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrMsgStatsUnit.Merge(dst, src)
 }
 func (m *BgpNbrMsgStatsUnit) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrMsgStatsUnit.Size(m)
@@ -4177,17 +4150,16 @@ func (m *BgpNbrMsgStatsOp) Reset()         { *m = BgpNbrMsgStatsOp{} }
 func (m *BgpNbrMsgStatsOp) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrMsgStatsOp) ProtoMessage()    {}
 func (*BgpNbrMsgStatsOp) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{25}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{25}
 }
-
 func (m *BgpNbrMsgStatsOp) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrMsgStatsOp.Unmarshal(m, b)
 }
 func (m *BgpNbrMsgStatsOp) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrMsgStatsOp.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrMsgStatsOp) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrMsgStatsOp.Merge(m, src)
+func (dst *BgpNbrMsgStatsOp) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrMsgStatsOp.Merge(dst, src)
 }
 func (m *BgpNbrMsgStatsOp) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrMsgStatsOp.Size(m)
@@ -4234,17 +4206,16 @@ func (m *BgpNbrMsgStats) Reset()         { *m = BgpNbrMsgStats{} }
 func (m *BgpNbrMsgStats) String() string { return proto.CompactTextString(m) }
 func (*BgpNbrMsgStats) ProtoMessage()    {}
 func (*BgpNbrMsgStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_be84ba08d516c4d3, []int{26}
+	return fileDescriptor_bgp_nbr_bag_4034188288032db0, []int{26}
 }
-
 func (m *BgpNbrMsgStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpNbrMsgStats.Unmarshal(m, b)
 }
 func (m *BgpNbrMsgStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpNbrMsgStats.Marshal(b, m, deterministic)
 }
-func (m *BgpNbrMsgStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpNbrMsgStats.Merge(m, src)
+func (dst *BgpNbrMsgStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpNbrMsgStats.Merge(dst, src)
 }
 func (m *BgpNbrMsgStats) XXX_Size() int {
 	return xxx_messageInfo_BgpNbrMsgStats.Size(m)
@@ -4327,9 +4298,9 @@ func init() {
 	proto.RegisterType((*BgpNbrMsgStats)(nil), "cisco_ios_xr_ipv4_bgp_oper.bgp.instances.instance.instance_active.default_vrf.afs.af.neighbor_af_table.neighbor.bgp_nbr_msg_stats")
 }
 
-func init() { proto.RegisterFile("bgp_nbr_bag.proto", fileDescriptor_be84ba08d516c4d3) }
+func init() { proto.RegisterFile("bgp_nbr_bag.proto", fileDescriptor_bgp_nbr_bag_4034188288032db0) }
 
-var fileDescriptor_be84ba08d516c4d3 = []byte{
+var fileDescriptor_bgp_nbr_bag_4034188288032db0 = []byte{
 	// 8158 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x7d, 0xe9, 0x77, 0x1c, 0x49,
 	0x72, 0xdf, 0xeb, 0xb9, 0x08, 0x26, 0xd0, 0x04, 0x90, 0x38, 0x58, 0x00, 0x2f, 0x10, 0x1c, 0x0e,

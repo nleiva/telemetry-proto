@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_vrrp_oper_vrrp_ipv4_virtual_routers_virtual_router
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Detailed vrID specific information
 type VrrpVrouterInfo_KEYS struct {
@@ -33,17 +31,16 @@ func (m *VrrpVrouterInfo_KEYS) Reset()         { *m = VrrpVrouterInfo_KEYS{} }
 func (m *VrrpVrouterInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*VrrpVrouterInfo_KEYS) ProtoMessage()    {}
 func (*VrrpVrouterInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d1ae68bde8871189, []int{0}
+	return fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3, []int{0}
 }
-
 func (m *VrrpVrouterInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpVrouterInfo_KEYS.Unmarshal(m, b)
 }
 func (m *VrrpVrouterInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpVrouterInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *VrrpVrouterInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpVrouterInfo_KEYS.Merge(m, src)
+func (dst *VrrpVrouterInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpVrouterInfo_KEYS.Merge(dst, src)
 }
 func (m *VrrpVrouterInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_VrrpVrouterInfo_KEYS.Size(m)
@@ -226,17 +223,16 @@ func (m *VrrpVrouterInfo) Reset()         { *m = VrrpVrouterInfo{} }
 func (m *VrrpVrouterInfo) String() string { return proto.CompactTextString(m) }
 func (*VrrpVrouterInfo) ProtoMessage()    {}
 func (*VrrpVrouterInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d1ae68bde8871189, []int{1}
+	return fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3, []int{1}
 }
-
 func (m *VrrpVrouterInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpVrouterInfo.Unmarshal(m, b)
 }
 func (m *VrrpVrouterInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpVrouterInfo.Marshal(b, m, deterministic)
 }
-func (m *VrrpVrouterInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpVrouterInfo.Merge(m, src)
+func (dst *VrrpVrouterInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpVrouterInfo.Merge(dst, src)
 }
 func (m *VrrpVrouterInfo) XXX_Size() int {
 	return xxx_messageInfo_VrrpVrouterInfo.Size(m)
@@ -776,17 +772,16 @@ func (m *Ipv6BagAddr_) Reset()         { *m = Ipv6BagAddr_{} }
 func (m *Ipv6BagAddr_) String() string { return proto.CompactTextString(m) }
 func (*Ipv6BagAddr_) ProtoMessage()    {}
 func (*Ipv6BagAddr_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d1ae68bde8871189, []int{2}
+	return fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3, []int{2}
 }
-
 func (m *Ipv6BagAddr_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6BagAddr_.Unmarshal(m, b)
 }
 func (m *Ipv6BagAddr_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6BagAddr_.Marshal(b, m, deterministic)
 }
-func (m *Ipv6BagAddr_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6BagAddr_.Merge(m, src)
+func (dst *Ipv6BagAddr_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6BagAddr_.Merge(dst, src)
 }
 func (m *Ipv6BagAddr_) XXX_Size() int {
 	return xxx_messageInfo_Ipv6BagAddr_.Size(m)
@@ -819,17 +814,16 @@ func (m *VrrpBagTimestamp) Reset()         { *m = VrrpBagTimestamp{} }
 func (m *VrrpBagTimestamp) String() string { return proto.CompactTextString(m) }
 func (*VrrpBagTimestamp) ProtoMessage()    {}
 func (*VrrpBagTimestamp) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d1ae68bde8871189, []int{3}
+	return fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3, []int{3}
 }
-
 func (m *VrrpBagTimestamp) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpBagTimestamp.Unmarshal(m, b)
 }
 func (m *VrrpBagTimestamp) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpBagTimestamp.Marshal(b, m, deterministic)
 }
-func (m *VrrpBagTimestamp) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpBagTimestamp.Merge(m, src)
+func (dst *VrrpBagTimestamp) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpBagTimestamp.Merge(dst, src)
 }
 func (m *VrrpBagTimestamp) XXX_Size() int {
 	return xxx_messageInfo_VrrpBagTimestamp.Size(m)
@@ -873,17 +867,16 @@ func (m *VrrpStateChangeInfoType) Reset()         { *m = VrrpStateChangeInfoType
 func (m *VrrpStateChangeInfoType) String() string { return proto.CompactTextString(m) }
 func (*VrrpStateChangeInfoType) ProtoMessage()    {}
 func (*VrrpStateChangeInfoType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d1ae68bde8871189, []int{4}
+	return fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3, []int{4}
 }
-
 func (m *VrrpStateChangeInfoType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_VrrpStateChangeInfoType.Unmarshal(m, b)
 }
 func (m *VrrpStateChangeInfoType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_VrrpStateChangeInfoType.Marshal(b, m, deterministic)
 }
-func (m *VrrpStateChangeInfoType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_VrrpStateChangeInfoType.Merge(m, src)
+func (dst *VrrpStateChangeInfoType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_VrrpStateChangeInfoType.Merge(dst, src)
 }
 func (m *VrrpStateChangeInfoType) XXX_Size() int {
 	return xxx_messageInfo_VrrpStateChangeInfoType.Size(m)
@@ -930,9 +923,11 @@ func init() {
 	proto.RegisterType((*VrrpStateChangeInfoType)(nil), "cisco_ios_xr_ipv4_vrrp_oper.vrrp.ipv4.virtual_routers.virtual_router.vrrp_state_change_info_type")
 }
 
-func init() { proto.RegisterFile("vrrp_vrouter_info.proto", fileDescriptor_d1ae68bde8871189) }
+func init() {
+	proto.RegisterFile("vrrp_vrouter_info.proto", fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3)
+}
 
-var fileDescriptor_d1ae68bde8871189 = []byte{
+var fileDescriptor_vrrp_vrouter_info_8dca961373e8f9a3 = []byte{
 	// 1705 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x58, 0x4b, 0x77, 0x1b, 0xb7,
 	0x15, 0x3e, 0x8c, 0x73, 0x1c, 0x1b, 0x7a, 0xd8, 0x1a, 0x3d, 0x3c, 0xb6, 0xea, 0x1c, 0x5a, 0x4d,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_shellutil_filesystem_oper_file_system_node
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // File Systems
 type Filesystem_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Filesystem_KEYS) Reset()         { *m = Filesystem_KEYS{} }
 func (m *Filesystem_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Filesystem_KEYS) ProtoMessage()    {}
 func (*Filesystem_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0a9f8093c6c7067e, []int{0}
+	return fileDescriptor_filesystem_2ede87d9835a03b4, []int{0}
 }
-
 func (m *Filesystem_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Filesystem_KEYS.Unmarshal(m, b)
 }
 func (m *Filesystem_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Filesystem_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Filesystem_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Filesystem_KEYS.Merge(m, src)
+func (dst *Filesystem_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Filesystem_KEYS.Merge(dst, src)
 }
 func (m *Filesystem_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Filesystem_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *Filesystem) Reset()         { *m = Filesystem{} }
 func (m *Filesystem) String() string { return proto.CompactTextString(m) }
 func (*Filesystem) ProtoMessage()    {}
 func (*Filesystem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0a9f8093c6c7067e, []int{1}
+	return fileDescriptor_filesystem_2ede87d9835a03b4, []int{1}
 }
-
 func (m *Filesystem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Filesystem.Unmarshal(m, b)
 }
 func (m *Filesystem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Filesystem.Marshal(b, m, deterministic)
 }
-func (m *Filesystem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Filesystem.Merge(m, src)
+func (dst *Filesystem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Filesystem.Merge(dst, src)
 }
 func (m *Filesystem) XXX_Size() int {
 	return xxx_messageInfo_Filesystem.Size(m)
@@ -121,17 +117,16 @@ func (m *FilesystemUtil) Reset()         { *m = FilesystemUtil{} }
 func (m *FilesystemUtil) String() string { return proto.CompactTextString(m) }
 func (*FilesystemUtil) ProtoMessage()    {}
 func (*FilesystemUtil) Descriptor() ([]byte, []int) {
-	return fileDescriptor_0a9f8093c6c7067e, []int{2}
+	return fileDescriptor_filesystem_2ede87d9835a03b4, []int{2}
 }
-
 func (m *FilesystemUtil) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FilesystemUtil.Unmarshal(m, b)
 }
 func (m *FilesystemUtil) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FilesystemUtil.Marshal(b, m, deterministic)
 }
-func (m *FilesystemUtil) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FilesystemUtil.Merge(m, src)
+func (dst *FilesystemUtil) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FilesystemUtil.Merge(dst, src)
 }
 func (m *FilesystemUtil) XXX_Size() int {
 	return xxx_messageInfo_FilesystemUtil.Size(m)
@@ -183,9 +178,9 @@ func init() {
 	proto.RegisterType((*FilesystemUtil)(nil), "cisco_ios_xr_shellutil_filesystem_oper.file_system.node.filesystem_util")
 }
 
-func init() { proto.RegisterFile("filesystem.proto", fileDescriptor_0a9f8093c6c7067e) }
+func init() { proto.RegisterFile("filesystem.proto", fileDescriptor_filesystem_2ede87d9835a03b4) }
 
-var fileDescriptor_0a9f8093c6c7067e = []byte{
+var fileDescriptor_filesystem_2ede87d9835a03b4 = []byte{
 	// 233 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x9c, 0x90, 0x31, 0x4f, 0xc3, 0x30,
 	0x10, 0x85, 0x55, 0xda, 0xa2, 0xf6, 0x8a, 0x04, 0xb2, 0x18, 0x2c, 0x58, 0xaa, 0x4c, 0x9d, 0x3c,

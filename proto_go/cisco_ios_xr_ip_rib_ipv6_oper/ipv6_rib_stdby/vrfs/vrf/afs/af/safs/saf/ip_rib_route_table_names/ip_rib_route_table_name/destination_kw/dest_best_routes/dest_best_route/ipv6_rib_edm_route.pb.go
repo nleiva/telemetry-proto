@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv6_oper_ipv6_rib_stdby_vrfs_vrf_afs_af_safs_saf_ip_rib_route_table_names_ip_rib_route_table_name_destination_kw_dest_best_routes_dest_best_route
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information of a rib route head and rib proto route
 type Ipv6RibEdmRoute_KEYS struct {
@@ -36,17 +34,16 @@ func (m *Ipv6RibEdmRoute_KEYS) Reset()         { *m = Ipv6RibEdmRoute_KEYS{} }
 func (m *Ipv6RibEdmRoute_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6RibEdmRoute_KEYS) ProtoMessage()    {}
 func (*Ipv6RibEdmRoute_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{0}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{0}
 }
-
 func (m *Ipv6RibEdmRoute_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6RibEdmRoute_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6RibEdmRoute_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6RibEdmRoute_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6RibEdmRoute_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6RibEdmRoute_KEYS.Merge(m, src)
+func (dst *Ipv6RibEdmRoute_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6RibEdmRoute_KEYS.Merge(dst, src)
 }
 func (m *Ipv6RibEdmRoute_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6RibEdmRoute_KEYS.Size(m)
@@ -168,17 +165,16 @@ func (m *Ipv6RibEdmRoute) Reset()         { *m = Ipv6RibEdmRoute{} }
 func (m *Ipv6RibEdmRoute) String() string { return proto.CompactTextString(m) }
 func (*Ipv6RibEdmRoute) ProtoMessage()    {}
 func (*Ipv6RibEdmRoute) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{1}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{1}
 }
-
 func (m *Ipv6RibEdmRoute) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6RibEdmRoute.Unmarshal(m, b)
 }
 func (m *Ipv6RibEdmRoute) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6RibEdmRoute.Marshal(b, m, deterministic)
 }
-func (m *Ipv6RibEdmRoute) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6RibEdmRoute.Merge(m, src)
+func (dst *Ipv6RibEdmRoute) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6RibEdmRoute.Merge(dst, src)
 }
 func (m *Ipv6RibEdmRoute) XXX_Size() int {
 	return xxx_messageInfo_Ipv6RibEdmRoute.Size(m)
@@ -431,17 +427,16 @@ func (m *Ipv6RibEdmAddr) Reset()         { *m = Ipv6RibEdmAddr{} }
 func (m *Ipv6RibEdmAddr) String() string { return proto.CompactTextString(m) }
 func (*Ipv6RibEdmAddr) ProtoMessage()    {}
 func (*Ipv6RibEdmAddr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{2}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{2}
 }
-
 func (m *Ipv6RibEdmAddr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6RibEdmAddr.Unmarshal(m, b)
 }
 func (m *Ipv6RibEdmAddr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6RibEdmAddr.Marshal(b, m, deterministic)
 }
-func (m *Ipv6RibEdmAddr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6RibEdmAddr.Merge(m, src)
+func (dst *Ipv6RibEdmAddr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6RibEdmAddr.Merge(dst, src)
 }
 func (m *Ipv6RibEdmAddr) XXX_Size() int {
 	return xxx_messageInfo_Ipv6RibEdmAddr.Size(m)
@@ -472,17 +467,16 @@ func (m *Ipv6RibEdmPath) Reset()         { *m = Ipv6RibEdmPath{} }
 func (m *Ipv6RibEdmPath) String() string { return proto.CompactTextString(m) }
 func (*Ipv6RibEdmPath) ProtoMessage()    {}
 func (*Ipv6RibEdmPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{3}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{3}
 }
-
 func (m *Ipv6RibEdmPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6RibEdmPath.Unmarshal(m, b)
 }
 func (m *Ipv6RibEdmPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6RibEdmPath.Marshal(b, m, deterministic)
 }
-func (m *Ipv6RibEdmPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6RibEdmPath.Merge(m, src)
+func (dst *Ipv6RibEdmPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6RibEdmPath.Merge(dst, src)
 }
 func (m *Ipv6RibEdmPath) XXX_Size() int {
 	return xxx_messageInfo_Ipv6RibEdmPath.Size(m)
@@ -580,17 +574,16 @@ func (m *Ipv6RibEdmPathItem) Reset()         { *m = Ipv6RibEdmPathItem{} }
 func (m *Ipv6RibEdmPathItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6RibEdmPathItem) ProtoMessage()    {}
 func (*Ipv6RibEdmPathItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{4}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{4}
 }
-
 func (m *Ipv6RibEdmPathItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6RibEdmPathItem.Unmarshal(m, b)
 }
 func (m *Ipv6RibEdmPathItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6RibEdmPathItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6RibEdmPathItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6RibEdmPathItem.Merge(m, src)
+func (dst *Ipv6RibEdmPathItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6RibEdmPathItem.Merge(dst, src)
 }
 func (m *Ipv6RibEdmPathItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6RibEdmPathItem.Size(m)
@@ -887,17 +880,16 @@ func (m *RibEdmLocalLabel) Reset()         { *m = RibEdmLocalLabel{} }
 func (m *RibEdmLocalLabel) String() string { return proto.CompactTextString(m) }
 func (*RibEdmLocalLabel) ProtoMessage()    {}
 func (*RibEdmLocalLabel) Descriptor() ([]byte, []int) {
-	return fileDescriptor_97e3b1af6daa47d0, []int{5}
+	return fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba, []int{5}
 }
-
 func (m *RibEdmLocalLabel) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmLocalLabel.Unmarshal(m, b)
 }
 func (m *RibEdmLocalLabel) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmLocalLabel.Marshal(b, m, deterministic)
 }
-func (m *RibEdmLocalLabel) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmLocalLabel.Merge(m, src)
+func (dst *RibEdmLocalLabel) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmLocalLabel.Merge(dst, src)
 }
 func (m *RibEdmLocalLabel) XXX_Size() int {
 	return xxx_messageInfo_RibEdmLocalLabel.Size(m)
@@ -973,9 +965,11 @@ func init() {
 	proto.RegisterType((*RibEdmLocalLabel)(nil), "cisco_ios_xr_ip_rib_ipv6_oper.ipv6_rib_stdby.vrfs.vrf.afs.af.safs.saf.ip_rib_route_table_names.ip_rib_route_table_name.destination_kw.dest_best_routes.dest_best_route.rib_edm_local_label")
 }
 
-func init() { proto.RegisterFile("ipv6_rib_edm_route.proto", fileDescriptor_97e3b1af6daa47d0) }
+func init() {
+	proto.RegisterFile("ipv6_rib_edm_route.proto", fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba)
+}
 
-var fileDescriptor_97e3b1af6daa47d0 = []byte{
+var fileDescriptor_ipv6_rib_edm_route_106e15c01eaef1ba = []byte{
 	// 1520 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x57, 0xdd, 0x72, 0x1b, 0xb7,
 	0x15, 0x1e, 0xda, 0xb1, 0x44, 0x42, 0xa4, 0x2c, 0xae, 0x55, 0x19, 0x8e, 0x12, 0x87, 0x56, 0x9a,

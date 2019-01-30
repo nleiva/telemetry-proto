@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_frr_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FRR summary for an ISIS topology
 type IsisShFrrSummary_KEYS struct {
@@ -35,17 +33,16 @@ func (m *IsisShFrrSummary_KEYS) Reset()         { *m = IsisShFrrSummary_KEYS{} }
 func (m *IsisShFrrSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShFrrSummary_KEYS) ProtoMessage()    {}
 func (*IsisShFrrSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c98dc24990f20193, []int{0}
+	return fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3, []int{0}
 }
-
 func (m *IsisShFrrSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShFrrSummary_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShFrrSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShFrrSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShFrrSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShFrrSummary_KEYS.Merge(m, src)
+func (dst *IsisShFrrSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShFrrSummary_KEYS.Merge(dst, src)
 }
 func (m *IsisShFrrSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShFrrSummary_KEYS.Size(m)
@@ -100,17 +97,16 @@ func (m *IsisShFrrSummary) Reset()         { *m = IsisShFrrSummary{} }
 func (m *IsisShFrrSummary) String() string { return proto.CompactTextString(m) }
 func (*IsisShFrrSummary) ProtoMessage()    {}
 func (*IsisShFrrSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c98dc24990f20193, []int{1}
+	return fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3, []int{1}
 }
-
 func (m *IsisShFrrSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShFrrSummary.Unmarshal(m, b)
 }
 func (m *IsisShFrrSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShFrrSummary.Marshal(b, m, deterministic)
 }
-func (m *IsisShFrrSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShFrrSummary.Merge(m, src)
+func (dst *IsisShFrrSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShFrrSummary.Merge(dst, src)
 }
 func (m *IsisShFrrSummary) XXX_Size() int {
 	return xxx_messageInfo_IsisShFrrSummary.Size(m)
@@ -161,17 +157,16 @@ func (m *IsisPerPriorityCounts) Reset()         { *m = IsisPerPriorityCounts{} }
 func (m *IsisPerPriorityCounts) String() string { return proto.CompactTextString(m) }
 func (*IsisPerPriorityCounts) ProtoMessage()    {}
 func (*IsisPerPriorityCounts) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c98dc24990f20193, []int{2}
+	return fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3, []int{2}
 }
-
 func (m *IsisPerPriorityCounts) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisPerPriorityCounts.Unmarshal(m, b)
 }
 func (m *IsisPerPriorityCounts) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisPerPriorityCounts.Marshal(b, m, deterministic)
 }
-func (m *IsisPerPriorityCounts) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisPerPriorityCounts.Merge(m, src)
+func (dst *IsisPerPriorityCounts) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisPerPriorityCounts.Merge(dst, src)
 }
 func (m *IsisPerPriorityCounts) XXX_Size() int {
 	return xxx_messageInfo_IsisPerPriorityCounts.Size(m)
@@ -227,17 +222,16 @@ func (m *IsisShFrrLevelSummary) Reset()         { *m = IsisShFrrLevelSummary{} }
 func (m *IsisShFrrLevelSummary) String() string { return proto.CompactTextString(m) }
 func (*IsisShFrrLevelSummary) ProtoMessage()    {}
 func (*IsisShFrrLevelSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c98dc24990f20193, []int{3}
+	return fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3, []int{3}
 }
-
 func (m *IsisShFrrLevelSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShFrrLevelSummary.Unmarshal(m, b)
 }
 func (m *IsisShFrrLevelSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShFrrLevelSummary.Marshal(b, m, deterministic)
 }
-func (m *IsisShFrrLevelSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShFrrLevelSummary.Merge(m, src)
+func (dst *IsisShFrrLevelSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShFrrLevelSummary.Merge(dst, src)
 }
 func (m *IsisShFrrLevelSummary) XXX_Size() int {
 	return xxx_messageInfo_IsisShFrrLevelSummary.Size(m)
@@ -276,9 +270,11 @@ func init() {
 	proto.RegisterType((*IsisShFrrLevelSummary)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.frr_summary.isis_sh_frr_level_summary")
 }
 
-func init() { proto.RegisterFile("isis_sh_frr_summary.proto", fileDescriptor_c98dc24990f20193) }
+func init() {
+	proto.RegisterFile("isis_sh_frr_summary.proto", fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3)
+}
 
-var fileDescriptor_c98dc24990f20193 = []byte{
+var fileDescriptor_isis_sh_frr_summary_c502e92d14b256e3 = []byte{
 	// 424 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0xd4, 0x4d, 0x6e, 0xd4, 0x30,
 	0x14, 0x07, 0x70, 0xb9, 0xa9, 0xa6, 0xe5, 0x95, 0xf0, 0xe1, 0xa9, 0x60, 0xca, 0xaa, 0x9a, 0x6e,

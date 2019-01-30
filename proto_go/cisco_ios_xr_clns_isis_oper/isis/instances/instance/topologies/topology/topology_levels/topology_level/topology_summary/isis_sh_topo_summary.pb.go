@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_topology_levels_topology_level_topology_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Summary Statistics for an IS Topology
 type IsisShTopoSummary_KEYS struct {
@@ -36,17 +34,16 @@ func (m *IsisShTopoSummary_KEYS) Reset()         { *m = IsisShTopoSummary_KEYS{}
 func (m *IsisShTopoSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopoSummary_KEYS) ProtoMessage()    {}
 func (*IsisShTopoSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2b9c80d2dfbf2207, []int{0}
+	return fileDescriptor_isis_sh_topo_summary_871559797fc82cbf, []int{0}
 }
-
 func (m *IsisShTopoSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopoSummary_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShTopoSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopoSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopoSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopoSummary_KEYS.Merge(m, src)
+func (dst *IsisShTopoSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopoSummary_KEYS.Merge(dst, src)
 }
 func (m *IsisShTopoSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopoSummary_KEYS.Size(m)
@@ -106,17 +103,16 @@ func (m *IsisShTopoSummary) Reset()         { *m = IsisShTopoSummary{} }
 func (m *IsisShTopoSummary) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopoSummary) ProtoMessage()    {}
 func (*IsisShTopoSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2b9c80d2dfbf2207, []int{1}
+	return fileDescriptor_isis_sh_topo_summary_871559797fc82cbf, []int{1}
 }
-
 func (m *IsisShTopoSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopoSummary.Unmarshal(m, b)
 }
 func (m *IsisShTopoSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopoSummary.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopoSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopoSummary.Merge(m, src)
+func (dst *IsisShTopoSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopoSummary.Merge(dst, src)
 }
 func (m *IsisShTopoSummary) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopoSummary.Size(m)
@@ -158,17 +154,16 @@ func (m *IsisShTopoSummaryNodeStats) Reset()         { *m = IsisShTopoSummaryNod
 func (m *IsisShTopoSummaryNodeStats) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopoSummaryNodeStats) ProtoMessage()    {}
 func (*IsisShTopoSummaryNodeStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2b9c80d2dfbf2207, []int{2}
+	return fileDescriptor_isis_sh_topo_summary_871559797fc82cbf, []int{2}
 }
-
 func (m *IsisShTopoSummaryNodeStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopoSummaryNodeStats.Unmarshal(m, b)
 }
 func (m *IsisShTopoSummaryNodeStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopoSummaryNodeStats.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopoSummaryNodeStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopoSummaryNodeStats.Merge(m, src)
+func (dst *IsisShTopoSummaryNodeStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopoSummaryNodeStats.Merge(dst, src)
 }
 func (m *IsisShTopoSummaryNodeStats) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopoSummaryNodeStats.Size(m)
@@ -206,9 +201,11 @@ func init() {
 	proto.RegisterType((*IsisShTopoSummaryNodeStats)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.topology_levels.topology_level.topology_summary.isis_sh_topo_summary_node_stats")
 }
 
-func init() { proto.RegisterFile("isis_sh_topo_summary.proto", fileDescriptor_2b9c80d2dfbf2207) }
+func init() {
+	proto.RegisterFile("isis_sh_topo_summary.proto", fileDescriptor_isis_sh_topo_summary_871559797fc82cbf)
+}
 
-var fileDescriptor_2b9c80d2dfbf2207 = []byte{
+var fileDescriptor_isis_sh_topo_summary_871559797fc82cbf = []byte{
 	// 364 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x93, 0x4f, 0x4e, 0xf3, 0x30,
 	0x10, 0xc5, 0xe5, 0xf6, 0x6b, 0xfb, 0x31, 0x50, 0x21, 0x42, 0x80, 0x96, 0x4d, 0xab, 0x74, 0xd3,

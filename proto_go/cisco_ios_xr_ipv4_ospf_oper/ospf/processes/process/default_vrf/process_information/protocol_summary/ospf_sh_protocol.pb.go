@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_process_information_protocol_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Protocol Information
 type OspfShProtocol_KEYS struct {
@@ -32,17 +30,16 @@ func (m *OspfShProtocol_KEYS) Reset()         { *m = OspfShProtocol_KEYS{} }
 func (m *OspfShProtocol_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShProtocol_KEYS) ProtoMessage()    {}
 func (*OspfShProtocol_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4559d5f25e5c5134, []int{0}
+	return fileDescriptor_ospf_sh_protocol_c097b6e186c3dfb9, []int{0}
 }
-
 func (m *OspfShProtocol_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShProtocol_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShProtocol_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShProtocol_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShProtocol_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShProtocol_KEYS.Merge(m, src)
+func (dst *OspfShProtocol_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShProtocol_KEYS.Merge(dst, src)
 }
 func (m *OspfShProtocol_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShProtocol_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *OspfShProtocol) Reset()         { *m = OspfShProtocol{} }
 func (m *OspfShProtocol) String() string { return proto.CompactTextString(m) }
 func (*OspfShProtocol) ProtoMessage()    {}
 func (*OspfShProtocol) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4559d5f25e5c5134, []int{1}
+	return fileDescriptor_ospf_sh_protocol_c097b6e186c3dfb9, []int{1}
 }
-
 func (m *OspfShProtocol) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShProtocol.Unmarshal(m, b)
 }
 func (m *OspfShProtocol) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShProtocol.Marshal(b, m, deterministic)
 }
-func (m *OspfShProtocol) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShProtocol.Merge(m, src)
+func (dst *OspfShProtocol) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShProtocol.Merge(dst, src)
 }
 func (m *OspfShProtocol) XXX_Size() int {
 	return xxx_messageInfo_OspfShProtocol.Size(m)
@@ -150,9 +146,11 @@ func init() {
 	proto.RegisterType((*OspfShProtocol)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.process_information.protocol_summary.ospf_sh_protocol")
 }
 
-func init() { proto.RegisterFile("ospf_sh_protocol.proto", fileDescriptor_4559d5f25e5c5134) }
+func init() {
+	proto.RegisterFile("ospf_sh_protocol.proto", fileDescriptor_ospf_sh_protocol_c097b6e186c3dfb9)
+}
 
-var fileDescriptor_4559d5f25e5c5134 = []byte{
+var fileDescriptor_ospf_sh_protocol_c097b6e186c3dfb9 = []byte{
 	// 310 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x90, 0x41, 0x4b, 0xf3, 0x40,
 	0x10, 0x86, 0xc9, 0x77, 0xf8, 0xd0, 0xb5, 0x42, 0x5d, 0x50, 0xf6, 0xa4, 0xb1, 0xa7, 0x82, 0x92,

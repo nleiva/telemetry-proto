@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_nsr_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IS-IS process NSR statistics
 type IsisShNsrStatsGlobal_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IsisShNsrStatsGlobal_KEYS) Reset()         { *m = IsisShNsrStatsGlobal_
 func (m *IsisShNsrStatsGlobal_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShNsrStatsGlobal_KEYS) ProtoMessage()    {}
 func (*IsisShNsrStatsGlobal_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1105235fa2f58eb9, []int{0}
+	return fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c, []int{0}
 }
-
 func (m *IsisShNsrStatsGlobal_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNsrStatsGlobal_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShNsrStatsGlobal_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNsrStatsGlobal_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShNsrStatsGlobal_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNsrStatsGlobal_KEYS.Merge(m, src)
+func (dst *IsisShNsrStatsGlobal_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNsrStatsGlobal_KEYS.Merge(dst, src)
 }
 func (m *IsisShNsrStatsGlobal_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShNsrStatsGlobal_KEYS.Size(m)
@@ -74,17 +71,16 @@ func (m *IsisShNsrStatsGlobal) Reset()         { *m = IsisShNsrStatsGlobal{} }
 func (m *IsisShNsrStatsGlobal) String() string { return proto.CompactTextString(m) }
 func (*IsisShNsrStatsGlobal) ProtoMessage()    {}
 func (*IsisShNsrStatsGlobal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1105235fa2f58eb9, []int{1}
+	return fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c, []int{1}
 }
-
 func (m *IsisShNsrStatsGlobal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShNsrStatsGlobal.Unmarshal(m, b)
 }
 func (m *IsisShNsrStatsGlobal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShNsrStatsGlobal.Marshal(b, m, deterministic)
 }
-func (m *IsisShNsrStatsGlobal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShNsrStatsGlobal.Merge(m, src)
+func (dst *IsisShNsrStatsGlobal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShNsrStatsGlobal.Merge(dst, src)
 }
 func (m *IsisShNsrStatsGlobal) XXX_Size() int {
 	return xxx_messageInfo_IsisShNsrStatsGlobal.Size(m)
@@ -132,17 +128,16 @@ func (m *NsrStatsGblType) Reset()         { *m = NsrStatsGblType{} }
 func (m *NsrStatsGblType) String() string { return proto.CompactTextString(m) }
 func (*NsrStatsGblType) ProtoMessage()    {}
 func (*NsrStatsGblType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1105235fa2f58eb9, []int{2}
+	return fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c, []int{2}
 }
-
 func (m *NsrStatsGblType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatsGblType.Unmarshal(m, b)
 }
 func (m *NsrStatsGblType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatsGblType.Marshal(b, m, deterministic)
 }
-func (m *NsrStatsGblType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatsGblType.Merge(m, src)
+func (dst *NsrStatsGblType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatsGblType.Merge(dst, src)
 }
 func (m *NsrStatsGblType) XXX_Size() int {
 	return xxx_messageInfo_NsrStatsGblType.Size(m)
@@ -256,17 +251,16 @@ func (m *NsrStatsGblArrType) Reset()         { *m = NsrStatsGblArrType{} }
 func (m *NsrStatsGblArrType) String() string { return proto.CompactTextString(m) }
 func (*NsrStatsGblArrType) ProtoMessage()    {}
 func (*NsrStatsGblArrType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1105235fa2f58eb9, []int{3}
+	return fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c, []int{3}
 }
-
 func (m *NsrStatsGblArrType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_NsrStatsGblArrType.Unmarshal(m, b)
 }
 func (m *NsrStatsGblArrType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_NsrStatsGblArrType.Marshal(b, m, deterministic)
 }
-func (m *NsrStatsGblArrType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NsrStatsGblArrType.Merge(m, src)
+func (dst *NsrStatsGblArrType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_NsrStatsGblArrType.Merge(dst, src)
 }
 func (m *NsrStatsGblArrType) XXX_Size() int {
 	return xxx_messageInfo_NsrStatsGblArrType.Size(m)
@@ -298,9 +292,11 @@ func init() {
 	proto.RegisterType((*NsrStatsGblArrType)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.nsr_statistics.nsr_stats_gbl_arr_type")
 }
 
-func init() { proto.RegisterFile("isis_sh_nsr_stats_global.proto", fileDescriptor_1105235fa2f58eb9) }
+func init() {
+	proto.RegisterFile("isis_sh_nsr_stats_global.proto", fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c)
+}
 
-var fileDescriptor_1105235fa2f58eb9 = []byte{
+var fileDescriptor_isis_sh_nsr_stats_global_39caaefa1b599a0c = []byte{
 	// 497 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0xd4, 0xd1, 0x6e, 0xd3, 0x3c,
 	0x14, 0x07, 0x70, 0x65, 0xeb, 0xd7, 0x8f, 0xba, 0xcd, 0xd4, 0x79, 0x30, 0xf9, 0x06, 0xa8, 0xba,

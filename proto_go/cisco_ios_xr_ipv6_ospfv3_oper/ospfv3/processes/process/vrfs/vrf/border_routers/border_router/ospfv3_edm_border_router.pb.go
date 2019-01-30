@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_vrfs_vrf_border_routers_border_router
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 border router information
 type Ospfv3EdmBorderRouter_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3EdmBorderRouter_KEYS) Reset()         { *m = Ospfv3EdmBorderRoute
 func (m *Ospfv3EdmBorderRouter_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmBorderRouter_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmBorderRouter_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_de51da64d25cb95f, []int{0}
+	return fileDescriptor_ospfv3_edm_border_router_2423aca8fb50ea32, []int{0}
 }
-
 func (m *Ospfv3EdmBorderRouter_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmBorderRouter_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmBorderRouter_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmBorderRouter_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmBorderRouter_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmBorderRouter_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmBorderRouter_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *Ospfv3EdmBorderRouter) Reset()         { *m = Ospfv3EdmBorderRouter{} }
 func (m *Ospfv3EdmBorderRouter) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmBorderRouter) ProtoMessage()    {}
 func (*Ospfv3EdmBorderRouter) Descriptor() ([]byte, []int) {
-	return fileDescriptor_de51da64d25cb95f, []int{1}
+	return fileDescriptor_ospfv3_edm_border_router_2423aca8fb50ea32, []int{1}
 }
-
 func (m *Ospfv3EdmBorderRouter) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmBorderRouter) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmBorderRouter) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmBorderRouter.Merge(m, src)
+func (dst *Ospfv3EdmBorderRouter) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmBorderRouter.Merge(dst, src)
 }
 func (m *Ospfv3EdmBorderRouter) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmBorderRouter.Size(m)
@@ -141,17 +137,16 @@ func (m *Ospfv3EdmBrPath) Reset()         { *m = Ospfv3EdmBrPath{} }
 func (m *Ospfv3EdmBrPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmBrPath) ProtoMessage()    {}
 func (*Ospfv3EdmBrPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_de51da64d25cb95f, []int{2}
+	return fileDescriptor_ospfv3_edm_border_router_2423aca8fb50ea32, []int{2}
 }
-
 func (m *Ospfv3EdmBrPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmBrPath.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmBrPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmBrPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmBrPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmBrPath.Merge(m, src)
+func (dst *Ospfv3EdmBrPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmBrPath.Merge(dst, src)
 }
 func (m *Ospfv3EdmBrPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmBrPath.Size(m)
@@ -217,9 +212,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmBrPath)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.vrfs.vrf.border_routers.border_router.ospfv3_edm_br_path")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_border_router.proto", fileDescriptor_de51da64d25cb95f) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_border_router.proto", fileDescriptor_ospfv3_edm_border_router_2423aca8fb50ea32)
+}
 
-var fileDescriptor_de51da64d25cb95f = []byte{
+var fileDescriptor_ospfv3_edm_border_router_2423aca8fb50ea32 = []byte{
 	// 401 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x53, 0xcf, 0xca, 0xd3, 0x40,
 	0x10, 0x27, 0xdf, 0xa7, 0x6d, 0x9d, 0xda, 0x52, 0xd7, 0x6a, 0xa3, 0xa0, 0xd6, 0x82, 0xd0, 0x83,

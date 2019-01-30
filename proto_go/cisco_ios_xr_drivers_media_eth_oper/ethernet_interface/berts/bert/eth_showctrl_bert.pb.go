@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_drivers_media_eth_oper_ethernet_interface_berts_bert
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Per port BERT test status information
 type EthShowctrlBert_KEYS struct {
@@ -32,17 +30,16 @@ func (m *EthShowctrlBert_KEYS) Reset()         { *m = EthShowctrlBert_KEYS{} }
 func (m *EthShowctrlBert_KEYS) String() string { return proto.CompactTextString(m) }
 func (*EthShowctrlBert_KEYS) ProtoMessage()    {}
 func (*EthShowctrlBert_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42d52ccdd898f643, []int{0}
+	return fileDescriptor_eth_showctrl_bert_bcf244d90808e43c, []int{0}
 }
-
 func (m *EthShowctrlBert_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthShowctrlBert_KEYS.Unmarshal(m, b)
 }
 func (m *EthShowctrlBert_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthShowctrlBert_KEYS.Marshal(b, m, deterministic)
 }
-func (m *EthShowctrlBert_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthShowctrlBert_KEYS.Merge(m, src)
+func (dst *EthShowctrlBert_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthShowctrlBert_KEYS.Merge(dst, src)
 }
 func (m *EthShowctrlBert_KEYS) XXX_Size() int {
 	return xxx_messageInfo_EthShowctrlBert_KEYS.Size(m)
@@ -76,17 +73,16 @@ func (m *EthShowctrlBert) Reset()         { *m = EthShowctrlBert{} }
 func (m *EthShowctrlBert) String() string { return proto.CompactTextString(m) }
 func (*EthShowctrlBert) ProtoMessage()    {}
 func (*EthShowctrlBert) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42d52ccdd898f643, []int{1}
+	return fileDescriptor_eth_showctrl_bert_bcf244d90808e43c, []int{1}
 }
-
 func (m *EthShowctrlBert) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthShowctrlBert.Unmarshal(m, b)
 }
 func (m *EthShowctrlBert) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthShowctrlBert.Marshal(b, m, deterministic)
 }
-func (m *EthShowctrlBert) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthShowctrlBert.Merge(m, src)
+func (dst *EthShowctrlBert) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthShowctrlBert.Merge(dst, src)
 }
 func (m *EthShowctrlBert) XXX_Size() int {
 	return xxx_messageInfo_EthShowctrlBert.Size(m)
@@ -146,17 +142,16 @@ func (m *EthernetBertStatus_) Reset()         { *m = EthernetBertStatus_{} }
 func (m *EthernetBertStatus_) String() string { return proto.CompactTextString(m) }
 func (*EthernetBertStatus_) ProtoMessage()    {}
 func (*EthernetBertStatus_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_42d52ccdd898f643, []int{2}
+	return fileDescriptor_eth_showctrl_bert_bcf244d90808e43c, []int{2}
 }
-
 func (m *EthernetBertStatus_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthernetBertStatus_.Unmarshal(m, b)
 }
 func (m *EthernetBertStatus_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthernetBertStatus_.Marshal(b, m, deterministic)
 }
-func (m *EthernetBertStatus_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthernetBertStatus_.Merge(m, src)
+func (dst *EthernetBertStatus_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthernetBertStatus_.Merge(dst, src)
 }
 func (m *EthernetBertStatus_) XXX_Size() int {
 	return xxx_messageInfo_EthernetBertStatus_.Size(m)
@@ -236,9 +231,11 @@ func init() {
 	proto.RegisterType((*EthernetBertStatus_)(nil), "cisco_ios_xr_drivers_media_eth_oper.ethernet_interface.berts.bert.ethernet_bert_status_")
 }
 
-func init() { proto.RegisterFile("eth_showctrl_bert.proto", fileDescriptor_42d52ccdd898f643) }
+func init() {
+	proto.RegisterFile("eth_showctrl_bert.proto", fileDescriptor_eth_showctrl_bert_bcf244d90808e43c)
+}
 
-var fileDescriptor_42d52ccdd898f643 = []byte{
+var fileDescriptor_eth_showctrl_bert_bcf244d90808e43c = []byte{
 	// 422 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0x92, 0x5d, 0x8b, 0xd4, 0x30,
 	0x14, 0x86, 0xe9, 0xba, 0xae, 0x3b, 0x99, 0xad, 0xce, 0x04, 0xd4, 0x80, 0x08, 0xe3, 0x88, 0x30,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_mpls_forwarding_nodes_node_label_fib_informations_information
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information about label leaf
 type MplsShLeaf_KEYS struct {
@@ -34,17 +32,16 @@ func (m *MplsShLeaf_KEYS) Reset()         { *m = MplsShLeaf_KEYS{} }
 func (m *MplsShLeaf_KEYS) String() string { return proto.CompactTextString(m) }
 func (*MplsShLeaf_KEYS) ProtoMessage()    {}
 func (*MplsShLeaf_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{0}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{0}
 }
-
 func (m *MplsShLeaf_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsShLeaf_KEYS.Unmarshal(m, b)
 }
 func (m *MplsShLeaf_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsShLeaf_KEYS.Marshal(b, m, deterministic)
 }
-func (m *MplsShLeaf_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsShLeaf_KEYS.Merge(m, src)
+func (dst *MplsShLeaf_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsShLeaf_KEYS.Merge(dst, src)
 }
 func (m *MplsShLeaf_KEYS) XXX_Size() int {
 	return xxx_messageInfo_MplsShLeaf_KEYS.Size(m)
@@ -130,17 +127,16 @@ func (m *MplsShLeaf) Reset()         { *m = MplsShLeaf{} }
 func (m *MplsShLeaf) String() string { return proto.CompactTextString(m) }
 func (*MplsShLeaf) ProtoMessage()    {}
 func (*MplsShLeaf) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{1}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{1}
 }
-
 func (m *MplsShLeaf) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsShLeaf.Unmarshal(m, b)
 }
 func (m *MplsShLeaf) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsShLeaf.Marshal(b, m, deterministic)
 }
-func (m *MplsShLeaf) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsShLeaf.Merge(m, src)
+func (dst *MplsShLeaf) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsShLeaf.Merge(dst, src)
 }
 func (m *MplsShLeaf) XXX_Size() int {
 	return xxx_messageInfo_MplsShLeaf.Size(m)
@@ -335,17 +331,16 @@ func (m *MplsFwdInfo) Reset()         { *m = MplsFwdInfo{} }
 func (m *MplsFwdInfo) String() string { return proto.CompactTextString(m) }
 func (*MplsFwdInfo) ProtoMessage()    {}
 func (*MplsFwdInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{2}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{2}
 }
-
 func (m *MplsFwdInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsFwdInfo.Unmarshal(m, b)
 }
 func (m *MplsFwdInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsFwdInfo.Marshal(b, m, deterministic)
 }
-func (m *MplsFwdInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsFwdInfo.Merge(m, src)
+func (dst *MplsFwdInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsFwdInfo.Merge(dst, src)
 }
 func (m *MplsFwdInfo) XXX_Size() int {
 	return xxx_messageInfo_MplsFwdInfo.Size(m)
@@ -475,17 +470,16 @@ func (m *MplsAdjInfo) Reset()         { *m = MplsAdjInfo{} }
 func (m *MplsAdjInfo) String() string { return proto.CompactTextString(m) }
 func (*MplsAdjInfo) ProtoMessage()    {}
 func (*MplsAdjInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{3}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{3}
 }
-
 func (m *MplsAdjInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsAdjInfo.Unmarshal(m, b)
 }
 func (m *MplsAdjInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsAdjInfo.Marshal(b, m, deterministic)
 }
-func (m *MplsAdjInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsAdjInfo.Merge(m, src)
+func (dst *MplsAdjInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsAdjInfo.Merge(dst, src)
 }
 func (m *MplsAdjInfo) XXX_Size() int {
 	return xxx_messageInfo_MplsAdjInfo.Size(m)
@@ -649,17 +643,16 @@ func (m *MplsLdiInfo) Reset()         { *m = MplsLdiInfo{} }
 func (m *MplsLdiInfo) String() string { return proto.CompactTextString(m) }
 func (*MplsLdiInfo) ProtoMessage()    {}
 func (*MplsLdiInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{4}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{4}
 }
-
 func (m *MplsLdiInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsLdiInfo.Unmarshal(m, b)
 }
 func (m *MplsLdiInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsLdiInfo.Marshal(b, m, deterministic)
 }
-func (m *MplsLdiInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsLdiInfo.Merge(m, src)
+func (dst *MplsLdiInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsLdiInfo.Merge(dst, src)
 }
 func (m *MplsLdiInfo) XXX_Size() int {
 	return xxx_messageInfo_MplsLdiInfo.Size(m)
@@ -716,17 +709,16 @@ func (m *MplsMcastInfo) Reset()         { *m = MplsMcastInfo{} }
 func (m *MplsMcastInfo) String() string { return proto.CompactTextString(m) }
 func (*MplsMcastInfo) ProtoMessage()    {}
 func (*MplsMcastInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_4805ef0f6f394614, []int{5}
+	return fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc, []int{5}
 }
-
 func (m *MplsMcastInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsMcastInfo.Unmarshal(m, b)
 }
 func (m *MplsMcastInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsMcastInfo.Marshal(b, m, deterministic)
 }
-func (m *MplsMcastInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsMcastInfo.Merge(m, src)
+func (dst *MplsMcastInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsMcastInfo.Merge(dst, src)
 }
 func (m *MplsMcastInfo) XXX_Size() int {
 	return xxx_messageInfo_MplsMcastInfo.Size(m)
@@ -844,9 +836,9 @@ func init() {
 	proto.RegisterType((*MplsMcastInfo)(nil), "cisco_ios_xr_fib_common_oper.mpls_forwarding.nodes.node.label_fib.informations.information.mpls_mcast_info")
 }
 
-func init() { proto.RegisterFile("mpls_sh_leaf.proto", fileDescriptor_4805ef0f6f394614) }
+func init() { proto.RegisterFile("mpls_sh_leaf.proto", fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc) }
 
-var fileDescriptor_4805ef0f6f394614 = []byte{
+var fileDescriptor_mpls_sh_leaf_dae78e05eeb3c0bc = []byte{
 	// 1561 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x57, 0x5d, 0x72, 0x1b, 0xc7,
 	0x11, 0x2e, 0x84, 0x32, 0x48, 0x34, 0x01, 0x92, 0x18, 0x92, 0xd0, 0xd2, 0x34, 0x4d, 0x88, 0xb6,

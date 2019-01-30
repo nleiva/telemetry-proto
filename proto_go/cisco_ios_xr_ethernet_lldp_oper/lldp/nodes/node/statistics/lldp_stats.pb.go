@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ethernet_lldp_oper_lldp_nodes_node_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // LLDP statistics
 type LldpStats_KEYS struct {
@@ -32,17 +30,16 @@ func (m *LldpStats_KEYS) Reset()         { *m = LldpStats_KEYS{} }
 func (m *LldpStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*LldpStats_KEYS) ProtoMessage()    {}
 func (*LldpStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8e59a3e13d4c9274, []int{0}
+	return fileDescriptor_lldp_stats_7792e58a45181ed6, []int{0}
 }
-
 func (m *LldpStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpStats_KEYS.Unmarshal(m, b)
 }
 func (m *LldpStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *LldpStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpStats_KEYS.Merge(m, src)
+func (dst *LldpStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpStats_KEYS.Merge(dst, src)
 }
 func (m *LldpStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_LldpStats_KEYS.Size(m)
@@ -92,17 +89,16 @@ func (m *LldpStats) Reset()         { *m = LldpStats{} }
 func (m *LldpStats) String() string { return proto.CompactTextString(m) }
 func (*LldpStats) ProtoMessage()    {}
 func (*LldpStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8e59a3e13d4c9274, []int{1}
+	return fileDescriptor_lldp_stats_7792e58a45181ed6, []int{1}
 }
-
 func (m *LldpStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpStats.Unmarshal(m, b)
 }
 func (m *LldpStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpStats.Marshal(b, m, deterministic)
 }
-func (m *LldpStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpStats.Merge(m, src)
+func (dst *LldpStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpStats.Merge(dst, src)
 }
 func (m *LldpStats) XXX_Size() int {
 	return xxx_messageInfo_LldpStats.Size(m)
@@ -195,9 +191,9 @@ func init() {
 	proto.RegisterType((*LldpStats)(nil), "cisco_ios_xr_ethernet_lldp_oper.lldp.nodes.node.statistics.lldp_stats")
 }
 
-func init() { proto.RegisterFile("lldp_stats.proto", fileDescriptor_8e59a3e13d4c9274) }
+func init() { proto.RegisterFile("lldp_stats.proto", fileDescriptor_lldp_stats_7792e58a45181ed6) }
 
-var fileDescriptor_8e59a3e13d4c9274 = []byte{
+var fileDescriptor_lldp_stats_7792e58a45181ed6 = []byte{
 	// 373 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x92, 0x4b, 0xab, 0xd3, 0x40,
 	0x14, 0x80, 0x29, 0x88, 0xd8, 0x23, 0xb5, 0xe9, 0xb4, 0x42, 0xc0, 0x85, 0xa5, 0x0b, 0xa9, 0x28,

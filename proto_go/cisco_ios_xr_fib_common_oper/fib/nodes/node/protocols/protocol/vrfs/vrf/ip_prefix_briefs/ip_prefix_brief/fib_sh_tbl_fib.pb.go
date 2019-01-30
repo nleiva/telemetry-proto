@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_vrfs_vrf_ip_prefix_briefs_ip_prefix_brief
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Basic FIB table information
 type FibShTblFib_KEYS struct {
@@ -36,17 +34,16 @@ func (m *FibShTblFib_KEYS) Reset()         { *m = FibShTblFib_KEYS{} }
 func (m *FibShTblFib_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibShTblFib_KEYS) ProtoMessage()    {}
 func (*FibShTblFib_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{0}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{0}
 }
-
 func (m *FibShTblFib_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblFib_KEYS.Unmarshal(m, b)
 }
 func (m *FibShTblFib_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblFib_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibShTblFib_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblFib_KEYS.Merge(m, src)
+func (dst *FibShTblFib_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblFib_KEYS.Merge(dst, src)
 }
 func (m *FibShTblFib_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibShTblFib_KEYS.Size(m)
@@ -172,17 +169,16 @@ func (m *FibShTblFib) Reset()         { *m = FibShTblFib{} }
 func (m *FibShTblFib) String() string { return proto.CompactTextString(m) }
 func (*FibShTblFib) ProtoMessage()    {}
 func (*FibShTblFib) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{1}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{1}
 }
-
 func (m *FibShTblFib) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblFib.Unmarshal(m, b)
 }
 func (m *FibShTblFib) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblFib.Marshal(b, m, deterministic)
 }
-func (m *FibShTblFib) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblFib.Merge(m, src)
+func (dst *FibShTblFib) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblFib.Merge(dst, src)
 }
 func (m *FibShTblFib) XXX_Size() int {
 	return xxx_messageInfo_FibShTblFib.Size(m)
@@ -451,17 +447,16 @@ func (m *FibAddrStr) Reset()         { *m = FibAddrStr{} }
 func (m *FibAddrStr) String() string { return proto.CompactTextString(m) }
 func (*FibAddrStr) ProtoMessage()    {}
 func (*FibAddrStr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{2}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{2}
 }
-
 func (m *FibAddrStr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibAddrStr.Unmarshal(m, b)
 }
 func (m *FibAddrStr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibAddrStr.Marshal(b, m, deterministic)
 }
-func (m *FibAddrStr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibAddrStr.Merge(m, src)
+func (dst *FibAddrStr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibAddrStr.Merge(dst, src)
 }
 func (m *FibAddrStr) XXX_Size() int {
 	return xxx_messageInfo_FibAddrStr.Size(m)
@@ -494,17 +489,16 @@ func (m *FibShTblMplsLabelStack) Reset()         { *m = FibShTblMplsLabelStack{}
 func (m *FibShTblMplsLabelStack) String() string { return proto.CompactTextString(m) }
 func (*FibShTblMplsLabelStack) ProtoMessage()    {}
 func (*FibShTblMplsLabelStack) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{3}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{3}
 }
-
 func (m *FibShTblMplsLabelStack) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblMplsLabelStack.Unmarshal(m, b)
 }
 func (m *FibShTblMplsLabelStack) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblMplsLabelStack.Marshal(b, m, deterministic)
 }
-func (m *FibShTblMplsLabelStack) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblMplsLabelStack.Merge(m, src)
+func (dst *FibShTblMplsLabelStack) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblMplsLabelStack.Merge(dst, src)
 }
 func (m *FibShTblMplsLabelStack) XXX_Size() int {
 	return xxx_messageInfo_FibShTblMplsLabelStack.Size(m)
@@ -562,17 +556,16 @@ func (m *FibShTblPathMplsInfo) Reset()         { *m = FibShTblPathMplsInfo{} }
 func (m *FibShTblPathMplsInfo) String() string { return proto.CompactTextString(m) }
 func (*FibShTblPathMplsInfo) ProtoMessage()    {}
 func (*FibShTblPathMplsInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{4}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{4}
 }
-
 func (m *FibShTblPathMplsInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblPathMplsInfo.Unmarshal(m, b)
 }
 func (m *FibShTblPathMplsInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblPathMplsInfo.Marshal(b, m, deterministic)
 }
-func (m *FibShTblPathMplsInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblPathMplsInfo.Merge(m, src)
+func (dst *FibShTblPathMplsInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblPathMplsInfo.Merge(dst, src)
 }
 func (m *FibShTblPathMplsInfo) XXX_Size() int {
 	return xxx_messageInfo_FibShTblPathMplsInfo.Size(m)
@@ -649,17 +642,16 @@ func (m *FibShIpencapHdrDet) Reset()         { *m = FibShIpencapHdrDet{} }
 func (m *FibShIpencapHdrDet) String() string { return proto.CompactTextString(m) }
 func (*FibShIpencapHdrDet) ProtoMessage()    {}
 func (*FibShIpencapHdrDet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{5}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{5}
 }
-
 func (m *FibShIpencapHdrDet) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShIpencapHdrDet.Unmarshal(m, b)
 }
 func (m *FibShIpencapHdrDet) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShIpencapHdrDet.Marshal(b, m, deterministic)
 }
-func (m *FibShIpencapHdrDet) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShIpencapHdrDet.Merge(m, src)
+func (dst *FibShIpencapHdrDet) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShIpencapHdrDet.Merge(dst, src)
 }
 func (m *FibShIpencapHdrDet) XXX_Size() int {
 	return xxx_messageInfo_FibShIpencapHdrDet.Size(m)
@@ -722,17 +714,16 @@ func (m *FibShIpencapDet) Reset()         { *m = FibShIpencapDet{} }
 func (m *FibShIpencapDet) String() string { return proto.CompactTextString(m) }
 func (*FibShIpencapDet) ProtoMessage()    {}
 func (*FibShIpencapDet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{6}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{6}
 }
-
 func (m *FibShIpencapDet) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShIpencapDet.Unmarshal(m, b)
 }
 func (m *FibShIpencapDet) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShIpencapDet.Marshal(b, m, deterministic)
 }
-func (m *FibShIpencapDet) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShIpencapDet.Merge(m, src)
+func (dst *FibShIpencapDet) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShIpencapDet.Merge(dst, src)
 }
 func (m *FibShIpencapDet) XXX_Size() int {
 	return xxx_messageInfo_FibShIpencapDet.Size(m)
@@ -878,17 +869,16 @@ func (m *FibShTblPathDet) Reset()         { *m = FibShTblPathDet{} }
 func (m *FibShTblPathDet) String() string { return proto.CompactTextString(m) }
 func (*FibShTblPathDet) ProtoMessage()    {}
 func (*FibShTblPathDet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{7}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{7}
 }
-
 func (m *FibShTblPathDet) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblPathDet.Unmarshal(m, b)
 }
 func (m *FibShTblPathDet) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblPathDet.Marshal(b, m, deterministic)
 }
-func (m *FibShTblPathDet) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblPathDet.Merge(m, src)
+func (dst *FibShTblPathDet) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblPathDet.Merge(dst, src)
 }
 func (m *FibShTblPathDet) XXX_Size() int {
 	return xxx_messageInfo_FibShTblPathDet.Size(m)
@@ -1101,17 +1091,16 @@ func (m *FibShTblPath) Reset()         { *m = FibShTblPath{} }
 func (m *FibShTblPath) String() string { return proto.CompactTextString(m) }
 func (*FibShTblPath) ProtoMessage()    {}
 func (*FibShTblPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{8}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{8}
 }
-
 func (m *FibShTblPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblPath.Unmarshal(m, b)
 }
 func (m *FibShTblPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblPath.Marshal(b, m, deterministic)
 }
-func (m *FibShTblPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblPath.Merge(m, src)
+func (dst *FibShTblPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblPath.Merge(dst, src)
 }
 func (m *FibShTblPath) XXX_Size() int {
 	return xxx_messageInfo_FibShTblPath.Size(m)
@@ -1185,17 +1174,16 @@ func (m *FibShTblPathItem) Reset()         { *m = FibShTblPathItem{} }
 func (m *FibShTblPathItem) String() string { return proto.CompactTextString(m) }
 func (*FibShTblPathItem) ProtoMessage()    {}
 func (*FibShTblPathItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{9}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{9}
 }
-
 func (m *FibShTblPathItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblPathItem.Unmarshal(m, b)
 }
 func (m *FibShTblPathItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblPathItem.Marshal(b, m, deterministic)
 }
-func (m *FibShTblPathItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblPathItem.Merge(m, src)
+func (dst *FibShTblPathItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblPathItem.Merge(dst, src)
 }
 func (m *FibShTblPathItem) XXX_Size() int {
 	return xxx_messageInfo_FibShTblPathItem.Size(m)
@@ -1422,17 +1410,16 @@ func (m *FibShTblLoadinfoInt) Reset()         { *m = FibShTblLoadinfoInt{} }
 func (m *FibShTblLoadinfoInt) String() string { return proto.CompactTextString(m) }
 func (*FibShTblLoadinfoInt) ProtoMessage()    {}
 func (*FibShTblLoadinfoInt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{10}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{10}
 }
-
 func (m *FibShTblLoadinfoInt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblLoadinfoInt.Unmarshal(m, b)
 }
 func (m *FibShTblLoadinfoInt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblLoadinfoInt.Marshal(b, m, deterministic)
 }
-func (m *FibShTblLoadinfoInt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblLoadinfoInt.Merge(m, src)
+func (dst *FibShTblLoadinfoInt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblLoadinfoInt.Merge(dst, src)
 }
 func (m *FibShTblLoadinfoInt) XXX_Size() int {
 	return xxx_messageInfo_FibShTblLoadinfoInt.Size(m)
@@ -1632,17 +1619,16 @@ func (m *FibShTblLoadinfoDet) Reset()         { *m = FibShTblLoadinfoDet{} }
 func (m *FibShTblLoadinfoDet) String() string { return proto.CompactTextString(m) }
 func (*FibShTblLoadinfoDet) ProtoMessage()    {}
 func (*FibShTblLoadinfoDet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{11}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{11}
 }
-
 func (m *FibShTblLoadinfoDet) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblLoadinfoDet.Unmarshal(m, b)
 }
 func (m *FibShTblLoadinfoDet) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblLoadinfoDet.Marshal(b, m, deterministic)
 }
-func (m *FibShTblLoadinfoDet) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblLoadinfoDet.Merge(m, src)
+func (dst *FibShTblLoadinfoDet) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblLoadinfoDet.Merge(dst, src)
 }
 func (m *FibShTblLoadinfoDet) XXX_Size() int {
 	return xxx_messageInfo_FibShTblLoadinfoDet.Size(m)
@@ -1828,17 +1814,16 @@ func (m *FibShTblFibDet) Reset()         { *m = FibShTblFibDet{} }
 func (m *FibShTblFibDet) String() string { return proto.CompactTextString(m) }
 func (*FibShTblFibDet) ProtoMessage()    {}
 func (*FibShTblFibDet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e70b87858a55e612, []int{12}
+	return fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d, []int{12}
 }
-
 func (m *FibShTblFibDet) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblFibDet.Unmarshal(m, b)
 }
 func (m *FibShTblFibDet) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblFibDet.Marshal(b, m, deterministic)
 }
-func (m *FibShTblFibDet) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblFibDet.Merge(m, src)
+func (dst *FibShTblFibDet) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblFibDet.Merge(dst, src)
 }
 func (m *FibShTblFibDet) XXX_Size() int {
 	return xxx_messageInfo_FibShTblFibDet.Size(m)
@@ -2145,9 +2130,11 @@ func init() {
 	proto.RegisterType((*FibShTblFibDet)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.vrfs.vrf.ip_prefix_briefs.ip_prefix_brief.fib_sh_tbl_fib_det")
 }
 
-func init() { proto.RegisterFile("fib_sh_tbl_fib.proto", fileDescriptor_e70b87858a55e612) }
+func init() {
+	proto.RegisterFile("fib_sh_tbl_fib.proto", fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d)
+}
 
-var fileDescriptor_e70b87858a55e612 = []byte{
+var fileDescriptor_fib_sh_tbl_fib_aa01d62efbdce20d = []byte{
 	// 4056 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x5a, 0x4b, 0x6f, 0x1c, 0x49,
 	0x72, 0x46, 0x8f, 0x66, 0x45, 0x32, 0xd9, 0xcd, 0x47, 0xf1, 0x55, 0x14, 0x87, 0x12, 0x45, 0x69,

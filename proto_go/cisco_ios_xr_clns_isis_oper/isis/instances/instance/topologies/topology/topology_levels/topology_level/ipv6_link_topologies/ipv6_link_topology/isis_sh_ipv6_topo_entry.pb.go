@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_topology_levels_topology_level_ipv6_link_topologies_ipv6_link_topology
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IPv6 IS Link Topology Entry
 type IsisShIpv6TopoEntry_KEYS struct {
@@ -37,17 +35,16 @@ func (m *IsisShIpv6TopoEntry_KEYS) Reset()         { *m = IsisShIpv6TopoEntry_KE
 func (m *IsisShIpv6TopoEntry_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6TopoEntry_KEYS) ProtoMessage()    {}
 func (*IsisShIpv6TopoEntry_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{0}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{0}
 }
-
 func (m *IsisShIpv6TopoEntry_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6TopoEntry_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShIpv6TopoEntry_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6TopoEntry_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6TopoEntry_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6TopoEntry_KEYS.Merge(m, src)
+func (dst *IsisShIpv6TopoEntry_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6TopoEntry_KEYS.Merge(dst, src)
 }
 func (m *IsisShIpv6TopoEntry_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6TopoEntry_KEYS.Size(m)
@@ -122,17 +119,16 @@ func (m *IsisShIpv6TopoEntry) Reset()         { *m = IsisShIpv6TopoEntry{} }
 func (m *IsisShIpv6TopoEntry) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6TopoEntry) ProtoMessage()    {}
 func (*IsisShIpv6TopoEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{1}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{1}
 }
-
 func (m *IsisShIpv6TopoEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6TopoEntry.Unmarshal(m, b)
 }
 func (m *IsisShIpv6TopoEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6TopoEntry.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6TopoEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6TopoEntry.Merge(m, src)
+func (dst *IsisShIpv6TopoEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6TopoEntry.Merge(dst, src)
 }
 func (m *IsisShIpv6TopoEntry) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6TopoEntry.Size(m)
@@ -196,17 +192,16 @@ func (m *IsisNodeIdType) Reset()         { *m = IsisNodeIdType{} }
 func (m *IsisNodeIdType) String() string { return proto.CompactTextString(m) }
 func (*IsisNodeIdType) ProtoMessage()    {}
 func (*IsisNodeIdType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{2}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{2}
 }
-
 func (m *IsisNodeIdType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisNodeIdType.Unmarshal(m, b)
 }
 func (m *IsisNodeIdType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisNodeIdType.Marshal(b, m, deterministic)
 }
-func (m *IsisNodeIdType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisNodeIdType.Merge(m, src)
+func (dst *IsisNodeIdType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisNodeIdType.Merge(dst, src)
 }
 func (m *IsisNodeIdType) XXX_Size() int {
 	return xxx_messageInfo_IsisNodeIdType.Size(m)
@@ -235,17 +230,16 @@ func (m *IsisSnpaType) Reset()         { *m = IsisSnpaType{} }
 func (m *IsisSnpaType) String() string { return proto.CompactTextString(m) }
 func (*IsisSnpaType) ProtoMessage()    {}
 func (*IsisSnpaType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{3}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{3}
 }
-
 func (m *IsisSnpaType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisSnpaType.Unmarshal(m, b)
 }
 func (m *IsisSnpaType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisSnpaType.Marshal(b, m, deterministic)
 }
-func (m *IsisSnpaType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisSnpaType.Merge(m, src)
+func (dst *IsisSnpaType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisSnpaType.Merge(dst, src)
 }
 func (m *IsisSnpaType) XXX_Size() int {
 	return xxx_messageInfo_IsisSnpaType.Size(m)
@@ -282,17 +276,16 @@ func (m *IsisPerPriorityCounts) Reset()         { *m = IsisPerPriorityCounts{} }
 func (m *IsisPerPriorityCounts) String() string { return proto.CompactTextString(m) }
 func (*IsisPerPriorityCounts) ProtoMessage()    {}
 func (*IsisPerPriorityCounts) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{4}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{4}
 }
-
 func (m *IsisPerPriorityCounts) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisPerPriorityCounts.Unmarshal(m, b)
 }
 func (m *IsisPerPriorityCounts) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisPerPriorityCounts.Marshal(b, m, deterministic)
 }
-func (m *IsisPerPriorityCounts) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisPerPriorityCounts.Merge(m, src)
+func (dst *IsisPerPriorityCounts) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisPerPriorityCounts.Merge(dst, src)
 }
 func (m *IsisPerPriorityCounts) XXX_Size() int {
 	return xxx_messageInfo_IsisPerPriorityCounts.Size(m)
@@ -352,17 +345,16 @@ func (m *IsisShRepEl) Reset()         { *m = IsisShRepEl{} }
 func (m *IsisShRepEl) String() string { return proto.CompactTextString(m) }
 func (*IsisShRepEl) ProtoMessage()    {}
 func (*IsisShRepEl) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{5}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{5}
 }
-
 func (m *IsisShRepEl) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShRepEl.Unmarshal(m, b)
 }
 func (m *IsisShRepEl) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShRepEl.Marshal(b, m, deterministic)
 }
-func (m *IsisShRepEl) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShRepEl.Merge(m, src)
+func (dst *IsisShRepEl) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShRepEl.Merge(dst, src)
 }
 func (m *IsisShRepEl) XXX_Size() int {
 	return xxx_messageInfo_IsisShRepEl.Size(m)
@@ -469,17 +461,16 @@ func (m *IsisShIpv6FrrBackup) Reset()         { *m = IsisShIpv6FrrBackup{} }
 func (m *IsisShIpv6FrrBackup) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6FrrBackup) ProtoMessage()    {}
 func (*IsisShIpv6FrrBackup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{6}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{6}
 }
-
 func (m *IsisShIpv6FrrBackup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Unmarshal(m, b)
 }
 func (m *IsisShIpv6FrrBackup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6FrrBackup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6FrrBackup.Merge(m, src)
+func (dst *IsisShIpv6FrrBackup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6FrrBackup.Merge(dst, src)
 }
 func (m *IsisShIpv6FrrBackup) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6FrrBackup.Size(m)
@@ -696,17 +687,16 @@ func (m *IsisShIpv6Path) Reset()         { *m = IsisShIpv6Path{} }
 func (m *IsisShIpv6Path) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6Path) ProtoMessage()    {}
 func (*IsisShIpv6Path) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{7}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{7}
 }
-
 func (m *IsisShIpv6Path) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6Path.Unmarshal(m, b)
 }
 func (m *IsisShIpv6Path) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6Path.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6Path) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6Path.Merge(m, src)
+func (dst *IsisShIpv6Path) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6Path.Merge(dst, src)
 }
 func (m *IsisShIpv6Path) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6Path.Size(m)
@@ -802,17 +792,16 @@ func (m *IsisShTopoNeighbor) Reset()         { *m = IsisShTopoNeighbor{} }
 func (m *IsisShTopoNeighbor) String() string { return proto.CompactTextString(m) }
 func (*IsisShTopoNeighbor) ProtoMessage()    {}
 func (*IsisShTopoNeighbor) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{8}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{8}
 }
-
 func (m *IsisShTopoNeighbor) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTopoNeighbor.Unmarshal(m, b)
 }
 func (m *IsisShTopoNeighbor) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTopoNeighbor.Marshal(b, m, deterministic)
 }
-func (m *IsisShTopoNeighbor) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTopoNeighbor.Merge(m, src)
+func (dst *IsisShTopoNeighbor) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTopoNeighbor.Merge(dst, src)
 }
 func (m *IsisShTopoNeighbor) XXX_Size() int {
 	return xxx_messageInfo_IsisShTopoNeighbor.Size(m)
@@ -860,17 +849,16 @@ func (m *IsisShIpv6TopoReachableDetails) Reset()         { *m = IsisShIpv6TopoRe
 func (m *IsisShIpv6TopoReachableDetails) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6TopoReachableDetails) ProtoMessage()    {}
 func (*IsisShIpv6TopoReachableDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{9}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{9}
 }
-
 func (m *IsisShIpv6TopoReachableDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6TopoReachableDetails.Unmarshal(m, b)
 }
 func (m *IsisShIpv6TopoReachableDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6TopoReachableDetails.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6TopoReachableDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6TopoReachableDetails.Merge(m, src)
+func (dst *IsisShIpv6TopoReachableDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6TopoReachableDetails.Merge(dst, src)
 }
 func (m *IsisShIpv6TopoReachableDetails) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6TopoReachableDetails.Size(m)
@@ -937,17 +925,16 @@ func (m *IsisShIpv6TopoReachableStatus) Reset()         { *m = IsisShIpv6TopoRea
 func (m *IsisShIpv6TopoReachableStatus) String() string { return proto.CompactTextString(m) }
 func (*IsisShIpv6TopoReachableStatus) ProtoMessage()    {}
 func (*IsisShIpv6TopoReachableStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d6f044907606a0ce, []int{10}
+	return fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c, []int{10}
 }
-
 func (m *IsisShIpv6TopoReachableStatus) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShIpv6TopoReachableStatus.Unmarshal(m, b)
 }
 func (m *IsisShIpv6TopoReachableStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShIpv6TopoReachableStatus.Marshal(b, m, deterministic)
 }
-func (m *IsisShIpv6TopoReachableStatus) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShIpv6TopoReachableStatus.Merge(m, src)
+func (dst *IsisShIpv6TopoReachableStatus) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShIpv6TopoReachableStatus.Merge(dst, src)
 }
 func (m *IsisShIpv6TopoReachableStatus) XXX_Size() int {
 	return xxx_messageInfo_IsisShIpv6TopoReachableStatus.Size(m)
@@ -986,9 +973,11 @@ func init() {
 	proto.RegisterType((*IsisShIpv6TopoReachableStatus)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.topology_levels.topology_level.ipv6_link_topologies.ipv6_link_topology.isis_sh_ipv6_topo_reachable_status")
 }
 
-func init() { proto.RegisterFile("isis_sh_ipv6_topo_entry.proto", fileDescriptor_d6f044907606a0ce) }
+func init() {
+	proto.RegisterFile("isis_sh_ipv6_topo_entry.proto", fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c)
+}
 
-var fileDescriptor_d6f044907606a0ce = []byte{
+var fileDescriptor_isis_sh_ipv6_topo_entry_306a9c8c2344cb6c = []byte{
 	// 1460 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xd4, 0x58, 0xcd, 0x6f, 0x1c, 0xc5,
 	0x12, 0xd7, 0xc4, 0xdf, 0xb5, 0x5e, 0x7b, 0xb7, 0xfd, 0xb1, 0x93, 0xbc, 0x17, 0x3d, 0xbf, 0xcd,

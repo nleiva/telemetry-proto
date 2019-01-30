@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_new_dhcpv6d_oper_dhcpv6_nodes_node_relay_statistics
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // DHCPv6 relay statistics
 type Ipv6Dhcpv6DRelayStats_KEYS struct {
@@ -32,17 +30,16 @@ func (m *Ipv6Dhcpv6DRelayStats_KEYS) Reset()         { *m = Ipv6Dhcpv6DRelayStat
 func (m *Ipv6Dhcpv6DRelayStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DRelayStats_KEYS) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DRelayStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_863fc551359266ac, []int{0}
+	return fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96, []int{0}
 }
-
 func (m *Ipv6Dhcpv6DRelayStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DRelayStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DRelayStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DRelayStats_KEYS.Merge(m, src)
+func (dst *Ipv6Dhcpv6DRelayStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DRelayStats_KEYS.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DRelayStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats_KEYS.Size(m)
@@ -71,17 +68,16 @@ func (m *Ipv6Dhcpv6DRelayStats) Reset()         { *m = Ipv6Dhcpv6DRelayStats{} }
 func (m *Ipv6Dhcpv6DRelayStats) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DRelayStats) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DRelayStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_863fc551359266ac, []int{1}
+	return fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96, []int{1}
 }
-
 func (m *Ipv6Dhcpv6DRelayStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DRelayStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DRelayStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DRelayStats.Merge(m, src)
+func (dst *Ipv6Dhcpv6DRelayStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DRelayStats.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DRelayStats) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStats.Size(m)
@@ -113,17 +109,16 @@ func (m *Ipv6Dhcpv6DRelayStatsItem) Reset()         { *m = Ipv6Dhcpv6DRelayStats
 func (m *Ipv6Dhcpv6DRelayStatsItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DRelayStatsItem) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DRelayStatsItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_863fc551359266ac, []int{2}
+	return fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96, []int{2}
 }
-
 func (m *Ipv6Dhcpv6DRelayStatsItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStatsItem.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DRelayStatsItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStatsItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DRelayStatsItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DRelayStatsItem.Merge(m, src)
+func (dst *Ipv6Dhcpv6DRelayStatsItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DRelayStatsItem.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DRelayStatsItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DRelayStatsItem.Size(m)
@@ -165,17 +160,16 @@ func (m *Ipv6Dhcpv6DFilteredStats) Reset()         { *m = Ipv6Dhcpv6DFilteredSta
 func (m *Ipv6Dhcpv6DFilteredStats) String() string { return proto.CompactTextString(m) }
 func (*Ipv6Dhcpv6DFilteredStats) ProtoMessage()    {}
 func (*Ipv6Dhcpv6DFilteredStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_863fc551359266ac, []int{3}
+	return fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96, []int{3}
 }
-
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Unmarshal(m, b)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Marshal(b, m, deterministic)
 }
-func (m *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(m, src)
+func (dst *Ipv6Dhcpv6DFilteredStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Merge(dst, src)
 }
 func (m *Ipv6Dhcpv6DFilteredStats) XXX_Size() int {
 	return xxx_messageInfo_Ipv6Dhcpv6DFilteredStats.Size(m)
@@ -214,9 +208,11 @@ func init() {
 	proto.RegisterType((*Ipv6Dhcpv6DFilteredStats)(nil), "cisco_ios_xr_ipv6_new_dhcpv6d_oper.dhcpv6.nodes.node.relay.statistics.ipv6_dhcpv6d_filtered_stats")
 }
 
-func init() { proto.RegisterFile("ipv6_dhcpv6d_relay_stats.proto", fileDescriptor_863fc551359266ac) }
+func init() {
+	proto.RegisterFile("ipv6_dhcpv6d_relay_stats.proto", fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96)
+}
 
-var fileDescriptor_863fc551359266ac = []byte{
+var fileDescriptor_ipv6_dhcpv6d_relay_stats_9aef13b12f1cac96 = []byte{
 	// 314 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x92, 0x3f, 0x4b, 0x3b, 0x31,
 	0x18, 0xc7, 0x49, 0xfb, 0xe3, 0x67, 0x9b, 0x82, 0x95, 0x88, 0x70, 0x52, 0x94, 0x72, 0x8b, 0x75,

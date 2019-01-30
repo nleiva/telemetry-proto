@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_process_information_protocol_areas_protocol_area
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Protocol Area Information
 type OspfShProtoArea_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShProtoArea_KEYS) Reset()         { *m = OspfShProtoArea_KEYS{} }
 func (m *OspfShProtoArea_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShProtoArea_KEYS) ProtoMessage()    {}
 func (*OspfShProtoArea_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2f2729fb732dd66d, []int{0}
+	return fileDescriptor_ospf_sh_proto_area_b0257756c086e7a0, []int{0}
 }
-
 func (m *OspfShProtoArea_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShProtoArea_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShProtoArea_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShProtoArea_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShProtoArea_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShProtoArea_KEYS.Merge(m, src)
+func (dst *OspfShProtoArea_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShProtoArea_KEYS.Merge(dst, src)
 }
 func (m *OspfShProtoArea_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShProtoArea_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *OspfShProtoArea) Reset()         { *m = OspfShProtoArea{} }
 func (m *OspfShProtoArea) String() string { return proto.CompactTextString(m) }
 func (*OspfShProtoArea) ProtoMessage()    {}
 func (*OspfShProtoArea) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2f2729fb732dd66d, []int{1}
+	return fileDescriptor_ospf_sh_proto_area_b0257756c086e7a0, []int{1}
 }
-
 func (m *OspfShProtoArea) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShProtoArea.Unmarshal(m, b)
 }
 func (m *OspfShProtoArea) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShProtoArea.Marshal(b, m, deterministic)
 }
-func (m *OspfShProtoArea) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShProtoArea.Merge(m, src)
+func (dst *OspfShProtoArea) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShProtoArea.Merge(dst, src)
 }
 func (m *OspfShProtoArea) XXX_Size() int {
 	return xxx_messageInfo_OspfShProtoArea.Size(m)
@@ -160,17 +156,16 @@ func (m *OspfShProtoIntf) Reset()         { *m = OspfShProtoIntf{} }
 func (m *OspfShProtoIntf) String() string { return proto.CompactTextString(m) }
 func (*OspfShProtoIntf) ProtoMessage()    {}
 func (*OspfShProtoIntf) Descriptor() ([]byte, []int) {
-	return fileDescriptor_2f2729fb732dd66d, []int{2}
+	return fileDescriptor_ospf_sh_proto_area_b0257756c086e7a0, []int{2}
 }
-
 func (m *OspfShProtoIntf) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShProtoIntf.Unmarshal(m, b)
 }
 func (m *OspfShProtoIntf) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShProtoIntf.Marshal(b, m, deterministic)
 }
-func (m *OspfShProtoIntf) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShProtoIntf.Merge(m, src)
+func (dst *OspfShProtoIntf) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShProtoIntf.Merge(dst, src)
 }
 func (m *OspfShProtoIntf) XXX_Size() int {
 	return xxx_messageInfo_OspfShProtoIntf.Size(m)
@@ -208,9 +203,11 @@ func init() {
 	proto.RegisterType((*OspfShProtoIntf)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.process_information.protocol_areas.protocol_area.ospf_sh_proto_intf")
 }
 
-func init() { proto.RegisterFile("ospf_sh_proto_area.proto", fileDescriptor_2f2729fb732dd66d) }
+func init() {
+	proto.RegisterFile("ospf_sh_proto_area.proto", fileDescriptor_ospf_sh_proto_area_b0257756c086e7a0)
+}
 
-var fileDescriptor_2f2729fb732dd66d = []byte{
+var fileDescriptor_ospf_sh_proto_area_b0257756c086e7a0 = []byte{
 	// 377 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x52, 0x3d, 0x6f, 0xdb, 0x30,
 	0x10, 0x85, 0x6c, 0xc0, 0xae, 0x69, 0x7b, 0x61, 0xd1, 0x9a, 0x68, 0x0b, 0x54, 0x75, 0x17, 0x4d,

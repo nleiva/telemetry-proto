@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_pfi_im_cmd_oper_interfaces_interfaces_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Interface description information
 type ImDescInfo_KEYS struct {
@@ -32,17 +30,16 @@ func (m *ImDescInfo_KEYS) Reset()         { *m = ImDescInfo_KEYS{} }
 func (m *ImDescInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*ImDescInfo_KEYS) ProtoMessage()    {}
 func (*ImDescInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_87c3966b22a51963, []int{0}
+	return fileDescriptor_im_desc_info_505c9432549e5bb3, []int{0}
 }
-
 func (m *ImDescInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImDescInfo_KEYS.Unmarshal(m, b)
 }
 func (m *ImDescInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImDescInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *ImDescInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImDescInfo_KEYS.Merge(m, src)
+func (dst *ImDescInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImDescInfo_KEYS.Merge(dst, src)
 }
 func (m *ImDescInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_ImDescInfo_KEYS.Size(m)
@@ -78,17 +75,16 @@ func (m *ImDescInfo) Reset()         { *m = ImDescInfo{} }
 func (m *ImDescInfo) String() string { return proto.CompactTextString(m) }
 func (*ImDescInfo) ProtoMessage()    {}
 func (*ImDescInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_87c3966b22a51963, []int{1}
+	return fileDescriptor_im_desc_info_505c9432549e5bb3, []int{1}
 }
-
 func (m *ImDescInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ImDescInfo.Unmarshal(m, b)
 }
 func (m *ImDescInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ImDescInfo.Marshal(b, m, deterministic)
 }
-func (m *ImDescInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ImDescInfo.Merge(m, src)
+func (dst *ImDescInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ImDescInfo.Merge(dst, src)
 }
 func (m *ImDescInfo) XXX_Size() int {
 	return xxx_messageInfo_ImDescInfo.Size(m)
@@ -132,9 +128,9 @@ func init() {
 	proto.RegisterType((*ImDescInfo)(nil), "cisco_ios_xr_pfi_im_cmd_oper.interfaces.interfaces.interface.im_desc_info")
 }
 
-func init() { proto.RegisterFile("im_desc_info.proto", fileDescriptor_87c3966b22a51963) }
+func init() { proto.RegisterFile("im_desc_info.proto", fileDescriptor_im_desc_info_505c9432549e5bb3) }
 
-var fileDescriptor_87c3966b22a51963 = []byte{
+var fileDescriptor_im_desc_info_505c9432549e5bb3 = []byte{
 	// 199 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0xca, 0xcc, 0x8d, 0x4f,
 	0x49, 0x2d, 0x4e, 0x8e, 0xcf, 0xcc, 0x4b, 0xcb, 0xd7, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0xb2,

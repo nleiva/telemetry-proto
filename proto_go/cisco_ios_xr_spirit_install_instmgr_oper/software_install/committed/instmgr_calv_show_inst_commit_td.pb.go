@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_spirit_install_instmgr_oper_software_install_committed
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Calvados show install commit info
 type InstmgrCalvShowInstCommitTd_KEYS struct {
@@ -31,17 +29,16 @@ func (m *InstmgrCalvShowInstCommitTd_KEYS) Reset()         { *m = InstmgrCalvSho
 func (m *InstmgrCalvShowInstCommitTd_KEYS) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstCommitTd_KEYS) ProtoMessage()    {}
 func (*InstmgrCalvShowInstCommitTd_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a9dc69a01bf98677, []int{0}
+	return fileDescriptor_instmgr_calv_show_inst_commit_td_b8e662bbfe96719a, []int{0}
 }
-
 func (m *InstmgrCalvShowInstCommitTd_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd_KEYS.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstCommitTd_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd_KEYS.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstCommitTd_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstCommitTd_KEYS.Merge(m, src)
+func (dst *InstmgrCalvShowInstCommitTd_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstCommitTd_KEYS.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstCommitTd_KEYS) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd_KEYS.Size(m)
@@ -63,17 +60,16 @@ func (m *InstmgrCalvShowInstCommitTd) Reset()         { *m = InstmgrCalvShowInst
 func (m *InstmgrCalvShowInstCommitTd) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstCommitTd) ProtoMessage()    {}
 func (*InstmgrCalvShowInstCommitTd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a9dc69a01bf98677, []int{1}
+	return fileDescriptor_instmgr_calv_show_inst_commit_td_b8e662bbfe96719a, []int{1}
 }
-
 func (m *InstmgrCalvShowInstCommitTd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstCommitTd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstCommitTd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstCommitTd.Merge(m, src)
+func (dst *InstmgrCalvShowInstCommitTd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstCommitTd.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstCommitTd) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitTd.Size(m)
@@ -107,17 +103,16 @@ func (m *InstmgrCalvShowInstCommitRow) Reset()         { *m = InstmgrCalvShowIns
 func (m *InstmgrCalvShowInstCommitRow) String() string { return proto.CompactTextString(m) }
 func (*InstmgrCalvShowInstCommitRow) ProtoMessage()    {}
 func (*InstmgrCalvShowInstCommitRow) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a9dc69a01bf98677, []int{2}
+	return fileDescriptor_instmgr_calv_show_inst_commit_td_b8e662bbfe96719a, []int{2}
 }
-
 func (m *InstmgrCalvShowInstCommitRow) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitRow.Unmarshal(m, b)
 }
 func (m *InstmgrCalvShowInstCommitRow) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitRow.Marshal(b, m, deterministic)
 }
-func (m *InstmgrCalvShowInstCommitRow) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_InstmgrCalvShowInstCommitRow.Merge(m, src)
+func (dst *InstmgrCalvShowInstCommitRow) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_InstmgrCalvShowInstCommitRow.Merge(dst, src)
 }
 func (m *InstmgrCalvShowInstCommitRow) XXX_Size() int {
 	return xxx_messageInfo_InstmgrCalvShowInstCommitRow.Size(m)
@@ -177,10 +172,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("instmgr_calv_show_inst_commit_td.proto", fileDescriptor_a9dc69a01bf98677)
+	proto.RegisterFile("instmgr_calv_show_inst_commit_td.proto", fileDescriptor_instmgr_calv_show_inst_commit_td_b8e662bbfe96719a)
 }
 
-var fileDescriptor_a9dc69a01bf98677 = []byte{
+var fileDescriptor_instmgr_calv_show_inst_commit_td_b8e662bbfe96719a = []byte{
 	// 326 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x92, 0x3f, 0x4e, 0xf3, 0x40,
 	0x10, 0xc5, 0xe5, 0xe4, 0xfb, 0x22, 0xb2, 0x90, 0x82, 0x05, 0x21, 0xf3, 0xa7, 0x30, 0x41, 0x40,

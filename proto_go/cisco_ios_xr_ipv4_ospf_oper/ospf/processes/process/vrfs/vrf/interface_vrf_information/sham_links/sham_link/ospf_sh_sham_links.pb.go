@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_vrfs_vrf_interface_vrf_information_sham_links_sham_link
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Sham Link
 type OspfShShamLinks_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShShamLinks_KEYS) Reset()         { *m = OspfShShamLinks_KEYS{} }
 func (m *OspfShShamLinks_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShShamLinks_KEYS) ProtoMessage()    {}
 func (*OspfShShamLinks_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e1787917a16480c7, []int{0}
+	return fileDescriptor_ospf_sh_sham_links_090c86a43203fb55, []int{0}
 }
-
 func (m *OspfShShamLinks_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShShamLinks_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShShamLinks_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShShamLinks_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShShamLinks_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShShamLinks_KEYS.Merge(m, src)
+func (dst *OspfShShamLinks_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShShamLinks_KEYS.Merge(dst, src)
 }
 func (m *OspfShShamLinks_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShShamLinks_KEYS.Size(m)
@@ -144,17 +141,16 @@ func (m *OspfShShamLinks) Reset()         { *m = OspfShShamLinks{} }
 func (m *OspfShShamLinks) String() string { return proto.CompactTextString(m) }
 func (*OspfShShamLinks) ProtoMessage()    {}
 func (*OspfShShamLinks) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e1787917a16480c7, []int{1}
+	return fileDescriptor_ospf_sh_sham_links_090c86a43203fb55, []int{1}
 }
-
 func (m *OspfShShamLinks) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShShamLinks.Unmarshal(m, b)
 }
 func (m *OspfShShamLinks) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShShamLinks.Marshal(b, m, deterministic)
 }
-func (m *OspfShShamLinks) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShShamLinks.Merge(m, src)
+func (dst *OspfShShamLinks) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShShamLinks.Merge(dst, src)
 }
 func (m *OspfShShamLinks) XXX_Size() int {
 	return xxx_messageInfo_OspfShShamLinks.Size(m)
@@ -417,17 +413,16 @@ func (m *OspfShNeighborRetrans) Reset()         { *m = OspfShNeighborRetrans{} }
 func (m *OspfShNeighborRetrans) String() string { return proto.CompactTextString(m) }
 func (*OspfShNeighborRetrans) ProtoMessage()    {}
 func (*OspfShNeighborRetrans) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e1787917a16480c7, []int{2}
+	return fileDescriptor_ospf_sh_sham_links_090c86a43203fb55, []int{2}
 }
-
 func (m *OspfShNeighborRetrans) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShNeighborRetrans.Unmarshal(m, b)
 }
 func (m *OspfShNeighborRetrans) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShNeighborRetrans.Marshal(b, m, deterministic)
 }
-func (m *OspfShNeighborRetrans) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShNeighborRetrans.Merge(m, src)
+func (dst *OspfShNeighborRetrans) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShNeighborRetrans.Merge(dst, src)
 }
 func (m *OspfShNeighborRetrans) XXX_Size() int {
 	return xxx_messageInfo_OspfShNeighborRetrans.Size(m)
@@ -588,17 +583,16 @@ func (m *OspfShSlinkNeighbor) Reset()         { *m = OspfShSlinkNeighbor{} }
 func (m *OspfShSlinkNeighbor) String() string { return proto.CompactTextString(m) }
 func (*OspfShSlinkNeighbor) ProtoMessage()    {}
 func (*OspfShSlinkNeighbor) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e1787917a16480c7, []int{3}
+	return fileDescriptor_ospf_sh_sham_links_090c86a43203fb55, []int{3}
 }
-
 func (m *OspfShSlinkNeighbor) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShSlinkNeighbor.Unmarshal(m, b)
 }
 func (m *OspfShSlinkNeighbor) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShSlinkNeighbor.Marshal(b, m, deterministic)
 }
-func (m *OspfShSlinkNeighbor) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShSlinkNeighbor.Merge(m, src)
+func (dst *OspfShSlinkNeighbor) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShSlinkNeighbor.Merge(dst, src)
 }
 func (m *OspfShSlinkNeighbor) XXX_Size() int {
 	return xxx_messageInfo_OspfShSlinkNeighbor.Size(m)
@@ -637,9 +631,11 @@ func init() {
 	proto.RegisterType((*OspfShSlinkNeighbor)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.vrfs.vrf.interface_vrf_information.sham_links.sham_link.ospf_sh_slink_neighbor")
 }
 
-func init() { proto.RegisterFile("ospf_sh_sham_links.proto", fileDescriptor_e1787917a16480c7) }
+func init() {
+	proto.RegisterFile("ospf_sh_sham_links.proto", fileDescriptor_ospf_sh_sham_links_090c86a43203fb55)
+}
 
-var fileDescriptor_e1787917a16480c7 = []byte{
+var fileDescriptor_ospf_sh_sham_links_090c86a43203fb55 = []byte{
 	// 1188 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x97, 0xdf, 0x4f, 0x1c, 0x37,
 	0x10, 0xc7, 0x75, 0x24, 0x4d, 0x82, 0x81, 0x10, 0x4c, 0x02, 0x06, 0x42, 0x7a, 0x9c, 0xaa, 0x0a,

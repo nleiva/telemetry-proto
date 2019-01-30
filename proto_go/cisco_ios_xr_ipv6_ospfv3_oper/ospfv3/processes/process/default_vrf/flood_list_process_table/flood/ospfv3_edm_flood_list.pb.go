@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_flood_list_process_table_flood
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 flood list information
 type Ospfv3EdmFloodList_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ospfv3EdmFloodList_KEYS) Reset()         { *m = Ospfv3EdmFloodList_KEYS
 func (m *Ospfv3EdmFloodList_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmFloodList_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmFloodList_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8bfa9702fba4c3d4, []int{0}
+	return fileDescriptor_ospfv3_edm_flood_list_15b4195f9d8680fc, []int{0}
 }
-
 func (m *Ospfv3EdmFloodList_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmFloodList_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmFloodList_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmFloodList_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmFloodList_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmFloodList_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmFloodList_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmFloodList_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmFloodList_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmFloodList_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *Ospfv3EdmFloodList) Reset()         { *m = Ospfv3EdmFloodList{} }
 func (m *Ospfv3EdmFloodList) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmFloodList) ProtoMessage()    {}
 func (*Ospfv3EdmFloodList) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8bfa9702fba4c3d4, []int{1}
+	return fileDescriptor_ospfv3_edm_flood_list_15b4195f9d8680fc, []int{1}
 }
-
 func (m *Ospfv3EdmFloodList) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmFloodList.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmFloodList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmFloodList.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmFloodList) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmFloodList.Merge(m, src)
+func (dst *Ospfv3EdmFloodList) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmFloodList.Merge(dst, src)
 }
 func (m *Ospfv3EdmFloodList) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmFloodList.Size(m)
@@ -165,17 +161,16 @@ func (m *Ospfv3EdmLsaSum) Reset()         { *m = Ospfv3EdmLsaSum{} }
 func (m *Ospfv3EdmLsaSum) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmLsaSum) ProtoMessage()    {}
 func (*Ospfv3EdmLsaSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_8bfa9702fba4c3d4, []int{2}
+	return fileDescriptor_ospfv3_edm_flood_list_15b4195f9d8680fc, []int{2}
 }
-
 func (m *Ospfv3EdmLsaSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmLsaSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmLsaSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmLsaSum.Merge(m, src)
+func (dst *Ospfv3EdmLsaSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmLsaSum.Merge(dst, src)
 }
 func (m *Ospfv3EdmLsaSum) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmLsaSum.Size(m)
@@ -227,9 +222,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmLsaSum)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.flood_list_process_table.flood.ospfv3_edm_lsa_sum")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_flood_list.proto", fileDescriptor_8bfa9702fba4c3d4) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_flood_list.proto", fileDescriptor_ospfv3_edm_flood_list_15b4195f9d8680fc)
+}
 
-var fileDescriptor_8bfa9702fba4c3d4 = []byte{
+var fileDescriptor_ospfv3_edm_flood_list_15b4195f9d8680fc = []byte{
 	// 434 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x94, 0x31, 0x6f, 0xd3, 0x40,
 	0x14, 0xc7, 0x65, 0x5a, 0x90, 0xb8, 0xd4, 0xad, 0x38, 0x28, 0x18, 0x58, 0x42, 0x04, 0x28, 0x93,

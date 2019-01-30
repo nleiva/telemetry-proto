@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_ospfv3_oper_ospfv3_processes_process_default_vrf_internal_routes_internal_route
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPFv3 Topology Internal Information
 type Ospfv3EdmTopologyInternal_KEYS struct {
@@ -34,17 +32,16 @@ func (m *Ospfv3EdmTopologyInternal_KEYS) Reset()         { *m = Ospfv3EdmTopolog
 func (m *Ospfv3EdmTopologyInternal_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopologyInternal_KEYS) ProtoMessage()    {}
 func (*Ospfv3EdmTopologyInternal_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{0}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{0}
 }
-
 func (m *Ospfv3EdmTopologyInternal_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal_KEYS.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopologyInternal_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopologyInternal_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopologyInternal_KEYS.Merge(m, src)
+func (dst *Ospfv3EdmTopologyInternal_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopologyInternal_KEYS.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopologyInternal_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *Ospfv3EdmTopologyInternal) Reset()         { *m = Ospfv3EdmTopologyInte
 func (m *Ospfv3EdmTopologyInternal) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopologyInternal) ProtoMessage()    {}
 func (*Ospfv3EdmTopologyInternal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{1}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{1}
 }
-
 func (m *Ospfv3EdmTopologyInternal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopologyInternal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopologyInternal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopologyInternal.Merge(m, src)
+func (dst *Ospfv3EdmTopologyInternal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopologyInternal.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopologyInternal) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopologyInternal.Size(m)
@@ -172,17 +168,16 @@ func (m *Ospfv3ShBackupPath) Reset()         { *m = Ospfv3ShBackupPath{} }
 func (m *Ospfv3ShBackupPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3ShBackupPath) ProtoMessage()    {}
 func (*Ospfv3ShBackupPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{2}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{2}
 }
-
 func (m *Ospfv3ShBackupPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Unmarshal(m, b)
 }
 func (m *Ospfv3ShBackupPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3ShBackupPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3ShBackupPath.Merge(m, src)
+func (dst *Ospfv3ShBackupPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3ShBackupPath.Merge(dst, src)
 }
 func (m *Ospfv3ShBackupPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3ShBackupPath.Size(m)
@@ -275,17 +270,16 @@ func (m *Ospfv3EdmTopPath) Reset()         { *m = Ospfv3EdmTopPath{} }
 func (m *Ospfv3EdmTopPath) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopPath) ProtoMessage()    {}
 func (*Ospfv3EdmTopPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{3}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{3}
 }
-
 func (m *Ospfv3EdmTopPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopPath.Merge(m, src)
+func (dst *Ospfv3EdmTopPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopPath.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopPath) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopPath.Size(m)
@@ -341,17 +335,16 @@ func (m *Ospfv3EdmTopSource) Reset()         { *m = Ospfv3EdmTopSource{} }
 func (m *Ospfv3EdmTopSource) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopSource) ProtoMessage()    {}
 func (*Ospfv3EdmTopSource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{4}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{4}
 }
-
 func (m *Ospfv3EdmTopSource) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopSource.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopSource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopSource.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopSource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopSource.Merge(m, src)
+func (dst *Ospfv3EdmTopSource) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopSource.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopSource) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopSource.Size(m)
@@ -402,17 +395,16 @@ func (m *Ospfv3EdmTopology) Reset()         { *m = Ospfv3EdmTopology{} }
 func (m *Ospfv3EdmTopology) String() string { return proto.CompactTextString(m) }
 func (*Ospfv3EdmTopology) ProtoMessage()    {}
 func (*Ospfv3EdmTopology) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a8df910defcd84a2, []int{5}
+	return fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf, []int{5}
 }
-
 func (m *Ospfv3EdmTopology) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ospfv3EdmTopology.Unmarshal(m, b)
 }
 func (m *Ospfv3EdmTopology) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ospfv3EdmTopology.Marshal(b, m, deterministic)
 }
-func (m *Ospfv3EdmTopology) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ospfv3EdmTopology.Merge(m, src)
+func (dst *Ospfv3EdmTopology) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ospfv3EdmTopology.Merge(dst, src)
 }
 func (m *Ospfv3EdmTopology) XXX_Size() int {
 	return xxx_messageInfo_Ospfv3EdmTopology.Size(m)
@@ -460,9 +452,11 @@ func init() {
 	proto.RegisterType((*Ospfv3EdmTopology)(nil), "cisco_ios_xr_ipv6_ospfv3_oper.ospfv3.processes.process.default_vrf.internal_routes.internal_route.ospfv3_edm_topology")
 }
 
-func init() { proto.RegisterFile("ospfv3_edm_topology_internal.proto", fileDescriptor_a8df910defcd84a2) }
+func init() {
+	proto.RegisterFile("ospfv3_edm_topology_internal.proto", fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf)
+}
 
-var fileDescriptor_a8df910defcd84a2 = []byte{
+var fileDescriptor_ospfv3_edm_topology_internal_da2a442499d2a0bf = []byte{
 	// 720 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x55, 0x5d, 0x4f, 0x13, 0x4d,
 	0x14, 0xce, 0x52, 0x5e, 0x3e, 0xa6, 0x2d, 0x2f, 0x0c, 0xc1, 0x2c, 0x41, 0x48, 0x59, 0xa2, 0xe9,

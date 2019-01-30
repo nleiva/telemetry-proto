@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ethernet_lldp_oper_lldp_nodes_node_neighbors_details_detail
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // LLDP neighbor info
 type LldpNeighbor_KEYS struct {
@@ -34,17 +32,16 @@ func (m *LldpNeighbor_KEYS) Reset()         { *m = LldpNeighbor_KEYS{} }
 func (m *LldpNeighbor_KEYS) String() string { return proto.CompactTextString(m) }
 func (*LldpNeighbor_KEYS) ProtoMessage()    {}
 func (*LldpNeighbor_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{0}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{0}
 }
-
 func (m *LldpNeighbor_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpNeighbor_KEYS.Unmarshal(m, b)
 }
 func (m *LldpNeighbor_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpNeighbor_KEYS.Marshal(b, m, deterministic)
 }
-func (m *LldpNeighbor_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpNeighbor_KEYS.Merge(m, src)
+func (dst *LldpNeighbor_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpNeighbor_KEYS.Merge(dst, src)
 }
 func (m *LldpNeighbor_KEYS) XXX_Size() int {
 	return xxx_messageInfo_LldpNeighbor_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *LldpNeighbor) Reset()         { *m = LldpNeighbor{} }
 func (m *LldpNeighbor) String() string { return proto.CompactTextString(m) }
 func (*LldpNeighbor) ProtoMessage()    {}
 func (*LldpNeighbor) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{1}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{1}
 }
-
 func (m *LldpNeighbor) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpNeighbor.Unmarshal(m, b)
 }
 func (m *LldpNeighbor) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpNeighbor.Marshal(b, m, deterministic)
 }
-func (m *LldpNeighbor) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpNeighbor.Merge(m, src)
+func (dst *LldpNeighbor) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpNeighbor.Merge(dst, src)
 }
 func (m *LldpNeighbor) XXX_Size() int {
 	return xxx_messageInfo_LldpNeighbor.Size(m)
@@ -148,17 +144,16 @@ func (m *LldpNeighborItem) Reset()         { *m = LldpNeighborItem{} }
 func (m *LldpNeighborItem) String() string { return proto.CompactTextString(m) }
 func (*LldpNeighborItem) ProtoMessage()    {}
 func (*LldpNeighborItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{2}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{2}
 }
-
 func (m *LldpNeighborItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpNeighborItem.Unmarshal(m, b)
 }
 func (m *LldpNeighborItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpNeighborItem.Marshal(b, m, deterministic)
 }
-func (m *LldpNeighborItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpNeighborItem.Merge(m, src)
+func (dst *LldpNeighborItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpNeighborItem.Merge(dst, src)
 }
 func (m *LldpNeighborItem) XXX_Size() int {
 	return xxx_messageInfo_LldpNeighborItem.Size(m)
@@ -257,17 +252,16 @@ func (m *In6AddrTd) Reset()         { *m = In6AddrTd{} }
 func (m *In6AddrTd) String() string { return proto.CompactTextString(m) }
 func (*In6AddrTd) ProtoMessage()    {}
 func (*In6AddrTd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{3}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{3}
 }
-
 func (m *In6AddrTd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_In6AddrTd.Unmarshal(m, b)
 }
 func (m *In6AddrTd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_In6AddrTd.Marshal(b, m, deterministic)
 }
-func (m *In6AddrTd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_In6AddrTd.Merge(m, src)
+func (dst *In6AddrTd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_In6AddrTd.Merge(dst, src)
 }
 func (m *In6AddrTd) XXX_Size() int {
 	return xxx_messageInfo_In6AddrTd.Size(m)
@@ -300,17 +294,16 @@ func (m *LldpL3Addr) Reset()         { *m = LldpL3Addr{} }
 func (m *LldpL3Addr) String() string { return proto.CompactTextString(m) }
 func (*LldpL3Addr) ProtoMessage()    {}
 func (*LldpL3Addr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{4}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{4}
 }
-
 func (m *LldpL3Addr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpL3Addr.Unmarshal(m, b)
 }
 func (m *LldpL3Addr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpL3Addr.Marshal(b, m, deterministic)
 }
-func (m *LldpL3Addr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpL3Addr.Merge(m, src)
+func (dst *LldpL3Addr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpL3Addr.Merge(dst, src)
 }
 func (m *LldpL3Addr) XXX_Size() int {
 	return xxx_messageInfo_LldpL3Addr.Size(m)
@@ -354,17 +347,16 @@ func (m *LldpAddrEntry) Reset()         { *m = LldpAddrEntry{} }
 func (m *LldpAddrEntry) String() string { return proto.CompactTextString(m) }
 func (*LldpAddrEntry) ProtoMessage()    {}
 func (*LldpAddrEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{5}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{5}
 }
-
 func (m *LldpAddrEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpAddrEntry.Unmarshal(m, b)
 }
 func (m *LldpAddrEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpAddrEntry.Marshal(b, m, deterministic)
 }
-func (m *LldpAddrEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpAddrEntry.Merge(m, src)
+func (dst *LldpAddrEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpAddrEntry.Merge(dst, src)
 }
 func (m *LldpAddrEntry) XXX_Size() int {
 	return xxx_messageInfo_LldpAddrEntry.Size(m)
@@ -398,17 +390,16 @@ func (m *LldpAddrEntryItem) Reset()         { *m = LldpAddrEntryItem{} }
 func (m *LldpAddrEntryItem) String() string { return proto.CompactTextString(m) }
 func (*LldpAddrEntryItem) ProtoMessage()    {}
 func (*LldpAddrEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{6}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{6}
 }
-
 func (m *LldpAddrEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpAddrEntryItem.Unmarshal(m, b)
 }
 func (m *LldpAddrEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpAddrEntryItem.Marshal(b, m, deterministic)
 }
-func (m *LldpAddrEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpAddrEntryItem.Merge(m, src)
+func (dst *LldpAddrEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpAddrEntryItem.Merge(dst, src)
 }
 func (m *LldpAddrEntryItem) XXX_Size() int {
 	return xxx_messageInfo_LldpAddrEntryItem.Size(m)
@@ -452,17 +443,16 @@ func (m *LldpUnknownTlvEntry) Reset()         { *m = LldpUnknownTlvEntry{} }
 func (m *LldpUnknownTlvEntry) String() string { return proto.CompactTextString(m) }
 func (*LldpUnknownTlvEntry) ProtoMessage()    {}
 func (*LldpUnknownTlvEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{7}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{7}
 }
-
 func (m *LldpUnknownTlvEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpUnknownTlvEntry.Unmarshal(m, b)
 }
 func (m *LldpUnknownTlvEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpUnknownTlvEntry.Marshal(b, m, deterministic)
 }
-func (m *LldpUnknownTlvEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpUnknownTlvEntry.Merge(m, src)
+func (dst *LldpUnknownTlvEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpUnknownTlvEntry.Merge(dst, src)
 }
 func (m *LldpUnknownTlvEntry) XXX_Size() int {
 	return xxx_messageInfo_LldpUnknownTlvEntry.Size(m)
@@ -494,17 +484,16 @@ func (m *LldpUnknownTlvEntryItem) Reset()         { *m = LldpUnknownTlvEntryItem
 func (m *LldpUnknownTlvEntryItem) String() string { return proto.CompactTextString(m) }
 func (*LldpUnknownTlvEntryItem) ProtoMessage()    {}
 func (*LldpUnknownTlvEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{8}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{8}
 }
-
 func (m *LldpUnknownTlvEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpUnknownTlvEntryItem.Unmarshal(m, b)
 }
 func (m *LldpUnknownTlvEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpUnknownTlvEntryItem.Marshal(b, m, deterministic)
 }
-func (m *LldpUnknownTlvEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpUnknownTlvEntryItem.Merge(m, src)
+func (dst *LldpUnknownTlvEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpUnknownTlvEntryItem.Merge(dst, src)
 }
 func (m *LldpUnknownTlvEntryItem) XXX_Size() int {
 	return xxx_messageInfo_LldpUnknownTlvEntryItem.Size(m)
@@ -541,17 +530,16 @@ func (m *LldpOrgDefTlvEntry) Reset()         { *m = LldpOrgDefTlvEntry{} }
 func (m *LldpOrgDefTlvEntry) String() string { return proto.CompactTextString(m) }
 func (*LldpOrgDefTlvEntry) ProtoMessage()    {}
 func (*LldpOrgDefTlvEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{9}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{9}
 }
-
 func (m *LldpOrgDefTlvEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpOrgDefTlvEntry.Unmarshal(m, b)
 }
 func (m *LldpOrgDefTlvEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpOrgDefTlvEntry.Marshal(b, m, deterministic)
 }
-func (m *LldpOrgDefTlvEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpOrgDefTlvEntry.Merge(m, src)
+func (dst *LldpOrgDefTlvEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpOrgDefTlvEntry.Merge(dst, src)
 }
 func (m *LldpOrgDefTlvEntry) XXX_Size() int {
 	return xxx_messageInfo_LldpOrgDefTlvEntry.Size(m)
@@ -587,17 +575,16 @@ func (m *LldpOrgDefTlvEntryItem) Reset()         { *m = LldpOrgDefTlvEntryItem{}
 func (m *LldpOrgDefTlvEntryItem) String() string { return proto.CompactTextString(m) }
 func (*LldpOrgDefTlvEntryItem) ProtoMessage()    {}
 func (*LldpOrgDefTlvEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{10}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{10}
 }
-
 func (m *LldpOrgDefTlvEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpOrgDefTlvEntryItem.Unmarshal(m, b)
 }
 func (m *LldpOrgDefTlvEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpOrgDefTlvEntryItem.Marshal(b, m, deterministic)
 }
-func (m *LldpOrgDefTlvEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpOrgDefTlvEntryItem.Merge(m, src)
+func (dst *LldpOrgDefTlvEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpOrgDefTlvEntryItem.Merge(dst, src)
 }
 func (m *LldpOrgDefTlvEntryItem) XXX_Size() int {
 	return xxx_messageInfo_LldpOrgDefTlvEntryItem.Size(m)
@@ -668,17 +655,16 @@ func (m *LldpNeighborDetail) Reset()         { *m = LldpNeighborDetail{} }
 func (m *LldpNeighborDetail) String() string { return proto.CompactTextString(m) }
 func (*LldpNeighborDetail) ProtoMessage()    {}
 func (*LldpNeighborDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{11}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{11}
 }
-
 func (m *LldpNeighborDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpNeighborDetail.Unmarshal(m, b)
 }
 func (m *LldpNeighborDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpNeighborDetail.Marshal(b, m, deterministic)
 }
-func (m *LldpNeighborDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpNeighborDetail.Merge(m, src)
+func (dst *LldpNeighborDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpNeighborDetail.Merge(dst, src)
 }
 func (m *LldpNeighborDetail) XXX_Size() int {
 	return xxx_messageInfo_LldpNeighborDetail.Size(m)
@@ -796,17 +782,16 @@ func (m *LldpNeighborMib) Reset()         { *m = LldpNeighborMib{} }
 func (m *LldpNeighborMib) String() string { return proto.CompactTextString(m) }
 func (*LldpNeighborMib) ProtoMessage()    {}
 func (*LldpNeighborMib) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e11c5a31a1083cb5, []int{12}
+	return fileDescriptor_lldp_neighbor_d4b12823debd54bd, []int{12}
 }
-
 func (m *LldpNeighborMib) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LldpNeighborMib.Unmarshal(m, b)
 }
 func (m *LldpNeighborMib) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LldpNeighborMib.Marshal(b, m, deterministic)
 }
-func (m *LldpNeighborMib) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LldpNeighborMib.Merge(m, src)
+func (dst *LldpNeighborMib) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LldpNeighborMib.Merge(dst, src)
 }
 func (m *LldpNeighborMib) XXX_Size() int {
 	return xxx_messageInfo_LldpNeighborMib.Size(m)
@@ -903,9 +888,9 @@ func init() {
 	proto.RegisterType((*LldpNeighborMib)(nil), "cisco_ios_xr_ethernet_lldp_oper.lldp.nodes.node.neighbors.details.detail.lldp_neighbor_mib")
 }
 
-func init() { proto.RegisterFile("lldp_neighbor.proto", fileDescriptor_e11c5a31a1083cb5) }
+func init() { proto.RegisterFile("lldp_neighbor.proto", fileDescriptor_lldp_neighbor_d4b12823debd54bd) }
 
-var fileDescriptor_e11c5a31a1083cb5 = []byte{
+var fileDescriptor_lldp_neighbor_d4b12823debd54bd = []byte{
 	// 1196 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x57, 0xdf, 0x6e, 0x1b, 0xc5,
 	0x17, 0xd6, 0x36, 0x69, 0x6a, 0x9f, 0xf5, 0x26, 0xee, 0x24, 0xed, 0xcf, 0x6d, 0x7e, 0xd0, 0x60,

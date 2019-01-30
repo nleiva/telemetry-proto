@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_summary_prefixes_summary_prefix
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Summary Address
 type OspfShSummaryAddress_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShSummaryAddress_KEYS) Reset()         { *m = OspfShSummaryAddress_
 func (m *OspfShSummaryAddress_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShSummaryAddress_KEYS) ProtoMessage()    {}
 func (*OspfShSummaryAddress_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cd21629d59cea757, []int{0}
+	return fileDescriptor_ospf_sh_summary_address_563ba9ec336e0bdb, []int{0}
 }
-
 func (m *OspfShSummaryAddress_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShSummaryAddress_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShSummaryAddress_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShSummaryAddress_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShSummaryAddress_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShSummaryAddress_KEYS.Merge(m, src)
+func (dst *OspfShSummaryAddress_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShSummaryAddress_KEYS.Merge(dst, src)
 }
 func (m *OspfShSummaryAddress_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShSummaryAddress_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *OspfShSummaryAddress) Reset()         { *m = OspfShSummaryAddress{} }
 func (m *OspfShSummaryAddress) String() string { return proto.CompactTextString(m) }
 func (*OspfShSummaryAddress) ProtoMessage()    {}
 func (*OspfShSummaryAddress) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cd21629d59cea757, []int{1}
+	return fileDescriptor_ospf_sh_summary_address_563ba9ec336e0bdb, []int{1}
 }
-
 func (m *OspfShSummaryAddress) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShSummaryAddress.Unmarshal(m, b)
 }
 func (m *OspfShSummaryAddress) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShSummaryAddress.Marshal(b, m, deterministic)
 }
-func (m *OspfShSummaryAddress) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShSummaryAddress.Merge(m, src)
+func (dst *OspfShSummaryAddress) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShSummaryAddress.Merge(dst, src)
 }
 func (m *OspfShSummaryAddress) XXX_Size() int {
 	return xxx_messageInfo_OspfShSummaryAddress.Size(m)
@@ -157,9 +153,11 @@ func init() {
 	proto.RegisterType((*OspfShSummaryAddress)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.summary_prefixes.summary_prefix.ospf_sh_summary_address")
 }
 
-func init() { proto.RegisterFile("ospf_sh_summary_address.proto", fileDescriptor_cd21629d59cea757) }
+func init() {
+	proto.RegisterFile("ospf_sh_summary_address.proto", fileDescriptor_ospf_sh_summary_address_563ba9ec336e0bdb)
+}
 
-var fileDescriptor_cd21629d59cea757 = []byte{
+var fileDescriptor_ospf_sh_summary_address_563ba9ec336e0bdb = []byte{
 	// 276 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x91, 0xc1, 0x4a, 0x03, 0x31,
 	0x10, 0x86, 0x59, 0x85, 0x8a, 0x63, 0x2b, 0x18, 0x41, 0x73, 0x50, 0x6c, 0x0b, 0x42, 0x4f, 0x7b,

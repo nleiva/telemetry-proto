@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_trap_queue
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP Trap  queue statistics
 type SnmpTrapque_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpTrapque_KEYS) Reset()         { *m = SnmpTrapque_KEYS{} }
 func (m *SnmpTrapque_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpTrapque_KEYS) ProtoMessage()    {}
 func (*SnmpTrapque_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_20735a7a5bda6daf, []int{0}
+	return fileDescriptor_snmp_trapque_09e12bdf5b23562e, []int{0}
 }
-
 func (m *SnmpTrapque_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpTrapque_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpTrapque_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpTrapque_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpTrapque_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpTrapque_KEYS.Merge(m, src)
+func (dst *SnmpTrapque_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpTrapque_KEYS.Merge(dst, src)
 }
 func (m *SnmpTrapque_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpTrapque_KEYS.Size(m)
@@ -66,17 +63,16 @@ func (m *SnmpTrapque) Reset()         { *m = SnmpTrapque{} }
 func (m *SnmpTrapque) String() string { return proto.CompactTextString(m) }
 func (*SnmpTrapque) ProtoMessage()    {}
 func (*SnmpTrapque) Descriptor() ([]byte, []int) {
-	return fileDescriptor_20735a7a5bda6daf, []int{1}
+	return fileDescriptor_snmp_trapque_09e12bdf5b23562e, []int{1}
 }
-
 func (m *SnmpTrapque) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpTrapque.Unmarshal(m, b)
 }
 func (m *SnmpTrapque) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpTrapque.Marshal(b, m, deterministic)
 }
-func (m *SnmpTrapque) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpTrapque.Merge(m, src)
+func (dst *SnmpTrapque) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpTrapque.Merge(dst, src)
 }
 func (m *SnmpTrapque) XXX_Size() int {
 	return xxx_messageInfo_SnmpTrapque.Size(m)
@@ -120,9 +116,9 @@ func init() {
 	proto.RegisterType((*SnmpTrapque)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.trap_queue.snmp_trapque")
 }
 
-func init() { proto.RegisterFile("snmp_trapque.proto", fileDescriptor_20735a7a5bda6daf) }
+func init() { proto.RegisterFile("snmp_trapque.proto", fileDescriptor_snmp_trapque_09e12bdf5b23562e) }
 
-var fileDescriptor_20735a7a5bda6daf = []byte{
+var fileDescriptor_snmp_trapque_09e12bdf5b23562e = []byte{
 	// 178 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x2a, 0xce, 0xcb, 0x2d,
 	0x88, 0x2f, 0x29, 0x4a, 0x2c, 0x28, 0x2c, 0x4d, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0xb2,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_vrfs_vrf_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB summary statistics
 type FibShSum_KEYS struct {
@@ -34,17 +32,16 @@ func (m *FibShSum_KEYS) Reset()         { *m = FibShSum_KEYS{} }
 func (m *FibShSum_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibShSum_KEYS) ProtoMessage()    {}
 func (*FibShSum_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{0}
+	return fileDescriptor_fib_sh_sum_6cd3370514016bbb, []int{0}
 }
-
 func (m *FibShSum_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShSum_KEYS.Unmarshal(m, b)
 }
 func (m *FibShSum_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShSum_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibShSum_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShSum_KEYS.Merge(m, src)
+func (dst *FibShSum_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShSum_KEYS.Merge(dst, src)
 }
 func (m *FibShSum_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibShSum_KEYS.Size(m)
@@ -172,17 +169,16 @@ func (m *FibShSum) Reset()         { *m = FibShSum{} }
 func (m *FibShSum) String() string { return proto.CompactTextString(m) }
 func (*FibShSum) ProtoMessage()    {}
 func (*FibShSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{1}
+	return fileDescriptor_fib_sh_sum_6cd3370514016bbb, []int{1}
 }
-
 func (m *FibShSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShSum.Unmarshal(m, b)
 }
 func (m *FibShSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShSum.Marshal(b, m, deterministic)
 }
-func (m *FibShSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShSum.Merge(m, src)
+func (dst *FibShSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShSum.Merge(dst, src)
 }
 func (m *FibShSum) XXX_Size() int {
 	return xxx_messageInfo_FibShSum.Size(m)
@@ -523,17 +519,16 @@ func (m *FibPlLdiCount) Reset()         { *m = FibPlLdiCount{} }
 func (m *FibPlLdiCount) String() string { return proto.CompactTextString(m) }
 func (*FibPlLdiCount) ProtoMessage()    {}
 func (*FibPlLdiCount) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6b124c48422c0f95, []int{2}
+	return fileDescriptor_fib_sh_sum_6cd3370514016bbb, []int{2}
 }
-
 func (m *FibPlLdiCount) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibPlLdiCount.Unmarshal(m, b)
 }
 func (m *FibPlLdiCount) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibPlLdiCount.Marshal(b, m, deterministic)
 }
-func (m *FibPlLdiCount) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibPlLdiCount.Merge(m, src)
+func (dst *FibPlLdiCount) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibPlLdiCount.Merge(dst, src)
 }
 func (m *FibPlLdiCount) XXX_Size() int {
 	return xxx_messageInfo_FibPlLdiCount.Size(m)
@@ -613,9 +608,9 @@ func init() {
 	proto.RegisterType((*FibPlLdiCount)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.vrfs.vrf.summary.fib_pl_ldi_count")
 }
 
-func init() { proto.RegisterFile("fib_sh_sum.proto", fileDescriptor_6b124c48422c0f95) }
+func init() { proto.RegisterFile("fib_sh_sum.proto", fileDescriptor_fib_sh_sum_6cd3370514016bbb) }
 
-var fileDescriptor_6b124c48422c0f95 = []byte{
+var fileDescriptor_fib_sh_sum_6cd3370514016bbb = []byte{
 	// 1286 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x56, 0xdf, 0x72, 0x13, 0xb7,
 	0x17, 0x1e, 0x03, 0xbf, 0x90, 0xe8, 0x47, 0x20, 0xd9, 0x84, 0x22, 0xfe, 0x4e, 0x08, 0x43, 0x1b,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_controller_optics_oper_optics_oper_optics_ports_optics_port_optics_lanes_optics_lane
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Grey lane data
 type OpticsEdmLaneData_KEYS struct {
@@ -33,17 +31,16 @@ func (m *OpticsEdmLaneData_KEYS) Reset()         { *m = OpticsEdmLaneData_KEYS{}
 func (m *OpticsEdmLaneData_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmLaneData_KEYS) ProtoMessage()    {}
 func (*OpticsEdmLaneData_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_610dcff6840e6c13, []int{0}
+	return fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a, []int{0}
 }
-
 func (m *OpticsEdmLaneData_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmLaneData_KEYS.Unmarshal(m, b)
 }
 func (m *OpticsEdmLaneData_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmLaneData_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmLaneData_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmLaneData_KEYS.Merge(m, src)
+func (dst *OpticsEdmLaneData_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmLaneData_KEYS.Merge(dst, src)
 }
 func (m *OpticsEdmLaneData_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmLaneData_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *OpticsEdmLaneData) Reset()         { *m = OpticsEdmLaneData{} }
 func (m *OpticsEdmLaneData) String() string { return proto.CompactTextString(m) }
 func (*OpticsEdmLaneData) ProtoMessage()    {}
 func (*OpticsEdmLaneData) Descriptor() ([]byte, []int) {
-	return fileDescriptor_610dcff6840e6c13, []int{1}
+	return fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a, []int{1}
 }
-
 func (m *OpticsEdmLaneData) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OpticsEdmLaneData.Unmarshal(m, b)
 }
 func (m *OpticsEdmLaneData) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OpticsEdmLaneData.Marshal(b, m, deterministic)
 }
-func (m *OpticsEdmLaneData) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OpticsEdmLaneData.Merge(m, src)
+func (dst *OpticsEdmLaneData) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OpticsEdmLaneData.Merge(dst, src)
 }
 func (m *OpticsEdmLaneData) XXX_Size() int {
 	return xxx_messageInfo_OpticsEdmLaneData.Size(m)
@@ -195,17 +191,16 @@ func (m *LaneAlarmDetail) Reset()         { *m = LaneAlarmDetail{} }
 func (m *LaneAlarmDetail) String() string { return proto.CompactTextString(m) }
 func (*LaneAlarmDetail) ProtoMessage()    {}
 func (*LaneAlarmDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_610dcff6840e6c13, []int{2}
+	return fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a, []int{2}
 }
-
 func (m *LaneAlarmDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LaneAlarmDetail.Unmarshal(m, b)
 }
 func (m *LaneAlarmDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LaneAlarmDetail.Marshal(b, m, deterministic)
 }
-func (m *LaneAlarmDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LaneAlarmDetail.Merge(m, src)
+func (dst *LaneAlarmDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LaneAlarmDetail.Merge(dst, src)
 }
 func (m *LaneAlarmDetail) XXX_Size() int {
 	return xxx_messageInfo_LaneAlarmDetail.Size(m)
@@ -251,17 +246,16 @@ func (m *LaneEdmAlarmInfo) Reset()         { *m = LaneEdmAlarmInfo{} }
 func (m *LaneEdmAlarmInfo) String() string { return proto.CompactTextString(m) }
 func (*LaneEdmAlarmInfo) ProtoMessage()    {}
 func (*LaneEdmAlarmInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_610dcff6840e6c13, []int{3}
+	return fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a, []int{3}
 }
-
 func (m *LaneEdmAlarmInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Unmarshal(m, b)
 }
 func (m *LaneEdmAlarmInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Marshal(b, m, deterministic)
 }
-func (m *LaneEdmAlarmInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_LaneEdmAlarmInfo.Merge(m, src)
+func (dst *LaneEdmAlarmInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_LaneEdmAlarmInfo.Merge(dst, src)
 }
 func (m *LaneEdmAlarmInfo) XXX_Size() int {
 	return xxx_messageInfo_LaneEdmAlarmInfo.Size(m)
@@ -314,9 +308,11 @@ func init() {
 	proto.RegisterType((*LaneEdmAlarmInfo)(nil), "cisco_ios_xr_controller_optics_oper.optics_oper.optics_ports.optics_port.optics_lanes.optics_lane.lane_edm_alarm_info")
 }
 
-func init() { proto.RegisterFile("optics_edm_lane_data.proto", fileDescriptor_610dcff6840e6c13) }
+func init() {
+	proto.RegisterFile("optics_edm_lane_data.proto", fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a)
+}
 
-var fileDescriptor_610dcff6840e6c13 = []byte{
+var fileDescriptor_optics_edm_lane_data_eb33b482472e8c4a = []byte{
 	// 526 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x55, 0xcd, 0x6e, 0x13, 0x3d,
 	0x14, 0xd5, 0xf4, 0xcb, 0x97, 0xb6, 0x37, 0x0d, 0xa5, 0x6e, 0x01, 0xb7, 0x52, 0x45, 0x14, 0x84,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_drivers_media_eth_oper_ethernet_interface_interfaces_interface
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Ethernet bag for driver state for the show controllers command
 type EthernetControllerDriverBagV2Type_KEYS struct {
@@ -34,17 +32,16 @@ func (m *EthernetControllerDriverBagV2Type_KEYS) Reset() {
 func (m *EthernetControllerDriverBagV2Type_KEYS) String() string { return proto.CompactTextString(m) }
 func (*EthernetControllerDriverBagV2Type_KEYS) ProtoMessage()    {}
 func (*EthernetControllerDriverBagV2Type_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{0}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{0}
 }
-
 func (m *EthernetControllerDriverBagV2Type_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type_KEYS.Unmarshal(m, b)
 }
 func (m *EthernetControllerDriverBagV2Type_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type_KEYS.Marshal(b, m, deterministic)
 }
-func (m *EthernetControllerDriverBagV2Type_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthernetControllerDriverBagV2Type_KEYS.Merge(m, src)
+func (dst *EthernetControllerDriverBagV2Type_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthernetControllerDriverBagV2Type_KEYS.Merge(dst, src)
 }
 func (m *EthernetControllerDriverBagV2Type_KEYS) XXX_Size() int {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type_KEYS.Size(m)
@@ -84,17 +81,16 @@ func (m *EthernetControllerDriverBagV2Type) Reset()         { *m = EthernetContr
 func (m *EthernetControllerDriverBagV2Type) String() string { return proto.CompactTextString(m) }
 func (*EthernetControllerDriverBagV2Type) ProtoMessage()    {}
 func (*EthernetControllerDriverBagV2Type) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{1}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{1}
 }
-
 func (m *EthernetControllerDriverBagV2Type) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type.Unmarshal(m, b)
 }
 func (m *EthernetControllerDriverBagV2Type) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type.Marshal(b, m, deterministic)
 }
-func (m *EthernetControllerDriverBagV2Type) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthernetControllerDriverBagV2Type.Merge(m, src)
+func (dst *EthernetControllerDriverBagV2Type) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthernetControllerDriverBagV2Type.Merge(dst, src)
 }
 func (m *EthernetControllerDriverBagV2Type) XXX_Size() int {
 	return xxx_messageInfo_EthernetControllerDriverBagV2Type.Size(m)
@@ -171,17 +167,16 @@ func (m *EtherAutoneg_) Reset()         { *m = EtherAutoneg_{} }
 func (m *EtherAutoneg_) String() string { return proto.CompactTextString(m) }
 func (*EtherAutoneg_) ProtoMessage()    {}
 func (*EtherAutoneg_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{2}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{2}
 }
-
 func (m *EtherAutoneg_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherAutoneg_.Unmarshal(m, b)
 }
 func (m *EtherAutoneg_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherAutoneg_.Marshal(b, m, deterministic)
 }
-func (m *EtherAutoneg_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherAutoneg_.Merge(m, src)
+func (dst *EtherAutoneg_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherAutoneg_.Merge(dst, src)
 }
 func (m *EtherAutoneg_) XXX_Size() int {
 	return xxx_messageInfo_EtherAutoneg_.Size(m)
@@ -252,17 +247,16 @@ func (m *MacAddrType) Reset()         { *m = MacAddrType{} }
 func (m *MacAddrType) String() string { return proto.CompactTextString(m) }
 func (*MacAddrType) ProtoMessage()    {}
 func (*MacAddrType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{3}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{3}
 }
-
 func (m *MacAddrType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MacAddrType.Unmarshal(m, b)
 }
 func (m *MacAddrType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MacAddrType.Marshal(b, m, deterministic)
 }
-func (m *MacAddrType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MacAddrType.Merge(m, src)
+func (dst *MacAddrType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MacAddrType.Merge(dst, src)
 }
 func (m *MacAddrType) XXX_Size() int {
 	return xxx_messageInfo_MacAddrType.Size(m)
@@ -294,17 +288,16 @@ func (m *EtherMcastMacType_) Reset()         { *m = EtherMcastMacType_{} }
 func (m *EtherMcastMacType_) String() string { return proto.CompactTextString(m) }
 func (*EtherMcastMacType_) ProtoMessage()    {}
 func (*EtherMcastMacType_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{4}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{4}
 }
-
 func (m *EtherMcastMacType_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherMcastMacType_.Unmarshal(m, b)
 }
 func (m *EtherMcastMacType_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherMcastMacType_.Marshal(b, m, deterministic)
 }
-func (m *EtherMcastMacType_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherMcastMacType_.Merge(m, src)
+func (dst *EtherMcastMacType_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherMcastMacType_.Merge(dst, src)
 }
 func (m *EtherMcastMacType_) XXX_Size() int {
 	return xxx_messageInfo_EtherMcastMacType_.Size(m)
@@ -345,17 +338,16 @@ func (m *EthCtrlrPhyDomLaneAlarms) Reset()         { *m = EthCtrlrPhyDomLaneAlar
 func (m *EthCtrlrPhyDomLaneAlarms) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyDomLaneAlarms) ProtoMessage()    {}
 func (*EthCtrlrPhyDomLaneAlarms) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{5}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{5}
 }
-
 func (m *EthCtrlrPhyDomLaneAlarms) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyDomLaneAlarms.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyDomLaneAlarms) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyDomLaneAlarms.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyDomLaneAlarms) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyDomLaneAlarms.Merge(m, src)
+func (dst *EthCtrlrPhyDomLaneAlarms) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyDomLaneAlarms.Merge(dst, src)
 }
 func (m *EthCtrlrPhyDomLaneAlarms) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyDomLaneAlarms.Size(m)
@@ -405,17 +397,16 @@ func (m *EthCtrlrPhyLaneOptMonValidity) Reset()         { *m = EthCtrlrPhyLaneOp
 func (m *EthCtrlrPhyLaneOptMonValidity) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyLaneOptMonValidity) ProtoMessage()    {}
 func (*EthCtrlrPhyLaneOptMonValidity) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{6}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{6}
 }
-
 func (m *EthCtrlrPhyLaneOptMonValidity) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMonValidity.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyLaneOptMonValidity) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMonValidity.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyLaneOptMonValidity) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyLaneOptMonValidity.Merge(m, src)
+func (dst *EthCtrlrPhyLaneOptMonValidity) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyLaneOptMonValidity.Merge(dst, src)
 }
 func (m *EthCtrlrPhyLaneOptMonValidity) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMonValidity.Size(m)
@@ -474,17 +465,16 @@ func (m *EthCtrlrPhyLaneOptMon) Reset()         { *m = EthCtrlrPhyLaneOptMon{} }
 func (m *EthCtrlrPhyLaneOptMon) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyLaneOptMon) ProtoMessage()    {}
 func (*EthCtrlrPhyLaneOptMon) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{7}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{7}
 }
-
 func (m *EthCtrlrPhyLaneOptMon) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMon.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyLaneOptMon) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMon.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyLaneOptMon) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyLaneOptMon.Merge(m, src)
+func (dst *EthCtrlrPhyLaneOptMon) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyLaneOptMon.Merge(dst, src)
 }
 func (m *EthCtrlrPhyLaneOptMon) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyLaneOptMon.Size(m)
@@ -550,17 +540,16 @@ func (m *EthCtrlrPhyDomAlarms) Reset()         { *m = EthCtrlrPhyDomAlarms{} }
 func (m *EthCtrlrPhyDomAlarms) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyDomAlarms) ProtoMessage()    {}
 func (*EthCtrlrPhyDomAlarms) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{8}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{8}
 }
-
 func (m *EthCtrlrPhyDomAlarms) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyDomAlarms.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyDomAlarms) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyDomAlarms.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyDomAlarms) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyDomAlarms.Merge(m, src)
+func (dst *EthCtrlrPhyDomAlarms) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyDomAlarms.Merge(dst, src)
 }
 func (m *EthCtrlrPhyDomAlarms) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyDomAlarms.Size(m)
@@ -626,17 +615,16 @@ func (m *EthCtrlrPhyDomThresholdValidity) Reset()         { *m = EthCtrlrPhyDomT
 func (m *EthCtrlrPhyDomThresholdValidity) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyDomThresholdValidity) ProtoMessage()    {}
 func (*EthCtrlrPhyDomThresholdValidity) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{9}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{9}
 }
-
 func (m *EthCtrlrPhyDomThresholdValidity) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholdValidity.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyDomThresholdValidity) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholdValidity.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyDomThresholdValidity) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyDomThresholdValidity.Merge(m, src)
+func (dst *EthCtrlrPhyDomThresholdValidity) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyDomThresholdValidity.Merge(dst, src)
 }
 func (m *EthCtrlrPhyDomThresholdValidity) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholdValidity.Size(m)
@@ -734,17 +722,16 @@ func (m *EthCtrlrPhyDomThresholds) Reset()         { *m = EthCtrlrPhyDomThreshol
 func (m *EthCtrlrPhyDomThresholds) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyDomThresholds) ProtoMessage()    {}
 func (*EthCtrlrPhyDomThresholds) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{10}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{10}
 }
-
 func (m *EthCtrlrPhyDomThresholds) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholds.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyDomThresholds) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholds.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyDomThresholds) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyDomThresholds.Merge(m, src)
+func (dst *EthCtrlrPhyDomThresholds) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyDomThresholds.Merge(dst, src)
 }
 func (m *EthCtrlrPhyDomThresholds) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyDomThresholds.Size(m)
@@ -938,17 +925,16 @@ func (m *EtherPhyDetails) Reset()         { *m = EtherPhyDetails{} }
 func (m *EtherPhyDetails) String() string { return proto.CompactTextString(m) }
 func (*EtherPhyDetails) ProtoMessage()    {}
 func (*EtherPhyDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{11}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{11}
 }
-
 func (m *EtherPhyDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherPhyDetails.Unmarshal(m, b)
 }
 func (m *EtherPhyDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherPhyDetails.Marshal(b, m, deterministic)
 }
-func (m *EtherPhyDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherPhyDetails.Merge(m, src)
+func (dst *EtherPhyDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherPhyDetails.Merge(dst, src)
 }
 func (m *EtherPhyDetails) XXX_Size() int {
 	return xxx_messageInfo_EtherPhyDetails.Size(m)
@@ -1078,17 +1064,16 @@ func (m *EthCtrlrAlarms) Reset()         { *m = EthCtrlrAlarms{} }
 func (m *EthCtrlrAlarms) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrAlarms) ProtoMessage()    {}
 func (*EthCtrlrAlarms) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{12}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{12}
 }
-
 func (m *EthCtrlrAlarms) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrAlarms.Unmarshal(m, b)
 }
 func (m *EthCtrlrAlarms) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrAlarms.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrAlarms) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrAlarms.Merge(m, src)
+func (dst *EthCtrlrAlarms) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrAlarms.Merge(dst, src)
 }
 func (m *EthCtrlrAlarms) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrAlarms.Size(m)
@@ -1176,17 +1161,16 @@ func (m *EthCtrlrErrorCounters) Reset()         { *m = EthCtrlrErrorCounters{} }
 func (m *EthCtrlrErrorCounters) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrErrorCounters) ProtoMessage()    {}
 func (*EthCtrlrErrorCounters) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{13}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{13}
 }
-
 func (m *EthCtrlrErrorCounters) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrErrorCounters.Unmarshal(m, b)
 }
 func (m *EthCtrlrErrorCounters) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrErrorCounters.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrErrorCounters) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrErrorCounters.Merge(m, src)
+func (dst *EthCtrlrErrorCounters) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrErrorCounters.Merge(dst, src)
 }
 func (m *EthCtrlrErrorCounters) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrErrorCounters.Size(m)
@@ -1231,17 +1215,16 @@ func (m *EtherBerSettings) Reset()         { *m = EtherBerSettings{} }
 func (m *EtherBerSettings) String() string { return proto.CompactTextString(m) }
 func (*EtherBerSettings) ProtoMessage()    {}
 func (*EtherBerSettings) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{14}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{14}
 }
-
 func (m *EtherBerSettings) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherBerSettings.Unmarshal(m, b)
 }
 func (m *EtherBerSettings) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherBerSettings.Marshal(b, m, deterministic)
 }
-func (m *EtherBerSettings) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherBerSettings.Merge(m, src)
+func (dst *EtherBerSettings) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherBerSettings.Merge(dst, src)
 }
 func (m *EtherBerSettings) XXX_Size() int {
 	return xxx_messageInfo_EtherBerSettings.Size(m)
@@ -1301,17 +1284,16 @@ func (m *EthBerMonitoring) Reset()         { *m = EthBerMonitoring{} }
 func (m *EthBerMonitoring) String() string { return proto.CompactTextString(m) }
 func (*EthBerMonitoring) ProtoMessage()    {}
 func (*EthBerMonitoring) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{15}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{15}
 }
-
 func (m *EthBerMonitoring) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthBerMonitoring.Unmarshal(m, b)
 }
 func (m *EthBerMonitoring) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthBerMonitoring.Marshal(b, m, deterministic)
 }
-func (m *EthBerMonitoring) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthBerMonitoring.Merge(m, src)
+func (dst *EthBerMonitoring) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthBerMonitoring.Merge(dst, src)
 }
 func (m *EthBerMonitoring) XXX_Size() int {
 	return xxx_messageInfo_EthBerMonitoring.Size(m)
@@ -1348,17 +1330,16 @@ func (m *EthCtrlrUcastMacFilter) Reset()         { *m = EthCtrlrUcastMacFilter{}
 func (m *EthCtrlrUcastMacFilter) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrUcastMacFilter) ProtoMessage()    {}
 func (*EthCtrlrUcastMacFilter) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{16}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{16}
 }
-
 func (m *EthCtrlrUcastMacFilter) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrUcastMacFilter.Unmarshal(m, b)
 }
 func (m *EthCtrlrUcastMacFilter) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrUcastMacFilter.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrUcastMacFilter) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrUcastMacFilter.Merge(m, src)
+func (dst *EthCtrlrUcastMacFilter) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrUcastMacFilter.Merge(dst, src)
 }
 func (m *EthCtrlrUcastMacFilter) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrUcastMacFilter.Size(m)
@@ -1390,17 +1371,16 @@ func (m *EthCtrlrMcastMacFilter) Reset()         { *m = EthCtrlrMcastMacFilter{}
 func (m *EthCtrlrMcastMacFilter) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrMcastMacFilter) ProtoMessage()    {}
 func (*EthCtrlrMcastMacFilter) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{17}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{17}
 }
-
 func (m *EthCtrlrMcastMacFilter) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrMcastMacFilter.Unmarshal(m, b)
 }
 func (m *EthCtrlrMcastMacFilter) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrMcastMacFilter.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrMcastMacFilter) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrMcastMacFilter.Merge(m, src)
+func (dst *EthCtrlrMcastMacFilter) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrMcastMacFilter.Merge(dst, src)
 }
 func (m *EthCtrlrMcastMacFilter) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrMcastMacFilter.Size(m)
@@ -1441,17 +1421,16 @@ func (m *EtherFecDetails) Reset()         { *m = EtherFecDetails{} }
 func (m *EtherFecDetails) String() string { return proto.CompactTextString(m) }
 func (*EtherFecDetails) ProtoMessage()    {}
 func (*EtherFecDetails) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{18}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{18}
 }
-
 func (m *EtherFecDetails) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherFecDetails.Unmarshal(m, b)
 }
 func (m *EtherFecDetails) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherFecDetails.Marshal(b, m, deterministic)
 }
-func (m *EtherFecDetails) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherFecDetails.Merge(m, src)
+func (dst *EtherFecDetails) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherFecDetails.Merge(dst, src)
 }
 func (m *EtherFecDetails) XXX_Size() int {
 	return xxx_messageInfo_EtherFecDetails.Size(m)
@@ -1501,17 +1480,16 @@ func (m *EtherPfcDetailsType) Reset()         { *m = EtherPfcDetailsType{} }
 func (m *EtherPfcDetailsType) String() string { return proto.CompactTextString(m) }
 func (*EtherPfcDetailsType) ProtoMessage()    {}
 func (*EtherPfcDetailsType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{19}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{19}
 }
-
 func (m *EtherPfcDetailsType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EtherPfcDetailsType.Unmarshal(m, b)
 }
 func (m *EtherPfcDetailsType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EtherPfcDetailsType.Marshal(b, m, deterministic)
 }
-func (m *EtherPfcDetailsType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EtherPfcDetailsType.Merge(m, src)
+func (dst *EtherPfcDetailsType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EtherPfcDetailsType.Merge(dst, src)
 }
 func (m *EtherPfcDetailsType) XXX_Size() int {
 	return xxx_messageInfo_EtherPfcDetailsType.Size(m)
@@ -1570,17 +1548,16 @@ func (m *EthCtrlrPhyInfo) Reset()         { *m = EthCtrlrPhyInfo{} }
 func (m *EthCtrlrPhyInfo) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrPhyInfo) ProtoMessage()    {}
 func (*EthCtrlrPhyInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{20}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{20}
 }
-
 func (m *EthCtrlrPhyInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrPhyInfo.Unmarshal(m, b)
 }
 func (m *EthCtrlrPhyInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrPhyInfo.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrPhyInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrPhyInfo.Merge(m, src)
+func (dst *EthCtrlrPhyInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrPhyInfo.Merge(dst, src)
 }
 func (m *EthCtrlrPhyInfo) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrPhyInfo.Size(m)
@@ -1666,17 +1643,16 @@ func (m *EthCtrlrL1Info) Reset()         { *m = EthCtrlrL1Info{} }
 func (m *EthCtrlrL1Info) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrL1Info) ProtoMessage()    {}
 func (*EthCtrlrL1Info) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{21}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{21}
 }
-
 func (m *EthCtrlrL1Info) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrL1Info.Unmarshal(m, b)
 }
 func (m *EthCtrlrL1Info) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrL1Info.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrL1Info) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrL1Info.Merge(m, src)
+func (dst *EthCtrlrL1Info) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrL1Info.Merge(dst, src)
 }
 func (m *EthCtrlrL1Info) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrL1Info.Size(m)
@@ -1814,17 +1790,16 @@ func (m *EthCtrlrMacInfo) Reset()         { *m = EthCtrlrMacInfo{} }
 func (m *EthCtrlrMacInfo) String() string { return proto.CompactTextString(m) }
 func (*EthCtrlrMacInfo) ProtoMessage()    {}
 func (*EthCtrlrMacInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{22}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{22}
 }
-
 func (m *EthCtrlrMacInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtrlrMacInfo.Unmarshal(m, b)
 }
 func (m *EthCtrlrMacInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtrlrMacInfo.Marshal(b, m, deterministic)
 }
-func (m *EthCtrlrMacInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtrlrMacInfo.Merge(m, src)
+func (dst *EthCtrlrMacInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtrlrMacInfo.Merge(dst, src)
 }
 func (m *EthCtrlrMacInfo) XXX_Size() int {
 	return xxx_messageInfo_EthCtrlrMacInfo.Size(m)
@@ -1895,17 +1870,16 @@ func (m *EthCtlrTransportInfo) Reset()         { *m = EthCtlrTransportInfo{} }
 func (m *EthCtlrTransportInfo) String() string { return proto.CompactTextString(m) }
 func (*EthCtlrTransportInfo) ProtoMessage()    {}
 func (*EthCtlrTransportInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_cea19af9feab0699, []int{23}
+	return fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12, []int{23}
 }
-
 func (m *EthCtlrTransportInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_EthCtlrTransportInfo.Unmarshal(m, b)
 }
 func (m *EthCtlrTransportInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_EthCtlrTransportInfo.Marshal(b, m, deterministic)
 }
-func (m *EthCtlrTransportInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EthCtlrTransportInfo.Merge(m, src)
+func (dst *EthCtlrTransportInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EthCtlrTransportInfo.Merge(dst, src)
 }
 func (m *EthCtlrTransportInfo) XXX_Size() int {
 	return xxx_messageInfo_EthCtlrTransportInfo.Size(m)
@@ -1972,10 +1946,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("ethernet_controller_driver_bag_v2_type.proto", fileDescriptor_cea19af9feab0699)
+	proto.RegisterFile("ethernet_controller_driver_bag_v2_type.proto", fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12)
 }
 
-var fileDescriptor_cea19af9feab0699 = []byte{
+var fileDescriptor_ethernet_controller_driver_bag_v2_type_0365467288777c12 = []byte{
 	// 2612 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x3a, 0x49, 0x8f, 0x24, 0x47,
 	0xd5, 0xca, 0xae, 0xea, 0xa5, 0x5e, 0x75, 0x55, 0x57, 0x65, 0x6f, 0xf5, 0x8d, 0x67, 0x69, 0xe7,

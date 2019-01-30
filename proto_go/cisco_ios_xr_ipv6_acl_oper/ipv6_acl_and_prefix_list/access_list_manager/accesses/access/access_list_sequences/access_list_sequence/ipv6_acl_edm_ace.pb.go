@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv6_acl_oper_ipv6_acl_and_prefix_list_access_list_manager_accesses_access_access_list_sequences_access_list_sequence
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // ACLE bag
 type Ipv6AclEdmAce_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv6AclEdmAce_KEYS) Reset()         { *m = Ipv6AclEdmAce_KEYS{} }
 func (m *Ipv6AclEdmAce_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclEdmAce_KEYS) ProtoMessage()    {}
 func (*Ipv6AclEdmAce_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a280e520230d78eb, []int{0}
+	return fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098, []int{0}
 }
-
 func (m *Ipv6AclEdmAce_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclEdmAce_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv6AclEdmAce_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclEdmAce_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclEdmAce_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclEdmAce_KEYS.Merge(m, src)
+func (dst *Ipv6AclEdmAce_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclEdmAce_KEYS.Merge(dst, src)
 }
 func (m *Ipv6AclEdmAce_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclEdmAce_KEYS.Size(m)
@@ -147,17 +144,16 @@ func (m *Ipv6AclEdmAce) Reset()         { *m = Ipv6AclEdmAce{} }
 func (m *Ipv6AclEdmAce) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclEdmAce) ProtoMessage()    {}
 func (*Ipv6AclEdmAce) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a280e520230d78eb, []int{1}
+	return fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098, []int{1}
 }
-
 func (m *Ipv6AclEdmAce) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclEdmAce.Unmarshal(m, b)
 }
 func (m *Ipv6AclEdmAce) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclEdmAce.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclEdmAce) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclEdmAce.Merge(m, src)
+func (dst *Ipv6AclEdmAce) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclEdmAce.Merge(dst, src)
 }
 func (m *Ipv6AclEdmAce) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclEdmAce.Size(m)
@@ -520,17 +516,16 @@ func (m *Ipv6AclBagNhInfo) Reset()         { *m = Ipv6AclBagNhInfo{} }
 func (m *Ipv6AclBagNhInfo) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclBagNhInfo) ProtoMessage()    {}
 func (*Ipv6AclBagNhInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a280e520230d78eb, []int{2}
+	return fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098, []int{2}
 }
-
 func (m *Ipv6AclBagNhInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclBagNhInfo.Unmarshal(m, b)
 }
 func (m *Ipv6AclBagNhInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclBagNhInfo.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclBagNhInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclBagNhInfo.Merge(m, src)
+func (dst *Ipv6AclBagNhInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclBagNhInfo.Merge(dst, src)
 }
 func (m *Ipv6AclBagNhInfo) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclBagNhInfo.Size(m)
@@ -602,17 +597,16 @@ func (m *Ipv6AclBagHwNhInfo) Reset()         { *m = Ipv6AclBagHwNhInfo{} }
 func (m *Ipv6AclBagHwNhInfo) String() string { return proto.CompactTextString(m) }
 func (*Ipv6AclBagHwNhInfo) ProtoMessage()    {}
 func (*Ipv6AclBagHwNhInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_a280e520230d78eb, []int{3}
+	return fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098, []int{3}
 }
-
 func (m *Ipv6AclBagHwNhInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv6AclBagHwNhInfo.Unmarshal(m, b)
 }
 func (m *Ipv6AclBagHwNhInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv6AclBagHwNhInfo.Marshal(b, m, deterministic)
 }
-func (m *Ipv6AclBagHwNhInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv6AclBagHwNhInfo.Merge(m, src)
+func (dst *Ipv6AclBagHwNhInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv6AclBagHwNhInfo.Merge(dst, src)
 }
 func (m *Ipv6AclBagHwNhInfo) XXX_Size() int {
 	return xxx_messageInfo_Ipv6AclBagHwNhInfo.Size(m)
@@ -658,9 +652,11 @@ func init() {
 	proto.RegisterType((*Ipv6AclBagHwNhInfo)(nil), "cisco_ios_xr_ipv6_acl_oper.ipv6_acl_and_prefix_list.access_list_manager.accesses.access.access_list_sequences.access_list_sequence.ipv6_acl_bag_hw_nh_info")
 }
 
-func init() { proto.RegisterFile("ipv6_acl_edm_ace.proto", fileDescriptor_a280e520230d78eb) }
+func init() {
+	proto.RegisterFile("ipv6_acl_edm_ace.proto", fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098)
+}
 
-var fileDescriptor_a280e520230d78eb = []byte{
+var fileDescriptor_ipv6_acl_edm_ace_7c0deabf5bd4a098 = []byte{
 	// 1254 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x56, 0x6d, 0x73, 0x1b, 0x35,
 	0x10, 0x1e, 0xb7, 0xa1, 0x49, 0x94, 0xa4, 0x71, 0x94, 0x26, 0x55, 0xa7, 0x2d, 0x75, 0x33, 0x0c,

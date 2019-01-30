@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_acl_oper_ipv4_acl_and_prefix_list_access_list_manager_prefixes_prefix_prefix_list_sequences_prefix_list_sequence
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Prefix list entry BAG
 type Ipv4PfxEdmAce_KEYS struct {
@@ -33,17 +31,16 @@ func (m *Ipv4PfxEdmAce_KEYS) Reset()         { *m = Ipv4PfxEdmAce_KEYS{} }
 func (m *Ipv4PfxEdmAce_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv4PfxEdmAce_KEYS) ProtoMessage()    {}
 func (*Ipv4PfxEdmAce_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_3fdff792878db60c, []int{0}
+	return fileDescriptor_ipv4_pfx_edm_ace_0a7d9a4635d45d3d, []int{0}
 }
-
 func (m *Ipv4PfxEdmAce_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4PfxEdmAce_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv4PfxEdmAce_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4PfxEdmAce_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv4PfxEdmAce_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4PfxEdmAce_KEYS.Merge(m, src)
+func (dst *Ipv4PfxEdmAce_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4PfxEdmAce_KEYS.Merge(dst, src)
 }
 func (m *Ipv4PfxEdmAce_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv4PfxEdmAce_KEYS.Size(m)
@@ -100,17 +97,16 @@ func (m *Ipv4PfxEdmAce) Reset()         { *m = Ipv4PfxEdmAce{} }
 func (m *Ipv4PfxEdmAce) String() string { return proto.CompactTextString(m) }
 func (*Ipv4PfxEdmAce) ProtoMessage()    {}
 func (*Ipv4PfxEdmAce) Descriptor() ([]byte, []int) {
-	return fileDescriptor_3fdff792878db60c, []int{1}
+	return fileDescriptor_ipv4_pfx_edm_ace_0a7d9a4635d45d3d, []int{1}
 }
-
 func (m *Ipv4PfxEdmAce) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4PfxEdmAce.Unmarshal(m, b)
 }
 func (m *Ipv4PfxEdmAce) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4PfxEdmAce.Marshal(b, m, deterministic)
 }
-func (m *Ipv4PfxEdmAce) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4PfxEdmAce.Merge(m, src)
+func (dst *Ipv4PfxEdmAce) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4PfxEdmAce.Merge(dst, src)
 }
 func (m *Ipv4PfxEdmAce) XXX_Size() int {
 	return xxx_messageInfo_Ipv4PfxEdmAce.Size(m)
@@ -203,9 +199,11 @@ func init() {
 	proto.RegisterType((*Ipv4PfxEdmAce)(nil), "cisco_ios_xr_ipv4_acl_oper.ipv4_acl_and_prefix_list.access_list_manager.prefixes.prefix.prefix_list_sequences.prefix_list_sequence.ipv4_pfx_edm_ace")
 }
 
-func init() { proto.RegisterFile("ipv4_pfx_edm_ace.proto", fileDescriptor_3fdff792878db60c) }
+func init() {
+	proto.RegisterFile("ipv4_pfx_edm_ace.proto", fileDescriptor_ipv4_pfx_edm_ace_0a7d9a4635d45d3d)
+}
 
-var fileDescriptor_3fdff792878db60c = []byte{
+var fileDescriptor_ipv4_pfx_edm_ace_0a7d9a4635d45d3d = []byte{
 	// 353 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x5c, 0x52, 0x4d, 0x4f, 0x02, 0x31,
 	0x10, 0xcd, 0x12, 0x45, 0x68, 0x04, 0x49, 0xa3, 0xa4, 0xea, 0x85, 0x60, 0x8c, 0x9c, 0xf6, 0x20,

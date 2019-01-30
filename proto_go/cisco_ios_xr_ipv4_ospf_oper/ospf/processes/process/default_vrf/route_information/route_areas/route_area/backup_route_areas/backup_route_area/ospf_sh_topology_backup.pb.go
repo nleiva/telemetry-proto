@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_route_information_route_areas_route_area_backup_route_areas_backup_route_area
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Route Information With Backup Path
 type OspfShTopologyBackup_KEYS struct {
@@ -35,17 +33,16 @@ func (m *OspfShTopologyBackup_KEYS) Reset()         { *m = OspfShTopologyBackup_
 func (m *OspfShTopologyBackup_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopologyBackup_KEYS) ProtoMessage()    {}
 func (*OspfShTopologyBackup_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{0}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{0}
 }
-
 func (m *OspfShTopologyBackup_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopologyBackup_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShTopologyBackup_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopologyBackup_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopologyBackup_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopologyBackup_KEYS.Merge(m, src)
+func (dst *OspfShTopologyBackup_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopologyBackup_KEYS.Merge(dst, src)
 }
 func (m *OspfShTopologyBackup_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopologyBackup_KEYS.Size(m)
@@ -108,17 +105,16 @@ func (m *OspfShTopologyBackup) Reset()         { *m = OspfShTopologyBackup{} }
 func (m *OspfShTopologyBackup) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopologyBackup) ProtoMessage()    {}
 func (*OspfShTopologyBackup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{1}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{1}
 }
-
 func (m *OspfShTopologyBackup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopologyBackup.Unmarshal(m, b)
 }
 func (m *OspfShTopologyBackup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopologyBackup.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopologyBackup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopologyBackup.Merge(m, src)
+func (dst *OspfShTopologyBackup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopologyBackup.Merge(dst, src)
 }
 func (m *OspfShTopologyBackup) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopologyBackup.Size(m)
@@ -190,17 +186,16 @@ func (m *OspfShTime) Reset()         { *m = OspfShTime{} }
 func (m *OspfShTime) String() string { return proto.CompactTextString(m) }
 func (*OspfShTime) ProtoMessage()    {}
 func (*OspfShTime) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{2}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{2}
 }
-
 func (m *OspfShTime) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTime.Unmarshal(m, b)
 }
 func (m *OspfShTime) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTime.Marshal(b, m, deterministic)
 }
-func (m *OspfShTime) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTime.Merge(m, src)
+func (dst *OspfShTime) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTime.Merge(dst, src)
 }
 func (m *OspfShTime) XXX_Size() int {
 	return xxx_messageInfo_OspfShTime.Size(m)
@@ -242,17 +237,16 @@ func (m *OspfShRepEl) Reset()         { *m = OspfShRepEl{} }
 func (m *OspfShRepEl) String() string { return proto.CompactTextString(m) }
 func (*OspfShRepEl) ProtoMessage()    {}
 func (*OspfShRepEl) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{3}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{3}
 }
-
 func (m *OspfShRepEl) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRepEl.Unmarshal(m, b)
 }
 func (m *OspfShRepEl) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRepEl.Marshal(b, m, deterministic)
 }
-func (m *OspfShRepEl) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRepEl.Merge(m, src)
+func (dst *OspfShRepEl) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRepEl.Merge(dst, src)
 }
 func (m *OspfShRepEl) XXX_Size() int {
 	return xxx_messageInfo_OspfShRepEl.Size(m)
@@ -321,17 +315,16 @@ func (m *OspfShBackupPath) Reset()         { *m = OspfShBackupPath{} }
 func (m *OspfShBackupPath) String() string { return proto.CompactTextString(m) }
 func (*OspfShBackupPath) ProtoMessage()    {}
 func (*OspfShBackupPath) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{4}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{4}
 }
-
 func (m *OspfShBackupPath) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShBackupPath.Unmarshal(m, b)
 }
 func (m *OspfShBackupPath) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShBackupPath.Marshal(b, m, deterministic)
 }
-func (m *OspfShBackupPath) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShBackupPath.Merge(m, src)
+func (dst *OspfShBackupPath) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShBackupPath.Merge(dst, src)
 }
 func (m *OspfShBackupPath) XXX_Size() int {
 	return xxx_messageInfo_OspfShBackupPath.Size(m)
@@ -464,17 +457,16 @@ func (m *OspfShTopPathBackup) Reset()         { *m = OspfShTopPathBackup{} }
 func (m *OspfShTopPathBackup) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopPathBackup) ProtoMessage()    {}
 func (*OspfShTopPathBackup) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{5}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{5}
 }
-
 func (m *OspfShTopPathBackup) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopPathBackup.Unmarshal(m, b)
 }
 func (m *OspfShTopPathBackup) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopPathBackup.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopPathBackup) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopPathBackup.Merge(m, src)
+func (dst *OspfShTopPathBackup) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopPathBackup.Merge(dst, src)
 }
 func (m *OspfShTopPathBackup) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopPathBackup.Size(m)
@@ -590,17 +582,16 @@ func (m *OspfShTopCommon) Reset()         { *m = OspfShTopCommon{} }
 func (m *OspfShTopCommon) String() string { return proto.CompactTextString(m) }
 func (*OspfShTopCommon) ProtoMessage()    {}
 func (*OspfShTopCommon) Descriptor() ([]byte, []int) {
-	return fileDescriptor_f7ea12a528fbabda, []int{6}
+	return fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac, []int{6}
 }
-
 func (m *OspfShTopCommon) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShTopCommon.Unmarshal(m, b)
 }
 func (m *OspfShTopCommon) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShTopCommon.Marshal(b, m, deterministic)
 }
-func (m *OspfShTopCommon) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShTopCommon.Merge(m, src)
+func (dst *OspfShTopCommon) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShTopCommon.Merge(dst, src)
 }
 func (m *OspfShTopCommon) XXX_Size() int {
 	return xxx_messageInfo_OspfShTopCommon.Size(m)
@@ -705,9 +696,11 @@ func init() {
 	proto.RegisterType((*OspfShTopCommon)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.route_information.route_areas.route_area.backup_route_areas.backup_route_area.ospf_sh_top_common")
 }
 
-func init() { proto.RegisterFile("ospf_sh_topology_backup.proto", fileDescriptor_f7ea12a528fbabda) }
+func init() {
+	proto.RegisterFile("ospf_sh_topology_backup.proto", fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac)
+}
 
-var fileDescriptor_f7ea12a528fbabda = []byte{
+var fileDescriptor_ospf_sh_topology_backup_41fdfdc0d33627ac = []byte{
 	// 1174 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x57, 0xcd, 0x6e, 0x24, 0x35,
 	0x10, 0x56, 0xb3, 0xcb, 0x24, 0xe3, 0xc9, 0xec, 0x26, 0x0e, 0x24, 0x1d, 0xd8, 0x40, 0x18, 0x24,

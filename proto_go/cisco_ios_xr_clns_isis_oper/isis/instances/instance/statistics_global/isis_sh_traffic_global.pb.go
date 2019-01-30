@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_statistics_global
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // IS-IS process traffic data
 type IsisShTrafficGlobal_KEYS struct {
@@ -32,17 +30,16 @@ func (m *IsisShTrafficGlobal_KEYS) Reset()         { *m = IsisShTrafficGlobal_KE
 func (m *IsisShTrafficGlobal_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShTrafficGlobal_KEYS) ProtoMessage()    {}
 func (*IsisShTrafficGlobal_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{0}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{0}
 }
-
 func (m *IsisShTrafficGlobal_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTrafficGlobal_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShTrafficGlobal_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTrafficGlobal_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShTrafficGlobal_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTrafficGlobal_KEYS.Merge(m, src)
+func (dst *IsisShTrafficGlobal_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTrafficGlobal_KEYS.Merge(dst, src)
 }
 func (m *IsisShTrafficGlobal_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShTrafficGlobal_KEYS.Size(m)
@@ -74,17 +71,16 @@ func (m *IsisShTrafficGlobal) Reset()         { *m = IsisShTrafficGlobal{} }
 func (m *IsisShTrafficGlobal) String() string { return proto.CompactTextString(m) }
 func (*IsisShTrafficGlobal) ProtoMessage()    {}
 func (*IsisShTrafficGlobal) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{1}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{1}
 }
-
 func (m *IsisShTrafficGlobal) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTrafficGlobal.Unmarshal(m, b)
 }
 func (m *IsisShTrafficGlobal) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTrafficGlobal.Marshal(b, m, deterministic)
 }
-func (m *IsisShTrafficGlobal) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTrafficGlobal.Merge(m, src)
+func (dst *IsisShTrafficGlobal) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTrafficGlobal.Merge(dst, src)
 }
 func (m *IsisShTrafficGlobal) XXX_Size() int {
 	return xxx_messageInfo_IsisShTrafficGlobal.Size(m)
@@ -128,17 +124,16 @@ func (m *IsisTopoIdType) Reset()         { *m = IsisTopoIdType{} }
 func (m *IsisTopoIdType) String() string { return proto.CompactTextString(m) }
 func (*IsisTopoIdType) ProtoMessage()    {}
 func (*IsisTopoIdType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{2}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{2}
 }
-
 func (m *IsisTopoIdType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisTopoIdType.Unmarshal(m, b)
 }
 func (m *IsisTopoIdType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisTopoIdType.Marshal(b, m, deterministic)
 }
-func (m *IsisTopoIdType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisTopoIdType.Merge(m, src)
+func (dst *IsisTopoIdType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisTopoIdType.Merge(dst, src)
 }
 func (m *IsisTopoIdType) XXX_Size() int {
 	return xxx_messageInfo_IsisTopoIdType.Size(m)
@@ -192,17 +187,16 @@ func (m *IsisShTimestampType) Reset()         { *m = IsisShTimestampType{} }
 func (m *IsisShTimestampType) String() string { return proto.CompactTextString(m) }
 func (*IsisShTimestampType) ProtoMessage()    {}
 func (*IsisShTimestampType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{3}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{3}
 }
-
 func (m *IsisShTimestampType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTimestampType.Unmarshal(m, b)
 }
 func (m *IsisShTimestampType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTimestampType.Marshal(b, m, deterministic)
 }
-func (m *IsisShTimestampType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTimestampType.Merge(m, src)
+func (dst *IsisShTimestampType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTimestampType.Merge(dst, src)
 }
 func (m *IsisShTimestampType) XXX_Size() int {
 	return xxx_messageInfo_IsisShTimestampType.Size(m)
@@ -248,17 +242,16 @@ func (m *IsisAreaTopoStatsType) Reset()         { *m = IsisAreaTopoStatsType{} }
 func (m *IsisAreaTopoStatsType) String() string { return proto.CompactTextString(m) }
 func (*IsisAreaTopoStatsType) ProtoMessage()    {}
 func (*IsisAreaTopoStatsType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{4}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{4}
 }
-
 func (m *IsisAreaTopoStatsType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisAreaTopoStatsType.Unmarshal(m, b)
 }
 func (m *IsisAreaTopoStatsType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisAreaTopoStatsType.Marshal(b, m, deterministic)
 }
-func (m *IsisAreaTopoStatsType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisAreaTopoStatsType.Merge(m, src)
+func (dst *IsisAreaTopoStatsType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisAreaTopoStatsType.Merge(dst, src)
 }
 func (m *IsisAreaTopoStatsType) XXX_Size() int {
 	return xxx_messageInfo_IsisAreaTopoStatsType.Size(m)
@@ -319,17 +312,16 @@ func (m *IsisShTrafficAreaTopo) Reset()         { *m = IsisShTrafficAreaTopo{} }
 func (m *IsisShTrafficAreaTopo) String() string { return proto.CompactTextString(m) }
 func (*IsisShTrafficAreaTopo) ProtoMessage()    {}
 func (*IsisShTrafficAreaTopo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{5}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{5}
 }
-
 func (m *IsisShTrafficAreaTopo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTrafficAreaTopo.Unmarshal(m, b)
 }
 func (m *IsisShTrafficAreaTopo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTrafficAreaTopo.Marshal(b, m, deterministic)
 }
-func (m *IsisShTrafficAreaTopo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTrafficAreaTopo.Merge(m, src)
+func (dst *IsisShTrafficAreaTopo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTrafficAreaTopo.Merge(dst, src)
 }
 func (m *IsisShTrafficAreaTopo) XXX_Size() int {
 	return xxx_messageInfo_IsisShTrafficAreaTopo.Size(m)
@@ -369,17 +361,16 @@ func (m *IsisAreaStatsType) Reset()         { *m = IsisAreaStatsType{} }
 func (m *IsisAreaStatsType) String() string { return proto.CompactTextString(m) }
 func (*IsisAreaStatsType) ProtoMessage()    {}
 func (*IsisAreaStatsType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{6}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{6}
 }
-
 func (m *IsisAreaStatsType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisAreaStatsType.Unmarshal(m, b)
 }
 func (m *IsisAreaStatsType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisAreaStatsType.Marshal(b, m, deterministic)
 }
-func (m *IsisAreaStatsType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisAreaStatsType.Merge(m, src)
+func (dst *IsisAreaStatsType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisAreaStatsType.Merge(dst, src)
 }
 func (m *IsisAreaStatsType) XXX_Size() int {
 	return xxx_messageInfo_IsisAreaStatsType.Size(m)
@@ -421,17 +412,16 @@ func (m *IsisShTrafficArea) Reset()         { *m = IsisShTrafficArea{} }
 func (m *IsisShTrafficArea) String() string { return proto.CompactTextString(m) }
 func (*IsisShTrafficArea) ProtoMessage()    {}
 func (*IsisShTrafficArea) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{7}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{7}
 }
-
 func (m *IsisShTrafficArea) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTrafficArea.Unmarshal(m, b)
 }
 func (m *IsisShTrafficArea) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTrafficArea.Marshal(b, m, deterministic)
 }
-func (m *IsisShTrafficArea) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTrafficArea.Merge(m, src)
+func (dst *IsisShTrafficArea) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTrafficArea.Merge(dst, src)
 }
 func (m *IsisShTrafficArea) XXX_Size() int {
 	return xxx_messageInfo_IsisShTrafficArea.Size(m)
@@ -530,17 +520,16 @@ func (m *IsisTrafficGlobalType) Reset()         { *m = IsisTrafficGlobalType{} }
 func (m *IsisTrafficGlobalType) String() string { return proto.CompactTextString(m) }
 func (*IsisTrafficGlobalType) ProtoMessage()    {}
 func (*IsisTrafficGlobalType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_244c562481976a73, []int{8}
+	return fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71, []int{8}
 }
-
 func (m *IsisTrafficGlobalType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisTrafficGlobalType.Unmarshal(m, b)
 }
 func (m *IsisTrafficGlobalType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisTrafficGlobalType.Marshal(b, m, deterministic)
 }
-func (m *IsisTrafficGlobalType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisTrafficGlobalType.Merge(m, src)
+func (dst *IsisTrafficGlobalType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisTrafficGlobalType.Merge(dst, src)
 }
 func (m *IsisTrafficGlobalType) XXX_Size() int {
 	return xxx_messageInfo_IsisTrafficGlobalType.Size(m)
@@ -759,9 +748,11 @@ func init() {
 	proto.RegisterType((*IsisTrafficGlobalType)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.statistics_global.isis_traffic_global_type")
 }
 
-func init() { proto.RegisterFile("isis_sh_traffic_global.proto", fileDescriptor_244c562481976a73) }
+func init() {
+	proto.RegisterFile("isis_sh_traffic_global.proto", fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71)
+}
 
-var fileDescriptor_244c562481976a73 = []byte{
+var fileDescriptor_isis_sh_traffic_global_58dbb23d895a9f71 = []byte{
 	// 1084 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x57, 0x4f, 0x6f, 0xdb, 0xb6,
 	0x1b, 0x86, 0x9c, 0x34, 0x69, 0xe9, 0x38, 0xa9, 0x15, 0x27, 0x51, 0xd2, 0x1c, 0xf2, 0x73, 0x7f,

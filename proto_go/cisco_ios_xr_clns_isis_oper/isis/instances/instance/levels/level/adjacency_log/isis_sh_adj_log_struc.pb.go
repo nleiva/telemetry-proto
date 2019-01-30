@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_levels_level_adjacency_log
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Adjacency log structure
 type IsisShAdjLogStruc_KEYS struct {
@@ -33,17 +31,16 @@ func (m *IsisShAdjLogStruc_KEYS) Reset()         { *m = IsisShAdjLogStruc_KEYS{}
 func (m *IsisShAdjLogStruc_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShAdjLogStruc_KEYS) ProtoMessage()    {}
 func (*IsisShAdjLogStruc_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{0}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{0}
 }
-
 func (m *IsisShAdjLogStruc_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShAdjLogStruc_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShAdjLogStruc_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShAdjLogStruc_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShAdjLogStruc_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShAdjLogStruc_KEYS.Merge(m, src)
+func (dst *IsisShAdjLogStruc_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShAdjLogStruc_KEYS.Merge(dst, src)
 }
 func (m *IsisShAdjLogStruc_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShAdjLogStruc_KEYS.Size(m)
@@ -80,17 +77,16 @@ func (m *IsisShAdjLogStruc) Reset()         { *m = IsisShAdjLogStruc{} }
 func (m *IsisShAdjLogStruc) String() string { return proto.CompactTextString(m) }
 func (*IsisShAdjLogStruc) ProtoMessage()    {}
 func (*IsisShAdjLogStruc) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{1}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{1}
 }
-
 func (m *IsisShAdjLogStruc) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShAdjLogStruc.Unmarshal(m, b)
 }
 func (m *IsisShAdjLogStruc) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShAdjLogStruc.Marshal(b, m, deterministic)
 }
-func (m *IsisShAdjLogStruc) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShAdjLogStruc.Merge(m, src)
+func (dst *IsisShAdjLogStruc) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShAdjLogStruc.Merge(dst, src)
 }
 func (m *IsisShAdjLogStruc) XXX_Size() int {
 	return xxx_messageInfo_IsisShAdjLogStruc.Size(m)
@@ -127,17 +123,16 @@ func (m *IsisTopoIdType) Reset()         { *m = IsisTopoIdType{} }
 func (m *IsisTopoIdType) String() string { return proto.CompactTextString(m) }
 func (*IsisTopoIdType) ProtoMessage()    {}
 func (*IsisTopoIdType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{2}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{2}
 }
-
 func (m *IsisTopoIdType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisTopoIdType.Unmarshal(m, b)
 }
 func (m *IsisTopoIdType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisTopoIdType.Marshal(b, m, deterministic)
 }
-func (m *IsisTopoIdType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisTopoIdType.Merge(m, src)
+func (dst *IsisTopoIdType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisTopoIdType.Merge(dst, src)
 }
 func (m *IsisTopoIdType) XXX_Size() int {
 	return xxx_messageInfo_IsisTopoIdType.Size(m)
@@ -191,17 +186,16 @@ func (m *IsisAdjLogTopoType) Reset()         { *m = IsisAdjLogTopoType{} }
 func (m *IsisAdjLogTopoType) String() string { return proto.CompactTextString(m) }
 func (*IsisAdjLogTopoType) ProtoMessage()    {}
 func (*IsisAdjLogTopoType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{3}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{3}
 }
-
 func (m *IsisAdjLogTopoType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisAdjLogTopoType.Unmarshal(m, b)
 }
 func (m *IsisAdjLogTopoType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisAdjLogTopoType.Marshal(b, m, deterministic)
 }
-func (m *IsisAdjLogTopoType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisAdjLogTopoType.Merge(m, src)
+func (dst *IsisAdjLogTopoType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisAdjLogTopoType.Merge(dst, src)
 }
 func (m *IsisAdjLogTopoType) XXX_Size() int {
 	return xxx_messageInfo_IsisAdjLogTopoType.Size(m)
@@ -241,17 +235,16 @@ func (m *IsisShTimestampType) Reset()         { *m = IsisShTimestampType{} }
 func (m *IsisShTimestampType) String() string { return proto.CompactTextString(m) }
 func (*IsisShTimestampType) ProtoMessage()    {}
 func (*IsisShTimestampType) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{4}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{4}
 }
-
 func (m *IsisShTimestampType) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTimestampType.Unmarshal(m, b)
 }
 func (m *IsisShTimestampType) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTimestampType.Marshal(b, m, deterministic)
 }
-func (m *IsisShTimestampType) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTimestampType.Merge(m, src)
+func (dst *IsisShTimestampType) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTimestampType.Merge(dst, src)
 }
 func (m *IsisShTimestampType) XXX_Size() int {
 	return xxx_messageInfo_IsisShTimestampType.Size(m)
@@ -289,17 +282,16 @@ func (m *IsisShGenericLogEnt) Reset()         { *m = IsisShGenericLogEnt{} }
 func (m *IsisShGenericLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShGenericLogEnt) ProtoMessage()    {}
 func (*IsisShGenericLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{5}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{5}
 }
-
 func (m *IsisShGenericLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShGenericLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShGenericLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShGenericLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShGenericLogEnt.Merge(m, src)
+func (dst *IsisShGenericLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShGenericLogEnt.Merge(dst, src)
 }
 func (m *IsisShGenericLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShGenericLogEnt.Size(m)
@@ -342,17 +334,16 @@ func (m *IsisShAdjLogEnt) Reset()         { *m = IsisShAdjLogEnt{} }
 func (m *IsisShAdjLogEnt) String() string { return proto.CompactTextString(m) }
 func (*IsisShAdjLogEnt) ProtoMessage()    {}
 func (*IsisShAdjLogEnt) Descriptor() ([]byte, []int) {
-	return fileDescriptor_709cbed2c0fe98bb, []int{6}
+	return fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875, []int{6}
 }
-
 func (m *IsisShAdjLogEnt) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShAdjLogEnt.Unmarshal(m, b)
 }
 func (m *IsisShAdjLogEnt) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShAdjLogEnt.Marshal(b, m, deterministic)
 }
-func (m *IsisShAdjLogEnt) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShAdjLogEnt.Merge(m, src)
+func (dst *IsisShAdjLogEnt) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShAdjLogEnt.Merge(dst, src)
 }
 func (m *IsisShAdjLogEnt) XXX_Size() int {
 	return xxx_messageInfo_IsisShAdjLogEnt.Size(m)
@@ -422,9 +413,11 @@ func init() {
 	proto.RegisterType((*IsisShAdjLogEnt)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.levels.level.adjacency_log.isis_sh_adj_log_ent")
 }
 
-func init() { proto.RegisterFile("isis_sh_adj_log_struc.proto", fileDescriptor_709cbed2c0fe98bb) }
+func init() {
+	proto.RegisterFile("isis_sh_adj_log_struc.proto", fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875)
+}
 
-var fileDescriptor_709cbed2c0fe98bb = []byte{
+var fileDescriptor_isis_sh_adj_log_struc_89df20c27fb77875 = []byte{
 	// 564 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x54, 0x41, 0x6f, 0xd3, 0x30,
 	0x14, 0x56, 0xba, 0xad, 0xdd, 0x5e, 0xdb, 0x49, 0x18, 0xe8, 0xc2, 0x26, 0xa1, 0x2d, 0x03, 0x69,

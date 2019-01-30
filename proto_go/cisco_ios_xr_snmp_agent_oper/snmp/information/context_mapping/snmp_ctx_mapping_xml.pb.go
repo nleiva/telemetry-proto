@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_context_mapping
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP context mapping
 type SnmpCtxMappingXml_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpCtxMappingXml_KEYS) Reset()         { *m = SnmpCtxMappingXml_KEYS{}
 func (m *SnmpCtxMappingXml_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpCtxMappingXml_KEYS) ProtoMessage()    {}
 func (*SnmpCtxMappingXml_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed63b3af1ed68519, []int{0}
+	return fileDescriptor_snmp_ctx_mapping_xml_fe0d6a1028dd338f, []int{0}
 }
-
 func (m *SnmpCtxMappingXml_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpCtxMappingXml_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpCtxMappingXml_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpCtxMappingXml_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpCtxMappingXml_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpCtxMappingXml_KEYS.Merge(m, src)
+func (dst *SnmpCtxMappingXml_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpCtxMappingXml_KEYS.Merge(dst, src)
 }
 func (m *SnmpCtxMappingXml_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpCtxMappingXml_KEYS.Size(m)
@@ -64,17 +61,16 @@ func (m *SnmpCtxMappingXml) Reset()         { *m = SnmpCtxMappingXml{} }
 func (m *SnmpCtxMappingXml) String() string { return proto.CompactTextString(m) }
 func (*SnmpCtxMappingXml) ProtoMessage()    {}
 func (*SnmpCtxMappingXml) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed63b3af1ed68519, []int{1}
+	return fileDescriptor_snmp_ctx_mapping_xml_fe0d6a1028dd338f, []int{1}
 }
-
 func (m *SnmpCtxMappingXml) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpCtxMappingXml.Unmarshal(m, b)
 }
 func (m *SnmpCtxMappingXml) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpCtxMappingXml.Marshal(b, m, deterministic)
 }
-func (m *SnmpCtxMappingXml) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpCtxMappingXml.Merge(m, src)
+func (dst *SnmpCtxMappingXml) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpCtxMappingXml.Merge(dst, src)
 }
 func (m *SnmpCtxMappingXml) XXX_Size() int {
 	return xxx_messageInfo_SnmpCtxMappingXml.Size(m)
@@ -113,17 +109,16 @@ func (m *SnmpCtxMappingEntryXml) Reset()         { *m = SnmpCtxMappingEntryXml{}
 func (m *SnmpCtxMappingEntryXml) String() string { return proto.CompactTextString(m) }
 func (*SnmpCtxMappingEntryXml) ProtoMessage()    {}
 func (*SnmpCtxMappingEntryXml) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ed63b3af1ed68519, []int{2}
+	return fileDescriptor_snmp_ctx_mapping_xml_fe0d6a1028dd338f, []int{2}
 }
-
 func (m *SnmpCtxMappingEntryXml) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpCtxMappingEntryXml.Unmarshal(m, b)
 }
 func (m *SnmpCtxMappingEntryXml) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpCtxMappingEntryXml.Marshal(b, m, deterministic)
 }
-func (m *SnmpCtxMappingEntryXml) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpCtxMappingEntryXml.Merge(m, src)
+func (dst *SnmpCtxMappingEntryXml) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpCtxMappingEntryXml.Merge(dst, src)
 }
 func (m *SnmpCtxMappingEntryXml) XXX_Size() int {
 	return xxx_messageInfo_SnmpCtxMappingEntryXml.Size(m)
@@ -175,9 +170,11 @@ func init() {
 	proto.RegisterType((*SnmpCtxMappingEntryXml)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.context_mapping.snmp_ctx_mapping_entry_xml")
 }
 
-func init() { proto.RegisterFile("snmp_ctx_mapping_xml.proto", fileDescriptor_ed63b3af1ed68519) }
+func init() {
+	proto.RegisterFile("snmp_ctx_mapping_xml.proto", fileDescriptor_snmp_ctx_mapping_xml_fe0d6a1028dd338f)
+}
 
-var fileDescriptor_ed63b3af1ed68519 = []byte{
+var fileDescriptor_snmp_ctx_mapping_xml_fe0d6a1028dd338f = []byte{
 	// 250 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0x91, 0xbf, 0x4e, 0xc3, 0x30,
 	0x10, 0xc6, 0x65, 0xca, 0x5f, 0x17, 0x18, 0x2c, 0x06, 0x53, 0x96, 0xd2, 0xa9, 0x93, 0x87, 0x32,

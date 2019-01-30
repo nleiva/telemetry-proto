@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_spirit_install_instmgr_oper_software_install_issu_stage
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // ISSU Director stage Information
 type IsdStageInfo_KEYS struct {
@@ -31,17 +29,16 @@ func (m *IsdStageInfo_KEYS) Reset()         { *m = IsdStageInfo_KEYS{} }
 func (m *IsdStageInfo_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsdStageInfo_KEYS) ProtoMessage()    {}
 func (*IsdStageInfo_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_303ca283b17801bb, []int{0}
+	return fileDescriptor_isd_stage_info_a564f4f9fed50e8f, []int{0}
 }
-
 func (m *IsdStageInfo_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsdStageInfo_KEYS.Unmarshal(m, b)
 }
 func (m *IsdStageInfo_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsdStageInfo_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsdStageInfo_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsdStageInfo_KEYS.Merge(m, src)
+func (dst *IsdStageInfo_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsdStageInfo_KEYS.Merge(dst, src)
 }
 func (m *IsdStageInfo_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsdStageInfo_KEYS.Size(m)
@@ -74,17 +71,16 @@ func (m *IsdStageInfo) Reset()         { *m = IsdStageInfo{} }
 func (m *IsdStageInfo) String() string { return proto.CompactTextString(m) }
 func (*IsdStageInfo) ProtoMessage()    {}
 func (*IsdStageInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_303ca283b17801bb, []int{1}
+	return fileDescriptor_isd_stage_info_a564f4f9fed50e8f, []int{1}
 }
-
 func (m *IsdStageInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsdStageInfo.Unmarshal(m, b)
 }
 func (m *IsdStageInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsdStageInfo.Marshal(b, m, deterministic)
 }
-func (m *IsdStageInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsdStageInfo.Merge(m, src)
+func (dst *IsdStageInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsdStageInfo.Merge(dst, src)
 }
 func (m *IsdStageInfo) XXX_Size() int {
 	return xxx_messageInfo_IsdStageInfo.Size(m)
@@ -142,9 +138,11 @@ func init() {
 	proto.RegisterType((*IsdStageInfo)(nil), "cisco_ios_xr_spirit_install_instmgr_oper.software_install.issu.stage.isd_stage_info")
 }
 
-func init() { proto.RegisterFile("isd_stage_info.proto", fileDescriptor_303ca283b17801bb) }
+func init() {
+	proto.RegisterFile("isd_stage_info.proto", fileDescriptor_isd_stage_info_a564f4f9fed50e8f)
+}
 
-var fileDescriptor_303ca283b17801bb = []byte{
+var fileDescriptor_isd_stage_info_a564f4f9fed50e8f = []byte{
 	// 247 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x90, 0x4f, 0x4b, 0x33, 0x41,
 	0x0c, 0xc6, 0xd9, 0xc3, 0xfb, 0x42, 0x47, 0x14, 0x1d, 0x2b, 0xec, 0x45, 0x2d, 0x7b, 0xea, 0xc5,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_duplicate_drop
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP Statistics extension
 type SnmpStatistics_KEYS struct {
@@ -31,17 +29,16 @@ func (m *SnmpStatistics_KEYS) Reset()         { *m = SnmpStatistics_KEYS{} }
 func (m *SnmpStatistics_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpStatistics_KEYS) ProtoMessage()    {}
 func (*SnmpStatistics_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_28dcbda7412ce840, []int{0}
+	return fileDescriptor_snmp_statistics_b9d493ef5dec4040, []int{0}
 }
-
 func (m *SnmpStatistics_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpStatistics_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpStatistics_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpStatistics_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpStatistics_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpStatistics_KEYS.Merge(m, src)
+func (dst *SnmpStatistics_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpStatistics_KEYS.Merge(dst, src)
 }
 func (m *SnmpStatistics_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpStatistics_KEYS.Size(m)
@@ -84,17 +81,16 @@ func (m *SnmpStatistics) Reset()         { *m = SnmpStatistics{} }
 func (m *SnmpStatistics) String() string { return proto.CompactTextString(m) }
 func (*SnmpStatistics) ProtoMessage()    {}
 func (*SnmpStatistics) Descriptor() ([]byte, []int) {
-	return fileDescriptor_28dcbda7412ce840, []int{1}
+	return fileDescriptor_snmp_statistics_b9d493ef5dec4040, []int{1}
 }
-
 func (m *SnmpStatistics) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpStatistics.Unmarshal(m, b)
 }
 func (m *SnmpStatistics) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpStatistics.Marshal(b, m, deterministic)
 }
-func (m *SnmpStatistics) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpStatistics.Merge(m, src)
+func (dst *SnmpStatistics) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpStatistics.Merge(dst, src)
 }
 func (m *SnmpStatistics) XXX_Size() int {
 	return xxx_messageInfo_SnmpStatistics.Size(m)
@@ -187,9 +183,11 @@ func init() {
 	proto.RegisterType((*SnmpStatistics)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.duplicate_drop.snmp_statistics")
 }
 
-func init() { proto.RegisterFile("snmp_statistics.proto", fileDescriptor_28dcbda7412ce840) }
+func init() {
+	proto.RegisterFile("snmp_statistics.proto", fileDescriptor_snmp_statistics_b9d493ef5dec4040)
+}
 
-var fileDescriptor_28dcbda7412ce840 = []byte{
+var fileDescriptor_snmp_statistics_b9d493ef5dec4040 = []byte{
 	// 391 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x93, 0x41, 0x4b, 0xe3, 0x40,
 	0x1c, 0xc5, 0xe9, 0x61, 0x17, 0x76, 0x60, 0x29, 0x1b, 0xba, 0xdd, 0xec, 0x6e, 0xd1, 0x5a, 0x3c,

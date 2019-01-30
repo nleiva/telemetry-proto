@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_arp_oper_arp_nodes_node_resolution_history_dynamic
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // ARP Resolution History
 type ArpReshist_KEYS struct {
@@ -32,17 +30,16 @@ func (m *ArpReshist_KEYS) Reset()         { *m = ArpReshist_KEYS{} }
 func (m *ArpReshist_KEYS) String() string { return proto.CompactTextString(m) }
 func (*ArpReshist_KEYS) ProtoMessage()    {}
 func (*ArpReshist_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_957bd29664843221, []int{0}
+	return fileDescriptor_arp_reshist_9dbd724845497750, []int{0}
 }
-
 func (m *ArpReshist_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ArpReshist_KEYS.Unmarshal(m, b)
 }
 func (m *ArpReshist_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ArpReshist_KEYS.Marshal(b, m, deterministic)
 }
-func (m *ArpReshist_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ArpReshist_KEYS.Merge(m, src)
+func (dst *ArpReshist_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ArpReshist_KEYS.Merge(dst, src)
 }
 func (m *ArpReshist_KEYS) XXX_Size() int {
 	return xxx_messageInfo_ArpReshist_KEYS.Size(m)
@@ -72,17 +69,16 @@ func (m *ArpReshist) Reset()         { *m = ArpReshist{} }
 func (m *ArpReshist) String() string { return proto.CompactTextString(m) }
 func (*ArpReshist) ProtoMessage()    {}
 func (*ArpReshist) Descriptor() ([]byte, []int) {
-	return fileDescriptor_957bd29664843221, []int{1}
+	return fileDescriptor_arp_reshist_9dbd724845497750, []int{1}
 }
-
 func (m *ArpReshist) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ArpReshist.Unmarshal(m, b)
 }
 func (m *ArpReshist) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ArpReshist.Marshal(b, m, deterministic)
 }
-func (m *ArpReshist) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ArpReshist.Merge(m, src)
+func (dst *ArpReshist) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ArpReshist.Merge(dst, src)
 }
 func (m *ArpReshist) XXX_Size() int {
 	return xxx_messageInfo_ArpReshist.Size(m)
@@ -127,17 +123,16 @@ func (m *ArpReshistEntry) Reset()         { *m = ArpReshistEntry{} }
 func (m *ArpReshistEntry) String() string { return proto.CompactTextString(m) }
 func (*ArpReshistEntry) ProtoMessage()    {}
 func (*ArpReshistEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_957bd29664843221, []int{2}
+	return fileDescriptor_arp_reshist_9dbd724845497750, []int{2}
 }
-
 func (m *ArpReshistEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_ArpReshistEntry.Unmarshal(m, b)
 }
 func (m *ArpReshistEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_ArpReshistEntry.Marshal(b, m, deterministic)
 }
-func (m *ArpReshistEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ArpReshistEntry.Merge(m, src)
+func (dst *ArpReshistEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ArpReshistEntry.Merge(dst, src)
 }
 func (m *ArpReshistEntry) XXX_Size() int {
 	return xxx_messageInfo_ArpReshistEntry.Size(m)
@@ -210,9 +205,9 @@ func init() {
 	proto.RegisterType((*ArpReshistEntry)(nil), "cisco_ios_xr_ipv4_arp_oper.arp.nodes.node.resolution_history_dynamic.arp_reshist_entry")
 }
 
-func init() { proto.RegisterFile("arp_reshist.proto", fileDescriptor_957bd29664843221) }
+func init() { proto.RegisterFile("arp_reshist.proto", fileDescriptor_arp_reshist_9dbd724845497750) }
 
-var fileDescriptor_957bd29664843221 = []byte{
+var fileDescriptor_arp_reshist_9dbd724845497750 = []byte{
 	// 357 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x92, 0xc1, 0x4b, 0x23, 0x31,
 	0x18, 0xc5, 0x99, 0xb6, 0xdb, 0x9d, 0x66, 0xb6, 0x4b, 0x9b, 0x43, 0x09, 0xec, 0x61, 0xc7, 0x82,

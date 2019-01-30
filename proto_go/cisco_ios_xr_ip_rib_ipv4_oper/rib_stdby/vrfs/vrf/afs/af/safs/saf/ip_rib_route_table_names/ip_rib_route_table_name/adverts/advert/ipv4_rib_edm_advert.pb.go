@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv4_oper_rib_stdby_vrfs_vrf_afs_af_safs_saf_ip_rib_route_table_names_ip_rib_route_table_name_adverts_advert
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Route advertisement information
 type Ipv4RibEdmAdvert_KEYS struct {
@@ -37,17 +35,16 @@ func (m *Ipv4RibEdmAdvert_KEYS) Reset()         { *m = Ipv4RibEdmAdvert_KEYS{} }
 func (m *Ipv4RibEdmAdvert_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmAdvert_KEYS) ProtoMessage()    {}
 func (*Ipv4RibEdmAdvert_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ca13767319e1ab26, []int{0}
+	return fileDescriptor_ipv4_rib_edm_advert_3b94415e5083e251, []int{0}
 }
-
 func (m *Ipv4RibEdmAdvert_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmAdvert_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmAdvert_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmAdvert_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmAdvert_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmAdvert_KEYS.Merge(m, src)
+func (dst *Ipv4RibEdmAdvert_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmAdvert_KEYS.Merge(dst, src)
 }
 func (m *Ipv4RibEdmAdvert_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmAdvert_KEYS.Size(m)
@@ -112,17 +109,16 @@ func (m *Ipv4RibEdmAdvert) Reset()         { *m = Ipv4RibEdmAdvert{} }
 func (m *Ipv4RibEdmAdvert) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmAdvert) ProtoMessage()    {}
 func (*Ipv4RibEdmAdvert) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ca13767319e1ab26, []int{1}
+	return fileDescriptor_ipv4_rib_edm_advert_3b94415e5083e251, []int{1}
 }
-
 func (m *Ipv4RibEdmAdvert) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmAdvert.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmAdvert) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmAdvert.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmAdvert) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmAdvert.Merge(m, src)
+func (dst *Ipv4RibEdmAdvert) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmAdvert.Merge(dst, src)
 }
 func (m *Ipv4RibEdmAdvert) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmAdvert.Size(m)
@@ -166,17 +162,16 @@ func (m *Ipv4RibEdmAdvertItem) Reset()         { *m = Ipv4RibEdmAdvertItem{} }
 func (m *Ipv4RibEdmAdvertItem) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmAdvertItem) ProtoMessage()    {}
 func (*Ipv4RibEdmAdvertItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_ca13767319e1ab26, []int{2}
+	return fileDescriptor_ipv4_rib_edm_advert_3b94415e5083e251, []int{2}
 }
-
 func (m *Ipv4RibEdmAdvertItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmAdvertItem.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmAdvertItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmAdvertItem.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmAdvertItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmAdvertItem.Merge(m, src)
+func (dst *Ipv4RibEdmAdvertItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmAdvertItem.Merge(dst, src)
 }
 func (m *Ipv4RibEdmAdvertItem) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmAdvertItem.Size(m)
@@ -249,9 +244,11 @@ func init() {
 	proto.RegisterType((*Ipv4RibEdmAdvertItem)(nil), "cisco_ios_xr_ip_rib_ipv4_oper.rib_stdby.vrfs.vrf.afs.af.safs.saf.ip_rib_route_table_names.ip_rib_route_table_name.adverts.advert.ipv4_rib_edm_advert_item")
 }
 
-func init() { proto.RegisterFile("ipv4_rib_edm_advert.proto", fileDescriptor_ca13767319e1ab26) }
+func init() {
+	proto.RegisterFile("ipv4_rib_edm_advert.proto", fileDescriptor_ipv4_rib_edm_advert_3b94415e5083e251)
+}
 
-var fileDescriptor_ca13767319e1ab26 = []byte{
+var fileDescriptor_ipv4_rib_edm_advert_3b94415e5083e251 = []byte{
 	// 458 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x92, 0x41, 0x8e, 0xd3, 0x30,
 	0x18, 0x85, 0x95, 0xce, 0xd0, 0x76, 0x3c, 0xcd, 0x30, 0xb8, 0x20, 0x52, 0x8d, 0x04, 0xd5, 0xb0,

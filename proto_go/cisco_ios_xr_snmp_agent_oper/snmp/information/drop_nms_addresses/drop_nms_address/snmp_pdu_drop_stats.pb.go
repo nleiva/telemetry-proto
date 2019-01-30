@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_snmp_agent_oper_snmp_information_drop_nms_addresses_drop_nms_address
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SNMP Agent Req PDU Drop Stats
 type SnmpPduDropStats_KEYS struct {
@@ -32,17 +30,16 @@ func (m *SnmpPduDropStats_KEYS) Reset()         { *m = SnmpPduDropStats_KEYS{} }
 func (m *SnmpPduDropStats_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SnmpPduDropStats_KEYS) ProtoMessage()    {}
 func (*SnmpPduDropStats_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c10dc920e5c41196, []int{0}
+	return fileDescriptor_snmp_pdu_drop_stats_7869e4face4d5c62, []int{0}
 }
-
 func (m *SnmpPduDropStats_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpPduDropStats_KEYS.Unmarshal(m, b)
 }
 func (m *SnmpPduDropStats_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpPduDropStats_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SnmpPduDropStats_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpPduDropStats_KEYS.Merge(m, src)
+func (dst *SnmpPduDropStats_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpPduDropStats_KEYS.Merge(dst, src)
 }
 func (m *SnmpPduDropStats_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SnmpPduDropStats_KEYS.Size(m)
@@ -90,17 +87,16 @@ func (m *SnmpPduDropStats) Reset()         { *m = SnmpPduDropStats{} }
 func (m *SnmpPduDropStats) String() string { return proto.CompactTextString(m) }
 func (*SnmpPduDropStats) ProtoMessage()    {}
 func (*SnmpPduDropStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c10dc920e5c41196, []int{1}
+	return fileDescriptor_snmp_pdu_drop_stats_7869e4face4d5c62, []int{1}
 }
-
 func (m *SnmpPduDropStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SnmpPduDropStats.Unmarshal(m, b)
 }
 func (m *SnmpPduDropStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SnmpPduDropStats.Marshal(b, m, deterministic)
 }
-func (m *SnmpPduDropStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SnmpPduDropStats.Merge(m, src)
+func (dst *SnmpPduDropStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SnmpPduDropStats.Merge(dst, src)
 }
 func (m *SnmpPduDropStats) XXX_Size() int {
 	return xxx_messageInfo_SnmpPduDropStats.Size(m)
@@ -186,9 +182,11 @@ func init() {
 	proto.RegisterType((*SnmpPduDropStats)(nil), "cisco_ios_xr_snmp_agent_oper.snmp.information.drop_nms_addresses.drop_nms_address.snmp_pdu_drop_stats")
 }
 
-func init() { proto.RegisterFile("snmp_pdu_drop_stats.proto", fileDescriptor_c10dc920e5c41196) }
+func init() {
+	proto.RegisterFile("snmp_pdu_drop_stats.proto", fileDescriptor_snmp_pdu_drop_stats_7869e4face4d5c62)
+}
 
-var fileDescriptor_c10dc920e5c41196 = []byte{
+var fileDescriptor_snmp_pdu_drop_stats_7869e4face4d5c62 = []byte{
 	// 330 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0xd2, 0x3d, 0x4f, 0xeb, 0x30,
 	0x14, 0xc6, 0x71, 0x55, 0x57, 0xba, 0xf7, 0xf6, 0xf4, 0x05, 0x14, 0x06, 0x52, 0x24, 0xd4, 0x52,

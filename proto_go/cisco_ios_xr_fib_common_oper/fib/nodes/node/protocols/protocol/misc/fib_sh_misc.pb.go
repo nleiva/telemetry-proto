@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_misc
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB miscellaneous info
 type FibShMisc_KEYS struct {
@@ -33,17 +31,16 @@ func (m *FibShMisc_KEYS) Reset()         { *m = FibShMisc_KEYS{} }
 func (m *FibShMisc_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibShMisc_KEYS) ProtoMessage()    {}
 func (*FibShMisc_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{0}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{0}
 }
-
 func (m *FibShMisc_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShMisc_KEYS.Unmarshal(m, b)
 }
 func (m *FibShMisc_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShMisc_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibShMisc_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShMisc_KEYS.Merge(m, src)
+func (dst *FibShMisc_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShMisc_KEYS.Merge(dst, src)
 }
 func (m *FibShMisc_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibShMisc_KEYS.Size(m)
@@ -142,17 +139,16 @@ func (m *FibShMisc) Reset()         { *m = FibShMisc{} }
 func (m *FibShMisc) String() string { return proto.CompactTextString(m) }
 func (*FibShMisc) ProtoMessage()    {}
 func (*FibShMisc) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{1}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{1}
 }
-
 func (m *FibShMisc) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShMisc.Unmarshal(m, b)
 }
 func (m *FibShMisc) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShMisc.Marshal(b, m, deterministic)
 }
-func (m *FibShMisc) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShMisc.Merge(m, src)
+func (dst *FibShMisc) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShMisc.Merge(dst, src)
 }
 func (m *FibShMisc) XXX_Size() int {
 	return xxx_messageInfo_FibShMisc.Size(m)
@@ -426,17 +422,16 @@ func (m *FibShObjActionStats) Reset()         { *m = FibShObjActionStats{} }
 func (m *FibShObjActionStats) String() string { return proto.CompactTextString(m) }
 func (*FibShObjActionStats) ProtoMessage()    {}
 func (*FibShObjActionStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{2}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{2}
 }
-
 func (m *FibShObjActionStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShObjActionStats.Unmarshal(m, b)
 }
 func (m *FibShObjActionStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShObjActionStats.Marshal(b, m, deterministic)
 }
-func (m *FibShObjActionStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShObjActionStats.Merge(m, src)
+func (dst *FibShObjActionStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShObjActionStats.Merge(dst, src)
 }
 func (m *FibShObjActionStats) XXX_Size() int {
 	return xxx_messageInfo_FibShObjActionStats.Size(m)
@@ -513,17 +508,16 @@ func (m *FibShObjStats) Reset()         { *m = FibShObjStats{} }
 func (m *FibShObjStats) String() string { return proto.CompactTextString(m) }
 func (*FibShObjStats) ProtoMessage()    {}
 func (*FibShObjStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{3}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{3}
 }
-
 func (m *FibShObjStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShObjStats.Unmarshal(m, b)
 }
 func (m *FibShObjStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShObjStats.Marshal(b, m, deterministic)
 }
-func (m *FibShObjStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShObjStats.Merge(m, src)
+func (dst *FibShObjStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShObjStats.Merge(dst, src)
 }
 func (m *FibShObjStats) XXX_Size() int {
 	return xxx_messageInfo_FibShObjStats.Size(m)
@@ -574,17 +568,16 @@ func (m *FibShPlatfUpdStats) Reset()         { *m = FibShPlatfUpdStats{} }
 func (m *FibShPlatfUpdStats) String() string { return proto.CompactTextString(m) }
 func (*FibShPlatfUpdStats) ProtoMessage()    {}
 func (*FibShPlatfUpdStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{4}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{4}
 }
-
 func (m *FibShPlatfUpdStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShPlatfUpdStats.Unmarshal(m, b)
 }
 func (m *FibShPlatfUpdStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShPlatfUpdStats.Marshal(b, m, deterministic)
 }
-func (m *FibShPlatfUpdStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShPlatfUpdStats.Merge(m, src)
+func (dst *FibShPlatfUpdStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShPlatfUpdStats.Merge(dst, src)
 }
 func (m *FibShPlatfUpdStats) XXX_Size() int {
 	return xxx_messageInfo_FibShPlatfUpdStats.Size(m)
@@ -646,17 +639,16 @@ func (m *FibShGtrieFnTiming) Reset()         { *m = FibShGtrieFnTiming{} }
 func (m *FibShGtrieFnTiming) String() string { return proto.CompactTextString(m) }
 func (*FibShGtrieFnTiming) ProtoMessage()    {}
 func (*FibShGtrieFnTiming) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{5}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{5}
 }
-
 func (m *FibShGtrieFnTiming) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShGtrieFnTiming.Unmarshal(m, b)
 }
 func (m *FibShGtrieFnTiming) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShGtrieFnTiming.Marshal(b, m, deterministic)
 }
-func (m *FibShGtrieFnTiming) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShGtrieFnTiming.Merge(m, src)
+func (dst *FibShGtrieFnTiming) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShGtrieFnTiming.Merge(dst, src)
 }
 func (m *FibShGtrieFnTiming) XXX_Size() int {
 	return xxx_messageInfo_FibShGtrieFnTiming.Size(m)
@@ -728,17 +720,16 @@ func (m *FibShGtrieTiming) Reset()         { *m = FibShGtrieTiming{} }
 func (m *FibShGtrieTiming) String() string { return proto.CompactTextString(m) }
 func (*FibShGtrieTiming) ProtoMessage()    {}
 func (*FibShGtrieTiming) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{6}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{6}
 }
-
 func (m *FibShGtrieTiming) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShGtrieTiming.Unmarshal(m, b)
 }
 func (m *FibShGtrieTiming) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShGtrieTiming.Marshal(b, m, deterministic)
 }
-func (m *FibShGtrieTiming) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShGtrieTiming.Merge(m, src)
+func (dst *FibShGtrieTiming) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShGtrieTiming.Merge(dst, src)
 }
 func (m *FibShGtrieTiming) XXX_Size() int {
 	return xxx_messageInfo_FibShGtrieTiming.Size(m)
@@ -890,17 +881,16 @@ func (m *FibShProtoDebugStats) Reset()         { *m = FibShProtoDebugStats{} }
 func (m *FibShProtoDebugStats) String() string { return proto.CompactTextString(m) }
 func (*FibShProtoDebugStats) ProtoMessage()    {}
 func (*FibShProtoDebugStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{7}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{7}
 }
-
 func (m *FibShProtoDebugStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShProtoDebugStats.Unmarshal(m, b)
 }
 func (m *FibShProtoDebugStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShProtoDebugStats.Marshal(b, m, deterministic)
 }
-func (m *FibShProtoDebugStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShProtoDebugStats.Merge(m, src)
+func (dst *FibShProtoDebugStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShProtoDebugStats.Merge(dst, src)
 }
 func (m *FibShProtoDebugStats) XXX_Size() int {
 	return xxx_messageInfo_FibShProtoDebugStats.Size(m)
@@ -1281,17 +1271,16 @@ func (m *FibShProtoPurgeStats) Reset()         { *m = FibShProtoPurgeStats{} }
 func (m *FibShProtoPurgeStats) String() string { return proto.CompactTextString(m) }
 func (*FibShProtoPurgeStats) ProtoMessage()    {}
 func (*FibShProtoPurgeStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{8}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{8}
 }
-
 func (m *FibShProtoPurgeStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShProtoPurgeStats.Unmarshal(m, b)
 }
 func (m *FibShProtoPurgeStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShProtoPurgeStats.Marshal(b, m, deterministic)
 }
-func (m *FibShProtoPurgeStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShProtoPurgeStats.Merge(m, src)
+func (dst *FibShProtoPurgeStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShProtoPurgeStats.Merge(dst, src)
 }
 func (m *FibShProtoPurgeStats) XXX_Size() int {
 	return xxx_messageInfo_FibShProtoPurgeStats.Size(m)
@@ -1324,17 +1313,16 @@ func (m *FibShRouteDelTs) Reset()         { *m = FibShRouteDelTs{} }
 func (m *FibShRouteDelTs) String() string { return proto.CompactTextString(m) }
 func (*FibShRouteDelTs) ProtoMessage()    {}
 func (*FibShRouteDelTs) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{9}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{9}
 }
-
 func (m *FibShRouteDelTs) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShRouteDelTs.Unmarshal(m, b)
 }
 func (m *FibShRouteDelTs) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShRouteDelTs.Marshal(b, m, deterministic)
 }
-func (m *FibShRouteDelTs) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShRouteDelTs.Merge(m, src)
+func (dst *FibShRouteDelTs) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShRouteDelTs.Merge(dst, src)
 }
 func (m *FibShRouteDelTs) XXX_Size() int {
 	return xxx_messageInfo_FibShRouteDelTs.Size(m)
@@ -1418,17 +1406,16 @@ func (m *FibIssuProtoState) Reset()         { *m = FibIssuProtoState{} }
 func (m *FibIssuProtoState) String() string { return proto.CompactTextString(m) }
 func (*FibIssuProtoState) ProtoMessage()    {}
 func (*FibIssuProtoState) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{10}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{10}
 }
-
 func (m *FibIssuProtoState) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibIssuProtoState.Unmarshal(m, b)
 }
 func (m *FibIssuProtoState) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibIssuProtoState.Marshal(b, m, deterministic)
 }
-func (m *FibIssuProtoState) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibIssuProtoState.Merge(m, src)
+func (dst *FibIssuProtoState) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibIssuProtoState.Merge(dst, src)
 }
 func (m *FibIssuProtoState) XXX_Size() int {
 	return xxx_messageInfo_FibIssuProtoState.Size(m)
@@ -1572,17 +1559,16 @@ func (m *FibIssuState) Reset()         { *m = FibIssuState{} }
 func (m *FibIssuState) String() string { return proto.CompactTextString(m) }
 func (*FibIssuState) ProtoMessage()    {}
 func (*FibIssuState) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{11}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{11}
 }
-
 func (m *FibIssuState) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibIssuState.Unmarshal(m, b)
 }
 func (m *FibIssuState) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibIssuState.Marshal(b, m, deterministic)
 }
-func (m *FibIssuState) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibIssuState.Merge(m, src)
+func (dst *FibIssuState) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibIssuState.Merge(dst, src)
 }
 func (m *FibIssuState) XXX_Size() int {
 	return xxx_messageInfo_FibIssuState.Size(m)
@@ -1718,17 +1704,16 @@ func (m *FibShProtoFrrStats) Reset()         { *m = FibShProtoFrrStats{} }
 func (m *FibShProtoFrrStats) String() string { return proto.CompactTextString(m) }
 func (*FibShProtoFrrStats) ProtoMessage()    {}
 func (*FibShProtoFrrStats) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{12}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{12}
 }
-
 func (m *FibShProtoFrrStats) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShProtoFrrStats.Unmarshal(m, b)
 }
 func (m *FibShProtoFrrStats) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShProtoFrrStats.Marshal(b, m, deterministic)
 }
-func (m *FibShProtoFrrStats) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShProtoFrrStats.Merge(m, src)
+func (dst *FibShProtoFrrStats) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShProtoFrrStats.Merge(dst, src)
 }
 func (m *FibShProtoFrrStats) XXX_Size() int {
 	return xxx_messageInfo_FibShProtoFrrStats.Size(m)
@@ -1907,17 +1892,16 @@ func (m *FibShPlatCapabilities) Reset()         { *m = FibShPlatCapabilities{} }
 func (m *FibShPlatCapabilities) String() string { return proto.CompactTextString(m) }
 func (*FibShPlatCapabilities) ProtoMessage()    {}
 func (*FibShPlatCapabilities) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c111c40a559eb9d0, []int{13}
+	return fileDescriptor_fib_sh_misc_3e8552b34b1cefd0, []int{13}
 }
-
 func (m *FibShPlatCapabilities) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShPlatCapabilities.Unmarshal(m, b)
 }
 func (m *FibShPlatCapabilities) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShPlatCapabilities.Marshal(b, m, deterministic)
 }
-func (m *FibShPlatCapabilities) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShPlatCapabilities.Merge(m, src)
+func (dst *FibShPlatCapabilities) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShPlatCapabilities.Merge(dst, src)
 }
 func (m *FibShPlatCapabilities) XXX_Size() int {
 	return xxx_messageInfo_FibShPlatCapabilities.Size(m)
@@ -2127,9 +2111,9 @@ func init() {
 	proto.RegisterType((*FibShPlatCapabilities)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.misc.fib_sh_plat_capabilities")
 }
 
-func init() { proto.RegisterFile("fib_sh_misc.proto", fileDescriptor_c111c40a559eb9d0) }
+func init() { proto.RegisterFile("fib_sh_misc.proto", fileDescriptor_fib_sh_misc_3e8552b34b1cefd0) }
 
-var fileDescriptor_c111c40a559eb9d0 = []byte{
+var fileDescriptor_fib_sh_misc_3e8552b34b1cefd0 = []byte{
 	// 3853 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x59, 0x5b, 0x73, 0x1c, 0x37,
 	0x76, 0x2e, 0x4a, 0xb2, 0x48, 0x82, 0x1c, 0x5e, 0x9a, 0x92, 0xd8, 0xba, 0xd3, 0x94, 0xd7, 0xa6,

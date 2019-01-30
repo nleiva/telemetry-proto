@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_ospf_oper_ospf_processes_process_default_vrf_adjacency_information_requests_request
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // OSPF Request List Information
 type OspfShRequestList_KEYS struct {
@@ -34,17 +32,16 @@ func (m *OspfShRequestList_KEYS) Reset()         { *m = OspfShRequestList_KEYS{}
 func (m *OspfShRequestList_KEYS) String() string { return proto.CompactTextString(m) }
 func (*OspfShRequestList_KEYS) ProtoMessage()    {}
 func (*OspfShRequestList_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e4609c816fd64cee, []int{0}
+	return fileDescriptor_ospf_sh_request_list_9ae68c8371745263, []int{0}
 }
-
 func (m *OspfShRequestList_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRequestList_KEYS.Unmarshal(m, b)
 }
 func (m *OspfShRequestList_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRequestList_KEYS.Marshal(b, m, deterministic)
 }
-func (m *OspfShRequestList_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRequestList_KEYS.Merge(m, src)
+func (dst *OspfShRequestList_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRequestList_KEYS.Merge(dst, src)
 }
 func (m *OspfShRequestList_KEYS) XXX_Size() int {
 	return xxx_messageInfo_OspfShRequestList_KEYS.Size(m)
@@ -94,17 +91,16 @@ func (m *OspfShRequestList) Reset()         { *m = OspfShRequestList{} }
 func (m *OspfShRequestList) String() string { return proto.CompactTextString(m) }
 func (*OspfShRequestList) ProtoMessage()    {}
 func (*OspfShRequestList) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e4609c816fd64cee, []int{1}
+	return fileDescriptor_ospf_sh_request_list_9ae68c8371745263, []int{1}
 }
-
 func (m *OspfShRequestList) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShRequestList.Unmarshal(m, b)
 }
 func (m *OspfShRequestList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShRequestList.Marshal(b, m, deterministic)
 }
-func (m *OspfShRequestList) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShRequestList.Merge(m, src)
+func (dst *OspfShRequestList) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShRequestList.Merge(dst, src)
 }
 func (m *OspfShRequestList) XXX_Size() int {
 	return xxx_messageInfo_OspfShRequestList.Size(m)
@@ -166,17 +162,16 @@ func (m *OspfShLsaSum) Reset()         { *m = OspfShLsaSum{} }
 func (m *OspfShLsaSum) String() string { return proto.CompactTextString(m) }
 func (*OspfShLsaSum) ProtoMessage()    {}
 func (*OspfShLsaSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_e4609c816fd64cee, []int{2}
+	return fileDescriptor_ospf_sh_request_list_9ae68c8371745263, []int{2}
 }
-
 func (m *OspfShLsaSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_OspfShLsaSum.Unmarshal(m, b)
 }
 func (m *OspfShLsaSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_OspfShLsaSum.Marshal(b, m, deterministic)
 }
-func (m *OspfShLsaSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_OspfShLsaSum.Merge(m, src)
+func (dst *OspfShLsaSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_OspfShLsaSum.Merge(dst, src)
 }
 func (m *OspfShLsaSum) XXX_Size() int {
 	return xxx_messageInfo_OspfShLsaSum.Size(m)
@@ -235,9 +230,11 @@ func init() {
 	proto.RegisterType((*OspfShLsaSum)(nil), "cisco_ios_xr_ipv4_ospf_oper.ospf.processes.process.default_vrf.adjacency_information.requests.request.ospf_sh_lsa_sum")
 }
 
-func init() { proto.RegisterFile("ospf_sh_request_list.proto", fileDescriptor_e4609c816fd64cee) }
+func init() {
+	proto.RegisterFile("ospf_sh_request_list.proto", fileDescriptor_ospf_sh_request_list_9ae68c8371745263)
+}
 
-var fileDescriptor_e4609c816fd64cee = []byte{
+var fileDescriptor_ospf_sh_request_list_9ae68c8371745263 = []byte{
 	// 444 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x93, 0xb1, 0x8f, 0xd3, 0x30,
 	0x14, 0xc6, 0xd5, 0x1e, 0x9c, 0xc4, 0x6b, 0x7b, 0xe5, 0x4c, 0x05, 0x39, 0xa6, 0x52, 0x01, 0x3a,

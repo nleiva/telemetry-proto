@@ -3,11 +3,9 @@
 
 package telemetry
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Telemetry message is the outermost payload message used to stream
 // telemetry in a Model Driven Telemetry (MDT) system. MDT provides a
@@ -92,17 +90,16 @@ func (m *Telemetry) Reset()         { *m = Telemetry{} }
 func (m *Telemetry) String() string { return proto.CompactTextString(m) }
 func (*Telemetry) ProtoMessage()    {}
 func (*Telemetry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_edbfcf76559f568d, []int{0}
+	return fileDescriptor_telemetry_e0588515dec567b1, []int{0}
 }
-
 func (m *Telemetry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Telemetry.Unmarshal(m, b)
 }
 func (m *Telemetry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Telemetry.Marshal(b, m, deterministic)
 }
-func (m *Telemetry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Telemetry.Merge(m, src)
+func (dst *Telemetry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Telemetry.Merge(dst, src)
 }
 func (m *Telemetry) XXX_Size() int {
 	return xxx_messageInfo_Telemetry.Size(m)
@@ -210,12 +207,82 @@ func (m *Telemetry) GetCollectionEndTime() uint64 {
 	return 0
 }
 
-// XXX_OneofWrappers is for the internal use of the proto package.
-func (*Telemetry) XXX_OneofWrappers() []interface{} {
-	return []interface{}{
+// XXX_OneofFuncs is for the internal use of the proto package.
+func (*Telemetry) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
+	return _Telemetry_OneofMarshaler, _Telemetry_OneofUnmarshaler, _Telemetry_OneofSizer, []interface{}{
 		(*Telemetry_NodeIdStr)(nil),
 		(*Telemetry_SubscriptionIdStr)(nil),
 	}
+}
+
+func _Telemetry_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
+	m := msg.(*Telemetry)
+	// node_id
+	switch x := m.NodeId.(type) {
+	case *Telemetry_NodeIdStr:
+		b.EncodeVarint(1<<3 | proto.WireBytes)
+		b.EncodeStringBytes(x.NodeIdStr)
+	case nil:
+	default:
+		return fmt.Errorf("Telemetry.NodeId has unexpected type %T", x)
+	}
+	// subscription
+	switch x := m.Subscription.(type) {
+	case *Telemetry_SubscriptionIdStr:
+		b.EncodeVarint(3<<3 | proto.WireBytes)
+		b.EncodeStringBytes(x.SubscriptionIdStr)
+	case nil:
+	default:
+		return fmt.Errorf("Telemetry.Subscription has unexpected type %T", x)
+	}
+	return nil
+}
+
+func _Telemetry_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
+	m := msg.(*Telemetry)
+	switch tag {
+	case 1: // node_id.node_id_str
+		if wire != proto.WireBytes {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeStringBytes()
+		m.NodeId = &Telemetry_NodeIdStr{x}
+		return true, err
+	case 3: // subscription.subscription_id_str
+		if wire != proto.WireBytes {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeStringBytes()
+		m.Subscription = &Telemetry_SubscriptionIdStr{x}
+		return true, err
+	default:
+		return false, nil
+	}
+}
+
+func _Telemetry_OneofSizer(msg proto.Message) (n int) {
+	m := msg.(*Telemetry)
+	// node_id
+	switch x := m.NodeId.(type) {
+	case *Telemetry_NodeIdStr:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(len(x.NodeIdStr)))
+		n += len(x.NodeIdStr)
+	case nil:
+	default:
+		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
+	}
+	// subscription
+	switch x := m.Subscription.(type) {
+	case *Telemetry_SubscriptionIdStr:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(len(x.SubscriptionIdStr)))
+		n += len(x.SubscriptionIdStr)
+	case nil:
+	default:
+		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
+	}
+	return n
 }
 
 //
@@ -270,17 +337,16 @@ func (m *TelemetryField) Reset()         { *m = TelemetryField{} }
 func (m *TelemetryField) String() string { return proto.CompactTextString(m) }
 func (*TelemetryField) ProtoMessage()    {}
 func (*TelemetryField) Descriptor() ([]byte, []int) {
-	return fileDescriptor_edbfcf76559f568d, []int{1}
+	return fileDescriptor_telemetry_e0588515dec567b1, []int{1}
 }
-
 func (m *TelemetryField) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TelemetryField.Unmarshal(m, b)
 }
 func (m *TelemetryField) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TelemetryField.Marshal(b, m, deterministic)
 }
-func (m *TelemetryField) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TelemetryField.Merge(m, src)
+func (dst *TelemetryField) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TelemetryField.Merge(dst, src)
 }
 func (m *TelemetryField) XXX_Size() int {
 	return xxx_messageInfo_TelemetryField.Size(m)
@@ -440,9 +506,9 @@ func (m *TelemetryField) GetFields() []*TelemetryField {
 	return nil
 }
 
-// XXX_OneofWrappers is for the internal use of the proto package.
-func (*TelemetryField) XXX_OneofWrappers() []interface{} {
-	return []interface{}{
+// XXX_OneofFuncs is for the internal use of the proto package.
+func (*TelemetryField) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
+	return _TelemetryField_OneofMarshaler, _TelemetryField_OneofUnmarshaler, _TelemetryField_OneofSizer, []interface{}{
 		(*TelemetryField_BytesValue)(nil),
 		(*TelemetryField_StringValue)(nil),
 		(*TelemetryField_BoolValue)(nil),
@@ -453,6 +519,159 @@ func (*TelemetryField) XXX_OneofWrappers() []interface{} {
 		(*TelemetryField_DoubleValue)(nil),
 		(*TelemetryField_FloatValue)(nil),
 	}
+}
+
+func _TelemetryField_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
+	m := msg.(*TelemetryField)
+	// value_by_type
+	switch x := m.ValueByType.(type) {
+	case *TelemetryField_BytesValue:
+		b.EncodeVarint(4<<3 | proto.WireBytes)
+		b.EncodeRawBytes(x.BytesValue)
+	case *TelemetryField_StringValue:
+		b.EncodeVarint(5<<3 | proto.WireBytes)
+		b.EncodeStringBytes(x.StringValue)
+	case *TelemetryField_BoolValue:
+		t := uint64(0)
+		if x.BoolValue {
+			t = 1
+		}
+		b.EncodeVarint(6<<3 | proto.WireVarint)
+		b.EncodeVarint(t)
+	case *TelemetryField_Uint32Value:
+		b.EncodeVarint(7<<3 | proto.WireVarint)
+		b.EncodeVarint(uint64(x.Uint32Value))
+	case *TelemetryField_Uint64Value:
+		b.EncodeVarint(8<<3 | proto.WireVarint)
+		b.EncodeVarint(uint64(x.Uint64Value))
+	case *TelemetryField_Sint32Value:
+		b.EncodeVarint(9<<3 | proto.WireVarint)
+		b.EncodeZigzag32(uint64(x.Sint32Value))
+	case *TelemetryField_Sint64Value:
+		b.EncodeVarint(10<<3 | proto.WireVarint)
+		b.EncodeZigzag64(uint64(x.Sint64Value))
+	case *TelemetryField_DoubleValue:
+		b.EncodeVarint(11<<3 | proto.WireFixed64)
+		b.EncodeFixed64(math.Float64bits(x.DoubleValue))
+	case *TelemetryField_FloatValue:
+		b.EncodeVarint(12<<3 | proto.WireFixed32)
+		b.EncodeFixed32(uint64(math.Float32bits(x.FloatValue)))
+	case nil:
+	default:
+		return fmt.Errorf("TelemetryField.ValueByType has unexpected type %T", x)
+	}
+	return nil
+}
+
+func _TelemetryField_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error) {
+	m := msg.(*TelemetryField)
+	switch tag {
+	case 4: // value_by_type.bytes_value
+		if wire != proto.WireBytes {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeRawBytes(true)
+		m.ValueByType = &TelemetryField_BytesValue{x}
+		return true, err
+	case 5: // value_by_type.string_value
+		if wire != proto.WireBytes {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeStringBytes()
+		m.ValueByType = &TelemetryField_StringValue{x}
+		return true, err
+	case 6: // value_by_type.bool_value
+		if wire != proto.WireVarint {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeVarint()
+		m.ValueByType = &TelemetryField_BoolValue{x != 0}
+		return true, err
+	case 7: // value_by_type.uint32_value
+		if wire != proto.WireVarint {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeVarint()
+		m.ValueByType = &TelemetryField_Uint32Value{uint32(x)}
+		return true, err
+	case 8: // value_by_type.uint64_value
+		if wire != proto.WireVarint {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeVarint()
+		m.ValueByType = &TelemetryField_Uint64Value{x}
+		return true, err
+	case 9: // value_by_type.sint32_value
+		if wire != proto.WireVarint {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeZigzag32()
+		m.ValueByType = &TelemetryField_Sint32Value{int32(x)}
+		return true, err
+	case 10: // value_by_type.sint64_value
+		if wire != proto.WireVarint {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeZigzag64()
+		m.ValueByType = &TelemetryField_Sint64Value{int64(x)}
+		return true, err
+	case 11: // value_by_type.double_value
+		if wire != proto.WireFixed64 {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeFixed64()
+		m.ValueByType = &TelemetryField_DoubleValue{math.Float64frombits(x)}
+		return true, err
+	case 12: // value_by_type.float_value
+		if wire != proto.WireFixed32 {
+			return true, proto.ErrInternalBadWireType
+		}
+		x, err := b.DecodeFixed32()
+		m.ValueByType = &TelemetryField_FloatValue{math.Float32frombits(uint32(x))}
+		return true, err
+	default:
+		return false, nil
+	}
+}
+
+func _TelemetryField_OneofSizer(msg proto.Message) (n int) {
+	m := msg.(*TelemetryField)
+	// value_by_type
+	switch x := m.ValueByType.(type) {
+	case *TelemetryField_BytesValue:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(len(x.BytesValue)))
+		n += len(x.BytesValue)
+	case *TelemetryField_StringValue:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(len(x.StringValue)))
+		n += len(x.StringValue)
+	case *TelemetryField_BoolValue:
+		n += 1 // tag and wire
+		n += 1
+	case *TelemetryField_Uint32Value:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(x.Uint32Value))
+	case *TelemetryField_Uint64Value:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(x.Uint64Value))
+	case *TelemetryField_Sint32Value:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64((uint32(x.Sint32Value) << 1) ^ uint32((int32(x.Sint32Value) >> 31))))
+	case *TelemetryField_Sint64Value:
+		n += 1 // tag and wire
+		n += proto.SizeVarint(uint64(uint64(x.Sint64Value<<1) ^ uint64((int64(x.Sint64Value) >> 63))))
+	case *TelemetryField_DoubleValue:
+		n += 1 // tag and wire
+		n += 8
+	case *TelemetryField_FloatValue:
+		n += 1 // tag and wire
+		n += 4
+	case nil:
+	default:
+		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
+	}
+	return n
 }
 
 // TelemetryGPBTable contains a repeated number of TelemetryRowGPB,
@@ -470,17 +689,16 @@ func (m *TelemetryGPBTable) Reset()         { *m = TelemetryGPBTable{} }
 func (m *TelemetryGPBTable) String() string { return proto.CompactTextString(m) }
 func (*TelemetryGPBTable) ProtoMessage()    {}
 func (*TelemetryGPBTable) Descriptor() ([]byte, []int) {
-	return fileDescriptor_edbfcf76559f568d, []int{2}
+	return fileDescriptor_telemetry_e0588515dec567b1, []int{2}
 }
-
 func (m *TelemetryGPBTable) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TelemetryGPBTable.Unmarshal(m, b)
 }
 func (m *TelemetryGPBTable) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TelemetryGPBTable.Marshal(b, m, deterministic)
 }
-func (m *TelemetryGPBTable) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TelemetryGPBTable.Merge(m, src)
+func (dst *TelemetryGPBTable) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TelemetryGPBTable.Merge(dst, src)
 }
 func (m *TelemetryGPBTable) XXX_Size() int {
 	return xxx_messageInfo_TelemetryGPBTable.Size(m)
@@ -545,17 +763,16 @@ func (m *TelemetryRowGPB) Reset()         { *m = TelemetryRowGPB{} }
 func (m *TelemetryRowGPB) String() string { return proto.CompactTextString(m) }
 func (*TelemetryRowGPB) ProtoMessage()    {}
 func (*TelemetryRowGPB) Descriptor() ([]byte, []int) {
-	return fileDescriptor_edbfcf76559f568d, []int{3}
+	return fileDescriptor_telemetry_e0588515dec567b1, []int{3}
 }
-
 func (m *TelemetryRowGPB) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_TelemetryRowGPB.Unmarshal(m, b)
 }
 func (m *TelemetryRowGPB) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_TelemetryRowGPB.Marshal(b, m, deterministic)
 }
-func (m *TelemetryRowGPB) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_TelemetryRowGPB.Merge(m, src)
+func (dst *TelemetryRowGPB) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_TelemetryRowGPB.Merge(dst, src)
 }
 func (m *TelemetryRowGPB) XXX_Size() int {
 	return xxx_messageInfo_TelemetryRowGPB.Size(m)
@@ -594,9 +811,9 @@ func init() {
 	proto.RegisterType((*TelemetryRowGPB)(nil), "telemetry.TelemetryRowGPB")
 }
 
-func init() { proto.RegisterFile("telemetry.proto", fileDescriptor_edbfcf76559f568d) }
+func init() { proto.RegisterFile("telemetry.proto", fileDescriptor_telemetry_e0588515dec567b1) }
 
-var fileDescriptor_edbfcf76559f568d = []byte{
+var fileDescriptor_telemetry_e0588515dec567b1 = []byte{
 	// 546 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x94, 0x41, 0x6f, 0x9b, 0x40,
 	0x10, 0x85, 0xb3, 0xb1, 0x6b, 0x9b, 0x01, 0xc7, 0xf2, 0x46, 0x95, 0xb6, 0x55, 0xa4, 0x12, 0xe7,

@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_nodes_node_protocols_protocol_external_summary_all
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB external brief summary information across all clients
 type FibShTblExtSumAll_KEYS struct {
@@ -33,17 +31,16 @@ func (m *FibShTblExtSumAll_KEYS) Reset()         { *m = FibShTblExtSumAll_KEYS{}
 func (m *FibShTblExtSumAll_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibShTblExtSumAll_KEYS) ProtoMessage()    {}
 func (*FibShTblExtSumAll_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d2d530b291657c53, []int{0}
+	return fileDescriptor_fib_sh_tbl_ext_sum_all_fee154a5afef7d2d, []int{0}
 }
-
 func (m *FibShTblExtSumAll_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblExtSumAll_KEYS.Unmarshal(m, b)
 }
 func (m *FibShTblExtSumAll_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblExtSumAll_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibShTblExtSumAll_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblExtSumAll_KEYS.Merge(m, src)
+func (dst *FibShTblExtSumAll_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblExtSumAll_KEYS.Merge(dst, src)
 }
 func (m *FibShTblExtSumAll_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibShTblExtSumAll_KEYS.Size(m)
@@ -82,17 +79,16 @@ func (m *FibShTblExtSumAll) Reset()         { *m = FibShTblExtSumAll{} }
 func (m *FibShTblExtSumAll) String() string { return proto.CompactTextString(m) }
 func (*FibShTblExtSumAll) ProtoMessage()    {}
 func (*FibShTblExtSumAll) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d2d530b291657c53, []int{1}
+	return fileDescriptor_fib_sh_tbl_ext_sum_all_fee154a5afef7d2d, []int{1}
 }
-
 func (m *FibShTblExtSumAll) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblExtSumAll.Unmarshal(m, b)
 }
 func (m *FibShTblExtSumAll) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblExtSumAll.Marshal(b, m, deterministic)
 }
-func (m *FibShTblExtSumAll) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblExtSumAll.Merge(m, src)
+func (dst *FibShTblExtSumAll) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblExtSumAll.Merge(dst, src)
 }
 func (m *FibShTblExtSumAll) XXX_Size() int {
 	return xxx_messageInfo_FibShTblExtSumAll.Size(m)
@@ -134,17 +130,16 @@ func (m *FibShTblExtPlSum) Reset()         { *m = FibShTblExtPlSum{} }
 func (m *FibShTblExtPlSum) String() string { return proto.CompactTextString(m) }
 func (*FibShTblExtPlSum) ProtoMessage()    {}
 func (*FibShTblExtPlSum) Descriptor() ([]byte, []int) {
-	return fileDescriptor_d2d530b291657c53, []int{2}
+	return fileDescriptor_fib_sh_tbl_ext_sum_all_fee154a5afef7d2d, []int{2}
 }
-
 func (m *FibShTblExtPlSum) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibShTblExtPlSum.Unmarshal(m, b)
 }
 func (m *FibShTblExtPlSum) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibShTblExtPlSum.Marshal(b, m, deterministic)
 }
-func (m *FibShTblExtPlSum) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibShTblExtPlSum.Merge(m, src)
+func (dst *FibShTblExtPlSum) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibShTblExtPlSum.Merge(dst, src)
 }
 func (m *FibShTblExtPlSum) XXX_Size() int {
 	return xxx_messageInfo_FibShTblExtPlSum.Size(m)
@@ -182,9 +177,11 @@ func init() {
 	proto.RegisterType((*FibShTblExtPlSum)(nil), "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.external_summary_all.fib_sh_tbl_ext_pl_sum")
 }
 
-func init() { proto.RegisterFile("fib_sh_tbl_ext_sum_all.proto", fileDescriptor_d2d530b291657c53) }
+func init() {
+	proto.RegisterFile("fib_sh_tbl_ext_sum_all.proto", fileDescriptor_fib_sh_tbl_ext_sum_all_fee154a5afef7d2d)
+}
 
-var fileDescriptor_d2d530b291657c53 = []byte{
+var fileDescriptor_fib_sh_tbl_ext_sum_all_fee154a5afef7d2d = []byte{
 	// 338 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x50, 0xcb, 0x4a, 0xeb, 0x40,
 	0x18, 0x26, 0xa7, 0x70, 0x38, 0x9d, 0x9e, 0x20, 0x0e, 0xb6, 0x44, 0xea, 0x22, 0x54, 0x90, 0xac,

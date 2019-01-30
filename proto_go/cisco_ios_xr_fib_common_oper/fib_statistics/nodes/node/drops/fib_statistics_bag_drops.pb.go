@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_fib_statistics_nodes_node_drops
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // FIB drop statistics
 type FibStatisticsBagDrops_KEYS struct {
@@ -32,17 +30,16 @@ func (m *FibStatisticsBagDrops_KEYS) Reset()         { *m = FibStatisticsBagDrop
 func (m *FibStatisticsBagDrops_KEYS) String() string { return proto.CompactTextString(m) }
 func (*FibStatisticsBagDrops_KEYS) ProtoMessage()    {}
 func (*FibStatisticsBagDrops_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_25c56793b009fdce, []int{0}
+	return fileDescriptor_fib_statistics_bag_drops_f634e0ed5658c1d5, []int{0}
 }
-
 func (m *FibStatisticsBagDrops_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibStatisticsBagDrops_KEYS.Unmarshal(m, b)
 }
 func (m *FibStatisticsBagDrops_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibStatisticsBagDrops_KEYS.Marshal(b, m, deterministic)
 }
-func (m *FibStatisticsBagDrops_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibStatisticsBagDrops_KEYS.Merge(m, src)
+func (dst *FibStatisticsBagDrops_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibStatisticsBagDrops_KEYS.Merge(dst, src)
 }
 func (m *FibStatisticsBagDrops_KEYS) XXX_Size() int {
 	return xxx_messageInfo_FibStatisticsBagDrops_KEYS.Size(m)
@@ -116,17 +113,16 @@ func (m *FibStatisticsBagDrops) Reset()         { *m = FibStatisticsBagDrops{} }
 func (m *FibStatisticsBagDrops) String() string { return proto.CompactTextString(m) }
 func (*FibStatisticsBagDrops) ProtoMessage()    {}
 func (*FibStatisticsBagDrops) Descriptor() ([]byte, []int) {
-	return fileDescriptor_25c56793b009fdce, []int{1}
+	return fileDescriptor_fib_statistics_bag_drops_f634e0ed5658c1d5, []int{1}
 }
-
 func (m *FibStatisticsBagDrops) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_FibStatisticsBagDrops.Unmarshal(m, b)
 }
 func (m *FibStatisticsBagDrops) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_FibStatisticsBagDrops.Marshal(b, m, deterministic)
 }
-func (m *FibStatisticsBagDrops) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_FibStatisticsBagDrops.Merge(m, src)
+func (dst *FibStatisticsBagDrops) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_FibStatisticsBagDrops.Merge(dst, src)
 }
 func (m *FibStatisticsBagDrops) XXX_Size() int {
 	return xxx_messageInfo_FibStatisticsBagDrops.Size(m)
@@ -303,9 +299,11 @@ func init() {
 	proto.RegisterType((*FibStatisticsBagDrops)(nil), "cisco_ios_xr_fib_common_oper.fib_statistics.nodes.node.drops.fib_statistics_bag_drops")
 }
 
-func init() { proto.RegisterFile("fib_statistics_bag_drops.proto", fileDescriptor_25c56793b009fdce) }
+func init() {
+	proto.RegisterFile("fib_statistics_bag_drops.proto", fileDescriptor_fib_statistics_bag_drops_f634e0ed5658c1d5)
+}
 
-var fileDescriptor_25c56793b009fdce = []byte{
+var fileDescriptor_fib_statistics_bag_drops_f634e0ed5658c1d5 = []byte{
 	// 665 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x94, 0xdf, 0x4f, 0x13, 0x4b,
 	0x14, 0xc7, 0x43, 0x72, 0x73, 0x73, 0x99, 0x8b, 0xa0, 0x55, 0xcb, 0x62, 0xc1, 0x20, 0x31, 0x4a,

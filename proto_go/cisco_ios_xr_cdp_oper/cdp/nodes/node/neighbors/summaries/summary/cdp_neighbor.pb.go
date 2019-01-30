@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_cdp_oper_cdp_nodes_node_neighbors_summaries_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // CDP neighbor info
 type CdpNeighbor_KEYS struct {
@@ -34,17 +32,16 @@ func (m *CdpNeighbor_KEYS) Reset()         { *m = CdpNeighbor_KEYS{} }
 func (m *CdpNeighbor_KEYS) String() string { return proto.CompactTextString(m) }
 func (*CdpNeighbor_KEYS) ProtoMessage()    {}
 func (*CdpNeighbor_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{0}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{0}
 }
-
 func (m *CdpNeighbor_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpNeighbor_KEYS.Unmarshal(m, b)
 }
 func (m *CdpNeighbor_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpNeighbor_KEYS.Marshal(b, m, deterministic)
 }
-func (m *CdpNeighbor_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpNeighbor_KEYS.Merge(m, src)
+func (dst *CdpNeighbor_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpNeighbor_KEYS.Merge(dst, src)
 }
 func (m *CdpNeighbor_KEYS) XXX_Size() int {
 	return xxx_messageInfo_CdpNeighbor_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *CdpNeighbor) Reset()         { *m = CdpNeighbor{} }
 func (m *CdpNeighbor) String() string { return proto.CompactTextString(m) }
 func (*CdpNeighbor) ProtoMessage()    {}
 func (*CdpNeighbor) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{1}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{1}
 }
-
 func (m *CdpNeighbor) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpNeighbor.Unmarshal(m, b)
 }
 func (m *CdpNeighbor) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpNeighbor.Marshal(b, m, deterministic)
 }
-func (m *CdpNeighbor) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpNeighbor.Merge(m, src)
+func (dst *CdpNeighbor) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpNeighbor.Merge(dst, src)
 }
 func (m *CdpNeighbor) XXX_Size() int {
 	return xxx_messageInfo_CdpNeighbor.Size(m)
@@ -142,17 +138,16 @@ func (m *CdpNeighborItem) Reset()         { *m = CdpNeighborItem{} }
 func (m *CdpNeighborItem) String() string { return proto.CompactTextString(m) }
 func (*CdpNeighborItem) ProtoMessage()    {}
 func (*CdpNeighborItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{2}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{2}
 }
-
 func (m *CdpNeighborItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpNeighborItem.Unmarshal(m, b)
 }
 func (m *CdpNeighborItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpNeighborItem.Marshal(b, m, deterministic)
 }
-func (m *CdpNeighborItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpNeighborItem.Merge(m, src)
+func (dst *CdpNeighborItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpNeighborItem.Merge(dst, src)
 }
 func (m *CdpNeighborItem) XXX_Size() int {
 	return xxx_messageInfo_CdpNeighborItem.Size(m)
@@ -230,17 +225,16 @@ func (m *In6AddrTd) Reset()         { *m = In6AddrTd{} }
 func (m *In6AddrTd) String() string { return proto.CompactTextString(m) }
 func (*In6AddrTd) ProtoMessage()    {}
 func (*In6AddrTd) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{3}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{3}
 }
-
 func (m *In6AddrTd) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_In6AddrTd.Unmarshal(m, b)
 }
 func (m *In6AddrTd) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_In6AddrTd.Marshal(b, m, deterministic)
 }
-func (m *In6AddrTd) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_In6AddrTd.Merge(m, src)
+func (dst *In6AddrTd) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_In6AddrTd.Merge(dst, src)
 }
 func (m *In6AddrTd) XXX_Size() int {
 	return xxx_messageInfo_In6AddrTd.Size(m)
@@ -273,17 +267,16 @@ func (m *CdpL3Addr) Reset()         { *m = CdpL3Addr{} }
 func (m *CdpL3Addr) String() string { return proto.CompactTextString(m) }
 func (*CdpL3Addr) ProtoMessage()    {}
 func (*CdpL3Addr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{4}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{4}
 }
-
 func (m *CdpL3Addr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpL3Addr.Unmarshal(m, b)
 }
 func (m *CdpL3Addr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpL3Addr.Marshal(b, m, deterministic)
 }
-func (m *CdpL3Addr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpL3Addr.Merge(m, src)
+func (dst *CdpL3Addr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpL3Addr.Merge(dst, src)
 }
 func (m *CdpL3Addr) XXX_Size() int {
 	return xxx_messageInfo_CdpL3Addr.Size(m)
@@ -327,17 +320,16 @@ func (m *CdpAddrEntry) Reset()         { *m = CdpAddrEntry{} }
 func (m *CdpAddrEntry) String() string { return proto.CompactTextString(m) }
 func (*CdpAddrEntry) ProtoMessage()    {}
 func (*CdpAddrEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{5}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{5}
 }
-
 func (m *CdpAddrEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpAddrEntry.Unmarshal(m, b)
 }
 func (m *CdpAddrEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpAddrEntry.Marshal(b, m, deterministic)
 }
-func (m *CdpAddrEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpAddrEntry.Merge(m, src)
+func (dst *CdpAddrEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpAddrEntry.Merge(dst, src)
 }
 func (m *CdpAddrEntry) XXX_Size() int {
 	return xxx_messageInfo_CdpAddrEntry.Size(m)
@@ -367,17 +359,16 @@ func (m *CdpAddrEntryItem) Reset()         { *m = CdpAddrEntryItem{} }
 func (m *CdpAddrEntryItem) String() string { return proto.CompactTextString(m) }
 func (*CdpAddrEntryItem) ProtoMessage()    {}
 func (*CdpAddrEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{6}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{6}
 }
-
 func (m *CdpAddrEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpAddrEntryItem.Unmarshal(m, b)
 }
 func (m *CdpAddrEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpAddrEntryItem.Marshal(b, m, deterministic)
 }
-func (m *CdpAddrEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpAddrEntryItem.Merge(m, src)
+func (dst *CdpAddrEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpAddrEntryItem.Merge(dst, src)
 }
 func (m *CdpAddrEntryItem) XXX_Size() int {
 	return xxx_messageInfo_CdpAddrEntryItem.Size(m)
@@ -407,17 +398,16 @@ func (m *CdpProtHelloEntry) Reset()         { *m = CdpProtHelloEntry{} }
 func (m *CdpProtHelloEntry) String() string { return proto.CompactTextString(m) }
 func (*CdpProtHelloEntry) ProtoMessage()    {}
 func (*CdpProtHelloEntry) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{7}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{7}
 }
-
 func (m *CdpProtHelloEntry) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpProtHelloEntry.Unmarshal(m, b)
 }
 func (m *CdpProtHelloEntry) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpProtHelloEntry.Marshal(b, m, deterministic)
 }
-func (m *CdpProtHelloEntry) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpProtHelloEntry.Merge(m, src)
+func (dst *CdpProtHelloEntry) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpProtHelloEntry.Merge(dst, src)
 }
 func (m *CdpProtHelloEntry) XXX_Size() int {
 	return xxx_messageInfo_CdpProtHelloEntry.Size(m)
@@ -447,17 +437,16 @@ func (m *CdpProtHelloEntryItem) Reset()         { *m = CdpProtHelloEntryItem{} }
 func (m *CdpProtHelloEntryItem) String() string { return proto.CompactTextString(m) }
 func (*CdpProtHelloEntryItem) ProtoMessage()    {}
 func (*CdpProtHelloEntryItem) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{8}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{8}
 }
-
 func (m *CdpProtHelloEntryItem) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpProtHelloEntryItem.Unmarshal(m, b)
 }
 func (m *CdpProtHelloEntryItem) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpProtHelloEntryItem.Marshal(b, m, deterministic)
 }
-func (m *CdpProtHelloEntryItem) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpProtHelloEntryItem.Merge(m, src)
+func (dst *CdpProtHelloEntryItem) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpProtHelloEntryItem.Merge(dst, src)
 }
 func (m *CdpProtHelloEntryItem) XXX_Size() int {
 	return xxx_messageInfo_CdpProtHelloEntryItem.Size(m)
@@ -499,17 +488,16 @@ func (m *CdpNeighborDetail) Reset()         { *m = CdpNeighborDetail{} }
 func (m *CdpNeighborDetail) String() string { return proto.CompactTextString(m) }
 func (*CdpNeighborDetail) ProtoMessage()    {}
 func (*CdpNeighborDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_54f7b90fbe9945b3, []int{9}
+	return fileDescriptor_cdp_neighbor_be15c0c63b07912d, []int{9}
 }
-
 func (m *CdpNeighborDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_CdpNeighborDetail.Unmarshal(m, b)
 }
 func (m *CdpNeighborDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_CdpNeighborDetail.Marshal(b, m, deterministic)
 }
-func (m *CdpNeighborDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CdpNeighborDetail.Merge(m, src)
+func (dst *CdpNeighborDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_CdpNeighborDetail.Merge(dst, src)
 }
 func (m *CdpNeighborDetail) XXX_Size() int {
 	return xxx_messageInfo_CdpNeighborDetail.Size(m)
@@ -582,9 +570,9 @@ func init() {
 	proto.RegisterType((*CdpNeighborDetail)(nil), "cisco_ios_xr_cdp_oper.cdp.nodes.node.neighbors.summaries.summary.cdp_neighbor_detail")
 }
 
-func init() { proto.RegisterFile("cdp_neighbor.proto", fileDescriptor_54f7b90fbe9945b3) }
+func init() { proto.RegisterFile("cdp_neighbor.proto", fileDescriptor_cdp_neighbor_be15c0c63b07912d) }
 
-var fileDescriptor_54f7b90fbe9945b3 = []byte{
+var fileDescriptor_cdp_neighbor_be15c0c63b07912d = []byte{
 	// 698 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x55, 0xcf, 0x4f, 0x1b, 0x39,
 	0x14, 0xd6, 0x90, 0x25, 0x3f, 0x5e, 0x12, 0xb4, 0x18, 0xc4, 0xce, 0x2e, 0x5a, 0x6d, 0x76, 0xd0,

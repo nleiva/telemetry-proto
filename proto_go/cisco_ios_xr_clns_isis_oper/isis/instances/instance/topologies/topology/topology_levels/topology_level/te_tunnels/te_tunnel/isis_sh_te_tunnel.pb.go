@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_topologies_topology_topology_levels_topology_level_te_tunnels_te_tunnel
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // MPLS TE tunnel
 type IsisShTeTunnel_KEYS struct {
@@ -38,17 +36,16 @@ func (m *IsisShTeTunnel_KEYS) Reset()         { *m = IsisShTeTunnel_KEYS{} }
 func (m *IsisShTeTunnel_KEYS) String() string { return proto.CompactTextString(m) }
 func (*IsisShTeTunnel_KEYS) ProtoMessage()    {}
 func (*IsisShTeTunnel_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6da9393d0618374e, []int{0}
+	return fileDescriptor_isis_sh_te_tunnel_e3fd0e58c0e18f24, []int{0}
 }
-
 func (m *IsisShTeTunnel_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTeTunnel_KEYS.Unmarshal(m, b)
 }
 func (m *IsisShTeTunnel_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTeTunnel_KEYS.Marshal(b, m, deterministic)
 }
-func (m *IsisShTeTunnel_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTeTunnel_KEYS.Merge(m, src)
+func (dst *IsisShTeTunnel_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTeTunnel_KEYS.Merge(dst, src)
 }
 func (m *IsisShTeTunnel_KEYS) XXX_Size() int {
 	return xxx_messageInfo_IsisShTeTunnel_KEYS.Size(m)
@@ -142,17 +139,16 @@ func (m *IsisShTeTunnel) Reset()         { *m = IsisShTeTunnel{} }
 func (m *IsisShTeTunnel) String() string { return proto.CompactTextString(m) }
 func (*IsisShTeTunnel) ProtoMessage()    {}
 func (*IsisShTeTunnel) Descriptor() ([]byte, []int) {
-	return fileDescriptor_6da9393d0618374e, []int{1}
+	return fileDescriptor_isis_sh_te_tunnel_e3fd0e58c0e18f24, []int{1}
 }
-
 func (m *IsisShTeTunnel) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_IsisShTeTunnel.Unmarshal(m, b)
 }
 func (m *IsisShTeTunnel) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_IsisShTeTunnel.Marshal(b, m, deterministic)
 }
-func (m *IsisShTeTunnel) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_IsisShTeTunnel.Merge(m, src)
+func (dst *IsisShTeTunnel) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_IsisShTeTunnel.Merge(dst, src)
 }
 func (m *IsisShTeTunnel) XXX_Size() int {
 	return xxx_messageInfo_IsisShTeTunnel.Size(m)
@@ -252,9 +248,11 @@ func init() {
 	proto.RegisterType((*IsisShTeTunnel)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.topologies.topology.topology_levels.topology_level.te_tunnels.te_tunnel.isis_sh_te_tunnel")
 }
 
-func init() { proto.RegisterFile("isis_sh_te_tunnel.proto", fileDescriptor_6da9393d0618374e) }
+func init() {
+	proto.RegisterFile("isis_sh_te_tunnel.proto", fileDescriptor_isis_sh_te_tunnel_e3fd0e58c0e18f24)
+}
 
-var fileDescriptor_6da9393d0618374e = []byte{
+var fileDescriptor_isis_sh_te_tunnel_e3fd0e58c0e18f24 = []byte{
 	// 501 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x93, 0x5f, 0x6f, 0xd3, 0x3c,
 	0x14, 0xc6, 0x95, 0xf7, 0xdd, 0xda, 0xce, 0xac, 0xa0, 0x59, 0xd3, 0x1a, 0xe0, 0xa6, 0x6c, 0x42,

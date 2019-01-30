@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_clns_isis_oper_isis_instances_instance_srms_policy_policy_ipv6_policy_ipv6_backup_policy_mi
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // SRMS show bag
 type SrmsMiTB_KEYS struct {
@@ -33,17 +31,16 @@ func (m *SrmsMiTB_KEYS) Reset()         { *m = SrmsMiTB_KEYS{} }
 func (m *SrmsMiTB_KEYS) String() string { return proto.CompactTextString(m) }
 func (*SrmsMiTB_KEYS) ProtoMessage()    {}
 func (*SrmsMiTB_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bb21d79d36617d23, []int{0}
+	return fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb, []int{0}
 }
-
 func (m *SrmsMiTB_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SrmsMiTB_KEYS.Unmarshal(m, b)
 }
 func (m *SrmsMiTB_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SrmsMiTB_KEYS.Marshal(b, m, deterministic)
 }
-func (m *SrmsMiTB_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SrmsMiTB_KEYS.Merge(m, src)
+func (dst *SrmsMiTB_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SrmsMiTB_KEYS.Merge(dst, src)
 }
 func (m *SrmsMiTB_KEYS) XXX_Size() int {
 	return xxx_messageInfo_SrmsMiTB_KEYS.Size(m)
@@ -96,17 +93,16 @@ func (m *SrmsMiTB) Reset()         { *m = SrmsMiTB{} }
 func (m *SrmsMiTB) String() string { return proto.CompactTextString(m) }
 func (*SrmsMiTB) ProtoMessage()    {}
 func (*SrmsMiTB) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bb21d79d36617d23, []int{1}
+	return fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb, []int{1}
 }
-
 func (m *SrmsMiTB) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_SrmsMiTB.Unmarshal(m, b)
 }
 func (m *SrmsMiTB) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_SrmsMiTB.Marshal(b, m, deterministic)
 }
-func (m *SrmsMiTB) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_SrmsMiTB.Merge(m, src)
+func (dst *SrmsMiTB) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_SrmsMiTB.Merge(dst, src)
 }
 func (m *SrmsMiTB) XXX_Size() int {
 	return xxx_messageInfo_SrmsMiTB.Size(m)
@@ -198,17 +194,16 @@ func (m *In6AddrTB) Reset()         { *m = In6AddrTB{} }
 func (m *In6AddrTB) String() string { return proto.CompactTextString(m) }
 func (*In6AddrTB) ProtoMessage()    {}
 func (*In6AddrTB) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bb21d79d36617d23, []int{2}
+	return fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb, []int{2}
 }
-
 func (m *In6AddrTB) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_In6AddrTB.Unmarshal(m, b)
 }
 func (m *In6AddrTB) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_In6AddrTB.Marshal(b, m, deterministic)
 }
-func (m *In6AddrTB) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_In6AddrTB.Merge(m, src)
+func (dst *In6AddrTB) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_In6AddrTB.Merge(dst, src)
 }
 func (m *In6AddrTB) XXX_Size() int {
 	return xxx_messageInfo_In6AddrTB.Size(m)
@@ -241,17 +236,16 @@ func (m *Addr) Reset()         { *m = Addr{} }
 func (m *Addr) String() string { return proto.CompactTextString(m) }
 func (*Addr) ProtoMessage()    {}
 func (*Addr) Descriptor() ([]byte, []int) {
-	return fileDescriptor_bb21d79d36617d23, []int{3}
+	return fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb, []int{3}
 }
-
 func (m *Addr) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Addr.Unmarshal(m, b)
 }
 func (m *Addr) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Addr.Marshal(b, m, deterministic)
 }
-func (m *Addr) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Addr.Merge(m, src)
+func (dst *Addr) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Addr.Merge(dst, src)
 }
 func (m *Addr) XXX_Size() int {
 	return xxx_messageInfo_Addr.Size(m)
@@ -290,9 +284,9 @@ func init() {
 	proto.RegisterType((*Addr)(nil), "cisco_ios_xr_clns_isis_oper.isis.instances.instance.srms.policy.policy_ipv6.policy_ipv6_backup.policy_mi.addr")
 }
 
-func init() { proto.RegisterFile("srms_mi_t_b.proto", fileDescriptor_bb21d79d36617d23) }
+func init() { proto.RegisterFile("srms_mi_t_b.proto", fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb) }
 
-var fileDescriptor_bb21d79d36617d23 = []byte{
+var fileDescriptor_srms_mi_t_b_4bdeda4fd3ded3bb = []byte{
 	// 408 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x53, 0xbd, 0x8e, 0x13, 0x31,
 	0x10, 0xd6, 0x26, 0xb9, 0x13, 0x37, 0xc9, 0x9d, 0x0e, 0x83, 0x90, 0x25, 0x0a, 0xa2, 0x70, 0x45,

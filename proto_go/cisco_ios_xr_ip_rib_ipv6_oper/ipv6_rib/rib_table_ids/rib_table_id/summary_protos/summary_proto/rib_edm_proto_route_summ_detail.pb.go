@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv6_oper_ipv6_rib_rib_table_ids_rib_table_id_summary_protos_summary_proto
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Details of Protocol route types
 type RibEdmProtoRouteSummDetail_KEYS struct {
@@ -33,17 +31,16 @@ func (m *RibEdmProtoRouteSummDetail_KEYS) Reset()         { *m = RibEdmProtoRout
 func (m *RibEdmProtoRouteSummDetail_KEYS) String() string { return proto.CompactTextString(m) }
 func (*RibEdmProtoRouteSummDetail_KEYS) ProtoMessage()    {}
 func (*RibEdmProtoRouteSummDetail_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c67f6a6d08872ebe, []int{0}
+	return fileDescriptor_rib_edm_proto_route_summ_detail_81278bf06adef94d, []int{0}
 }
-
 func (m *RibEdmProtoRouteSummDetail_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail_KEYS.Unmarshal(m, b)
 }
 func (m *RibEdmProtoRouteSummDetail_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail_KEYS.Marshal(b, m, deterministic)
 }
-func (m *RibEdmProtoRouteSummDetail_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmProtoRouteSummDetail_KEYS.Merge(m, src)
+func (dst *RibEdmProtoRouteSummDetail_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmProtoRouteSummDetail_KEYS.Merge(dst, src)
 }
 func (m *RibEdmProtoRouteSummDetail_KEYS) XXX_Size() int {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail_KEYS.Size(m)
@@ -118,17 +115,16 @@ func (m *RibEdmProtoRouteSummDetail) Reset()         { *m = RibEdmProtoRouteSumm
 func (m *RibEdmProtoRouteSummDetail) String() string { return proto.CompactTextString(m) }
 func (*RibEdmProtoRouteSummDetail) ProtoMessage()    {}
 func (*RibEdmProtoRouteSummDetail) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c67f6a6d08872ebe, []int{1}
+	return fileDescriptor_rib_edm_proto_route_summ_detail_81278bf06adef94d, []int{1}
 }
-
 func (m *RibEdmProtoRouteSummDetail) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail.Unmarshal(m, b)
 }
 func (m *RibEdmProtoRouteSummDetail) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail.Marshal(b, m, deterministic)
 }
-func (m *RibEdmProtoRouteSummDetail) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmProtoRouteSummDetail.Merge(m, src)
+func (dst *RibEdmProtoRouteSummDetail) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmProtoRouteSummDetail.Merge(dst, src)
 }
 func (m *RibEdmProtoRouteSummDetail) XXX_Size() int {
 	return xxx_messageInfo_RibEdmProtoRouteSummDetail.Size(m)
@@ -298,17 +294,16 @@ func (m *RibEdmRouteCount) Reset()         { *m = RibEdmRouteCount{} }
 func (m *RibEdmRouteCount) String() string { return proto.CompactTextString(m) }
 func (*RibEdmRouteCount) ProtoMessage()    {}
 func (*RibEdmRouteCount) Descriptor() ([]byte, []int) {
-	return fileDescriptor_c67f6a6d08872ebe, []int{2}
+	return fileDescriptor_rib_edm_proto_route_summ_detail_81278bf06adef94d, []int{2}
 }
-
 func (m *RibEdmRouteCount) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RibEdmRouteCount.Unmarshal(m, b)
 }
 func (m *RibEdmRouteCount) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RibEdmRouteCount.Marshal(b, m, deterministic)
 }
-func (m *RibEdmRouteCount) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RibEdmRouteCount.Merge(m, src)
+func (dst *RibEdmRouteCount) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RibEdmRouteCount.Merge(dst, src)
 }
 func (m *RibEdmRouteCount) XXX_Size() int {
 	return xxx_messageInfo_RibEdmRouteCount.Size(m)
@@ -354,10 +349,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("rib_edm_proto_route_summ_detail.proto", fileDescriptor_c67f6a6d08872ebe)
+	proto.RegisterFile("rib_edm_proto_route_summ_detail.proto", fileDescriptor_rib_edm_proto_route_summ_detail_81278bf06adef94d)
 }
 
-var fileDescriptor_c67f6a6d08872ebe = []byte{
+var fileDescriptor_rib_edm_proto_route_summ_detail_81278bf06adef94d = []byte{
 	// 602 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x96, 0xdd, 0x6a, 0x14, 0x31,
 	0x14, 0xc7, 0x89, 0x16, 0xb5, 0xa9, 0xed, 0xee, 0xa6, 0x20, 0xc1, 0x1b, 0x97, 0x45, 0x61, 0xf1,

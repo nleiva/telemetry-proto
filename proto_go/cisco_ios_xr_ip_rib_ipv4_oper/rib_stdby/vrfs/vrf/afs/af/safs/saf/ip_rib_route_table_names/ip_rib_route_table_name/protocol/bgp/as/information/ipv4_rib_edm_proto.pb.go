@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ip_rib_ipv4_oper_rib_stdby_vrfs_vrf_afs_af_safs_saf_ip_rib_route_table_names_ip_rib_route_table_name_protocol_bgp_as_information
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // Information of a rib protocol
 type Ipv4RibEdmProto_KEYS struct {
@@ -36,17 +34,16 @@ func (m *Ipv4RibEdmProto_KEYS) Reset()         { *m = Ipv4RibEdmProto_KEYS{} }
 func (m *Ipv4RibEdmProto_KEYS) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmProto_KEYS) ProtoMessage()    {}
 func (*Ipv4RibEdmProto_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_9d4183d9ee6d1994, []int{0}
+	return fileDescriptor_ipv4_rib_edm_proto_a3bc976b9314e2ba, []int{0}
 }
-
 func (m *Ipv4RibEdmProto_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmProto_KEYS.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmProto_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmProto_KEYS.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmProto_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmProto_KEYS.Merge(m, src)
+func (dst *Ipv4RibEdmProto_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmProto_KEYS.Merge(dst, src)
 }
 func (m *Ipv4RibEdmProto_KEYS) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmProto_KEYS.Size(m)
@@ -124,17 +121,16 @@ func (m *Ipv4RibEdmProto) Reset()         { *m = Ipv4RibEdmProto{} }
 func (m *Ipv4RibEdmProto) String() string { return proto.CompactTextString(m) }
 func (*Ipv4RibEdmProto) ProtoMessage()    {}
 func (*Ipv4RibEdmProto) Descriptor() ([]byte, []int) {
-	return fileDescriptor_9d4183d9ee6d1994, []int{1}
+	return fileDescriptor_ipv4_rib_edm_proto_a3bc976b9314e2ba, []int{1}
 }
-
 func (m *Ipv4RibEdmProto) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Ipv4RibEdmProto.Unmarshal(m, b)
 }
 func (m *Ipv4RibEdmProto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_Ipv4RibEdmProto.Marshal(b, m, deterministic)
 }
-func (m *Ipv4RibEdmProto) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Ipv4RibEdmProto.Merge(m, src)
+func (dst *Ipv4RibEdmProto) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Ipv4RibEdmProto.Merge(dst, src)
 }
 func (m *Ipv4RibEdmProto) XXX_Size() int {
 	return xxx_messageInfo_Ipv4RibEdmProto.Size(m)
@@ -227,9 +223,11 @@ func init() {
 	proto.RegisterType((*Ipv4RibEdmProto)(nil), "cisco_ios_xr_ip_rib_ipv4_oper.rib_stdby.vrfs.vrf.afs.af.safs.saf.ip_rib_route_table_names.ip_rib_route_table_name.protocol.bgp.as.information.ipv4_rib_edm_proto")
 }
 
-func init() { proto.RegisterFile("ipv4_rib_edm_proto.proto", fileDescriptor_9d4183d9ee6d1994) }
+func init() {
+	proto.RegisterFile("ipv4_rib_edm_proto.proto", fileDescriptor_ipv4_rib_edm_proto_a3bc976b9314e2ba)
+}
 
-var fileDescriptor_9d4183d9ee6d1994 = []byte{
+var fileDescriptor_ipv4_rib_edm_proto_a3bc976b9314e2ba = []byte{
 	// 444 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x91, 0xcf, 0x8e, 0xd3, 0x30,
 	0x10, 0xc6, 0x95, 0x2e, 0x6c, 0xcb, 0x40, 0x2b, 0xf0, 0x2e, 0xac, 0x0b, 0x07, 0x56, 0x8b, 0x90,

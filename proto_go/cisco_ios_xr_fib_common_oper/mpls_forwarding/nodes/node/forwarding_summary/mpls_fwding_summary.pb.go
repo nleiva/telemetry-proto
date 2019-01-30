@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_fib_common_oper_mpls_forwarding_nodes_node_forwarding_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 type MplsFwdingSummary_KEYS struct {
 	NodeName             string   `protobuf:"bytes,1,opt,name=node_name,json=nodeName,proto3" json:"node_name,omitempty"`
@@ -31,17 +29,16 @@ func (m *MplsFwdingSummary_KEYS) Reset()         { *m = MplsFwdingSummary_KEYS{}
 func (m *MplsFwdingSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*MplsFwdingSummary_KEYS) ProtoMessage()    {}
 func (*MplsFwdingSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_717870b55c7273da, []int{0}
+	return fileDescriptor_mpls_fwding_summary_bdf2239841eeda7d, []int{0}
 }
-
 func (m *MplsFwdingSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsFwdingSummary_KEYS.Unmarshal(m, b)
 }
 func (m *MplsFwdingSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsFwdingSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *MplsFwdingSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsFwdingSummary_KEYS.Merge(m, src)
+func (dst *MplsFwdingSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsFwdingSummary_KEYS.Merge(dst, src)
 }
 func (m *MplsFwdingSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_MplsFwdingSummary_KEYS.Size(m)
@@ -127,17 +124,16 @@ func (m *MplsFwdingSummary) Reset()         { *m = MplsFwdingSummary{} }
 func (m *MplsFwdingSummary) String() string { return proto.CompactTextString(m) }
 func (*MplsFwdingSummary) ProtoMessage()    {}
 func (*MplsFwdingSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_717870b55c7273da, []int{1}
+	return fileDescriptor_mpls_fwding_summary_bdf2239841eeda7d, []int{1}
 }
-
 func (m *MplsFwdingSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_MplsFwdingSummary.Unmarshal(m, b)
 }
 func (m *MplsFwdingSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_MplsFwdingSummary.Marshal(b, m, deterministic)
 }
-func (m *MplsFwdingSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MplsFwdingSummary.Merge(m, src)
+func (dst *MplsFwdingSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MplsFwdingSummary.Merge(dst, src)
 }
 func (m *MplsFwdingSummary) XXX_Size() int {
 	return xxx_messageInfo_MplsFwdingSummary.Size(m)
@@ -356,9 +352,11 @@ func init() {
 	proto.RegisterType((*MplsFwdingSummary)(nil), "cisco_ios_xr_fib_common_oper.mpls_forwarding.nodes.node.forwarding_summary.mpls_fwding_summary")
 }
 
-func init() { proto.RegisterFile("mpls_fwding_summary.proto", fileDescriptor_717870b55c7273da) }
+func init() {
+	proto.RegisterFile("mpls_fwding_summary.proto", fileDescriptor_mpls_fwding_summary_bdf2239841eeda7d)
+}
 
-var fileDescriptor_717870b55c7273da = []byte{
+var fileDescriptor_mpls_fwding_summary_bdf2239841eeda7d = []byte{
 	// 756 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x95, 0xdf, 0x53, 0x2b, 0x35,
 	0x14, 0xc7, 0xa7, 0x33, 0x8e, 0xe3, 0x8d, 0x70, 0xbd, 0x6e, 0xe9, 0x65, 0xd1, 0x51, 0x7b, 0x11,

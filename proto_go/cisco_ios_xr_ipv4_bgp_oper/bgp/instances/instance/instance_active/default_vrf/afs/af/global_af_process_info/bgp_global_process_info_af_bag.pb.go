@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_ipv4_bgp_oper_bgp_instances_instance_instance_active_default_vrf_afs_af_global_af_process_info
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // BGP address family specific information common to all BGP processes
 type BgpGlobalProcessInfoAfBag_KEYS struct {
@@ -33,17 +31,16 @@ func (m *BgpGlobalProcessInfoAfBag_KEYS) Reset()         { *m = BgpGlobalProcess
 func (m *BgpGlobalProcessInfoAfBag_KEYS) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoAfBag_KEYS) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoAfBag_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{0}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{0}
 }
-
 func (m *BgpGlobalProcessInfoAfBag_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag_KEYS.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoAfBag_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag_KEYS.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoAfBag_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoAfBag_KEYS.Merge(m, src)
+func (dst *BgpGlobalProcessInfoAfBag_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoAfBag_KEYS.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoAfBag_KEYS) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag_KEYS.Size(m)
@@ -88,17 +85,16 @@ func (m *BgpGlobalProcessInfoAfBag) Reset()         { *m = BgpGlobalProcessInfoA
 func (m *BgpGlobalProcessInfoAfBag) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoAfBag) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoAfBag) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{1}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{1}
 }
-
 func (m *BgpGlobalProcessInfoAfBag) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoAfBag) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoAfBag) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoAfBag.Merge(m, src)
+func (dst *BgpGlobalProcessInfoAfBag) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoAfBag.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoAfBag) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfBag.Size(m)
@@ -158,17 +154,16 @@ func (m *BgpTimespec) Reset()         { *m = BgpTimespec{} }
 func (m *BgpTimespec) String() string { return proto.CompactTextString(m) }
 func (*BgpTimespec) ProtoMessage()    {}
 func (*BgpTimespec) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{2}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{2}
 }
-
 func (m *BgpTimespec) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpTimespec.Unmarshal(m, b)
 }
 func (m *BgpTimespec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpTimespec.Marshal(b, m, deterministic)
 }
-func (m *BgpTimespec) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpTimespec.Merge(m, src)
+func (dst *BgpTimespec) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpTimespec.Merge(dst, src)
 }
 func (m *BgpTimespec) XXX_Size() int {
 	return xxx_messageInfo_BgpTimespec.Size(m)
@@ -217,17 +212,16 @@ func (m *BgpRibInstallTimeInfo) Reset()         { *m = BgpRibInstallTimeInfo{} }
 func (m *BgpRibInstallTimeInfo) String() string { return proto.CompactTextString(m) }
 func (*BgpRibInstallTimeInfo) ProtoMessage()    {}
 func (*BgpRibInstallTimeInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{3}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{3}
 }
-
 func (m *BgpRibInstallTimeInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpRibInstallTimeInfo.Unmarshal(m, b)
 }
 func (m *BgpRibInstallTimeInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpRibInstallTimeInfo.Marshal(b, m, deterministic)
 }
-func (m *BgpRibInstallTimeInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpRibInstallTimeInfo.Merge(m, src)
+func (dst *BgpRibInstallTimeInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpRibInstallTimeInfo.Merge(dst, src)
 }
 func (m *BgpRibInstallTimeInfo) XXX_Size() int {
 	return xxx_messageInfo_BgpRibInstallTimeInfo.Size(m)
@@ -364,17 +358,16 @@ func (m *BgpGlobalProcessInfoAfGbl_) Reset()         { *m = BgpGlobalProcessInfo
 func (m *BgpGlobalProcessInfoAfGbl_) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoAfGbl_) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoAfGbl_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{4}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{4}
 }
-
 func (m *BgpGlobalProcessInfoAfGbl_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfGbl_.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoAfGbl_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfGbl_.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoAfGbl_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoAfGbl_.Merge(m, src)
+func (dst *BgpGlobalProcessInfoAfGbl_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoAfGbl_.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoAfGbl_) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfGbl_.Size(m)
@@ -703,17 +696,16 @@ func (m *BgpGlobalProcessInfoAfVrf_) Reset()         { *m = BgpGlobalProcessInfo
 func (m *BgpGlobalProcessInfoAfVrf_) String() string { return proto.CompactTextString(m) }
 func (*BgpGlobalProcessInfoAfVrf_) ProtoMessage()    {}
 func (*BgpGlobalProcessInfoAfVrf_) Descriptor() ([]byte, []int) {
-	return fileDescriptor_1e79225ab6f81729, []int{5}
+	return fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10, []int{5}
 }
-
 func (m *BgpGlobalProcessInfoAfVrf_) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfVrf_.Unmarshal(m, b)
 }
 func (m *BgpGlobalProcessInfoAfVrf_) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfVrf_.Marshal(b, m, deterministic)
 }
-func (m *BgpGlobalProcessInfoAfVrf_) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_BgpGlobalProcessInfoAfVrf_.Merge(m, src)
+func (dst *BgpGlobalProcessInfoAfVrf_) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_BgpGlobalProcessInfoAfVrf_.Merge(dst, src)
 }
 func (m *BgpGlobalProcessInfoAfVrf_) XXX_Size() int {
 	return xxx_messageInfo_BgpGlobalProcessInfoAfVrf_.Size(m)
@@ -930,10 +922,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("bgp_global_process_info_af_bag.proto", fileDescriptor_1e79225ab6f81729)
+	proto.RegisterFile("bgp_global_process_info_af_bag.proto", fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10)
 }
 
-var fileDescriptor_1e79225ab6f81729 = []byte{
+var fileDescriptor_bgp_global_process_info_af_bag_ee569df804e32d10 = []byte{
 	// 1738 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x58, 0x5b, 0x6f, 0x1c, 0x49,
 	0x15, 0xd6, 0x6c, 0x96, 0xd8, 0xa9, 0x99, 0xf1, 0xa5, 0x7c, 0xeb, 0xc9, 0xc5, 0xf1, 0x8e, 0xbd,

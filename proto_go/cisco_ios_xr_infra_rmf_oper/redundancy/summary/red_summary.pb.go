@@ -3,11 +3,9 @@
 
 package cisco_ios_xr_infra_rmf_oper_redundancy_summary
 
-import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
-)
+import proto "github.com/golang/protobuf/proto"
+import fmt "fmt"
+import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -18,7 +16,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // rmf show
 type RedSummary_KEYS struct {
@@ -31,17 +29,16 @@ func (m *RedSummary_KEYS) Reset()         { *m = RedSummary_KEYS{} }
 func (m *RedSummary_KEYS) String() string { return proto.CompactTextString(m) }
 func (*RedSummary_KEYS) ProtoMessage()    {}
 func (*RedSummary_KEYS) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5a5d6dca6cb046eb, []int{0}
+	return fileDescriptor_red_summary_137537cafb7794b4, []int{0}
 }
-
 func (m *RedSummary_KEYS) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RedSummary_KEYS.Unmarshal(m, b)
 }
 func (m *RedSummary_KEYS) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RedSummary_KEYS.Marshal(b, m, deterministic)
 }
-func (m *RedSummary_KEYS) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RedSummary_KEYS.Merge(m, src)
+func (dst *RedSummary_KEYS) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RedSummary_KEYS.Merge(dst, src)
 }
 func (m *RedSummary_KEYS) XXX_Size() int {
 	return xxx_messageInfo_RedSummary_KEYS.Size(m)
@@ -66,17 +63,16 @@ func (m *RedSummary) Reset()         { *m = RedSummary{} }
 func (m *RedSummary) String() string { return proto.CompactTextString(m) }
 func (*RedSummary) ProtoMessage()    {}
 func (*RedSummary) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5a5d6dca6cb046eb, []int{1}
+	return fileDescriptor_red_summary_137537cafb7794b4, []int{1}
 }
-
 func (m *RedSummary) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RedSummary.Unmarshal(m, b)
 }
 func (m *RedSummary) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RedSummary.Marshal(b, m, deterministic)
 }
-func (m *RedSummary) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RedSummary.Merge(m, src)
+func (dst *RedSummary) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RedSummary.Merge(dst, src)
 }
 func (m *RedSummary) XXX_Size() int {
 	return xxx_messageInfo_RedSummary.Size(m)
@@ -115,17 +111,16 @@ func (m *RedGroupInfo) Reset()         { *m = RedGroupInfo{} }
 func (m *RedGroupInfo) String() string { return proto.CompactTextString(m) }
 func (*RedGroupInfo) ProtoMessage()    {}
 func (*RedGroupInfo) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5a5d6dca6cb046eb, []int{2}
+	return fileDescriptor_red_summary_137537cafb7794b4, []int{2}
 }
-
 func (m *RedGroupInfo) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RedGroupInfo.Unmarshal(m, b)
 }
 func (m *RedGroupInfo) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RedGroupInfo.Marshal(b, m, deterministic)
 }
-func (m *RedGroupInfo) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RedGroupInfo.Merge(m, src)
+func (dst *RedGroupInfo) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RedGroupInfo.Merge(dst, src)
 }
 func (m *RedGroupInfo) XXX_Size() int {
 	return xxx_messageInfo_RedGroupInfo.Size(m)
@@ -184,17 +179,16 @@ func (m *RedSummaryPair) Reset()         { *m = RedSummaryPair{} }
 func (m *RedSummaryPair) String() string { return proto.CompactTextString(m) }
 func (*RedSummaryPair) ProtoMessage()    {}
 func (*RedSummaryPair) Descriptor() ([]byte, []int) {
-	return fileDescriptor_5a5d6dca6cb046eb, []int{3}
+	return fileDescriptor_red_summary_137537cafb7794b4, []int{3}
 }
-
 func (m *RedSummaryPair) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RedSummaryPair.Unmarshal(m, b)
 }
 func (m *RedSummaryPair) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	return xxx_messageInfo_RedSummaryPair.Marshal(b, m, deterministic)
 }
-func (m *RedSummaryPair) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_RedSummaryPair.Merge(m, src)
+func (dst *RedSummaryPair) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_RedSummaryPair.Merge(dst, src)
 }
 func (m *RedSummaryPair) XXX_Size() int {
 	return xxx_messageInfo_RedSummaryPair.Size(m)
@@ -247,9 +241,9 @@ func init() {
 	proto.RegisterType((*RedSummaryPair)(nil), "cisco_ios_xr_infra_rmf_oper.redundancy.summary.red_summary_pair")
 }
 
-func init() { proto.RegisterFile("red_summary.proto", fileDescriptor_5a5d6dca6cb046eb) }
+func init() { proto.RegisterFile("red_summary.proto", fileDescriptor_red_summary_137537cafb7794b4) }
 
-var fileDescriptor_5a5d6dca6cb046eb = []byte{
+var fileDescriptor_red_summary_137537cafb7794b4 = []byte{
 	// 277 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x92, 0x3f, 0x4f, 0xc3, 0x30,
 	0x10, 0xc5, 0x15, 0x0a, 0xf9, 0x73, 0x95, 0x10, 0x78, 0x00, 0x23, 0x96, 0x2a, 0x53, 0xa7, 0x0c,
